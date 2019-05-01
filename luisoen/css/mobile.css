@@ -1,5 +1,57 @@
-/*@media (max-width: 767px) {*/
-	body {
-		
+@media (max-width: 767px) {
+	.top_header {
+		display: none;
 	}
+	.more_content p {
+		padding: 30px 0px 30px 0px;
+	}
+	.header {
+    margin-bottom: -30px;
+	}
+	.more {
+		border-radius: 35px;
+		position: relative;
+		z-index: 1;
+	}
+	.services {
+    padding: 80px 0px 50px 0px;
+    margin-top: -40px;
+    z-index: -1;
+	}
+	.more_content p {
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 25px;
+	}
+	.more_content h2::before {
+	    margin: 10px auto 40px;
+	}   
+	.more_content h2 {
+		font-size: 50px;
+	}
+	.testimonials .container h2 {
+		font-size: 40px;
+	}
+	.portfolio ul {
+		display: block;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

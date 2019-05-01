@@ -118,17 +118,24 @@ h1 {
 	width: 100%;
 }
 .more {
-	padding: 100px 0px;
+	 background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+		url(../img/img_bg.png) no-repeat center center/cover;
+		background-attachment: fixed;
+	padding: 50px;
 }
 .more .container {
-	display: flex;
-	justify-content: space-between;
-	flex-flow: nowrap;
+	display: block;
 	align-items: center;
 }
 .more_content {
-	width: 50%;
-	color: #7c7c7c;
+	width: 100%;
+    color: #7c7c7c;
+    margin: 0 auto;
+    text-align: center;
 }
 .more_content h2 {
 	font-family: Asap;
@@ -136,30 +143,37 @@ h1 {
 	font-size: 55px;
 	display: block;
 	letter-spacing: 6px;
+	color: #fff;
 }
 .more_content h2::before {
-     content: '';
+    content: '';
     display: block;
     width: 76px;
     height: 3px;
-    background-color: #7c7c7c;
-    margin-bottom: 20px;
+    background-color: #fff;
+    margin: 40px auto 40px;
 }
 .more_content p {
 	width: 80%;
 	font-family: Asap;
 	font-weight: 500;
-	line-height: 26px;
-	margin-bottom: 55px;
+	line-height: 35px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .more_content a {
 
 }
 .more_img {
+	display: none;
 	width: 50%;
 	height: 435px;
 }
 .more_img-pic {
+	display: none;
     height: 100%;
     background: url(../img/img_bg.png) no-repeat center center/contain;
 }
