@@ -153,6 +153,9 @@ h1 {
 	z-index: -1;
 	content: '';
 }
+.mob-nav {
+	display: none;
+}
 .phone8 {
     border-radius: 42px;
     box-shadow: 0px 0px 50px -12px #000;
@@ -160,6 +163,9 @@ h1 {
     height: 531px;
     top: -40px;
     left: 150px;
+}
+.phone8_mob {
+	display: none;
 }
 .bot-header_text {
     display: flex;
@@ -404,7 +410,7 @@ h3 {
 }
 .aaviofor .media-content2 {
 	width: 40%;
-	background: url('../img/adult.jpg') no-repeat center center/cover;
+	background: url('../img/adults-bg.png') no-repeat center center/cover;
     border-radius: 20px 0px 0px 20px;
     box-shadow: 2px 11px 25px -7px;
     height: 650px;

@@ -1,0 +1,93 @@
+@media (max-width: 767px) {
+header {
+	height: calc(100vh - 200px);
+	min-height: 0px;
+}
+.top-header_nav {
+	display: none;
+}
+.top-header {
+    padding: 20px;
+}
+.bot-header {
+    background: rgba(255, 255, 255, 0.0);
+}
+.bot-header_text {
+	display: none;
+}
+.bot-header::before {
+	display: none;
+}
+.bot-header::after {
+	display: none;
+}
+.airplane-path_header {
+	display: none;
+}
+.airplane-h1 {
+	margin-bottom: 0px;
+}
+h1 {
+    font-size: 80px;
+}
+.mob-nav {
+	display: flex;
+}
+.phone8 {
+	display: none; 
+}
+.phone8_mob {
+    display: block;
+    border-radius: 42px;
+    box-shadow: 0px 0px 50px -12px #000;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.mob_a {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 27px;
+	color: #fff;
+}
+.mob-nav {
+ padding-left: 20%;
+}
+.promo {
+	padding: 5%;
+}
+.aavio-works {
+	padding: 0px;
+}
+.aavio-works .container {
+	flex-direction: column-reverse;
+}
+.aavio-works .media-content, .aavio-works .text-content {
+	width: 100%;
+}
+.aavio-works .text-content {
+	padding: 10%;
+}
+.aavio-works .media-content {
+	position: relative;
+	padding-bottom: 15%;
+}	
+.media-content::before {
+	height: 94%;
+	top: 0;
+	width: 80%;
+}
+.sponsors {
+	display: none;
+}
+
+
+
+}
+
+
+
+
+
