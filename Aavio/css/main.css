@@ -1,0 +1,639 @@
+body * {
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+}
+header {
+	height:100vh;
+	background: url('../img/banner1.jpg') center bottom / cover no-repeat;
+	text-align: center;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 75px 60px 0px 60px;
+/*	position: absolute;
+	top: 0;
+	left: 0;*/
+	width: 100%;
+}
+.logo {
+	height: 70px;
+}
+.top-header_nav {
+	/*display: inline-blck;*/
+	display: flex;
+
+}
+.top-header_nav li {
+	margin: 0px 25px;
+}
+.top-header_nav li:nth-child(5) {
+	margin-right: 0;
+}
+.top-header_nav li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #fff;
+}
+.top-header_nav li a::after {
+	content: '';
+	display: block;
+	width: 0%;
+	height: 1px;
+	background-color: #FFA700;
+	left: 50%;
+	transform: translate3d(-50%,0,0);
+	position: relative;
+	bottom: -4px;
+	transition: .4s;
+}
+.top-header_nav li a:hover::after {
+	width: 100%;
+	transition: .4s;
+}
+h1 {
+	font-family: gilroy;
+	font-size: 165px;
+	color: #fff;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
+.airplane-h1 {
+	height: 65px;
+	margin-bottom: 15px;
+	animation: rotate 8s infinite;
+}
+@keyframes rotate {
+	55% {
+		transform: rotate(30deg);
+	}
+	75% {
+		transform: rotate(0deg);
+	}
+}
+.bold {
+	font-weight: bold;
+}
+.airplane-path_header {
+	position: relative;
+	left: 200px;
+    z-index: 10;
+}
+.plane_header {
+	left: 220px;
+    position: absolute;
+    bottom: 71px;
+    z-index: 1;
+    transform: rotate(27deg);
+    height: 70px;
+}
+.path_header {
+	left: 90px;
+	position: absolute;
+	height: 175px;
+	transform: rotate(4deg);
+    bottom: -20px;
+}
+.circle_header1 {
+    left: 60px;
+    position: absolute;
+    bottom: -25px;
+    animation: blinking1 2s infinite;
+}
+.circle_header2 {
+	left: 345px;
+    position: absolute;
+    bottom: 55px;
+    animation: blinking1 3s infinite;
+}
+.bot-header {
+	position: relative;
+	text-align: left;
+	width: 100%;
+	height: 160px;
+	background: rgba(255, 255, 255, 0.1);
+	bottom: 0;
+	z-index: 2;
+}
+.bot-header::after {
+	background: url(../img/banner1.jpg) no-repeat center bottom/cover;
+	position: absolute;
+    top: 0;
+    content: '';
+    width: 102%;
+    height: 102%;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -5;
+    left: -1%;
+}
+.bot-header::before {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	content: '';
+}
+.phone8 {
+    border-radius: 42px;
+    box-shadow: 0px 0px 50px -12px #000;
+    position: absolute;
+    height: 531px;
+    top: -40px;
+    left: 150px;
+}
+.bot-header_text {
+    display: flex;
+    width: 55%;
+    margin-left: 40%;
+}
+.bot-header_text li {
+	width: 30%;
+	border-bottom: 0.1em solid #FFF;
+	height:135px;
+}
+.bot-header_title a {
+	text-decoration: none;
+	color: #fff;
+}
+.bot-header_text li:hover {
+	content: '';
+	display: block;
+	border-bottom: 0.1em solid #FFA700;
+	position: relative;
+}
+.bot-header_text li:hover .bot-header_title a {
+	color: #FFA700;
+}
+.bot-header_title {
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 17px;
+	color: #fff;
+	margin: 40px 0px 5px 0px;
+    display: block;
+    text-decoration: none;
+}
+.bot-header_text p {
+	font-family: Montserrat;
+	font-weight: normal;
+	font-size: 12px;
+	color: #fff;
+	line-height: 15px;
+	width: 77%;
+}
+.promo {
+    padding: 100px 0px 0px 550px;
+    position: relative;
+    z-index: 1;
+}
+.promo h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	color: #282828;
+}
+.promo p {
+	display: block;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: ;
+	font-size: 14px;
+	line-height: 27px;	
+	margin: 25px 0px;
+	width: 65%;
+}
+.button {
+    padding: 13px 10px;
+    background-color: #ffa700;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'PT Sans';
+    font-size: 13px;
+    transition: 0.3s ease;
+    display: inline-block;
+    box-shadow: 0px 0px 50px -12px #000;
+    font-weight: bold;
+}
+.button:hover {
+	transform: scale(1.1);
+	transition: 0.3s ease;
+}
+.plane_area {
+	position: relative;
+	overflow: hidden;
+}
+.plane-animation {
+    border-radius: 50%;
+    border: 2px solid #FFEFD0;
+	height: 170vw;
+    width: 170vw;
+    bottom: -93%;
+    right: -10%;
+    animation: flying 19s infinite linear;
+    z-index: -10;
+}
+.plane-animation:before {
+    content: '';
+    display: block;
+    width: 99%;
+    height: 99%;
+    border-radius: 50%;
+    filter: blur(3px);
+    position: relative;
+    left: .5%;
+    top: .5%;
+    z-index: -10;
+    box-shadow: 0px 0px 0.5px 0px #4a4848, inset 0px 0px 0.5px 0px #585858
+}
+.for_plane {
+	width: 100%;
+	position: absolute;
+    bottom: 550px;
+    left: -754px;
+}
+.plane-fly {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translate3d(-50%,50%,0);
+    z-index: -10;
+}
+.aavio-works {
+	position: relative;
+	z-index: 1;
+	padding: 200px 0px;
+}
+/*.aavio-works::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 70%;
+    width: 40%;
+    max-width: 40%;
+    box-shadow: 11px 11px 51px -18px;
+    z-index: -2;
+    top: 15%;
+    border-radius: 40px;
+}*/
+.aavio-works .container {
+	display: flex;
+}
+.aavio-works .media-content {
+	width: 50%;
+}
+.media-content::before {
+    content: '';
+    display: block;
+    background: url(../img/yellowbackg.png) no-repeat center center/cover;
+    height: 70%;
+    width: 40%;
+    left: 0;
+    z-index: -1;
+    top: 15%;
+    position: absolute;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 11px 11px 51px -18px;
+}
+.media-content ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.media-content li {
+	width: 43%;
+	text-align: center;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 55px 35px;
+    margin: 20px 0px;
+	box-shadow: 3px 3px 16px -5px;
+}
+.media-content .logos {
+	display: block;
+	margin: 0 auto;
+}
+.media-content .number {
+	display: block;
+	font-family: Montserrat;
+	font-size: 40px;
+	color: #000;
+	margin: 20px 0px;
+}
+.media-content .title {
+	display: block;
+	font-family: Montserrat;
+    font-weight: bold;
+    font-size: 17px;
+	line-height: 30px;
+	font-style: normal;
+	color: #FFA700;
+}
+.aavio-works .text-content {
+	width: 50%;
+	padding: 20% 0% 0% 7%;
+}
+h3 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 42px;
+	color: #FFA700;
+	display: block;
+}
+.text-content p {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	display: block;
+	margin: 20px 0px;
+}
+.text-content .button {
+
+}
+.sponsors {
+}
+.sponsors ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.aaviofor {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	overflow: hidden;
+}
+.aaviofor .text-content2 {
+	width: 60%;
+	padding: 15% 0% 0% 10%;
+}
+.aaviofor p {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	display: block;
+	margin: 20px 0px;
+	width: 70%;
+}
+.aaviofor .media-content2 {
+	width: 40%;
+	background: url('../img/adults-bg.png') no-repeat center center/cover;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 2px 11px 25px -7px;
+    height: 650px;
+    margin: 5% 0%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.aaviofor .opacity_words {
+	
+}
+.media-content2 .first_word {
+	margin-top: 35%;
+	display: flex;
+	justify-content: center;
+	 animation: nastya 5s infinite ease;
+}
+@keyframes nastya {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 50;
+	}
+	100% {
+		opacity: 100;
+	}
+}
+.media-content2 .opacity-low {
+	margin-top: 15%;
+	display: flex;
+	justify-content: center;
+}
+.words {
+    padding: 15px 18px;
+    background: rgba(255,255,255,.4);
+    border-radius: 20px;
+}
+.media-content2 li {
+	padding: 0px 20px;
+}
+.opacity-medium, .opacity-high, .opacity-higher, .opacity-last {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+.opacity-medium {
+	animation: blinking1 7s infinite ease;
+}
+.opacity-high {
+	animation: blinking2 3s infinite ease;
+}
+.opacity-higher {
+	animation: blinking3 5s infinite ease;
+}
+.opacity-low {
+	animation: blinking3 10s infinite ease;
+}
+.opacity-last {
+	animation: blinking2 5s infinite ease;
+	animation-delay: 3s;
+}
+.aaviofor .plane-fly {
+    transform: translate3d(-50%,50%,0) rotate(180deg);
+}
+.aaviofor .plane-animation {
+	animation: flying2 15s infinite linear;
+	border: 2px solid #FFEFD0;
+}
+.aaviofor .for_plane {
+	width: 100%;
+    position: absolute;
+    bottom: 54px;
+    left: -204px;
+    z-index: -1;
+}
+.ourlegacy {
+	margin-bottom: 100px;
+}
+.ourlegacy .container {
+
+}
+.ourlegacy h3  {
+    margin: 0px 0px 50px 0px;
+    display: block;
+}
+.ourlegacy ul {
+	display: flex;
+	justify-content: space-between;
+}
+.ourlegacy li {
+}
+.ourlegacy img {
+	
+}
+.ourlegacy .img-left, .img-right {
+	opacity: 0.18;
+}
+.img-left {
+ 	border-radius: 0px 20px 20px 0px;
+}
+.img-right {
+	border-radius: 20px 0px 0px 20px;
+}
+.ourteam {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 350px;
+}
+.ourteam h3 {
+
+}
+.ourteam p {
+	display: block;
+	margin-top: 20px;
+	width: 50%;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+}
+.ourteam .team {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 30px;
+}
+.team li {
+	width: 25%;
+	text-align: center;
+	margin-top: 40px;
+}
+.team img {
+	display: block;
+	margin: 0 auto;
+}
+.surname {
+	display: block;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	margin: 15px 0px;
+}
+.position {
+	font-family: Montserrat;
+	font-style: normal;
+	font-size: 17px;
+	display: block;
+}
+.team::after {
+	content: '';
+    display: block;
+    height: 579px;
+    width: 325px;
+    background: url(../img/beach.png) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    border-radius: 20px 0px 0px 20px;
+    bottom: 20px;
+    box-shadow: 0px 14px 54px -13px;
+}
+.ourteam .for_plane {
+	position: absolute;
+    bottom: 120px;
+    left: -814px;
+}
+.ourteam .plane-fly {
+    transform: translate3d(-50%,50%,0) rotate(180deg);
+}
+.ourteam .plane-animation {
+	animation: flying2 25s infinite linear;
+	border: 2px solid #FFEFD0;
+}
+@keyframes flying2 {
+		0% {
+	    transform: rotate(65deg);;
+	}
+	100% {
+	    transform: rotate(-65deg);
+	}
+}
+@keyframes blinking3 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}
+@keyframes blinking {
+	0% {
+		transform: rotate(45deg);
+	}
+	50% {
+		opacity: 100;
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+@keyframes blinking1 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes blinking2 {
+	0% {
+		opacity: 100;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}	
+@keyframes flying {
+	0% {
+	    transform: rotate(-65deg);;
+	}
+	100% {
+	    transform: rotate(0deg);
+	}
+
