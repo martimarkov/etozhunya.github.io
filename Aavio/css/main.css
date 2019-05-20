@@ -376,6 +376,7 @@ h3 {
 
 }
 .sponsors {
+	display: none;
 }
 .sponsors ul {
 	display: flex;
