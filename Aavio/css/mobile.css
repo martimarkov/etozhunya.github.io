@@ -72,10 +72,10 @@ h1 {
 }
 .aavio-works .media-content {
 	position: relative;
-	padding-bottom: 15%;
+	padding-bottom: 45%;
 }	
 .media-content::before {
-	height: 94%;
+	height: 83%;
 	top: 0;
 	width: 80%;
 }
@@ -85,10 +85,24 @@ h1 {
 .ourlegacy {
 	display: none;
 }
-
+.plane_area .for_plane {
+    bottom: 55px;
+    left: -120px;
+}
+.plane_area .plane-animation {
+	animation: flying-mob 7s infinite linear
 }
 
 
+}
+@keyframes flying-mob {
+	0% {
+		transform: rotate(-55deg);
+	}
+	100% {
+		transform: rotate(55deg);
+	}
+}
 
 
 
