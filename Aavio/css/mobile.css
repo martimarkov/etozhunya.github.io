@@ -1,98 +1,173 @@
 @media (max-width: 767px) {
-header {
-	height: calc(100vh - 200px);
-	min-height: 0px;
-}
-.top-header_nav {
-	display: none;
-}
-.top-header {
-    padding: 20px;
-}
-.bot-header {
-    background: rgba(255, 255, 255, 0.0);
-}
-.bot-header_text {
-	display: none;
-}
-.bot-header::before {
-	display: none;
-}
-.bot-header::after {
-	display: none;
-}
-.airplane-path_header {
-	display: none;
-}
-.airplane-h1 {
-	margin-bottom: 0px;
-}
-h1 {
-    font-size: 80px;
-}
-.mob-nav {
-	display: flex;
-}
-.phone8 {
-	display: none; 
-}
-.phone8_mob {
-    display: block;
-    border-radius: 42px;
-    box-shadow: 0px 0px 50px -12px #000;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 10%;
-}
-.mob_a {
-	font-family: PT Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 17px;
-	line-height: 27px;
-	color: #fff;
-}
-.mob-nav {
- padding-left: 20%;
-}
-.promo {
-	padding: 5%;
-}
-.aavio-works {
-	padding: 0px;
-}
-.aavio-works .container {
-	flex-direction: column-reverse;
-}
-.aavio-works .media-content, .aavio-works .text-content {
-	width: 100%;
-}
-.aavio-works .text-content {
-	padding: 10%;
-}
-.aavio-works .media-content {
-	position: relative;
-	padding-bottom: 45%;
-}	
-.media-content::before {
-	height: 83%;
-	top: 0;
-	width: 80%;
-}
-.sponsors {
-	display: none;
-}
-.ourlegacy {
-	display: none;
-}
-.plane_area .for_plane {
-    bottom: 55px;
-    left: -120px;
-}
-.plane_area .plane-animation {
-	animation: flying-mob 7s infinite linear
-}
+	header {
+		height: calc(100vh - 200px);
+		min-height: 0px;
+	}
+	.top-header_nav {
+		position: fixed;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background-color: #dedede;
+		z-index: 10;
+		left: 0;
+		top: 0;
+		transform: translate3d(100%,0,0);
+    	transition: 1s ease;
+	}
+	.top-header_nav.visible {
+		transform: translate3d(0,0,0);
+    	transition: 1s ease;
+	}
+	.top-header_nav li {
+		margin-bottom: 15px;
+	}
+	.top-header_nav li:last-child {
+		margin: 0 auto;
+	}
+	.top-header {
+	    padding: 20px;
+	}
+	.bot-header {
+	    background: rgba(255, 255, 255, 0.0);
+	}
+	.bot-header_text {
+		display: none;
+	}
+	.bot-header::before {
+		display: none;
+	}
+	.bot-header::after {
+		display: none;
+	}
+	.airplane-path_header {
+		display: none;
+	}
+	.airplane-h1 {
+		margin-bottom: 0px;
+	}
+	h1 {
+	    font-size: 80px;
+	}
+	.mob-nav {
+		display: flex;
+	}
+	.phone8 {
+		display: none; 
+	}
+	.phone8_mob {
+	    display: block;
+	    border-radius: 42px;
+	    box-shadow: 0px 0px 50px -12px #000;
+	    width: 80%;
+	    margin: 0 auto;
+	    margin-top: 10%;
+	}
+	.mob_a {
+		font-family: PT Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 27px;
+		color: #fff;
+	}
+	.mob-nav {
+	 padding-left: 20%;
+	}
+	.promo {
+		padding: 5%;
+	}
+	.aavio-works {
+		padding: 0px;
+	}
+	.aavio-works .container {
+		flex-direction: column-reverse;
+	}
+	.aavio-works .media-content, .aavio-works .text-content {
+		width: 100%;
+	}
+	.aavio-works .text-content {
+		padding: 10%;
+	}
+	.aavio-works .media-content {
+		position: relative;
+		padding-bottom: 45%;
+	}	
+	.media-content::before {
+		height: 83%;
+		top: 0;
+		width: 80%;
+	}
+	.sponsors {
+		display: none;
+	}
+	.ourlegacy {
+		display: none;
+	}
+	.plane_area .for_plane {
+	    bottom: 55px;
+	    left: -120px;
+	}
+	.plane_area .plane-animation {
+		animation: flying-mob 7s infinite linear
+	}
+	.hamburger {
+		height: 50px;
+		width: 50px;
+		display: block;
+		position: fixed;
+		z-index: 11;
+		background-color: #fff;
+		border-radius: 50%;
+		right: 20px;
+		top: 20px;
+	}
+	.hamburger.active {
 
+	}
+	.hamburger.active .hamburger_button::before,
+	.hamburger.active .hamburger_button::after {
+		top: 0;
+		transition: top .3s, transform .3s .3s;
+		transform: rotate(45deg);
+	}
+	.hamburger.active .hamburger_button::after {
+		transform: rotate(-45deg);
+	}
+	.hamburger_button {
+		height: 2.5px;
+		width: 60%;
+		display: block;
+		background-color: #000;
+	    position: relative;
+	    top: 50%;
+	    margin: -2px auto 0px;
+	    border-radius: 3px;
+
+			
+	}
+	.hamburger_button::after, .hamburger_button::before {
+		content: '';
+		background-color: #000;
+		position: absolute;
+		height: 2.5px;
+		width: 100%;
+		left: 0;
+		border-radius: 3px;
+		transition: top .3s, transform .3s .3s;
+	}
+	.hamburger_button::after {
+		top: -7px;
+	}
+	.hamburger_button::before {
+		top: 7px;
+	}
 
 }
 @keyframes flying-mob {
