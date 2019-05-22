@@ -675,7 +675,7 @@ h5 {
 	position: relative;
 	z-index: 10;
 	color: #fff;
-    padding: 150px 0px 0px 150px;
+    padding: 100px 0px 0px 150px;
 }
 .contact-us .blur-block {
 	width: 50%;
@@ -711,6 +711,11 @@ h5 {
 	justify-content: space-between;
 	padding: 0px 100px;
 	flex-flow: row wrap;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 32px;
 }
 .blur-block label {
 	width: 45%;
@@ -719,6 +724,7 @@ h5 {
 	font-weight: bold;
 	font-size: 17px;
 	color: #fff;
+	margin-top: 60px;
 }
 .blur-block input {
 	display: block;
@@ -726,6 +732,7 @@ h5 {
 	border-bottom: 1px solid #fff;
 	background-color: transparent;
 	width: 100%;
+	color: #fff;
 }
 .blur-block input:focus {
     outline: none;
@@ -735,6 +742,11 @@ h5 {
 	border: none;
 	border-bottom: 1px solid #fff;
 	width: 100%;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 32px;
 }
 .blur-block textarea:focus {
     outline: none;
