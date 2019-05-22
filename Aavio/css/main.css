@@ -572,7 +572,7 @@ h3 {
     right: 0;
     border-radius: 20px 0px 0px 20px;
     bottom: 20px;
-    box-shadow: 0px 14px 54px -13px;
+    box-shadow: -10px 20px 19px -22px;
 }
 .ourteam .for_plane {
 	position: absolute;
@@ -585,6 +585,160 @@ h3 {
 .ourteam .plane-animation {
 	animation: flying2 25s infinite linear;
 	border: 2px solid #FFEFD0;
+}
+.ourteam form {
+    background-color: #fff;
+    width: 350px;
+    position: absolute;
+    right: 90px;
+    bottom: 60px;
+    height: 130px;
+    border-radius: 22px;
+    box-shadow: 1px 9px 33px -10px;
+    padding: 25px;
+}
+.ourteam h4 {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16.8px;
+	line-height: 22px;
+}
+.ourteam input {
+	border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    height: 51px;
+    font-size: 15px;
+}
+.ourteam input:focus {
+    outline: none;
+}
+.submit {
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
+    border: none;
+    cursor: pointer;
+}
+.submit img {
+	height: 20px;
+}
+.submit:focus {
+	outline: none;
+}
+.our-advisors {
+	margin-bottom: 150px;
+}
+.our-advisors p {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	display: block;
+	margin: 20px 0px;
+	width: 50%;
+}
+.our-advisors .advisors-team {
+	overflow: hidden;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+    width: 113%;
+    position: relative;
+    right: 97px;
+    text-align: center;
+}
+.our-advisors .advisors-team li:first-child, 
+.our-advisors .advisors-team li:last-child {
+	opacity: 0.18;
+}
+.contact-us {
+	display: flex;
+	height: 624px;
+	width:100%;
+	background: url('../img/bg-contact.png') no-repeat center center/cover;
+}
+.contact-us .empty-block {
+	width: 50%;
+}
+h5 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 42px;
+	position: relative;
+	z-index: 10;
+	color: #fff;
+    padding: 150px 0px 0px 150px;
+}
+.contact-us .blur-block {
+	width: 50%;
+	position: relative;
+}
+.blur-block::after {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url('../img/bg-contact.png') no-repeat center right/cover;
+	position: absolute;
+	z-index: 1;
+	filter: blur(5px);
+	top: 0;
+	border-radius: 20px 0px 0px 20px;
+}
+.blur-block::before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	background: rgba(40, 40, 40, 0.3);
+	border-radius: 20px 0px 0px 20px;
+}	
+.blur-block .inputs {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 100px;
+	flex-flow: row wrap;
+}
+.blur-block label {
+	width: 45%;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	color: #fff;
+}
+.blur-block input {
+	display: block;
+	border:none;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+	width: 100%;
+}
+.blur-block input:focus {
+    outline: none;
+}
+.blur-block textarea {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	width: 100%;
+}
+.blur-block textarea:focus {
+    outline: none;
+
 }
 @keyframes flying2 {
 		0% {

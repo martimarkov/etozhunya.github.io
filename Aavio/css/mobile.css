@@ -76,6 +76,7 @@
 		font-size: 17px;
 		line-height: 27px;
 		color: #fff;
+		text-decoration: none;
 	}
 	.mob-nav {
 	 padding-left: 20%;
@@ -118,21 +119,20 @@
 		animation: flying-mob 7s infinite linear
 	}
 	.hamburger {
-		height: 50px;
+		height: 46px;
 		width: 50px;
 		display: block;
 		position: fixed;
 		z-index: 11;
 		background-color: #fff;
-		border-radius: 50%;
+		border-radius: 30%;
 		right: 20px;
 		top: 20px;
 	}
 	.hamburger.active {
 
 	}
-	.hamburger.active .hamburger_button::before,
-	.hamburger.active .hamburger_button::after {
+	.hamburger.active .hamburger_button::before, .hamburger.active .hamburger_button::after {
 		top: 0;
 		transition: top .3s, transform .3s .3s;
 		transform: rotate(45deg);
@@ -147,10 +147,9 @@
 		background-color: #000;
 	    position: relative;
 	    top: 50%;
-	    margin: -2px auto 0px;
-	    border-radius: 3px;
-
-			
+      	margin: 0 auto;
+		border-radius: 3px;
+    	transform: translateY(-50%);
 	}
 	.hamburger_button::after, .hamburger_button::before {
 		content: '';
@@ -168,7 +167,16 @@
 	.hamburger_button::before {
 		top: 7px;
 	}
-
+	.aaviofor {
+		flex-direction: column;
+	}
+	.aaviofor .text-content2 {
+    width: 100%;
+    padding: 15% 5% 5% 10%;
+	}
+	.aaviofor p {
+	width: 100%;
+	}
 }
 @keyframes flying-mob {
 	0% {
