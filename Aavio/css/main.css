@@ -241,7 +241,13 @@ h1 {
     display: inline-block;
     box-shadow: 0px 0px 50px -12px #000;
     font-weight: bold;
+    cursor: pointer;
+    border: none;
 }
+.button:focus {
+	outline: none;
+}
+.button:active {}
 .button:hover {
 	transform: scale(1.1);
 	transition: 0.3s ease;
@@ -675,7 +681,7 @@ h5 {
 	position: relative;
 	z-index: 10;
 	color: #fff;
-    padding: 100px 0px 0px 150px;
+    padding: 100px 0px 0px 100px;
 }
 .contact-us .blur-block {
 	width: 50%;
@@ -724,7 +730,7 @@ h5 {
 	font-weight: bold;
 	font-size: 17px;
 	color: #fff;
-	margin-top: 60px;
+	margin-top: 40px;
 }
 .blur-block input {
 	display: block;
@@ -757,10 +763,32 @@ h5 {
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 32px;
+	resize: none;
 }
 .blur-block textarea:focus {
     outline: none;
 
+}
+.send {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 17px;
+	text-align: center;
+	padding: 10px 70px;
+	background-color: #FFA700;
+	position: absolute;
+	z-index: 10;
+	margin-left: 100px;
+	border-radius: 6px;
+	color: #fff;
+	border: none;
+	bottom: 50px;
+	cursor: pointer;
+}
+.send:focus {
+	outline: none;
 }
 @keyframes flying2 {
 		0% {
