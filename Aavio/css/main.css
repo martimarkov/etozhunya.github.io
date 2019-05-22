@@ -733,6 +733,16 @@ h5 {
 	background-color: transparent;
 	width: 100%;
 	color: #fff;
+	padding: 10px 0px;
+}
+.blur-block input::placeholder, 
+.blur-block textarea::placeholder {
+	color: #fff;
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 32px;
 }
 .blur-block input:focus {
     outline: none;
