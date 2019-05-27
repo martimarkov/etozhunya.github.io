@@ -68,6 +68,9 @@ header {
 	width: 100%;
 	transition: .4s;
 }
+.hamburger {
+	display: none;
+}
 h1 {
 	font-family: gilroy;
 	font-size: 165px;
@@ -686,6 +689,7 @@ h5 {
 .contact-us .blur-block {
 	width: 50%;
 	position: relative;
+	overflow: hidden;
 }
 .blur-block::after {
 	content: '';
@@ -789,6 +793,36 @@ h5 {
 }
 .send:focus {
 	outline: none;
+}
+footer {
+	padding: 15px;
+	position: relative;
+}
+footer .aavio-footer {
+	position: absolute;
+	left: 15px;
+} 
+footer .ul_images {
+    display: flex;
+    margin: 0 auto;
+    width: 10%;
+    justify-content: space-between;
+}
+footer .ul_footer_nav {
+	display: flex;
+    position: absolute;
+    right: 15px;
+    top: 24%;
+}
+footer .ul_footer_nav a {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 26px;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #000;
 }
 @keyframes flying2 {
 		0% {
