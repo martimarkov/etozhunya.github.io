@@ -124,7 +124,7 @@
 		display: none;
 	}
 	.ourlegacy {
-		
+		overflow: hidden;
 	}
 	.plane_area .for_plane {
 	    bottom: 55px;
