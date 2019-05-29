@@ -36,5 +36,16 @@ $(document).ready(function(){
 		hamburger.classList.toggle('active');
 		menu.classList.toggle('visible');
 	})
+ 
+	$('.bot-header_text li').click(function(){
+		var imgSrc = $(this).attr('data-image');
+
+		$('header').css({
+			"background": "url('" + imgSrc + "') center bottom / cover"
+		})
+		$('.blur-bg').css({
+			"background": "url('" + imgSrc + "') center bottom/cover"
+		})	
+	})
 
 });
