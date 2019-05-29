@@ -1,3 +1,6 @@
+@media (max-width: 1024px) {
+	
+}
 @media (max-width: 767px) {
 	header {
 		height: calc(100vh - 200px);
@@ -96,9 +99,15 @@
 	.aavio-works .text-content {
 		padding: 10%;
 	}
+	.submit {
+		background: none;
+	}
 	.aavio-works .media-content {
 		position: relative;
 		padding-bottom: 45%;
+	}
+	.media-content li {
+		padding: 55px 0px;
 	}	
 	.media-content::before {
 		height: 83%;
@@ -176,6 +185,19 @@
 	.aaviofor {
 		flex-direction: column;
 	}
+	.team::after {
+		display: none;
+	}
+	.ourteam {
+		padding-bottom: 80px;
+	}
+	.ourteam form {
+    	margin: 0 auto;
+    	margin-top: 40px;
+    	position: relative;
+    	right: 0;
+    	bottom: 0;
+   	}
 	.aaviofor .text-content2,
 	.ourteam p, 
 	.our-advisors p {
@@ -189,6 +211,48 @@
 	.our-advisors h3,
 	.ourteam h3 {
 		padding:0% 0% 0% 10%;
+	}
+	.contact-us .empty-block {
+		display: none;
+	}
+	.contact-us .blur-block {
+		width: 100%;
+	}
+	.blur-block .inputs {
+		display: block;
+		padding: 0px 60px;
+	}
+	.blur-block::before {
+		border-radius: none;
+	}
+	.send {
+    	margin-left: 60px;
+    	padding: 10px 83px;
+	}
+	footer {
+		text-align: center;
+	}
+	h5 {
+		padding: 100px 0px 0px 60px;
+	}
+	footer .ul_footer_nav {
+	     display: block; 
+   		position: relative;
+    	margin: 0 auto;
+    	width: 100%;
+    	text-align: center;
+    	right: 0;
+    }
+	footer .aavio-footer {
+		position: relative;
+		left: 0;
+	}
+    footer .ul_images {
+    	display: flex;
+    	margin: 0 auto;
+    	width: 50%;
+    	justify-content: space-between;
+    	padding: 15px 0px;
 	}
 }
 @keyframes flying-mob {

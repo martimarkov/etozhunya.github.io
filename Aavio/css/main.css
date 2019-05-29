@@ -506,7 +506,7 @@ h3 {
     margin: 0px 0px 50px 0px;
     display: block;
 }
-.ourlegacy ul {
+.ourlegacy .ul-legacy {
 	display: flex;
 	justify-content: space-between;
 }
@@ -597,7 +597,7 @@ h3 {
 }
 .ourteam form {
     background-color: #fff;
-    width: 350px;
+    max-width: 350px;
     position: absolute;
     right: 90px;
     bottom: 60px;
@@ -651,21 +651,29 @@ h3 {
 }
 .our-advisors .advisors-team {
 	overflow: hidden;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
-    width: 113%;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+    width: 100%;
     position: relative;
-    right: 97px;
     text-align: center;
 }
 .our-advisors .advisors-team li:first-child, 
 .our-advisors .advisors-team li:last-child {
-	opacity: 0.18;
+	
 }
+.slick-slide {
+	opacity: 0.3;
+	transition: 0.7s;
+}
+.slick-slide.slick-current {
+	opacity: 1;
+	transition: 0.7s;
+}
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+}
+
 .contact-us {
 	display: flex;
 	height: 624px;
@@ -768,6 +776,7 @@ h5 {
 	font-size: 12px;
 	line-height: 32px;
 	resize: none;
+	color: #fff;
 }
 .blur-block textarea:focus {
     outline: none;
