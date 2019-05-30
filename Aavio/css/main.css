@@ -34,7 +34,7 @@ header {
 	height: 70px;
 }
 .top-header_nav {
-	/*display: inline-blck;*/
+	/*display: inline-block;*/
 	display: flex;
 
 }
@@ -245,7 +245,7 @@ h1 {
     font-size: 13px;
     transition: 0.3s ease;
     display: inline-block;
-    box-shadow: 0px 0px 50px -12px #000;
+    box-shadow: 0px 18px 27px -15px #000;
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -654,8 +654,8 @@ h3 {
 }
 .our-advisors .advisors-team {
 	overflow: hidden;
-	/*display: flex;*/
-	/*justify-content: space-between;*/
+	display: flex;
+	justify-content: space-between;
     width: 100%;
     position: relative;
     text-align: center;

@@ -47,5 +47,29 @@ $(document).ready(function(){
 			"background": "url('" + imgSrc + "') center bottom/cover"
 		})	
 	})
+	window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    console.log(scroll)
+	});
 
+	$('#how-aavio').click(function(){
+        $('html, body').animate({scrollTop:1450}, 'slow');
+        $('.top-header_nav').removeClass('visible');
+    });
+	$('#who-aavio').click(function(){
+        $('html, body').animate({scrollTop:2716}, 'slow');
+        $('.top-header_nav').removeClass('visible');
+    });
+	$('#our-legacy').click(function(){
+        $('html, body').animate({scrollTop:3190}, 'slow');
+        $('.top-header_nav').removeClass('visible');
+    });	
+	$('#aavio-team').click(function(){
+        $('html, body').animate({scrollTop:3725}, 'slow');
+        $('.top-header_nav').removeClass('visible');
+    });	
+	$('#contact').click(function(){
+        $('html, body').animate({scrollTop:5335}, 'slow');
+        $('.top-header_nav').removeClass('visible');
+    });	
 });
