@@ -1,17 +1,32 @@
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+	.airplane-path_header {
+	    display: none;
+	}
 	.sponsors ul {
 		    margin: 0 60px;
+	}
+	.ourteam {
+		overflow-x: hidden;
+    	overflow-y: visible;
 	}
 	.ourlegacy .ul-legacy {
 		justify-content: space-around;
 	}
 	.ourlegacy img {
-    height: 80%;
+    	height: 80%;
 	}
 	.ourlegacy h3 , h3, .ourteam p, .our-advisors p {
 		margin-left: 25px;
 	}
-
+	.phone8 {
+		left: 40px;
+	}
+	.bot-header_text li {
+		padding: 0 10px;
+	}
+	.ourteam .for_plane {
+		left: -623px;
+	}
 }
 @media (max-width: 767px) {
 	header {
@@ -89,7 +104,7 @@
 	}
 	.phone8_mob {
 	    display: block;
-	    border-radius: 42px;
+	    border-radius: 41px;
 	    box-shadow: 0px 0px 50px -12px #000;
 	    width: 80%;
 	    margin: 0 auto;
@@ -166,6 +181,7 @@
 		border-radius: 30%;
 		right: 20px;
 		top: 20px;
+		z-index: 50;
 	}
 	.hamburger.active {
 
@@ -188,6 +204,7 @@
       	margin: 0 auto;
 		border-radius: 3px;
     	transform: translateY(-50%);
+    	z-index: 21;
 	}
 	.hamburger_button::after, .hamburger_button::before {
 		content: '';
@@ -221,6 +238,9 @@
     	right: 0;
     	bottom: 0;
    	}
+   	.ourteam .for_plane {
+   		display: none;
+   	}
 	.aaviofor .text-content2,
 	.ourteam p, 
 	.our-advisors p {
@@ -229,6 +249,9 @@
 	}
 	.aaviofor p {
 	width: 100%;
+	}
+	.ourlegacy li {
+    padding-bottom: 30px;
 	}
 	.ourlegacy h3,
 	.our-advisors h3,
