@@ -25,16 +25,12 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 75px 60px 0px 60px;
-/*	position: absolute;
-	top: 0;
-	left: 0;*/
 	width: 100%;
 }
 .logo {
 	height: 70px;
 }
 .top-header_nav {
-	/*display: inline-block;*/
 	display: flex;
 
 }
@@ -73,6 +69,7 @@ header {
 	display: none;
 }
 h1 {
+	transform: translateX(-1400px);
 	font-family: gilroy;
 	font-size: 165px;
 	color: #fff;
@@ -80,10 +77,31 @@ h1 {
 	display: block;
 	width: 100%;
 }
+h1.active {
+	transform: translateX(0);
+	transition: .4s 1s ease;
+}
+.bold.active {
+	animation: scaled .3s 1.9s;
+}
+@keyframes scaled {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
 .airplane-h1 {
 	height: 65px;
 	margin-bottom: 15px;
 	animation: rotate 8s infinite;
+}
+.airplane-h1.active {
+	-webkit-animation: scaled .3s 2.2s, rotate 8s 3s infinite;
 }
 @keyframes rotate {
 	55% {
@@ -95,6 +113,7 @@ h1 {
 }
 .bold {
 	font-weight: bold;
+	display: inline-block;
 }
 .airplane-path_header {
 	position: relative;
@@ -102,12 +121,16 @@ h1 {
     z-index: 10;
 }
 .plane_header {
-	left: 220px;
+	left: 160px;
     position: absolute;
-    bottom: 71px;
+    bottom: 54px;
     z-index: 1;
-    transform: rotate(27deg);
+    transform: rotate(18deg);
     height: 70px;
+}
+.plane_header.active {
+	animation: lol 6s 2.2s ease;
+	animation-fill-mode: forwards;
 }
 .path_header {
 	left: 90px;
@@ -347,6 +370,11 @@ h1 {
     padding: 55px 35px;
     margin: 20px 0px;
 	box-shadow: 3px 3px 16px -5px;
+	transform: translate3d(0px, 80px, 0px);
+}
+.media-content li.active {
+	transform: translate3d(0px, 0px, 0px);
+	transition: 1s;
 }
 .media-content .logos {
 	display: block;
@@ -371,6 +399,11 @@ h1 {
 .aavio-works .text-content {
 	width: 50%;
 	padding: 20% 0% 0% 7%;
+    transform: translate3d(0px, 80px, 0px);
+}
+.aavio-works .text-content.active {
+    transform: translate3d(0px, 0px, 0px);
+    transition: 1s;
 }
 h3 {
 	font-family: Montserrat;
@@ -409,6 +442,13 @@ h3 {
 .aaviofor .text-content2 {
 	width: 60%;
 	padding: 15% 0% 0% 10%;
+}
+.text-content2 h3 {
+    transform: translate3d(-570px, 0px, 0px);
+}
+.text-content2 h3.active {
+	transform: translate3d(0px, 0px, 0px);
+	transition: .4s;
 }
 .aaviofor p {
 	font-family: PT Sans;
@@ -501,6 +541,7 @@ h3 {
 }
 .ourlegacy {
 	margin-bottom: 100px;
+	padding-top: 50px;
 }
 .ourlegacy .container {
 
@@ -633,6 +674,7 @@ h3 {
     bottom: 40px;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
 .submit img {
 	height: 20px;
@@ -893,4 +935,36 @@ footer .ul_footer_nav a {
 	100% {
 	    transform: rotate(0deg);
 	}
+	@keyframes lol {
+	10% {
+		transform:translate3d(10px, -6px, 0px) rotate(18deg);
+	}
+	20% {
+		transform:translate3d(14px, -7px, 0px) rotate(19deg);
+	}
+	30% {
+		transform:translate3d(18px, -8px, 0px) rotate(21deg);
+	}
+	40% {
+		transform:translate3d(22px, -9px, 0px) rotate(24deg);
+	}
+	50% {
+		transform:translate3d(27px, -10px, 0px) rotate(24deg);
+	}
+	60% {
+		transform:translate3d(31px, -11px, 0px) rotate(24deg);
+	}
+	70% {
+		transform:translate3d(35px, -12px, 0px) rotate(24deg);
+	}
+	80% {
+		transform:translate3d(39px, -14px, 0px) rotate(25deg);
+	}
+	90% {
+		transform:translate3d(43px, -15px, 0px) rotate(27deg);
+	}
+	100% {
+		transform:translate3d(47px, -16px, 0px) rotate(29deg);
+	}
+}
 

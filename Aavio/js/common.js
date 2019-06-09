@@ -1,12 +1,45 @@
 $(document).ready(function(){
 
+   
+
+   $('h1, .bold, .airplane-h1, .plane_header').addClass('active')
+
+    var scrolled;
+    $(window).scroll(function(){
+      scrolled = $(this).scrollTop();
+      
+
+      if (scrolled + $(this).height() - 200 > 
+          $('.media-content').offset().top) {
+
+        $('.media-content li').addClass('active')
+      }
+
+        if (scrolled + $(this).height() - 200 > 
+            $('.aavio-works .text-content').offset().top) {
+
+          $('.aavio-works .text-content').addClass('active')
+        }
+
+        if (scrolled + $(this).height() - 200 > 
+            $('.text-content2 h3').offset().top) {
+
+          $('.text-content2 h3').addClass('active')
+        }
+    })
+
+
+    
+    $(window).trigger('scroll');
+
+
   if ($(window).width() < 768) {
 
   	$('.advisors-team').slick({
   	  	// infinite: true,
  		centerMode: true,
     	slidesToShow: 1,
-    	centerPadding: "70px"
+    	centerPadding: "80px"
   	});
 
   	  	$('.team').slick({
@@ -35,9 +68,9 @@ $(document).ready(function(){
 	hamburger.addEventListener('click', function() {
 		hamburger.classList.toggle('active');
 		menu.classList.toggle('visible');
-	})
- 
-	$('.bot-header_text li').click(function(){
+	})	
+
+    $('.bot-header_text li').click(function(){
 		var imgSrc = $(this).attr('data-image');
 
 		$('header').css({
@@ -47,29 +80,17 @@ $(document).ready(function(){
 			"background": "url('" + imgSrc + "') center bottom/cover"
 		})	
 	})
-	window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    console.log(scroll)
-	});
 
-	$('#how-aavio').click(function(){
-        $('html, body').animate({scrollTop:1450}, 'slow');
-        $('.top-header_nav').removeClass('visible');
-    });
-	$('#who-aavio').click(function(){
-        $('html, body').animate({scrollTop:2716}, 'slow');
-        $('.top-header_nav').removeClass('visible');
-    });
-	$('#our-legacy').click(function(){
-        $('html, body').animate({scrollTop:3190}, 'slow');
-        $('.top-header_nav').removeClass('visible');
-    });	
-	$('#aavio-team').click(function(){
-        $('html, body').animate({scrollTop:3725}, 'slow');
-        $('.top-header_nav').removeClass('visible');
-    });	
-	$('#contact').click(function(){
-        $('html, body').animate({scrollTop:5335}, 'slow');
-        $('.top-header_nav').removeClass('visible');
-    });	
+
+	$('a[href^="#"]').click(function() {
+      // e.preventDefault();
+      var id = $(this).attr('href');
+
+      $('html, body').animate({
+        scrollTop: $(id).offset().top - 50
+      }, 1500);
+
+      $('.top-header_nav').removeClass('visible');
+  });
+
 });

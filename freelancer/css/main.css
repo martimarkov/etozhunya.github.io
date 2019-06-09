@@ -99,6 +99,12 @@ h1 {
     background-color: #4CAF50;
     color: white;
 }
+h5 {
+    margin: 0 auto;
+    width: 10%;
+    text-align: center;
+}
+
 .text_info {
     max-width: 900px;
     margin: 0 auto;
@@ -142,6 +148,11 @@ h3 {
     width: 15px;
     height: 12px;
     margin-left: 8px;
+}
+.attempt {
+    width: 30%;
+    text-align: center;
+    margin:0 auto;
 }
 .portfolio {
     display: flex;
