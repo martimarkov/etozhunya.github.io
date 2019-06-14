@@ -47,6 +47,13 @@ body {
 	border-radius: 4px;
 	text-decoration: none;
 }
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 80px;
+	max-width: 1300px;
+	margin: 0 auto;
+}
 .header {
 	background: url('../img/header-bg-cut.png') top right / auto 100% no-repeat;
 	height:100vh;
@@ -54,11 +61,6 @@ body {
 	&-container {
 		max-width: 1180px;
 		margin: 0 auto;
-	}
-	&__top {
-		display: flex;
-		justify-content: space-between;
-		padding-top: 80px;
 	}
 	.logo {
 		width: 170px;
@@ -147,7 +149,8 @@ body {
 			background: url('../img/play-button.svg') center center/cover no-repeat;
 		}
 	}
-	.popup {
+}
+.popup {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -196,7 +199,6 @@ body {
 			// height: calc(100% - 100px);
 		}
 	}
-}
 .why-legacy {
 	position: relative;
 	&::after {
@@ -298,7 +300,7 @@ body {
 }
 .mission {
 	position: relative;
-	margin-top: 200px;
+	margin-top: 150px;
 	&::after {
 		display: block;
 		content: '';
@@ -313,6 +315,7 @@ body {
 		display: flex;
 			.slick-slider {
 				margin-top: 40px;
+
 				div {
 					height: 300px;
 					width: 536px;
@@ -378,6 +381,7 @@ body {
 	line-height: 27px;
 	color: $orange;
 	text-decoration: none;
+	cursor: pointer;
 }
 .signup::before {
 	display: inline-block;

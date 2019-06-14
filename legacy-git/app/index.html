@@ -19,19 +19,19 @@
 
 <body>
 <header class="header">
+	<div class="header__top">
+		<img src="img/logo.svg" alt="" class="logo">		
+		<nav>
+			<ul>
+				<li><a href="#YLA">Why YLA?</a></li>
+				<li><a href="#how-it-works">How it Works</a></li>
+				<li><a href="#meet-erno">Meet Erno</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#signup">Sign up</a></li>
+			</ul>
+		</nav>
+	</div>
 	<div class="header-container">
-		<div class="header__top">
-			<img src="img/logo.svg" alt="" class="logo">		
-			<nav>
-				<ul>
-					<li><a href="#YLA">Why YLA?</a></li>
-					<li><a href="#how-it-works">How it Works</a></li>
-					<li><a href="#meet-erno">Meet Erno</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#signup">Sign up</a></li>
-				</ul>
-			</nav>
-		</div>
 		<div class="container">
 			<div class="left">
 				<h1>What will you do with<br>your <span>full potential?</span></h1>
@@ -44,13 +44,13 @@
 					<div class="play-block" data-src="https://player.vimeo.com/video/333915304?autoplay=true"></div>
 					<p class="play-p" >The answer awaits outside of your comfort zone.</p>
 				</div>
-				<div class="popup">
+				<!-- <div class="popup">
 					<div>
 						<span class="close"></span>
 						<iframe src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
 						</iframe>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -128,16 +128,23 @@
 		<div class="text-block">
 			<h2>Meet Erno</h2>
 			<p class="p-default">“I know first-hand what it’s like to ‘just live’ without a sense of purpose or fulfillment. My own challenges helped me to change that, and now, I want to pay it forward.” - Erno</p>
-			<a href="#signup" class="signup">More about Erno</a>
+			<a class="signup" data-src="https://player.vimeo.com/video/340943870?autoplay=true">More about Erno</a>
 		</div>
 		<img src="img/conversation.png" class="conversation">
+	</div>
+	<div class="popup">
+		<div>
+			<span class="close"></span>
+			<iframe src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			</iframe>
+		</div>
 	</div>
 </section>
 
 <section class="team">
 	<div class="container">
 		<h2>Hear from people<br>just like you</h2>
-		<a href="#signup" class="signup">Their Stories</a>
+		<a href="#signup" class="signup" data-src="https://player.vimeo.com/video/280709887?autoplay=true">Their Stories</a>
 		<ul>
 			<li>
 				<img src="img/person1.jpg">
