@@ -35,5 +35,14 @@ $(document).ready(function() {
 			speed:2000
 	 	});
 })
+	
+	$('a[href^="#"]').click(function() {
+      // e.preventDefault();
+      var id = $(this).attr('href');
+
+      $('html, body').animate({
+        scrollTop: $(id).offset().top - 50
+      }, 1500);
+})
 
 

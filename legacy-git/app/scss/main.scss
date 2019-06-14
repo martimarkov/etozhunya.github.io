@@ -360,6 +360,7 @@ body {
 	}
 	.container {
 		.text-block {
+			padding-left: 70px;
 			.p-default {
 				width: 74%;
 			}
@@ -452,25 +453,75 @@ body {
 			font-size: 35px;
 			line-height: 42px;
 			color: white;
+			padding-top: 50px;
 		}
 		form  {
+			padding: 0 40px;
 			.inputs {
 				text-align: left;
 				display: flex;
 				flex-flow: row wrap;
+				justify-content: space-between;
 				label {
-					width: 50%;
+					margin-top: 30px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 32px;
+					width: 40%;
 					color: white;
-					input {
+					background-color: #212121;
+					input, option, select {
+						background-color: #212121;
+						font-family: Roboto;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 12px;
+						line-height: 32px;
 						display: block;
+						color: #838383;
+						border: none;
+					    border-bottom: 1px solid #fff;
+					    width: 100%;
+					    &:focus {
+					        outline: none;
+					    }
 					}
+				}
+				select {
+					border-bottom: 1px solid #fff;
+					border-radius: 0px;
+					-webkit-appearance: none;
+					background-image: 
+					  linear-gradient(45deg,transparent 50%,#fffefe 50%),
+					  linear-gradient(135deg,#fffdfd 50%,#ffffff00 50%);
+					background-position:
+					  calc(100% - 20px) calc(1em + 2px),
+					  calc(100% - 15px) calc(1em + 2px),
+					  calc(100% - 2.5em) .5em;
+					background-size:
+					    5px 5px,
+					    5px 5px,
+					    1px 1.5em;
+					 background-repeat: no-repeat;
+					 margin: 0;      
+					}
+				}
+				.general-box {
+					width: 40%;
+					margin-top: 30px;
+					.check {
+						width: 40%;
+						padding: 10px 0px;
+					}
+
 				}
 				.submit {
 
 				}	
 			}
 		}
-	}
 }
 
 
