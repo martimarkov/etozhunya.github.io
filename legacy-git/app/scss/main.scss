@@ -50,16 +50,14 @@ body {
 .header {
 	background: url('../img/header-bg-cut.png') top right / auto 100% no-repeat;
 	height:100vh;
-	// background-size: 100%;
-
 	&-container {
-		max-width: 1300px;
+		max-width: 1180px;
 		margin: 0 auto;
 	}
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 50px;
+		padding-top: 80px;
 	}
 	.logo {
 		width: 170px;
