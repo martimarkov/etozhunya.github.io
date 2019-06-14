@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
 	$('.play-block').click(function() {
-		$('.popup').css("display","block");
+		$('.popup').addClass('visible')
 	})
 
-	$('.cancel').click(function() {
-		$('.popup').css("display","none");
+	$('.close').click(function() {
+		$('.popup').removeClass('visible');
 	})
+
+
 
 })

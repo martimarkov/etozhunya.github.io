@@ -153,14 +153,25 @@ body {
 		left: 0;
 		height: 100vh;
 		width: 100vw;	
-		display:none;
+		display:block;
 		background-color: #0000008f;
-		z-index: 100;
+		z-index: -1;
+		opacity: 0;
+		transition: .2s;
+		&.visible {
+			transition: .4s;
+			opacity: 1;
+			z-index: 2;
+			iframe {
+				transform: scale(1);
+				transition: .4s .2s;
+			}
+		}
 		div {
 			padding: 5vh;
 			height: 100vh;
 		}
-		.cancel {
+		.close {
 			content: '';
 			background: url('../img/cancel.svg') center center / cover no-repeat;
 			display: block;
@@ -175,6 +186,8 @@ body {
 			z-index: 10;
 		}
 		iframe {
+			transform: scale(0);
+			transition: .4s;
 			display: block;
 			width: 100%;
 			// max-width: 1200px;
