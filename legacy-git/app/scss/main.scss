@@ -304,22 +304,30 @@ body {
 		content: '';
 		position: absolute;
 		height: 820px;
-		width: 575px;
+		width: 555px;
 		right: 0;
 		top: -280px;
 		background: url('../img/second-splash.svg') right top / cover no-repeat;
 	}
 	.container {
-		.carousel {
-			.for-pic1 {
-				width: 550px;
-			    height: 438px;
-			    background: url(../img/slider-1.png) center center/cover no-repeat;
-			    border-radius: 20px;
+		display: flex;
+			.slick-slider {
+				margin-top: 40px;
+				div {
+					height: 300px;
+					width: 536px;
+					border-radius: 10px;
+					img {
+						height: 100%;
+						width: 536px;
+						border-radius: 10px;
+					}
+				}
 			}
 		}
 		.text-block {
 			margin: 80px 0px 0px 70px;
+			width: 50%;
 			.p-mission {
 				font-family: 'gilroy';
 				font-style: normal;
@@ -329,11 +337,13 @@ body {
 				width: 80%;
 			}		
 		}	
-	}
-}	
+}
+.slick-next.slick-arrow, .slick-prev.slick-arrow {
+	display: none;
+}
 .meet-erno {
 	position: relative;
-	margin-top: 250px;
+	margin-top: 300px;
 	&::after {
 		display: block;
 		content: '';
@@ -354,7 +364,7 @@ body {
 		.conversation {
 			position: absolute;
 			right: 0;
-			top: -340px;
+			top: -300px;
 			width: 700px;
 			height: auto;
 		}

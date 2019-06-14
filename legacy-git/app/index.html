@@ -12,7 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
-	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<!-- 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/> -->
 </head>
 
 
@@ -40,13 +41,13 @@
 			<div class="right">
 				<div class="play-div">
 					<!-- <img src="img/play-button.svg"> -->
-					<div class="play-block"></div>
+					<div class="play-block" data-src="https://player.vimeo.com/video/333915304?autoplay=true"></div>
 					<p class="play-p" >The answer awaits outside of your comfort zone.</p>
 				</div>
 				<div class="popup">
 					<div>
 						<span class="close"></span>
-						<iframe src="https://player.vimeo.com/video/333915304" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+						<iframe src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
 						</iframe>
 					</div>
 				</div>
@@ -107,29 +108,19 @@
 
 <section class="mission">
 	<div class="container">
-		<div class="carousel">
-			<div class="for-pic1">
-				<!-- <img src="img/slider-1.png"> -->
-			</div>
-<!-- 			<div class="for-pic">
-				<img src="img/slider-2.png">
-			</div>
-			<div class="for-pic">
-				<img src="img/slider-3.png">
-			</div>
-			<div class="for-pic">
-				<img src="img/slider-4.png">
-			</div>
-			<div class="for-pic">
-				<img src="img/slider-5.png">
-			</div> -->
+		<div class="slick-slider">
+		  <div style="background: url('../img/slider-1.png') center center / cover no-repeat;"><!-- <img src="img/slider-1.png" alt=""> --></div>
+		  <div><img src="img/slider-2.jpg" alt=""></div>
+		  <div><img src="img/slider-3.jpg" alt=""></div>
+		  <div><img src="img/slider-4.jpg" alt=""></div>
+		  <div><img src="img/slider-5.jpg" alt=""></div>
 		</div>
-		<div class="text-block">
-			<h2>Mission</h2>
-			<p class="p-mission">
-			We pull you out of your comfort zone with an extreme Deep Experience - ticket to an unknown foreign location, no money, no phone.</p>
-		</div>
-	</div>
+			<div class="text-block">
+				<h2>Mission</h2>
+				<p class="p-mission">
+				We pull you out of your comfort zone with an extreme Deep Experience - ticket to an unknown foreign location, no money, no phone.</p>
+			</div>
+	</div>							
 </section>
 
 <section class="meet-erno">
@@ -179,7 +170,7 @@
 <section class="contact" id="signup">
 	<div class="contact-container">
 		<h3>Sign up for more information</h3>
-		<form action="#">
+		<form action="https://erno@yourlegacy.nl" method="POST">
 			<div class="inputs">
 				<label>First and last name<input type="text" placeholder="First and last name"></label>
 				<label>Email<input type="email" placeholder="Email address"></label>
@@ -192,9 +183,11 @@
 	</div>
 </section>
 
-
-	<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/scripts.min.js"></script>
-
+	<!-- <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="js/scripts.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
