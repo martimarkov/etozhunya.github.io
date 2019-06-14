@@ -1,5 +1,11 @@
-$(function() {
+$(document).ready(function() {
 
-	// Custom JS
+	$('.play-block').click(function() {
+		$('.popup').css("display","block");
+	})
 
-});
+	$('.cancel').click(function() {
+		$('.popup').css("display","none");
+	})
+
+})
