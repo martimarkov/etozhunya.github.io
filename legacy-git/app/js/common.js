@@ -13,7 +13,7 @@ $(document).ready(function() {
 		$('.popup').removeClass('visible');
 	})
 
-	$('.signup').click(function() {
+	$('.play-video').click(function() {
 		src = $(this).attr('data-src');
 
 		$('.popup').addClass('visible')
@@ -34,6 +34,14 @@ $(document).ready(function() {
 			fade:true,
 			speed:2000
 	 	});
+
+	 	  var hamburger = document.getElementById('hamburger'),
+	 		menu = document.querySelector('.header__top-nav');
+	 		
+	 		hamburger.addEventListener('click', function() {
+	 			hamburger.classList.toggle('active');
+	 			menu.classList.toggle('visible');
+	 		})	
 })
 	
 	$('a[href^="#"]').click(function() {
@@ -43,6 +51,8 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: $(id).offset().top - 50
       }, 1500);
+
+      $('.header__top-nav').removeClass('visible');
 })
 
 

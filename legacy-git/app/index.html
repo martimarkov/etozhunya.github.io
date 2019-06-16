@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-<!-- 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/> -->
 </head>
 
 <body>
@@ -21,13 +20,16 @@
 	<div class="header__top">
 		<img src="img/logo.svg" alt="" class="logo">		
 		<nav>
-			<ul>
+			<ul class="header__top-nav">
 				<li><a href="#YLA">Why YLA?</a></li>
 				<li><a href="#how-it-works">How it Works</a></li>
 				<li><a href="#meet-erno">Meet Erno</a></li>
 				<li><a href="#testimonials">Testimonials</a></li>
 				<li><a href="#signup">Sign up</a></li>
 			</ul>
+			<div class="hamburger" id="hamburger">
+				<span class="hamburger_button"></span>
+			</div>
 		</nav>
 	</div>
 	<div class="header-container">
@@ -43,17 +45,15 @@
 					<div class="play-block" data-src="https://player.vimeo.com/video/333915304?autoplay=true"></div>
 					<p class="play-p" >The answer awaits outside of your comfort zone.</p>
 				</div>
-				<!-- <div class="popup">
-					<div>
-						<span class="close"></span>
-						<iframe src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-						</iframe>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</div>
 </header>
+
+<section class="mob-info">
+	<p>The answer awaits outside of your<br>comfort zone.</p>
+	<a href="#signup" class="button">Get started</a>
+</section>
 
 <section class="why-legacy" id="YLA" >
 	<div class="container">
@@ -127,7 +127,7 @@
 		<div class="text-block">
 			<h2>Meet Erno</h2>
 			<p class="p-default">“I know first-hand what it’s like to ‘just live’ without a sense of purpose or fulfillment. My own challenges helped me to change that, and now, I want to pay it forward.” - Erno</p>
-			<a class="signup" data-src="https://player.vimeo.com/video/340943870?autoplay=true">More about Erno</a>
+			<a class="play-video" data-src="https://player.vimeo.com/video/340943870?autoplay=true">More about Erno</a>
 		</div>
 		<img src="img/conversation.png" class="conversation">
 	</div>
@@ -143,7 +143,7 @@
 <section class="team" id="testimonials">
 	<div class="container">
 		<h2>Hear from people<br>just like you</h2>
-		<a href="#signup" class="signup" data-src="https://player.vimeo.com/video/280709887?autoplay=true">Their Stories</a>
+		<a class="play-video" data-src="https://player.vimeo.com/video/280709887?autoplay=true">Their Stories</a>
 		<ul>
 			<li>
 				<img src="img/person1.jpg">
@@ -190,22 +190,38 @@
 					</select>
 				</label>
 					<div class="general-box">
-						<div class="check">
-						<input type="checkbox">
+						<label class="check">
+							<input type="checkbox">
+							I’m ready to go to EXTREME measures to find my purpose.
+							<span class="checkmark"></span>
+						</label>
+						<label class="check">I understand that my registration is only confirmed once I have paid in full.	
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
 					</div>
-					<div class="check">	
-						<input type="checkbox">
-					</div>
-				</div>
+					<label>Do you have any questions?<textarea type="textarea" placeholder="Example: how do I sign up?"></textarea></label>
 			</div>
 			<a type='submit' class="send">Submit</a>
 		</form>
 	</div>
+	<div class="doubt">
+		<h3>Still in doubt?</h3>
+		<p>Discover your purpose <a href="http://start.yourlegacy.academy/cursus-1">here</a> for free!</p>
+	</div>	
 </section>
-
-	<!-- <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script src="js/scripts.min.js"></script> -->
+<hr>
+<footer class="footer">
+	<div class="container">
+	<p>2019 Your Legacy | All Rights Reserved</p>
+	<img src="img/logo.svg" class="logo">
+	<ul>
+		<li><a href="https://www.facebook.com/yourlegacyacademy/"><img src="img/f.svg" alt=""></a></li>
+		<li><a href="https://www.linkedin.com/in/ernopickee/"><img src="img/in.svg"></a></li>
+		<li><a href="erno@yourlegacy.nl"><img src="img/box.svg"></a></li>
+	</ul>
+	</div>
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="js/common.js"></script>
