@@ -119,8 +119,7 @@
 		z-index: 20;
 		left: 0;
 		top: 0;
-		transform: translate3d(100%,0,0);
-    	transition: .5s ease;
+
 	}
 	.top-header_nav.visible {
 		transform: translate3d(0,0,0);
@@ -243,7 +242,7 @@
 		display: block;
 		position: fixed;
 		z-index: 11;
-		background-color: #fff;
+		/*background-color: #fff;*/
 		border-radius: 30%;
 		right: 20px;
 		top: 20px;
