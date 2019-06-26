@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("gilroy-b", "../fonts/Gilroy-Bold");
+@include font-face("Mweather", "../fonts/Merriweather-Regular");
+@include font-face("Mweather-b", "../fonts/Merriweather-Bold"); 

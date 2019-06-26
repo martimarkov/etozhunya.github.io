@@ -1,0 +1,119 @@
+@import "vars";
+@import "fonts";
+
+body * {
+	box-sizing: border-box;
+}
+body {
+	background-color:#fff;
+}
+.header {
+	background: linear-gradient(127.58deg, #8C6BFF -7.22%, #FF5CA8 61.5%, #FFB66F 117.98%);
+	height: 130px;
+	display: flex;
+	align-items: center;
+	.header-nav {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+	    width: 75%;
+	    margin: 0 auto;
+	    background: #FFFFFF;
+	    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	    border-radius: 15px;
+	    height: 75px;
+		.logo {
+			width: 75px;
+			padding: 5px 0px;
+			position: absolute;
+			left: 5px;
+			transform: translateY(5px);
+		}
+		ul {
+			display: flex;
+			li {
+				a {
+					text-decoration: none;
+					font-family: 'Mweather';
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 18px;
+					color: $black;
+				}
+			}
+			li:first-child {
+				margin-left: -160px;
+				margin-right: 50px;
+				width: 200px;
+			}
+			li:first-child::before {
+				content: '';
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background: url("../img/search.svg") center center / cover no-repeat;
+				margin-right: 6px;
+				transform: translateY(5px);
+			}
+			li:nth-child(2)::before {
+				content: '';
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background: url("../img/female.svg") center center / cover no-repeat;
+				margin-right: 6px;
+				transform: translateY(5px);
+			}
+			li:nth-child(3) {
+				margin: 0px 35px;
+			}
+			li:nth-child(3)::before {
+				content: '';
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background: url("../img/star.svg") center center / cover no-repeat;
+				margin-right: 6px;
+				transform: translateY(3px);
+			}
+			li:last-child::before {
+				content: '';
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background: url("../img/like.svg") center center / cover no-repeat;
+				margin-right: 6px;
+				transform: translateY(3px);
+			}
+		}
+		.log-in {
+			text-decoration: none;
+			position: absolute;
+			right: 25px;
+			font-family: 'Mweather';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 18px;
+			color: $black;
+		}
+		.log-in::before {
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url("../img/user.svg") center center / cover no-repeat;
+			margin-right: 6px;
+			transform: translateY(4px);
+		}
+	}
+}
+
+
+
+@import "media";
+
+
+	
