@@ -242,7 +242,7 @@
 		display: block;
 		position: fixed;
 		z-index: 11;
-		/*background-color: #fff;*/
+		background-color: #fff;
 		border-radius: 30%;
 		right: 20px;
 		top: 20px;
