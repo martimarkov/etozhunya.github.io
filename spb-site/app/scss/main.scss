@@ -5,11 +5,11 @@ body * {
 	box-sizing: border-box;
 }
 body {
-	background-color:#fff;
+	background: rgba(238, 238, 238, 0.15);
 }
 .header {
 	background: linear-gradient(127.58deg, #8C6BFF -7.22%, #FF5CA8 61.5%, #FFB66F 117.98%);
-	height: 130px;
+	height: 145px;
 	display: flex;
 	align-items: center;
 	.header-nav {
@@ -22,7 +22,7 @@ body {
 	    background: #FFFFFF;
 	    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 	    border-radius: 15px;
-	    height: 75px;
+	    height: 80px;
 		.logo {
 			width: 75px;
 			padding: 5px 0px;
@@ -107,6 +107,146 @@ body {
 			background: url("../img/user.svg") center center / cover no-repeat;
 			margin-right: 6px;
 			transform: translateY(4px);
+		}
+	}
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+	.general-nav {
+		display: flex;
+		justify-content: center;
+		li {
+			margin:20px;
+			a {
+				font-family: 'Mweather';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 20px;
+				color:$black;
+				text-decoration: none;
+			}
+		}
+	}
+	.people {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		margin: 50px 0px;
+		li {
+			position: relative;
+			display: flex;
+			background: #fff;
+			width: 30%;
+			box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+			border-radius: 15px;
+			overflow: hidden;
+			.photo {
+				width: 45%;
+				height: 170px;
+				// width: 174px;
+				background: url('../img/girl1.png') center center / cover no-repeat;
+			}
+			.text-content {
+				padding: 3% 2% 1% 3%;
+				width: 55%;
+				h4 {
+					background: -webkit-linear-gradient(118.96deg, #F83690 -10.2%, #3555F2 141.74%, rgba(255, 255, 255, 0) 152.77%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					font-family: 'Mweather-b';
+					font-style: normal;
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 20px;
+				}
+				.info {
+					display: flex;
+					.title {
+
+					}
+					.value {
+
+					}
+				}
+				.city {
+
+				}
+				.date {
+					display: block;
+				}
+			}
+		}
+		li:first-child {
+			background: #FFEAF4;
+		}
+		li:nth-child(2) {
+			margin: 0px 40px;
+			.photo {
+				background: url('../img/girl2.png') center center / cover no-repeat;
+			}
+		}
+		li:nth-child(3) {
+			.photo {
+				background: url('../img/girl3.png') center center / cover no-repeat;
+			}
+		}
+	}
+}
+.footer {
+	margin-top: 200px;
+	position: relative;
+	background: linear-gradient(137.46deg, #8C6BFF -7.22%, #FF5CA8 61.5%, #FFB66F 117.98%);
+	opacity: 0.9;
+	height: 110px;
+	display: flex;
+	align-items: center;
+	.footer-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 75%;
+		margin:0 auto;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+		border-radius: 15px;
+		height: 79px;
+		align-items: center;
+		.links {
+			display: flex;
+			margin-left: 10px;
+			li {
+				margin: 0 10px;
+				a {
+					img {
+						
+					}
+				}
+			}
+		}
+		.FAQ {
+			display: flex;
+			li {
+				margin: 10px 20px 0px 20px;
+				a {
+					font-family: 'Mweather';
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 18px;
+					color: $black;
+					text-decoration: none;
+				}
+			}
+			li:last-child {
+				margin-top: 0px;
+				margin-right: 40px;
+				a {
+					img {
+
+					}
+				}
+			}
 		}
 	}
 }
