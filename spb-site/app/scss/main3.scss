@@ -1,9 +1,6 @@
 @import "vars";
 @import "fonts";
 
-body * {
-	box-sizing: border-box;
-}
 body {
 	background: rgba(238, 238, 238, 0.15);
 }
@@ -137,8 +134,8 @@ body {
 		color: $black;
 		margin: 40px 0px;
 	}
-}	
-.container {
+}
+.container {	
 	width: 70%;
 	margin: 0 auto;
 	display: flex;
@@ -150,12 +147,13 @@ body {
 			background: #FFFFFF;
 			box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 			border-radius: 15px;
-			min-height: 650px;
+			min-height: 531px;
 			.portfolio-photo {
 				position: relative;
 				border-radius: 15px 15px 0px 0px;
 				height: 280px;
-				background: url('../img/jdepp.png') center center / cover no-repeat;
+				box-shadow: inset 0px -20px 20px 5px #fff;
+				background: url('../img/mcyrus.png') center center / cover no-repeat;
 			}
 			.portfolio-photo::after {
 				content: '';
@@ -166,22 +164,24 @@ body {
 				background: linear-gradient(to top,rgb(255, 255, 255) 1.68%,rgba(29,29,29,0) 56.82%,#fff0 1.68%);
 			}
 			.portfolio-info {
-				height: 65%;
+				position: relative;
 				text-align: center;
+				padding: 5px;
 				h3 {
 					margin-top: 10px;
+					margin-bottom: 10px;
 					font-family: Mweather;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 20px;
+					font-size: 24px;
 					line-height: 25px;
-					text-transform: uppercase;
+					// text-transform: uppercase;
 					background: -webkit-linear-gradient(118.96deg,#f83690 -10.2%,#3555f2 141.74%,rgba(255,255,255,0) 152.77%);
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 				}
 				span {
-					color: rgba(47, 46, 46, 0.6);
+					margin-top: 10px;
 					display: block;
 					font-family: Mweather-r;
 					font-style: normal;
@@ -189,123 +189,32 @@ body {
 					font-size: 12px;
 					line-height: 15px;
 					text-transform: uppercase;
-					margin-top: 8px;
 				}
 				.number {
-					margin-top: 4%;
-					color: $black;
+					margin-top: 10px;
 					font-family: Mweather;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 30px;
-					line-height: 38px;	
+					font-size: 22px;
+					line-height: 28px;
+					text-transform: uppercase;
+				}
+				ul {
+					display: flex;
+					justify-content: space-around;
+					flex-flow: row wrap;
+					li {
+						text-align: center;
+						width: 30%;
+					}
 				}
 			}
 		}
 	}
 	.right-content {
 		width:70%;
-		.people {
-			display: flex;
-			width: 100%;
-			justify-content: center;
-			// margin: 50px 0px;
-			li {
-				position: relative;
-				display: flex;
-				background: #fff;
-				width: 45%;
-				box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
-				border-radius: 15px;
-				overflow: hidden;
-				.photo {
-					width: 45%;
-					height: 170px;
-					background: url('../img/girl1.png') center center / cover no-repeat;
-				}
-				.text-content {
-					padding: 3% 2% 1% 3%;
-					width: 55%;
-					position: relative;
-					h4 {
-						margin: 6px 0px;
-						background: -webkit-linear-gradient(118.96deg, #F83690 -10.2%, #3555F2 141.74%, rgba(255, 255, 255, 0) 152.77%);
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						font-family: 'Mweather-b';
-						font-style: normal;
-						font-weight: bold;
-						font-size: 16px;
-						line-height: 20px;
-					}
-					.info {
-						display: flex;
-						justify-content: space-between;
-						.title {
-							font-family: 'Mweather-r';
-							font-style: normal;
-							font-weight: normal;
-							font-size: 12px;
-							line-height: 15px;
-							margin: 5px 0px;
-						}
-						.value {
-							font-family: 'Mweather-sb';
-							font-style: normal;
-							font-weight: bold;
-							font-size: 14px;
-							line-height: 18px;
-							color: $red;
-							margin-right: 35px;
-						}
-					}
-					.city {
-						font-family: 'Mweather-r';
-						font-style: normal;
-						font-weight: normal;
-						font-size: 12px;
-						line-height: 15px;
-						text-transform: uppercase;
-						color: $black;
-						margin-left: 2px;
-					}
-					.city::before {
-						position: relative;
-						right: 3px;
-						content: '';
-						display: inline-block;
-						width: 20px;
-						height: 20px;
-						background: url("../img/location.svg") center center / cover no-repeat;
-					}
-					.date {
-						display: block;
-						font-family: 'Mweather-sb';
-						font-style: normal;
-						font-weight: normal;
-						font-size: 10px;
-						line-height: 13px;
-						color: rgba(47, 46, 46, 0.7);
-						position: absolute;
-					    bottom: 8px;
-					    right: 9px;
-					}
-				}
-			}			
-			li:first-child {
-				margin: 0px 40px;
-				.photo {
-					background: url('../img/girl2.png') center center / cover no-repeat;
-				}
-			}
-			li:nth-child(2) {
-				.photo {
-					background: url('../img/girl3.png') center center / cover no-repeat;
-				}	
-			}		
-		}
 	}
-}		
+}	
 .footer {
 	margin-top: 130px;
 	position: relative;
