@@ -147,7 +147,7 @@ body {
 			background: #FFFFFF;
 			box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 			border-radius: 15px;
-			min-height: 531px;
+			min-height: 550px;
 			.portfolio-photo {
 				position: relative;
 				border-radius: 15px 15px 0px 0px;
@@ -200,6 +200,7 @@ body {
 					text-transform: uppercase;
 				}
 				ul {
+					margin-top: 10px;
 					display: flex;
 					justify-content: space-around;
 					flex-flow: row wrap;
@@ -210,9 +211,61 @@ body {
 				}
 			}
 		}
+		.button {
+			text-decoration: none;
+			margin: 18px 0px 11px 0px;
+			font-family: Mweather;
+			color: #fff;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 18px;
+			text-align: center;
+			padding: 25px 0px;
+			display: block;
+			background: #EF5EB4;
+			box-shadow: 2px 2px 15px rgba(239, 94, 180, 0.7);
+			border-radius: 15px;
+		}
+		#button1::before {
+			position: absolute;
+			left: 15px;
+			width: 20px;
+			height: 20px;
+			content: '';
+			display: block;
+			background: url('../img/star.png') center center/cover no-repeat;
+		}
+		#button2::before {
+			position: absolute;
+			left: 15px;
+			width: 20px;
+			height: 20px;
+			content: '';
+			display: block;
+			background: url('../img/user-white.png') center center/cover no-repeat;
+		}
 	}
 	.right-content {
 		width:70%;
+		.content-container {
+			padding: 0px 0px 0px 20px;
+			display: flex;
+			position: relative;
+			justify-content: space-around;
+			flex-flow: row wrap;
+			div {
+				margin-bottom: 25px;
+				height: 350px;
+				width: 43%;
+				background: #FFFFFF;
+				box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+				border-radius: 15px;
+			}
+			.charts {
+				width: 350px;
+			}
+		}
 	}
 }	
 .footer {
