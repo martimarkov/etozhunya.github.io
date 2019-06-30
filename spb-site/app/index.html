@@ -33,9 +33,12 @@
 </header>
 <div class="container">
 	<ul class="general-nav">
-		<li><a href="#" id="top-people">Топ-100</a></li>
-		<li><a href="#" id="popular">Набирающие популярность</a></li>
-		<li><a href="#">Недавно добавленные</a></li>
+		<li data-index="0"><a href="#" id="top-people">Топ-100</a></li>
+		<li data-index="1"><a href="#" id="popular">Набирающие популярность</a></li>
+		<li data-index="2"><a href="#" id="recent">Недавно добавленные</a></li>
+		<span class="rectangle_gradient">
+			<div class="core"></div>
+		</span>
 	</ul>
 	<select id='select2-id'>
 	<option value="one">Санкт-Петербург</option>
@@ -44,314 +47,554 @@
 	<option value="four">Киев</option>
 	<option value="five">Львов</option>
 	</select>
-	<ul class="top100">
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@adriana_lima</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special2">4.94</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">5370</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">12m</span>
-				</div>
-				<span class="city">Saint-Petersburg</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@emilia_clarke</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special1">4.96</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">4540</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">10m</span>
-				</div>
-				<span class="city">NEW-YORK</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@chloegmoretz</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special3">3.94</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">3370</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">8m</span>
-				</div>
-				<span class="city">HOLLYWOOD</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@adriana_lima</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special2">4.94</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">5370</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">12m</span>
-				</div>
-				<span class="city">Saint-Petersburg</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@emilia_clarke</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special1">4.96</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">4540</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">10m</span>
-				</div>
-				<span class="city">NEW-YORK</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@chloegmoretz</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special3">3.94</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">3370</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">8m</span>
-				</div>
-				<span class="city">HOLLYWOOD</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@adriana_lima</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special2">4.94</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">5370</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">12m</span>
-				</div>
-				<span class="city">Saint-Petersburg</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@emilia_clarke</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special1">4.96</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">4540</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">10m</span>
-				</div>
-				<span class="city">NEW-YORK</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@chloegmoretz</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special3">3.94</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">3370</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">8m</span>
-				</div>
-				<span class="city">HOLLYWOOD</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-
-
-	</ul>
-<!-- 	<ul class="people">
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@adriana_lima</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special2">4.94</span>
-				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">5370</span>
-				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">12m</span>
-				</div>
-				<span class="city">Saint-Petersburg</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-					<div class="photo"></div>
-					<div class="text-content">
-						<h4>@emilia_clarke</h4>
-						<div class="info">
-							<span class="title">avg. rate:</span>
-							<span class="value" id="special1">4.96</span>
-						</div>
-						<div class="info">
-							<span class="title">count rate:</span>
-							<span class="value">4540</span>
-						</div>
-						<div class="info">
-							<span class="title">qnty subs:</span>
-							<span class="value">10m</span>
-						</div>
-						<span class="city">NEW-YORK</span>
-						<span class="date">added 3 months ago</span>
+	<div class="ul-container">
+		<ul class="top100">
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
 					</div>
-				</li>
-				<li>
-					<div class="photo"></div>
-					<div class="text-content">
-						<h4>@chloegmoretz</h4>
-						<div class="info">
-							<span class="title">avg. rate:</span>
-							<span class="value" id="special3">3.94</span>
-						</div>
-						<div class="info">
-							<span class="title">count rate:</span>
-							<span class="value">3370</span>
-						</div>
-						<div class="info">
-							<span class="title">qnty subs:</span>
-							<span class="value">8m</span>
-						</div>
-						<span class="city">HOLLYWOOD</span>
-						<span class="date">added 3 months ago</span>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
 					</div>
-				</li>
-	</ul>	 -->
-<!-- 	<ul class="people">
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@adriana_lima</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special2">4.94</span>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">5370</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">12m</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<span class="city">Saint-Petersburg</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@emilia_clarke</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special1">4.96</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">4540</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">10m</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<span class="city">NEW-YORK</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li>
-		<li>
-			<div class="photo"></div>
-			<div class="text-content">
-				<h4>@chloegmoretz</h4>
-				<div class="info">
-					<span class="title">avg. rate:</span>
-					<span class="value" id="special3">3.94</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<div class="info">
-					<span class="title">count rate:</span>
-					<span class="value">3370</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<div class="info">
-					<span class="title">qnty subs:</span>
-					<span class="value">8m</span>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
 				</div>
-				<span class="city">HOLLYWOOD</span>
-				<span class="date">added 3 months ago</span>
-			</div>
-		</li> 
-	</ul> -->
+			</li>
+		</ul>
+		<ul class="popular">
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima2</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+		</ul>
+		<ul class="recent">
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima3</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@adriana_lima</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special2">4.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">5370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">12m</span>
+					</div>
+					<span class="city">Saint-Petersburg</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@emilia_clarke</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special1">4.96</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">4540</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">10m</span>
+					</div>
+					<span class="city">NEW-YORK</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+			<li>
+				<div class="photo"></div>
+				<div class="text-content">
+					<h4>@chloegmoretz</h4>
+					<div class="info">
+						<span class="title">avg. rate:</span>
+						<span class="value" id="special3">3.94</span>
+					</div>
+					<div class="info">
+						<span class="title">count rate:</span>
+						<span class="value">3370</span>
+					</div>
+					<div class="info">
+						<span class="title">qnty subs:</span>
+						<span class="value">8m</span>
+					</div>
+					<span class="city">HOLLYWOOD</span>
+					<span class="date">added 3 months ago</span>
+				</div>
+			</li>
+		</ul>
+	</div>
 </div>
 <footer class="footer">
 	<div class="footer-nav">
