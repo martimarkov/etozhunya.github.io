@@ -300,6 +300,7 @@ body {
 .top100.in-view, .popular.in-view, .recent.in-view  {
 	opacity: 1;
 	transition: 1s;
+	transition-delay: .7s;
 	z-index: 2;
 	font-family: mweather-b;
 }
