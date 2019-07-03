@@ -1,7 +1,96 @@
 @import "vars";
 
 @media (max-width: 767px) {
-	
+.header {
+	height: 125px;
+	.header-nav {
+		height: 60px;
+		width: 90%;
+		img {
+		}
+		ul {
+			li {
+				a {
+					font-size: 12px;
+				}
+			}
+			li:nth-child(1) {
+				display: none;
+			}
+			li:nth-child(3)::before, li:nth-child(2)::before, li:nth-child(4)::before {
+				display: block;
+				margin: 0 auto;
+				width: 15px;
+				height: 15px;
+			}
+			li:nth-child(3) {
+			    margin: 0 15px;
+			}
+		}
+		.log-in {
+			right: 4px;
+			margin: 0 auto;
+			font-size: 10px;
+		}
+		.log-in::before {
+			display: block;
+			margin: 0 auto;
+			width: 14px;
+			height: 14px;
+		}
+		.logo {
+			width: 50px;
+			left: 1px;
+		}
+	}
+}
+.container {
+	width: 95%;
+	.select2-container {
+		display: block;
+	    margin: 5% 0% 5% 8.5%;
+	}
+	.general-nav {
+		width: 90%;
+		margin: 0 auto;
+		li {
+			a {
+				font-size: 12px;
+				padding:0px;
+			}
+		}
+		li:first-child {
+			a {
+				transform: translateY(10px);
+				display: block;
+			}
+		}
+		.rectangle_gradient {
+			.core {
+				width: 60%;
+			}
+		}
+	}
+}
+.ul-container {
+	.top100, .recent, .popular {
+		li {
+			margin: 0 auto !important;
+			width: 80%;
+			margin-bottom: 20px !important;
+			.text-content {
+				.info {
+					.value {
+						margin-right: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+.footer {
+	display: none;
+}	
 
 }
 

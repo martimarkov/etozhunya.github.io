@@ -7,6 +7,39 @@ body * {
 body {
 	background: rgba(238, 238, 238, 0.15);
 }
+#special3::after {
+		position: absolute;
+		content: '+0.8%';
+		display: inline-block;
+		font-family: Mweather-sb;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 11px;
+		line-height: 15px;
+		color: #0FB41F;
+}
+#special2::after {
+		position: absolute;	
+		content: '+3.2%';
+		display: inline-block;
+		font-family: Mweather-sb;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 11px;
+		line-height: 15px;
+		color: #0FB41F;
+}
+#special1::after {
+		position: absolute;
+		content: '+1.2%';
+		display: inline-block;
+		font-family: Mweather-sb;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 11px;
+		line-height: 15px;
+		color: #0FB41F;
+}
 .header {
 	background: linear-gradient(127.58deg, #8C6BFF -7.22%, #FF5CA8 61.5%, #FFB66F 117.98%);
 	height: 145px;
@@ -208,9 +241,12 @@ body {
 		.people {
 			display: flex;
 			width: 100%;
-			justify-content: center;
+			justify-content: space-around;
+			position: relative;
+			flex-flow: row wrap;
 			// margin: 50px 0px;
 			li {
+				margin-bottom: 30px;
 				position: relative;
 				display: flex;
 				background: #fff;
@@ -291,17 +327,6 @@ body {
 					    right: 9px;
 					}
 				}
-			}			
-			li:first-child {
-				margin: 0px 40px;
-				.photo {
-					background: url('../img/girl2.png') center center / cover no-repeat;
-				}
-			}
-			li:nth-child(2) {
-				.photo {
-					background: url('../img/girl3.png') center center / cover no-repeat;
-				}	
 			}		
 		}
 	}

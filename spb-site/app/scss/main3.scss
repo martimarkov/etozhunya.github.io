@@ -254,7 +254,7 @@ body {
 			position: relative;
 			justify-content: space-around;
 			flex-flow: row wrap;
-			div {
+			> div {
 				margin-bottom: 25px;
 				height: 350px;
 				width: 43%;
@@ -268,6 +268,45 @@ body {
 		}
 	}
 }	
+.posts {
+	background: #FFFFFF;
+	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 77px;
+		background: linear-gradient(136.4deg, #8C6BFF -7.22%, #FF5CA8 61.5%, #FFB66F 117.98%);
+		opacity: 0.9;
+		border-radius: 15px 15px 0px 0px;
+		h3 {
+			color: #fff;
+			font-family: Mweather;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 25px;
+			line-height: 38px;
+		}
+	}
+	.pictures {
+		padding: 30px;
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		li {
+			margin-bottom: 10px;
+			a {
+				img {
+
+				}
+			}
+		}
+	}
+}
 .footer {
 	margin-top: 130px;
 	position: relative;
