@@ -387,7 +387,7 @@ body {
 .mission {
 	transform: translateY(100px);
 	position: relative;
-	margin-top: 100px;
+	margin-top: -50px;
 	&::after {
 		display: block;
 		content: '';

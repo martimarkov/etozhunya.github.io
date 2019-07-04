@@ -124,7 +124,7 @@ body {
 		.log-in {
 			text-decoration: none;
 			position: absolute;
-			right: 35px;
+			right: 25px;
 			font-family: 'Mweather';
 			font-style: normal;
 			font-weight: normal;
@@ -255,8 +255,9 @@ body {
 				border-radius: 15px;
 				overflow: hidden;
 				.photo {
-					width: 45%;
-					height: 170px;
+					width: 50%;
+					height: auto;
+					// width: 174px;
 					background: url('../img/girl1.png') center center / cover no-repeat;
 				}
 				.text-content {
@@ -271,7 +272,7 @@ body {
 						font-family: 'Mweather-b';
 						font-style: normal;
 						font-weight: bold;
-						font-size: 16px;
+						font-size: 15px;
 						line-height: 20px;
 					}
 					.info {
@@ -281,15 +282,17 @@ body {
 							font-family: 'Mweather-r';
 							font-style: normal;
 							font-weight: normal;
-							font-size: 12px;
+							font-size: 11px;
 							line-height: 15px;
-							margin: 5px 0px;
+							margin: 4px 0px;
 						}
 						.value {
+							display: block;
+						    transform: translateY(2px);
 							font-family: 'Mweather-sb';
 							font-style: normal;
 							font-weight: bold;
-							font-size: 14px;
+							font-size: 13px;
 							line-height: 18px;
 							color: $red;
 							margin-right: 35px;
@@ -303,15 +306,15 @@ body {
 						line-height: 15px;
 						text-transform: uppercase;
 						color: $black;
-						margin-left: 2px;
 					}
 					.city::before {
+						transform: translateY(5px);
 						position: relative;
 						right: 3px;
 						content: '';
 						display: inline-block;
-						width: 20px;
-						height: 20px;
+						width: 17px;
+						height: 18px;
 						background: url("../img/location.svg") center center / cover no-repeat;
 					}
 					.date {
@@ -322,9 +325,10 @@ body {
 						font-size: 10px;
 						line-height: 13px;
 						color: rgba(47, 46, 46, 0.7);
-						position: absolute;
-					    bottom: 8px;
-					    right: 9px;
+						position: relative;
+						bottom: 2px;
+						right: -36px;
+						margin-top: 4px;
 					}
 				}
 			}		
