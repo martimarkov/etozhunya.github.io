@@ -79,12 +79,36 @@
 			width: 80%;
 			margin-bottom: 20px !important;
 			.text-content {
+				h4 {
+					font-size: 13px;
+					margin: 6px 0 10px 0px;
+				}
 				.info {
 					.value {
-						margin-right: 40px;
+						margin-right: 20%;
+						font-size: 11px;
+					}
+					#special1::after, #special2::after, #special3::after {
+						font-size: 7px;
+					}
+					.title {
+						font-size: 10px;
 					}
 				}
+				.city {
+					font-size: 10px;
+				}
+				.city::before {
+					width: 14px;
+					height: 14px;
+				}
+				.date {
+					font-size: 8px;
+					margin-top: 10%;
+					left: 25%;
+				}
 			}
+
 		}
 	}
 }
@@ -94,12 +118,84 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-	
+@media (min-width: 768px) and (max-width: 1366px) {
+.container {
+	.top100, .recent, .popular {
+		li {
+			width: 45%;
+			.text-content {
+				h4 {
+					font-size: 13px;
+					margin: 6px 0 10px 0px;
+				}
+				.info {
+					.value {
+						margin-right: 20%;
+						font-size: 11px;
+					}
+					#special1::after, #special2::after, #special3::after {
+						font-size: 7px;
+					}
+					.title {
+						font-size: 10px;
+					}
+				}
+				.city {
+					font-size: 10px;
+				}
+				.city::before {
+					width: 14px;
+					height: 14px;
+				}
+				.date {
+					font-size: 8px;
+					margin-top: 10%;
+					left: 25%;
+				}
+			}
+		}
+	}
 }
+}
+@media (max-width: 1366px) {
+.tab-menu {
+	display: block;
+	height: 15vh;
+	width: 100vw;
+	background: linear-gradient(127.58deg,#8c6bff -7.22%,#ff5ca8 61.5%,#ffb66f 117.98%);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;	
+	ul {
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+	    width: 80%;
+	    margin: 0 auto;
+	    background: #FFFFFF;
+	    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	    border-radius: 15px;
+	    height: 60%;	
+		li {
+			width: 20%;
+			border-right: 1px solid #000;
+			height: 100%;
+			a {
+				img {
 
-@media (min-width: 1024px) and (max-width: 1300px) {
-	
+				}
+			}
+		}
+		li:last-child {
+			border-right: none;
+		}
+	}
 }
+}
+// @media (min-width: 1024px) and (max-width: 1300px) {
+	
+// }
 
 
