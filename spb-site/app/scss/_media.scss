@@ -28,7 +28,7 @@
 			}
 		}
 		.log-in {
-			right: 4px;
+			right: 10px;
 			margin: 0 auto;
 			font-size: 10px;
 		}
@@ -40,7 +40,7 @@
 		}
 		.logo {
 			width: 50px;
-			left: 1px;
+			left: 5px;
 		}
 	}
 }
@@ -189,6 +189,14 @@
 			li:first-child, li:nth-child(3), li:nth-child(4) {
 				display: none;
 			}
+			li::before {
+				width: 20px !important;
+				height: 20px !important;
+			}
+		}
+		.log-in::before {
+			width: 20px!important;
+			height: 20px!important;
 		}
 	}
 	.tab-menu {
