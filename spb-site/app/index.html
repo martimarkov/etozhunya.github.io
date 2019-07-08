@@ -23,7 +23,7 @@
 	<div class="header-nav">
 		<img src="img/logo.png" alt="" class="logo">
 		<ul>
-			<li><a href="#">Поиск аккаунта</a></li>
+			<li><input type="text" placeholder="Поиск аккаунта"></input></li>
 			<li><a href="#">Женщины</a></li>
 			<li><a href="#">Рейтинги</a></li>
 			<li><a href="#">Оценивать</a></li>
@@ -33,7 +33,7 @@
 </header>
 <div class="container">
 	<ul class="general-nav">
-		<li data-index="0"><a href="#" id="top-people">Топ-100</a></li>
+		<li data-index="0" class="active"><a href="#" id="top-people">Топ-100</a></li>
 		<li data-index="1"><a href="#" id="popular">Набирающие <br>популярность</a></li>
 		<li data-index="2"><a href="#" id="recent">Недавно <br>добавленные</a></li>
 		<span class="rectangle_gradient">
@@ -47,8 +47,8 @@
 	<option value="four">Киев</option>
 	<option value="five">Львов</option>
 	</select>
-	<div class="ul-container">
-		<ul class="top100">
+	<div class="ul-container profiles">
+		<ul class="top100 in-view">
 			<li>
 				<div class="photo"></div>
 				<div class="text-content">

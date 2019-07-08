@@ -123,6 +123,10 @@ body {
 		    width: 33%;
 		    text-align: center;
 		    position: relative;
+
+		    &.active a {
+		    	font-family: 'Mweather-b';
+		    }
 			a {
 				// padding: 5%;
 				display:block;
@@ -192,6 +196,21 @@ body {
 }
 .ul-container {
 	position: relative;
+}
+.profiles > ul {
+	    opacity: 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    z-index: -1;
+
+    &.in-view {
+    	opacity: 1;
+	transition: .4s;
+	transition-delay: .2s;
+	z-index: 2;
+	font-family: mweather-b;
+    }
 }
 	.top100, .popular, .recent {
 		display: flex;
@@ -313,11 +332,11 @@ body {
 	top: 0px;
 }
 .top100.in-view, .popular.in-view, .recent.in-view  {
-	opacity: 1;
-	transition: .4s;
-	transition-delay: .2s;
-	z-index: 2;
-	font-family: mweather-b;
+	// opacity: 1;
+	// transition: .4s;
+	// transition-delay: .2s;
+	// z-index: 2;
+	// font-family: mweather-b;
 }
 .popular.hide, .recent.hide, .top100.hide {
 	opacity: 0;
@@ -419,7 +438,7 @@ body {
 
 
 
-@import "media";
+@import "media2";
 
 
 	
