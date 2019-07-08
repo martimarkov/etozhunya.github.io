@@ -198,21 +198,34 @@ body {
 				height: 100%;
 				background: linear-gradient(to top,rgb(255, 255, 255) 1.68%,rgba(29,29,29,0) 56.82%,#fff0 1.68%);
 			}
+			h3 {
+				margin-top: 10px;
+				font-family: Mweather;
+				text-align: center;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 25px;
+				text-transform: uppercase;
+				background: -webkit-linear-gradient(118.96deg,#f83690 -10.2%,#3555f2 141.74%,rgba(255,255,255,0) 152.77%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			span {
+				color: rgba(47, 46, 46, 0.6);
+				display: block;
+				font-family: Mweather-r;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 15px;
+				text-transform: uppercase;
+				margin-top: 8px;
+				text-align: center;
+			}
 			.portfolio-info {
 				height: 65%;
 				text-align: center;
-				h3 {
-					margin-top: 10px;
-					font-family: Mweather;
-					font-style: normal;
-					font-weight: bold;
-					font-size: 20px;
-					line-height: 25px;
-					text-transform: uppercase;
-					background: -webkit-linear-gradient(118.96deg,#f83690 -10.2%,#3555f2 141.74%,rgba(255,255,255,0) 152.77%);
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
-				}
 				span {
 					color: rgba(47, 46, 46, 0.6);
 					display: block;
@@ -335,6 +348,9 @@ body {
 		}
 	}
 }		
+.tab-menu {
+	display: none;
+}
 .footer {
 	margin-top: 130px;
 	position: relative;
@@ -391,3 +407,5 @@ body {
 		}
 	}
 }
+
+@import "mediaa.scss";
