@@ -338,6 +338,9 @@ body {
 			.charts {
 				width: 42%;
 				height: 348px;
+				.shedule {
+					height: 300px;
+				}
 			}
 			.charts:not(:first-child) {
 				background: #FFFFFF;
