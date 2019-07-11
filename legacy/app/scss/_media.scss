@@ -125,7 +125,7 @@
 						    position: relative;
 						    // bottom: 0;
 						    br {
-						    	display: none;
+						    	// display: none;
 						    }
 						}
 						p {
@@ -423,7 +423,9 @@
 			max-width: 600px;
 			.container {
 				.left {
-
+					h1 {
+						width: 110%;
+					}
 				}
 				.right {
 
