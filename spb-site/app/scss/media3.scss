@@ -1,10 +1,68 @@
 @import "vars";
 
 @media (max-width: 767px) {
+	.container {
+		width: 80%;
+		display: block;
+		.left-content {
+			width: 100%;
+		}
+		.right-content {
+			width: 100%;
+			.content-container {
+				padding:0px;
+				.charts {
+					width: 100% !important;
+				}
+				.charts:first-child {
+					margin-bottom: 5%;
+				}
+			}
+		}
+	}
+	.posts {
+		width: 90%;
+		margin-top: 10%;
+		margin-bottom: 40%;
+		.pictures {
+			li {
+			    margin-bottom: 10px;
+			    margin: auto;
+			}
+		}
+	}
+	.footer {
+		display: none;
+	}
 
 }
 @media (min-width: 768px) and (max-width: 1366px) {
-
+	.container {
+		width: 80%;
+		display: block;
+		.left-content {
+			width: 55%;
+			margin: 0 auto;
+			.portfolio {
+				.portfolio-photo {
+					height: 400px;
+				}
+			}
+		}
+		.right-content {
+			width: 55%;
+			margin:0 auto;
+			.content-container {
+				padding:0px;
+				.charts {
+					width: 100% !important;
+				}
+				.charts:first-child {
+					margin-bottom: 5%;
+				}
+			}
+		}
+	}
 }
 @media (max-width: 1366px) {
 	.header {
@@ -91,25 +149,6 @@
 			}
 			li:last-child {
 				border-right: none;
-			}
-		}
-	}
-	.container {
-		width: 80%;
-		display: block;
-		.left-content {
-			width: 100%;
-		}
-		.right-content {
-			width: 100%;
-			.content-container {
-				padding:0px;
-				.charts {
-					width: 100% !important;
-				}
-				.charts:first-child {
-					margin-bottom: 5%;
-				}
 			}
 		}
 	}
