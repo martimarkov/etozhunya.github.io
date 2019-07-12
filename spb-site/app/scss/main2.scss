@@ -65,7 +65,9 @@ body {
 		}
 		ul {
 			display: flex;
+			align-items: center;
 			li {
+				position: relative;
 				input {
 					height: 30px;
 					border: none;
@@ -85,7 +87,7 @@ body {
 					line-height: 18px;
 				}
 				a {
-					display: block;
+					display: inline-block;
 					text-decoration: none;
 					font-family: 'Mweather';
 					font-style: normal;
@@ -107,7 +109,8 @@ body {
 				height: 20px;
 				background: url("../img/Search.svg") center center / cover no-repeat;
 				margin-right: 6px;
-				transform: translateY(5px);
+				position: absolute;
+				left: -22px;
 			}
 			li:nth-child(2)::before {
 				content: '';
@@ -116,7 +119,10 @@ body {
 				height: 20px;
 				background: url("../img/female.svg") center center / cover no-repeat;
 				margin-right: 6px;
-				transform: translateY(5px);
+				transform: translateY(3px);
+				// position: absolute;
+				// left: 0px;
+				// padding-left: 20px;
 			}
 			li:nth-child(3) {
 				margin: 0px 35px;
@@ -129,6 +135,8 @@ body {
 				background: url("../img/Star.svg") center center / cover no-repeat;
 				margin-right: 6px;
 				transform: translateY(3px);
+				// position: absolute;
+				// left: -25px;
 			}
 			li:last-child::before {
 				content: '';
@@ -138,6 +146,8 @@ body {
 				background: url("../img/Like.svg") center center / cover no-repeat;
 				margin-right: 6px;
 				transform: translateY(3px);
+				// position: absolute;
+				// left: -25px;
 			}
 		}
 		.log-in {
@@ -276,8 +286,8 @@ body {
 			justify-content: space-around;
 			position: relative;
 			flex-flow: row wrap;
-			// margin: 50px 0px;
 			li {
+				height: auto;
 				margin-bottom: 30px;
 				position: relative;
 				display: flex;

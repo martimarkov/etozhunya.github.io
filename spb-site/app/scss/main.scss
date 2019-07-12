@@ -33,6 +33,7 @@ body {
 		ul {
 			display: flex;
 			li {
+				position: relative;
 				input {
 					height: 30px;
 					border: none;
@@ -52,6 +53,7 @@ body {
 					line-height: 18px;
 				}
 				a {
+					display: inline-block;
 					text-decoration: none;
 					font-family: 'Mweather';
 					font-style: normal;
@@ -74,6 +76,8 @@ body {
 				background: url("../img/search.svg") center center / cover no-repeat;
 				margin-right: 6px;
 				transform: translateY(5px);
+				position: absolute;
+				left: -22px;
 			}
 			li:nth-child(2)::before {
 				content: '';
@@ -242,7 +246,7 @@ body {
 			display: flex;
 			background: #fff;
 			width: 30%;
-			height: 160px;
+			height: auto;
 			box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 			border-radius: 15px;
 			overflow: hidden;

@@ -128,9 +128,10 @@
 	height: 10vh !important;
 }
 .header {
+	position: relative;
 	height: 10vh !important;
 	.header-nav {
-		height: 81px !important;
+		height: 65% !important;
 		width: 80%;
 	}
 }

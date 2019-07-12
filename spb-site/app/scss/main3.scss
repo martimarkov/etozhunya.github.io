@@ -33,6 +33,7 @@ body * {
 		ul {
 			display: flex;
 			li {
+				position: relative;
 				input {
 					height: 30px;
 					border: none;
@@ -52,6 +53,7 @@ body * {
 					line-height: 18px;
 				}
 				a {
+					display: inline-block;
 					text-decoration: none;
 					font-family: 'Mweather';
 					font-style: normal;
@@ -74,6 +76,8 @@ body * {
 				background: url("../img/search.svg") center center / cover no-repeat;
 				margin-right: 6px;
 				transform: translateY(5px);
+				position: absolute;
+				left: -22px;
 			}
 			li:nth-child(2)::before {
 				content: '';
@@ -360,7 +364,7 @@ body * {
 							padding: 8px 0px;
 							text-align: center;
 							span {
-								font-family: Merriweather-r;
+								font-family: Mweather-r;
 								font-style: normal;
 								font-weight: normal;
 								font-size: 12px;
