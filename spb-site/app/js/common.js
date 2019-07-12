@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    // $('.time-stats li:nth-child(3)').addClass('active')
   // $('.top100').addClass('in-view');
   // $('.popular').addClass('hide');
   // $('.recent').addClass('hide');
@@ -24,7 +25,6 @@ $(document).ready(function () {
     $message.html('&nbsp;');
     $select.val('three').trigger('change.select2');
   });
-
 
   $('.general-nav li').click(function() {
     $(this).addClass('active').siblings().removeClass('active');

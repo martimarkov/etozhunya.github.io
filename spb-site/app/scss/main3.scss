@@ -4,6 +4,9 @@
 body {
 	background: rgba(238, 238, 238, 0.15);
 }
+body * {
+	box-sizing: border-box;
+}
 .header {
 	background: linear-gradient(127.58deg, #8C6BFF -7.22%, #FF5CA8 61.5%, #FFB66F 117.98%);
 	height: 145px;
@@ -165,7 +168,7 @@ body {
 			background: #FFFFFF;
 			box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 			border-radius: 15px;
-			min-height: 550px;
+			min-height: 533px;
 			.portfolio-photo {
 				position: relative;
 				border-radius: 15px 15px 0px 0px;
@@ -186,14 +189,12 @@ body {
 				text-align: center;
 				padding: 5px;
 				h3 {
-					margin-top: 10px;
 					margin-bottom: 10px;
 					font-family: Mweather;
 					font-style: normal;
 					font-weight: bold;
 					font-size: 24px;
 					line-height: 30px;
-					// text-transform: uppercase;
 					background: -webkit-linear-gradient(118.96deg,#f83690 -10.2%,#3555f2 141.74%,rgba(255,255,255,0) 152.77%);
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
@@ -239,7 +240,7 @@ body {
 			font-size: 14px;
 			line-height: 18px;
 			text-align: center;
-			padding: 25px 0px;
+			padding: 20px 0px;
 			display: block;
 			background: #EF5EB4;
 			box-shadow: 2px 2px 15px rgba(239, 94, 180, 0.7);
@@ -273,9 +274,6 @@ body {
 			justify-content: space-around;
 			flex-flow: row wrap;
 			> ul {
-				margin-bottom: 25px;
-				// height: 350px;
-				// width: 43%;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
@@ -298,7 +296,7 @@ body {
 							color: #FFF;
 							font-style: normal;
 							font-weight: normal;
-							font-size: 14px;
+							font-size: 12px;
 							line-height: 18px;
 							text-transform: uppercase;
 							display: block;
@@ -337,18 +335,127 @@ body {
 			}
 			.charts {
 				width: 42%;
-				height: 348px;
+				height: 328px;
+				.charts__title {
+					h3 {
+						color: #2F2E2E;
+						font-family: Mweather;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 18px;
+					}
+					.time-stats {
+						margin-top: 10px;
+						display: flex;
+						justify-content: space-around;
+						li {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							cursor: pointer;
+							position: relative;
+							z-index: 20;
+							width: 30%;
+							padding: 8px 0px;
+							text-align: center;
+							span {
+								font-family: Merriweather-r;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 12px;
+								line-height: 15px;
+								color: #6D6D6D;
+							}
+						}
+						li.active {
+							background-color: #EF5EB4;
+							border-radius: 20px;
+							span {
+								color: #fff;
+							}
+						}
+					}
+				}
 				.shedule {
 					height: 300px;
 				}
+				#e_chart_5 {
+					height: 200px;
+					transform: translateX(-12%);
+					width: 280px;
+				}
+				#e_chart_1 {
+					transform: translate3d(-35px,-60px,0);
+					height: 300px;
+					width: 125%;
+				}
+				#e_chart_6 {
+					height: 300px;
+					width: 125%;
+					transform: translate3d(-40px,-25px,0px);
+				}
+				.charts__info {
+					ul {
+						li {
+							position: relative;
+							padding-left: 17%;
+							.value {
+								color: #2F2E2E;
+								font-family: Mweather Sans;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 12px;
+								line-height: 15px;
+							}
+							#male::before {
+								content: '';
+								display: inline-block;
+								width: 25px;
+								height: 25px;
+								background-color: #A169EF;
+								position: absolute;
+							    left: 5px;
+							    transform: translateY(2px);
+							}
+							span {
+								font-family: Mweather-r;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 12px;
+								color: rgba(47, 46, 46, 0.5);
+								display: block;
+								line-height: 15px;
+							}
+							#female::before {
+								content: '';
+								display: inline-block;
+								width: 25px;
+								height: 25px;
+								background-color: #FF5CA8;
+								position: absolute;
+							    left: 5px;
+							    transform: translateY(2px);
+							}
+
+						}
+						li:first-child {
+							margin-bottom: 5px;
+						}
+					}
+				}
 			}
 			.charts:not(:first-child) {
+				padding: 20px 16px 20px 16px;
 				background: #FFFFFF;
 				box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 				border-radius: 15px;
 			}
 			.charts:nth-child(2n) {
 				width: 48%;
+			}
+			.charts:nth-child(3), .charts:nth-child(4) {
+				margin-top: 5%;
 			}
 		}
 	}
@@ -391,6 +498,9 @@ body {
 			}
 		}
 	}
+}
+.tab-menu {
+	display: none;
 }
 .footer {
 	margin-top: 130px;
@@ -448,3 +558,5 @@ body {
 		}
 	}
 }
+
+@import "media3";

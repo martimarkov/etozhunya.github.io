@@ -43,7 +43,7 @@ var echartsConfig = function() {
           fontSize: 12
         } 
       },
-      color: ['#2196F3'], 
+      color: ['#EF5EB4'], 
       grid:{
         show:false,
         top: 100,
@@ -57,7 +57,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
       },
@@ -67,7 +67,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
         splitLine: {
@@ -140,7 +140,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
         splitLine: {
@@ -155,7 +155,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
         axisTick: {
@@ -238,7 +238,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
         "splitArea": {
@@ -259,7 +259,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
         splitLine: {
@@ -381,7 +381,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
       },
@@ -393,7 +393,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
       },
@@ -481,7 +481,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
         axisTick: {
@@ -504,7 +504,7 @@ var echartsConfig = function() {
         },
         axisLabel: {
           textStyle: {
-            color: '#878787'
+            color: '#000'
           }
         },
         axisTick: {
@@ -525,7 +525,7 @@ var echartsConfig = function() {
         "itemStyle": {
           "normal": {
             "barBorderRadius": 0, 
-            "color": '#635bd6', 
+            "color": '#a169ef', 
             "label": {
               "show": true, 
               "textStyle": {
