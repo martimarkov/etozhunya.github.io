@@ -1,70 +1,6 @@
 @import "vars";
 
 @media (max-width: 767px) {
-	.container {
-		width: 80%;
-		display: block;
-		.left-content {
-			width: 100%;
-		}
-		.right-content {
-			width: 100%;
-			.content-container {
-				padding:0px;
-				.charts {
-					width: 100% !important;
-				}
-				.charts:first-child {
-					margin-bottom: 5%;
-				}
-			}
-		}
-	}
-	.posts {
-		width: 90%;
-		margin-top: 10%;
-		margin-bottom: 40%;
-		.pictures {
-			li {
-			    margin-bottom: 10px;
-			    margin: auto;
-			}
-		}
-	}
-	.footer {
-		display: none;
-	}
-
-}
-@media (min-width: 768px) and (max-width: 1366px) {
-	.container {
-		width: 80%;
-		display: block;
-		.left-content {
-			width: 55%;
-			margin: 0 auto;
-			.portfolio {
-				.portfolio-photo {
-					height: 400px;
-				}
-			}
-		}
-		.right-content {
-			width: 55%;
-			margin:0 auto;
-			.content-container {
-				padding:0px;
-				.charts {
-					width: 100% !important;
-				}
-				.charts:first-child {
-					margin-bottom: 5%;
-				}
-			}
-		}
-	}
-}
-@media (max-width: 1366px) {
 	.header {
 		height: 125px;
 		.header-nav {
@@ -116,6 +52,43 @@
 			}
 		}
 	}
+	.container {
+		width: 100%;
+		display: block;
+		.left-content {
+			width: 100%;
+			padding: 0% 10%;
+		}
+		.right-content {
+			width: 100%;
+			padding: 0% 10%;
+			.content-container {
+				padding:0px;
+				.charts {
+					width: 100% !important;
+				}
+				.charts:first-child {
+					margin-bottom: 5%;
+				}
+			}
+		}
+	}
+	.posts {
+		width: 100%;
+		margin-top: 10%;
+		margin-bottom: 40%;
+		padding: 0% 10%;
+		.pictures {
+			padding: 10px 0px;
+			li {
+			    margin-bottom: 10px;
+			    margin: auto;
+			}
+		}
+	}
+	.footer {
+		display: none;
+	}
 	.tab-menu {
 		z-index: 25;
 		display: block;
@@ -152,12 +125,59 @@
 			}
 		}
 	}
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+	.header {
+		position: relative;
+		.header-nav {
+			width: 80%;
+			.log-in {
+				right: 15px;
+			}
+			ul {
+				li:first-child {
+					display: none;
+				}
+			}
+		}
+	}
+	.container {
+		width: 100%;
+		display: block;
+		.left-content {
+			width: 100%;
+			padding: 0% 30%;
+			.portfolio {
+				.portfolio-photo {
+					height: 400px;
+				}
+			}
+		}
+		.right-content {
+			width: 100%;
+			padding: 0%;
+			.content-container {
+				padding:0px 15px;
+				.charts {
+				}
+				.charts:first-child {
+					margin-bottom: 5%;
+				}
+			}
+		}
+	}
 	.posts {
-		width: 90%;
-		margin-top: 10%;
-		margin-bottom: 40%;
+		width: 100%;
+	    margin-top: 10%;
+	    padding: 0% 15px;
 	}
 	.footer {
-		display: none;
+		display: flex;
+	}
+}
+@media (max-width: 1366px) {
+	.posts {
+		width: 100%;
+		margin-top: 10%;
 	}
 }
