@@ -57,7 +57,7 @@
 		display: block;
 		.left-content {
 			width: 100%;
-		    padding: 0% 30%;
+		    padding: 0% 20%;
 			.portfolio {
 				min-height: auto;
 				.portfolio-info {
@@ -199,9 +199,8 @@
 			width: 95%;
 			margin: 0 auto;
 			.people {
-				padding-bottom: 30%;
+				padding-bottom: 0%;
 				li {
-					width: 40;
 					.text-content {
 						h4 {
 							font-size: 13px;
@@ -237,7 +236,7 @@
 		}
 	}
 	.footer {
-		display: none;
+		display: flex;
 	}
 	.header-nav {
 		img {
@@ -259,14 +258,14 @@
 	}
 	.tab-menu {
 		z-index: 25;
-		display: block;
+		display: none;
 		height: 15vh;
 		width: 100vw;
 		background: linear-gradient(127.58deg,#8c6bff -7.22%,#ff5ca8 61.5%,#ffb66f 117.98%);
 		position: fixed;
 		bottom: 0;
 		left: 0;
-		display: flex;
+		// display: flex;
 		align-items: center;	
 		ul {
 			display: flex;
