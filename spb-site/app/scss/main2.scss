@@ -5,6 +5,7 @@ body * {
 	box-sizing: border-box;
 }
 body {
+	min-width: 320px;
 	background: rgba(238, 238, 238, 0.15);
 }
 #special3::after {
@@ -212,7 +213,8 @@ body {
 			background: #FFFFFF;
 			box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 			border-radius: 15px;
-			min-height: 650px;
+			height: 530px;
+			width: 317px;
 			.portfolio-photo {
 				position: relative;
 				border-radius: 15px 15px 0px 0px;
@@ -253,15 +255,21 @@ body {
 				text-align: center;
 			}
 			.portfolio-info {
-				height: 65%;
 				text-align: center;
+				padding: 10%;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+				li {
+					width: 40%;
+				}
 				span {
 					color: rgba(47, 46, 46, 0.6);
 					display: block;
 					font-family: Mweather-r;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 12px;
+					font-size: 9px;
 					line-height: 15px;
 					text-transform: uppercase;
 					margin-top: 8px;
@@ -272,8 +280,8 @@ body {
 					font-family: Mweather;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 30px;
-					line-height: 38px;	
+					font-size: 20px;
+					line-height: 20px;	
 				}
 			}
 		}
@@ -281,6 +289,7 @@ body {
 	.right-content {
 		width:70%;
 		.people {
+			margin-left: 40px;
 			display: flex;
 			width: 100%;
 			justify-content: space-around;
@@ -288,7 +297,8 @@ body {
 			flex-flow: row wrap;
 			li {
 				height: 160px;
-				margin-bottom: 30px;
+				// margin-bottom: 25px;
+				margin:15px 10px!important;
 				position: relative;
 				display: flex;
 				background: #fff;
@@ -381,7 +391,7 @@ body {
 	display: none;
 }
 .footer {
-	margin-top: 130px;
+	margin-top: 100px;
 	position: relative;
 	background: linear-gradient(137.46deg, #8C6BFF -7.22%, #FF5CA8 61.5%, #FFB66F 117.98%);
 	opacity: 0.9;

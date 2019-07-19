@@ -57,28 +57,9 @@
 		display: block;
 		.left-content {
 			width: 100%;
-		    padding: 0% 20%;
+		    padding: 0%;
 			.portfolio {
-				min-height: auto;
-				.portfolio-info {
-					padding: 5%;
-					display: flex;
-					flex-flow: row wrap;
-					justify-content: space-around;
-					li {
-						width: 40%;
-						h3 {
-							font-size: 15px;
-						}
-						span {
-							font-size: 8px;
-						}
-						.number {
-							line-height: 20px;
-							font-size: 20px;
-						}
-					}
-				}
+				margin: 0 auto;
 			}
 		}
 		.right-content {
@@ -86,10 +67,10 @@
 			margin: 0 auto;
 			.people {
 				padding-bottom: 30%;
+				margin-left: 0;
 				li {
-					margin: 0 auto !important;
-					width: 80%;
-					margin-bottom: 20px !important;
+					// margin: 0 auto !important;
+					// margin-bottom: 20px !important;
 					.text-content {
 						h4 {
 							font-size: 13px;
@@ -129,7 +110,7 @@
 		z-index: 25;
 		display: block;
 		height: 15vh;
-		width: 100vw;
+		width: 100%;
 		background: linear-gradient(127.58deg,#8c6bff -7.22%,#ff5ca8 61.5%,#ffb66f 117.98%);
 		position: fixed;
 		bottom: 0;
@@ -173,6 +154,7 @@
 			width: 100%;
 			padding: 0% 30%;
 			.portfolio {
+				margin: 0 auto;
 				min-height: auto;
 				.portfolio-info {
 					padding: 10%;
@@ -200,6 +182,7 @@
 			padding: 0% 7%;
 			.people {
 				padding-bottom: 0%;
+				margin-left: 0;
 				li {
 					.text-content {
 						h4 {
