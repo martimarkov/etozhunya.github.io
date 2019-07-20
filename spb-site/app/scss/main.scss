@@ -419,6 +419,7 @@ body {
 		.links {
 			display: flex;
 			margin-left: 10px;
+			margin-top: 10px;
 			li {
 				margin: 0 10px;
 				a {
@@ -426,6 +427,9 @@ body {
 						
 					}
 				}
+			}
+			li:first-child {
+				    transform: translateY(-3px);
 			}
 		}
 		.FAQ {

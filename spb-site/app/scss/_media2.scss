@@ -66,7 +66,7 @@
 			width: 95%;
 			margin: 0 auto;
 			.people {
-				padding-bottom: 30%;
+				padding-bottom: 50%;
 				margin-left: 0;
 				li {
 					// margin: 0 auto !important;
@@ -109,7 +109,7 @@
 	.tab-menu {
 		z-index: 25;
 		display: block;
-		height: 15vh;
+		height: 111px;
 		width: 100%;
 		background: linear-gradient(127.58deg,#8c6bff -7.22%,#ff5ca8 61.5%,#ffb66f 117.98%);
 		position: fixed;
@@ -181,7 +181,7 @@
 			width: 100%;
 			padding: 0% 7%;
 			.people {
-				padding-bottom: 0%;
+				padding-bottom: 25%;
 				margin-left: 0;
 				li {
 					.text-content {
@@ -242,7 +242,7 @@
 	.tab-menu {
 		z-index: 25;
 		display: none;
-		height: 15vh;
+		height: 111px;
 		width: 100vw;
 		background: linear-gradient(127.58deg,#8c6bff -7.22%,#ff5ca8 61.5%,#ffb66f 117.98%);
 		position: fixed;
