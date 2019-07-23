@@ -58,6 +58,14 @@
 		.left-content {
 			width: 100%;
 			padding: 0% 10%;
+			.portfolio {
+				width: 317px;
+				margin: 0 auto;
+			}
+			.button {
+				width: 317px;
+				margin: 18px auto 11px;
+			}
 		}
 		.right-content {
 			width: 100%;
@@ -65,7 +73,11 @@
 			.content-container {
 				padding:0px;
 				.charts {
-					width: 100% !important;
+					width: 317px !important;
+					margin:0 auto;
+					.stats {
+						width: 100%;
+					}
 				}
 				.charts:first-child {
 					margin-bottom: 5%;
@@ -77,12 +89,9 @@
 		width: 100%;
 		margin-top: 10%;
 		margin-bottom: 50%;
-		padding: 0% 10%;
 		.pictures {
 			padding: 10px 0px;
 			li {
-			    margin-bottom: 10px;
-			    margin: auto;
 			}
 		}
 	}
@@ -90,6 +99,7 @@
 		display: none;
 	}
 	.tab-menu {
+		min-width: 320px;
 		z-index: 25;
 		display: block;
 		height: 111px;
@@ -145,11 +155,10 @@
 		width: 100%;
 		display: block;
 		.left-content {
-			width: 100%;
-			padding: 0% 30%;
+			width: 317px;
+			margin: 0 auto;
 			.portfolio {
 				.portfolio-photo {
-					height: 400px;
 				}
 			}
 		}
@@ -169,7 +178,7 @@
 	.posts {
 		width: 100%;
 	    margin-top: 10%;
-	    padding: 0% 15px;
+	    // padding: 0% 15px;
 	}
 	.footer {
 		display: flex;
@@ -177,7 +186,25 @@
 }
 @media (max-width: 1366px) {
 	.posts {
-		width: 100%;
+		width: 80%;
 		margin-top: 10%;
+	}
+	.container {
+		.left-content {
+			.portfolio {
+				.portfolio-info {
+					h3 {
+						font-size: 15px;
+					}
+					span {
+						font-size: 8px;
+					}
+					.number {
+						line-height: 20px;
+						font-size: 20px;
+					}
+				}
+			}
+		}
 	}
 }
