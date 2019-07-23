@@ -348,6 +348,7 @@ body * {
 			}
 			.charts {
 				height: 328px;
+				overflow: hidden;
 				.charts__title {
 					h3 {
 						color: #2F2E2E;
