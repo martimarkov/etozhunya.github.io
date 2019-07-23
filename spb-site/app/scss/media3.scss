@@ -182,6 +182,40 @@
 		display: flex;
 	}
 }
+@media (max-width: 1152px) and (min-width: 782px)  {
+	.container {
+		.left-content {
+			width: 530px;
+			.portfolio {
+				display: flex;
+				min-height: 317px;
+				width: 530px;
+				position: relative;
+				&-photo {
+					height: 317px!important;
+					width: 50%;
+					border-radius: 15px 0px 0px 15px!important;
+					box-shadow: inset 1px -3px 20px 5px #fff!important;
+				}
+				&-photo::after {
+					    background: linear-gradient(to left,#fff 1.68%,rgba(29,29,29,0) 56.82%,#fff0 1.68%)!important;
+				}
+				&-info {
+					height: 317px;
+					width: 50%;
+					align-items: center;
+				    display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    padding: 0px!important;
+				}
+			}
+			.button {
+				margin: 18px auto 11px auto !important;
+			}
+		}
+	}
+}
 @media (max-width: 1366px) {
 	.posts {
 		width: 80%;
