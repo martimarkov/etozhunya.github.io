@@ -553,6 +553,9 @@ body * {
 					}
 				}
 			}
+			li:first-child {
+				    transform: translateY(-3px);
+			}
 		}
 		.FAQ {
 			display: flex;
