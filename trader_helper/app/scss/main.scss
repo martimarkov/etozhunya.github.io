@@ -21,6 +21,7 @@ h2 {
 	letter-spacing: normal;
 	color: #202124;
 	display: inline-block;
+	width: 90%;
 }
 .header {
 	padding: 10px;
@@ -28,8 +29,8 @@ h2 {
 	justify-content: space-between;
 	a {
 		img {
-		width: 16px;
-		height: 16px;
+		width: 20px;
+		height: 20px;
 		}
  	}
 	div {
@@ -43,15 +44,15 @@ h2 {
 	> div {
 		display: flex;
 		img {
-			width: 80px;
-			height: 80px;
+			width: 120px;
+			height: 120px;
 			display: inline-block;
 		}
 		div {
 			margin-left: 5%;
 			h1 {
 				 font-family: Roboto;
-				 font-size: 16px;
+				 font-size: 24px;
 				 font-weight: 500;
 				 font-style: normal;
 				 font-stretch: normal;
@@ -63,7 +64,7 @@ h2 {
 				  margin-top: 5px;
 				  display: block;	
 				  font-family: Roboto;
-				  font-size: 14px;
+				  font-size: 20px;
 				  font-weight: bold;
 				  font-style: normal;
 				  font-stretch: normal;
@@ -78,9 +79,11 @@ h2 {
 		justify-content: space-between;
 		margin-top: 5%;
 		li {
+			position: relative;
+			height: 55px;
 			.title {
 				font-family: Roboto;
-				 font-size: 20px;
+				 font-size: 24px;
 				 font-weight: normal;
 				 font-style: normal;
 				 font-stretch: normal;
@@ -91,13 +94,16 @@ h2 {
 			}
 			.value {
 				font-family: Roboto;
-				font-size: 16px;
+				font-size: 18px;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
 				line-height: normal;
 				letter-spacing: normal;
 				color: #787878;
+				position: absolute;
+				bottom: 0;
+				left: 0;
 			}
 		}
 		li:first-child {
@@ -108,8 +114,8 @@ h2 {
 			.title::after {
 				content: '';
 				display: inline-block;
-				width: 16px;
-				height: 16px;
+				width: 18px;
+				height: 18px;
 				background: url('../img/star.svg') center center / cover no-repeat;
 				margin-left: 10px;
 			}
@@ -143,11 +149,11 @@ h2 {
 			.value::after {
 				content: '';
 				display: inline-block;
-				width: 16px;
-				height: 16px;
+				width: 18px;
+				height: 18px;
 				position: absolute;
-				bottom: 2px;
-				left: 30px;
+				bottom: 13%;
+				left: 116%;
 				background: url('../img/i-button.png') center center / cover no-repeat;
 			}
 		}
@@ -158,7 +164,7 @@ h2 {
 			height: 34.1px;
 			background-color: #dadce0;
 			position: absolute;
-			left: -25px;
+			left: -25%;
 			bottom: 0;
 		}
 		li:nth-child(2)::after {
@@ -173,15 +179,15 @@ h2 {
 		}
 	}
 	.button {
-		width: 299px;
-		padding: 4px 0px 4px 0px;
+		width: 100%;
+		padding: 6px 0px 6px 0px;
 		border-radius: 5px;
 		background-color: #01875f;
 		margin: 0 auto;
 		display:block;
 		text-align: center;
 		font-family: Roboto;
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 500;
 		font-style: normal;
 		font-stretch: normal;
@@ -197,26 +203,30 @@ h2 {
 	padding: 0px 5px 20px 5px;
 	display: flex;
 	justify-content: space-around;
+	position: relative;
 	li {
+		width:23%;
 		img {
-			width: 70px;
-			height: 145px;
+			width: 100%;
+			height: auto;
 		}
 	}
 }
 .description {
-	padding: 0px 10px 30px 10px;
+	padding: 10% 10px 30px 10px;
 	h2 {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	img {
+		width: 20px;
+		height: 20px;
 		float: right;
 		transform: translateY(5px);
 	}
 	p {
 		margin-top: 10px;
 		font-family: Gravity;
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
@@ -226,30 +236,31 @@ h2 {
 	}
 }
 .ratings {
-	padding: 0px 10px 30px 10px;
+	padding: 5% 10px 30px 10px;
 	h2 {
-		font-size: 20px;
+		font-size: 24px;
+		display: inline;
 	}
 	> img {
 		margin-left: 5px;
-		width: 16px;
-		height: 16px;
+		width: 20px;
+		height: 20px;
 	}
 	.arrow {
-		width: 24px;
-		height: 24px;
+		width: 26px;
+		height: 26px;
 		float: right;
 	}
 	&-content {
 		position: relative;
 		display: flex;
-		margin-top: 10px;
+		margin-top: 5%;
 		.left-content {
 			width: 45%;
 			text-align: center;
 			.number {
 				font-family: Roboto;
-				font-size: 50px;
+				font-size: 60px;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -264,14 +275,14 @@ h2 {
 				justify-content: space-around;
 				li {
 					img {
-						width: 16px;
-						height: 16px;
+						width: 20px;
+						height: 20px;
 					}
 				}
 			}
 			> span {
 				font-family: Roboto;
-				font-size: 14px;
+				font-size: 16px;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -283,11 +294,12 @@ h2 {
 		}
 		.right-content {
 			width: 55%;
-			padding-left: 10%;
+			padding-left: 5%;
 			ul {
+				position: relative;
 				li {
-					width: 128.1px;
-					height: 8px;
+					width: 85%;
+					height: 11px;
 					border-radius: 5px;
 					background-color: #ebebeb;
 					position: relative;
@@ -302,7 +314,7 @@ h2 {
 					.green-color {
 						background-color: #01875f;
 						border-radius: 5px;
-						height: 8px;
+						height: 11px;
 						width: 0%;
 					}
 				}
@@ -336,22 +348,24 @@ h2 {
 	}
 }
 .popular {
-	padding: 0px 10px 30px 10px;
+	padding: 6% 10px 30px 10px;
 	h2 {
-		font-size: 16px;
+		font-size: 22px;
 	}
 	.arrow {
 		float: right;
+		width: 20px;
+		height: 20px;
 		transform: translateY(3px);
 	}
 	> div {
-		margin-top: 20px;
+		margin-top: 7%;
 		.avatar {
 			font-family: Roboto;
-			font-size: 24px;
+			font-size: 26px;
 			color: #fff;
 			background-color: #5a69c6;
-			padding: 4px 12px;
+			padding: 6px 14px;
 		    border-radius: 50px;
 		}
 		.avatar2 {
@@ -359,7 +373,7 @@ h2 {
 		}
 		span {
 			font-family: Roboto;
-			font-size: 18px;
+			font-size: 20px;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
@@ -370,8 +384,8 @@ h2 {
 		}
 		img {
 			float: right;
-			height: 12.4px;
-			width: 3.1px;
+			height: 14.4px;
+			width: 4.1px;
 			transform: translateY(13px);
 		}
 	}
@@ -380,14 +394,14 @@ h2 {
 		margin: 3% 1% 0% 1.4%;
 		li {
 			img {
-				width: 10px;
-				height: 10px;
+				width: 11px;
+				height: 11px;
 			}
 		}
 	}
 	span {
 		font-family: Roboto;
-		 font-size: 12px;
+		 font-size: 14px;
 		 font-weight: 500;
 		 font-style: normal;
 		 font-stretch: normal;
@@ -396,10 +410,10 @@ h2 {
 		 color: #676a70;
 	}
 	p {
-		margin:5px 0px;
+		margin:5px 0px 10px 0px;
 		display: block;
 		  font-family: Roboto;
-		  font-size: 12px;
+		  font-size: 14px;
 		  font-weight: normal;
 		  font-style: normal;
 		  font-stretch: normal;
@@ -408,57 +422,71 @@ h2 {
 		  color: #65686e;
 	}
 	.que {
-		margin-right: 20px;
+		display: inline-block;
+		margin:0 auto 10px auto;
 		font-family: Roboto;
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
 		line-height: 1.75;
 		letter-spacing: normal;
 		color: #65686e;
-	}
-	a {
-		font-family: Roboto;
-		font-size: 14px;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
+		width: 100%;
 		text-align: center;
-		color: #65686e;
-		text-decoration: none;
-		border-radius: 15px;
-		border: solid 1px #dedfe3;
-		padding: 5px 13px;
+	}
+	.buttons {
+		margin-top: 10px;
+		max-width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		a {
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #65686e;
+			text-decoration: none;
+			border-radius: 15px;
+			border: solid 1px #dedfe3;
+			padding: 5px 13px;
+			margin: 0px 10px;
+		}
 	}
 }
 .like {
 	padding: 0px 10px 15px 10px;
 	h2 {
-		font-size: 16px;
+		font-size: 22px;
+		margin-bottom: 20px;
 	}
 	.arrow {
 		float: right;
+		width: 20px;
+		height: 20px;
 		transform: translateY(3px);
 	}
 	ul {
-		margin-top: 15px;
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		li {
-			width: 84px;
+			width: 30%;
+			position: relative;
 			img {
-				width: 84px;
-				height: 84px;
+				width: 100%;
+				height: auto;
 			}
 			.title {
 				text-align: left;
 				margin-top: 5px;
 				display: block;
 				font-family: Roboto;
-				font-size: 11px;
+				font-size: 15px;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
@@ -467,10 +495,10 @@ h2 {
 				color: #313134;
 			}
 			.mb {
-				margin-top: 5px;
+				margin-top: 10px;
 				display: block;
 				font-family: Roboto;
-				font-size: 14px;
+				font-size: 16px;
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
