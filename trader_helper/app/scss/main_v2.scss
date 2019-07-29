@@ -14,7 +14,7 @@ body {
 	position: relative;
 }
 h2 {
-	font-family: Roboto;
+	font-family: Gravity-book;
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -39,7 +39,7 @@ h2 {
 			}
 		}
 		span {
-			font-family: Gravity;
+			font-family: Gravity-book;
 			font-size: 24px;
 			font-weight: normal;
 			font-style: normal;
@@ -77,7 +77,7 @@ h2 {
 			.button {
 				display: inline-block;
 				float:right;
-				font-family: Gravity;
+				font-family: Gravity-book;
 				font-size: 16px;
 				font-weight: normal;
 				font-style: normal;
@@ -94,7 +94,7 @@ h2 {
 				margin-top: 5px;
 				margin-left: 3px;
 				display:block;
-				font-family: Gravity;
+				font-family: Gravity-book;
 				font-size: 18px;
 				font-weight: normal;
 				font-style: normal;
@@ -152,10 +152,10 @@ h2 {
 	padding: 0px 10px;
 	h2 {
 		font-size: 22px;
-		margin: 15px 0;
+		margin: 15px 0 10px 0px;
 	}
 	p {
-		font-family: Gravity;
+		font-family: Gravity-book;
 		font-size: 14px;
 		font-weight: normal;
 		font-style: normal;
@@ -215,15 +215,15 @@ h2 {
 			justify-content: space-between;
 			background-color: #f6f6f6;
 			img {
-				width: 32px;
-				height: 32px;
+				width: 42px;
+				height: 42px;
 			}
 			div {
 				display: inline-block;
-				width: 87%;
+				width: 85%;
 				span {
-					font-family: Gravity;
-					font-size: 14px;
+					font-family: Gravity-book;
+					font-size: 16px;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -235,7 +235,7 @@ h2 {
 				.date {
 					float: right;
 					display: inline-block;
-					font-family: Gravity;
+					font-family: Gravity-light;
 					font-size: 12px;
 					font-weight: normal;
 					font-style: normal;
@@ -247,8 +247,8 @@ h2 {
 				}
 				.comment {
 					display: block;
-					font-family: Gravity;
-					font-size: 12px;
+					font-family: Gravity-book;
+					font-size: 13px;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
@@ -283,7 +283,7 @@ h2 {
 		width: 70%;
 	}
 	a {
-		font-family: Gravity;
+		font-family: Gravity-book;
 		font-size: 14px;
 		font-weight: normal;
 		font-style: normal;
@@ -326,7 +326,7 @@ h2 {
 
 		}
 		.stars {
-			padding: 0px 10px;
+			padding: 0px 20px;
 			li {
 				img {
 					width: 12px;
