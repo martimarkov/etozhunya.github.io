@@ -162,10 +162,36 @@ body {
 	min-height: 385px;
 	background-color: #e8ede9;
 	position: relative;
+	padding-bottom:5%;
 	.slick-carousel {
 		.slick-prev, .slick-arrow {
+			display: none !important;
 		}
-		li {
+		.slick-dots {
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			padding: 1rem 0;
+			list-style-type: none;
+			li {
+				margin: 0 0.25rem;
+				button {
+					display: block;
+					width: 6px;
+					height: 6px;
+					padding: 0;
+					border: none;
+					border-radius: 100%;
+					background-color: #d8d8d8;
+					text-indent: -9999px;
+				}
+			}
+			li.slick-active button {
+				background-color: #15b474;
+			}
+
+		}
+		.slides {
 			padding-top: 10%;
 			text-align: center;
 			width: 100%;

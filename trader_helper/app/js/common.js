@@ -1,5 +1,5 @@
   	$('.slick-carousel').slick({
-  	  	// infinite: true,
+  		dots:true,
  		centerMode: true,
     	slidesToShow: 1,
     	fade: true,
