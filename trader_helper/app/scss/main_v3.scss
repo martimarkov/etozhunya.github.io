@@ -1,0 +1,164 @@
+@import "vars";
+@import "fonts";
+
+body * {
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	max-width: 480px;
+	min-width: 320px;
+	width: 100%;
+	margin: 0 auto;
+	background-color:#fff;
+	position: relative;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	background: url('../img/background_v3.png') center center/cover no-repeat;
+	min-height: 50vh;
+	img {
+		border-radius: 50px;
+		width: 75px;
+		height: auto;
+		margin-bottom: 10%;
+	}
+	h1 {
+		font-family: Gravity;
+		font-size: 25px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.4;
+		letter-spacing: normal;
+		text-align: center;
+		color: #131415;
+		span {
+			font-weight: bold;
+			font-family: Gravity;
+			font-size: 25px;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.4;
+			letter-spacing: normal;
+			text-align: center;
+			color: #131415;		}
+	}
+	a {
+		padding: 6px 0px 6px 0px;
+		border-radius: 5px;
+		background-color: #15b474;
+		margin: 0 auto;
+		display:block;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+		margin-top: 25px;
+		cursor: pointer;
+		text-decoration: none;
+		width: 50%;
+	}
+}
+.iphone {
+	position: relative;
+	text-align: center;
+	img {
+		width: 50%;
+		height: auto;
+		margin: 10% auto 5% auto;
+		display: block;
+	}
+	h2 {
+		font-family: Gravity;
+		font-size: 24px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #131415;
+	}
+	ul {
+		margin-top: 5%;
+		li {
+			display: block;
+			font-family: Gravity;
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.5;
+			letter-spacing: normal;
+			margin: 5% 10% 5% 15%;
+			color: #131415;
+			position: relative;
+			p {
+				text-align: left;
+				font-family: Gravity;
+				font-size: 14px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.5;
+				letter-spacing: normal;
+				color: #131415;
+			}
+		}
+		li:first-child::before {
+			content: '';
+			display: inline-block;
+			background: url('../img/cash.png') center center / cover no-repeat;
+			width: 22px;
+			height: 16px;
+			position: absolute;
+			left: -10%;
+			top:25%;
+		}
+		li:nth-child(2)::before {
+			content: '';
+			display: inline-block;
+			background: url('../img/chart.png') center center / cover no-repeat;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			left: -10%;
+			top:25%;
+		}
+		li:nth-child(3)::before {
+			content: '';
+			display: inline-block;
+			background: url('../img/cellphone.png') center center / cover no-repeat;
+			width: 24px;
+			height: 16px;
+			position: absolute;
+			left: -11%;
+			top:25%;
+		}
+		li:nth-child(4)::before {
+			content: '';
+			display: inline-block;
+			background: url('../img/ticket.png') center center / cover no-repeat;
+			width: 24px;
+			height: 16px;
+			position: absolute;
+			left: -11%;
+			top:25%;
+		}
+	}
+}
+.slider-info {
+	height: 400px;
+	background-color: #e8ede9;
+}
