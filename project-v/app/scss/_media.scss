@@ -1,0 +1,95 @@
+@import "vars";
+@media (max-width: 321px) {
+	.header {
+		.content-container {
+			margin-top: 150px !important;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.header {
+		height: 110vh;
+		.content-container {
+			flex-direction: column;
+			margin-top: 10%;
+			.text-content {
+				width: 90%;
+				h1 {
+					font-size: 35px;
+					line-height: 40px;
+					br {
+						display: none;
+					}
+				}
+				p {
+					font-size: 10px;
+					line-height: 20px;
+				}
+				.button {
+					font-size: 10px;
+					margin-top: 20px;
+				}
+			}
+			.media-content {
+				width: 100%;
+				margin-top: 20px;
+				.nimble {
+					transform: translateY(14px);
+					z-index: -1;
+					width: 110%;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.header {
+		height: 70vh;
+		.content-container {
+			.text-content {
+				width: 60%;
+				h1 {
+					font-size: 40px;
+				}
+				p {
+					font-size: 13px;
+				}
+				.button {
+					font-size: 14px;
+				}
+			}
+			.media-content {
+				width: 40%;
+				.nimble {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+	.header {
+		height: 100vh;
+		.content-container {
+			.text-content {
+				h1 {
+					font-size: 55px;
+					br {
+						display: none;
+					}
+				}
+				p {
+					font-size: 13px;
+				}
+				.button {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	
+}
+
+

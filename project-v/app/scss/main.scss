@@ -1,0 +1,79 @@
+@import "vars";
+@import "fonts";
+
+body * {
+	box-sizing: border-box;
+}
+body {
+	background-color:#fff;
+	position: relative;
+}
+.header {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.logo {
+		position: absolute;
+		margin-left: 10%;
+		top: 20px;
+	}
+	.content-container {
+		display: flex;
+		position: relative;
+		padding-left: 10%;
+		justify-content: space-between;
+		.text-content {
+			width: 50%;
+			h1 {
+				display: block;
+				font-size: 60px;
+				font-family: apercu-b;
+				text-transform: uppercase;
+				color: $black;
+				.except {
+					color: $nimble;
+				}
+			}
+			p {
+				color: $black;
+				font-size: 14px;
+				font-family: Apercu-r;
+				line-height: 25px;
+				margin-top: 12px;
+			}
+			.button {
+				cursor: pointer;
+				display: inline-block;
+				text-transform: uppercase;
+				background-color: #89E872;
+				padding: 10px 50px;
+				font-family: apercu-m;
+				font-size: 15px;
+				color: #fff;
+				margin-top: 30px;
+			}
+		}
+		.media-content {
+			width: 50%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			.nimble {
+				width: 85%;
+			    height: auto;
+				float: right;
+				transform: translateY(-50px);
+			}	
+		}	
+	}	
+}
+
+
+
+
+
+@import "media";
+
+
+	
