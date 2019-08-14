@@ -19,13 +19,49 @@
 		}
 	}
 	.nimble-content::before {
-	    width: 60%!important;
+	    width: 55%!important;
 	}
 	.benefits {
 		ul {
 			.list-item {
 				p {
 					font-size: 13px;
+				}
+			}
+		}
+	}
+	.about {
+		.info {
+			display: block;
+			margin-top: 0px;
+			div {
+				transform: translateX(0);
+				display: block;
+				text-align: center;
+				#Phone, #URL {
+					margin: 0;
+					display: block;
+				}
+			}
+			.logo {
+				display: block;
+				margin: 0 auto;
+			}
+			#Address {
+				display: block;
+				text-align: center;
+				transform: translate3d(0,10px,0);
+			}
+		}
+		.signatures {
+			display: block !important;
+			text-align: center;
+			span {
+				font-size: 8px;
+			}
+			div {
+				a {
+					font-size: 10px;
 				}
 			}
 		}
@@ -95,6 +131,7 @@
 		}
 	}
 	.features-benefits {
+		padding: 25px 10px;
 		h2 {
 			.except {
 				display: block;
@@ -125,6 +162,52 @@
 				display: block;
 				width: 100%;
 				margin-top: 70px;
+			}
+			.signatures {
+				display: block !important;
+				text-align: center;
+				span {
+					font-size: 8px;
+				}
+				div {
+					a {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+		.info {
+			display: block;
+			margin-top: 0px;
+			div {
+				transform: translateX(0);
+				display: block;
+				text-align: center;
+				#Phone, #URL {
+					margin: 0;
+					display: block;
+				}
+			}
+			.logo {
+				display: block;
+				margin: 0 auto;
+			}
+			#Address {
+				display: block;
+				text-align: center;
+				transform: translate3d(0,10px,0);
+			}
+		}
+		.signatures {
+			display: block !important;
+			text-align: center;
+			span {
+				font-size: 8px;
+			}
+			div {
+				a {
+					font-size: 10px;
+				}
 			}
 		}
 	}
@@ -170,6 +253,42 @@
 			.list-item {
 				width: 40%;
 				margin: 0 auto;
+			}
+		}
+	}
+	.about {
+		.info {
+			display: block;
+			margin-top: 0px;
+			div {
+				transform: translateX(0);
+				display: block;
+				text-align: center;
+				#Phone, #URL {
+					margin: 0;
+					display: block;
+				}
+			}
+			.logo {
+				display: block;
+				margin: 0 auto;
+			}
+			#Address {
+				display: block;
+				text-align: center;
+				transform: translate3d(0,10px,0);
+			}
+		}
+		.signatures {
+			display: block !important;
+			text-align: center;
+			span {
+				font-size: 8px;
+			}
+			div {
+				a {
+					font-size: 10px;
+				}
 			}
 		}
 	}
