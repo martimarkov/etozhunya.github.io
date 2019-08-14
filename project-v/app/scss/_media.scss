@@ -119,10 +119,10 @@
 	}
 	.benefits, .features-benefits {
 		ul {
-			padding: 10% 10px;
+			padding: 70px 10px;
 			display: block;
 			.list-item {
-				margin: 10px auto;
+				margin: 20px auto;
 				width: 80%;
 				p {
 					font-size: 13px;
@@ -131,24 +131,27 @@
 		}
 	}
 	.features-benefits {
-		padding: 25px 10px;
+		padding: 70px 10px 0 10px;
 		h2 {
+			font-size: 30px;
+			width: 100%;
 			.except {
+				margin-bottom: 10px;
 				display: block;
 			}
-			font-size: 35px;
 		}
-		p {
-			width: 100%;
+		> p {
+			width: 80%;
 		}
 		ul {
-
+			padding-top: 10px;
 			.list-item {
 				padding: 5px;
 			}
 		}
 	}
 	.about {
+		padding: 50px 20px;
 		.rectangle {
 			h4 {
 				display: block;
