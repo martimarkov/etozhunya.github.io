@@ -2,18 +2,44 @@
 @media (max-width: 321px) {
 	.header {
 		.content-container {
-			margin-top: 150px !important;
+			margin-top: 50px !important;
+			.text-content {
+				p {
+					font-size: 13px;
+					br {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.nimble-content {
+		.text-content {
+			transform: translateY(-90px)!important;
+		}
+	}
+	.nimble-content::before {
+	    width: 60%!important;
+	}
+	.benefits {
+		ul {
+			.list-item {
+				p {
+					font-size: 13px;
+				}
+			}
 		}
 	}
 }
 @media (max-width: 767px) {
-	.header {
-		height: 110vh;
+	.header, .nimble-content {
 		.content-container {
 			flex-direction: column;
 			margin-top: 10%;
+			transform: translateY(0px);
 			.text-content {
 				width: 90%;
+				margin-top: 10% !important;
 				h1 {
 					font-size: 35px;
 					line-height: 40px;
@@ -24,6 +50,9 @@
 				p {
 					font-size: 10px;
 					line-height: 20px;
+					br {
+						display: none;
+					}
 				}
 				.button {
 					font-size: 10px;
@@ -32,20 +61,79 @@
 			}
 			.media-content {
 				width: 100%;
-				margin-top: 20px;
 				.nimble {
-					transform: translateY(14px);
 					z-index: -1;
 					width: 110%;
+					transform: translateY(2px)!important;
 				}
+			}
+		}
+	}
+	.nimble-content {
+		margin-top: 0px;
+		.text-content {
+			transform: translateY(-111px);
+			.button {
+				box-shadow: -2px 5px 9px 1px #000;
+			}
+		}
+	}
+	.nimble-content::before {
+		width: 70%;
+	}
+	.benefits, .features-benefits {
+		ul {
+			padding: 10% 10px;
+			display: block;
+			.list-item {
+				margin: 10px auto;
+				width: 80%;
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	.features-benefits {
+		h2 {
+			.except {
+				display: block;
+			}
+			font-size: 35px;
+		}
+		p {
+			width: 100%;
+		}
+		ul {
+
+			.list-item {
+				padding: 5px;
+			}
+		}
+	}
+	.about {
+		.rectangle {
+			h4 {
+				display: block;
+			}
+			.button {
+				display: inline-block;
+				float: left;
+				transform: translate3d(0,0,0);
+			}
+			p {
+				display: block;
+				width: 100%;
+				margin-top: 70px;
 			}
 		}
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-	.header {
-		height: 70vh;
+	.header, .nimble-content {
+		height: 60vh !important;
+		min-height: 60vh !important;
 		.content-container {
 			.text-content {
 				width: 60%;
@@ -67,11 +155,29 @@
 			}
 		}
 	}
+	.benefits {
+		ul {
+			padding: 10% 1%;
+		}
+	}
+	.features-benefits {
+		h2 {
+			.except {
+				display: block;
+			}
+		}
+		ul {
+			.list-item {
+				width: 40%;
+				margin: 0 auto;
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {
-	.header {
-		height: 100vh;
+	.header, .nimble-content {
+		height: 85vh;
 		.content-container {
 			.text-content {
 				h1 {

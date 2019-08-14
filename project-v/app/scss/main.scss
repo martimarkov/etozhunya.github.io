@@ -8,8 +8,9 @@ body {
 	background-color:#fff;
 	position: relative;
 }
-.header {
-	height: 100vh;
+.header, .nimble-content {
+	// height: 100vh;
+	min-height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -23,6 +24,7 @@ body {
 		position: relative;
 		padding-left: 10%;
 		justify-content: space-between;
+		transform: translateY(10%);
 		.text-content {
 			width: 50%;
 			h1 {
@@ -67,6 +69,229 @@ body {
 			}	
 		}	
 	}	
+}
+.benefits {
+	position: relative;
+	background-color: #f2f2f2;
+	ul {
+		display: flex;
+		justify-content: space-around;
+		padding:10%;
+		position: relative;
+		.list-item {
+			position: relative;
+			width: 30%;
+			background-color: #fff;
+			padding: 40px 20px;
+			.number {
+				font-family: apercu-b;
+				color: #fff;
+				padding: 5px;
+				background-color: $nimble;
+				font-size: 26px;
+				right: 0;
+				top:0;
+				position: absolute;
+			}
+			div {
+				border-radius: 50%;
+				background-color: #f2f2f2;
+				width: 50px;
+				height: 50px;
+			}
+			h3 {
+				color: $nimble;
+				font-family: apercu-b;
+				text-transform: uppercase;
+				margin: 20px 0px;
+				font-size: 22px;
+			}
+			p {
+				font-size: 16px;
+				font-family: apercu-r;
+				line-height: 25px;
+			}
+		}
+	}
+}
+.nimble-content {
+	background-color: $black;
+	height: 75vh;
+	position: relative;
+	.content-container {
+		.text-content {
+			h1 {
+				color: #fff;
+			}
+			p {
+				color: #fff;
+				width: 80%;
+			}
+		}
+		.media-content {
+		}
+	}
+}
+.nimble-content::before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: url('../img/nimble-device.png') bottom right/contain no-repeat;
+	width: 40%;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+}
+.features-benefits {
+	position: relative;
+	text-align: center;
+	padding: 10% 3% 10% 8%;
+	h2 {
+		display: block;
+		font-size: 40px;
+		font-family: apercu-b;
+		text-transform: uppercase;
+		color: $black;
+		.except {
+			color: $nimble;
+		}
+	}
+	> p {
+		font-size: 16px;
+		line-height: 20px;
+		width: 60%;
+		margin: 15px auto;
+	}
+	ul {
+		text-align: left;
+		display: flex;
+		flex-flow: row wrap;
+		.list-item {
+			position: relative;
+			width: 30%;
+			background-color: #fff;
+			padding: 40px 20px;
+			div {
+				border-radius: 50%;
+				background-color: #f2f2f2;
+				width: 50px;
+				height: 50px;
+			}
+			h3 {
+				color: $black;
+				font-family: apercu-b;
+				text-transform: uppercase;
+				margin: 20px 0px;
+				font-size: 22px;
+			}
+			p {
+				font-size: 16px;
+				font-family: apercu-r;
+				line-height: 25px;
+			}
+		}
+	}
+}
+.about {
+	background-color: #f2f2f2;
+	position: relative;
+	padding: 7% 5% 4% 7%;
+	.rectangle {
+		color: #fff;
+		background-color: $nimble;
+		padding: 40px 25px;
+		min-height: 150px;
+		h4 {
+			font-family: apercu-b;
+			font-size: 30px;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+		p {
+			display:block;
+			font-family: apercu-r;
+			font-size: 17px;
+			width: 50%;
+			line-height: 25px;
+		}
+		.button {
+			font-family: apercu-b;
+			padding: 10px 20px;
+			background-color: #fff;
+			color: $nimble;
+			display: inline-block;
+			float: right;
+			cursor: pointer;
+			transform: translate3d(-15%,90%,0);
+		}
+	}
+	.info {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+		padding: 20px;
+		border-bottom: 1px solid #D8D8D8;
+		.logo {
+			
+		}
+		a {
+			text-decoration: none;
+			color: grey;
+			font-family: apercu-r;
+		}
+		#Address {
+			transform: translateY(5px);
+		}
+		div {
+			transform: translateX(-100%);
+			#URL, #Phone {
+				transform: translateY(5px);
+				display: inline-block;
+				font-family: apercu-r;
+			}
+			#Phone {
+				margin-right: 20px;
+			}
+			#Phone::before {
+				content: '';
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				margin-right: 10px;
+				background:url('../img/phone.png') center center / cover no-repeat;
+				transform: translateY(3px);
+			}
+			#URL::before {
+				content: '';
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				margin-right: 10px;
+				background:url('../img/path.png') center center / cover no-repeat;
+				transform: translateY(3px);
+			}
+		}
+	}
+	.signatures {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		span {
+			font-family: apercu-bitalic;
+			font-size: 12px;
+			color: grey;
+			margin: 5px;
+		}
+		div {
+			a {
+				font-family: apercu-bitalic;
+				font-size: 12px;
+				color: grey;
+				margin: 5px;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 
