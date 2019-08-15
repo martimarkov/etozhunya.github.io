@@ -52,6 +52,13 @@
 				text-align: center;
 				transform: translate3d(0,10px,0);
 			}
+			#Phone::before {
+				left: 15%!important;
+				top: -20%;
+			}
+			#URL::before {
+				left: 15%!important;
+			}
 		}
 		.signatures {
 			display: block !important;
@@ -180,6 +187,7 @@
 			}
 		}
 		.info {
+			padding: 40px;
 			display: block;
 			margin-top: 0px;
 			div {
@@ -187,13 +195,23 @@
 				display: block;
 				text-align: center;
 				#Phone, #URL {
-					margin: 0;
+					margin: 10px 0px;
 					display: block;
+				}
+				#Phone::before {
+					position: absolute;
+					left: 20%;
+					top: -20%;
+				}
+				#URL::before {
+					position: absolute;
+					left: 20%;
 				}
 			}
 			.logo {
 				display: block;
 				margin: 0 auto;
+				width: 60%;
 			}
 			#Address {
 				display: block;
@@ -268,7 +286,7 @@
 				display: block;
 				text-align: center;
 				#Phone, #URL {
-					margin: 0;
+					margin: 10px 0px;
 					display: block;
 				}
 			}
@@ -280,6 +298,16 @@
 				display: block;
 				text-align: center;
 				transform: translate3d(0,10px,0);
+			}
+			#Phone::before {
+				left: 240px!important;
+				position: absolute;
+				top:-30%;
+				transform: translate3d(0,0,0);
+			}
+			#URL::before {
+				left: 240px!important;
+				position: absolute;
 			}
 		}
 		.signatures {

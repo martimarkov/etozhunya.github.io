@@ -201,6 +201,8 @@ body {
 		background-color: $nimble;
 		padding: 40px 25px;
 		min-height: 150px;
+		max-width: 1400px;
+	    margin: 0 auto;
 		h4 {
 			font-family: apercu-b;
 			font-size: 30px;
@@ -273,7 +275,7 @@ body {
 		}
 	}
 	.signatures {
-		margin-top: 10px;
+		margin-top: 30px;
 		display: flex;
 		justify-content: space-between;
 		span {
