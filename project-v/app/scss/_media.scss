@@ -3,6 +3,7 @@
 	.header {
 		.content-container {
 			margin-top: 50px !important;
+			padding-left: 5%!important;
 			.text-content {
 				p {
 					font-size: 13px;
@@ -14,8 +15,15 @@
 		}
 	}
 	.nimble-content {
-		.text-content {
-			transform: translateY(-90px)!important;
+		.content-container {
+			// margin-top: 80px !important;
+			.text-content {
+				transform: translateY(-70px)!important;
+				p {
+					font-size: 13px!important;
+					margin-top: 0 !important;
+				}
+			}
 		}
 	}
 	.nimble-content::before {
@@ -78,11 +86,12 @@
 	.header, .nimble-content {
 		.content-container {
 			flex-direction: column;
-			margin-top: 10%;
+			margin-top: 20%;
 			transform: translateY(0px);
+			padding-left: 5%;
 			.text-content {
 				width: 90%;
-				margin-top: 10% !important;
+				// margin-top: 10% !important;
 				h1 {
 					font-size: 35px;
 					line-height: 40px;
@@ -91,14 +100,14 @@
 					}
 				}
 				p {
-					font-size: 10px;
+					font-size: 16px;
 					line-height: 20px;
 					br {
 						display: none;
 					}
 				}
 				.button {
-					font-size: 10px;
+					font-size: 16px;
 					margin-top: 20px;
 				}
 			}
@@ -106,7 +115,7 @@
 				width: 100%;
 				.nimble {
 					z-index: -1;
-					width: 110%;
+					width: 100%;
 					transform: translateY(2px)!important;
 				}
 			}
@@ -114,8 +123,9 @@
 	}
 	.nimble-content {
 		margin-top: 0px;
+		height: 90vh;
 		.text-content {
-			transform: translateY(-111px);
+			transform: translateY(-86px);
 			.button {
 				box-shadow: -2px 5px 9px 1px #000;
 			}
@@ -130,9 +140,12 @@
 			display: block;
 			.list-item {
 				margin: 20px auto;
-				width: 80%;
-				p {
-					font-size: 13px;
+				width: 90%;
+				h3 {
+					font-size: 24px;
+				}
+				> p {
+					font-size: 15px;
 				}
 			}
 		}
@@ -158,8 +171,12 @@
 		}
 	}
 	.about {
-		padding: 50px 20px;
+		padding: 50px 20px 20px 20px;
 		.rectangle {
+			background: url(../img/rectangle-green.png) bottom right/contain no-repeat;
+			background-color: #0ED199;
+			background-size: 550px;
+			position: relative;
 			h4 {
 				display: block;
 			}
@@ -167,11 +184,14 @@
 				display: inline-block;
 				float: left;
 				transform: translate3d(0,0,0);
+				position: absolute;
+				bottom: 15%;
+			    left: 8%;
 			}
 			p {
 				display: block;
 				width: 100%;
-				margin-top: 70px;
+				margin-bottom: 70px;
 			}
 			.signatures {
 				display: block !important;
@@ -239,6 +259,7 @@
 		height: 60vh !important;
 		min-height: 60vh !important;
 		.content-container {
+			padding-left: 5%;
 			.text-content {
 				width: 60%;
 				h1 {
@@ -308,6 +329,13 @@
 			#URL::before {
 				left: 240px!important;
 				position: absolute;
+			}
+		}
+		.rectangle {
+			background: url(../img/rectangle-green.png) bottom right/contain no-repeat;
+			background-color: #0ED199;
+			p {
+				width: 60%;
 			}
 		}
 		.signatures {
