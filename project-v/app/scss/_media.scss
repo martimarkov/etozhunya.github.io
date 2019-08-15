@@ -1,5 +1,12 @@
 @import "vars";
 @media (max-width: 321px) {
+	.header {
+		.for-logo {
+			.header-wrapper {
+				margin: 20% auto 0 auto!important;
+			}
+		}
+	}
 	.nimble-content {
 		.for-logo {
 			.black-wrapper {
@@ -32,13 +39,13 @@
 					text-align: center;
 					transform: translate3d(0,10px,0);
 				}
-				#Phone::before {
-					left: 15%!important;
-					top: -20%;
-				}
-				#URL::before {
-					left: 15%!important;
-				}
+				// #Phone::before {
+				// 	left: 15%!important;
+				// 	top: -20%;
+				// }
+				// #URL::before {
+				// 	left: 15%!important;
+				// }
 			}
 			.signatures {
 				display: block !important;
@@ -223,15 +230,15 @@
 						margin: 10px 0px;
 						display: block;
 					}
-					#Phone::before {
-						position: absolute;
-						left: 20%;
-						top: -20%;
-					}
-					#URL::before {
-						position: absolute;
-						left: 20%;
-					}
+					// #Phone::before {
+					// 	position: absolute;
+					// 	left: 20%;
+					// 	top: -20%;
+					// }
+					// #URL::before {
+					// 	position: absolute;
+					// 	left: 20%;
+					// }
 				}
 				.logo {
 					display: block;
@@ -415,5 +422,11 @@
 		}
 	}
 }
+@media (min-width: 1200px) {
+	.header::before {
+		top: 20%;
+	}	
+}
+
 
 
