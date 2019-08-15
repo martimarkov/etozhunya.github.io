@@ -1,197 +1,35 @@
 @import "vars";
 @media (max-width: 321px) {
-	.header {
-		.content-container {
-			margin-top: 50px !important;
-			padding-left: 5%!important;
-			.text-content {
-				p {
-					font-size: 13px;
-					br {
-						display: none;
-					}
-				}
-			}
-		}
-	}
-	.nimble-content {
-		.content-container {
-			// margin-top: 80px !important;
-			.text-content {
-				transform: translateY(-70px)!important;
-				p {
-					font-size: 13px!important;
-					margin-top: 0 !important;
-				}
-			}
-		}
-	}
-	.nimble-content::before {
-	    width: 55%!important;
-	}
-	.benefits {
-		ul {
-			.list-item {
-				p {
-					font-size: 13px;
-				}
-			}
-		}
-	}
 	.about {
-		.info {
-			display: block;
-			margin-top: 0px;
-			div {
-				transform: translateX(0);
+		.wrapper {
+			.info {
 				display: block;
-				text-align: center;
-				#Phone, #URL {
-					margin: 0;
+				margin-top: 0px;
+				div {
+					transform: translateX(0);
 					display: block;
-				}
-			}
-			.logo {
-				display: block;
-				margin: 0 auto;
-			}
-			#Address {
-				display: block;
-				text-align: center;
-				transform: translate3d(0,10px,0);
-			}
-			#Phone::before {
-				left: 15%!important;
-				top: -20%;
-			}
-			#URL::before {
-				left: 15%!important;
-			}
-		}
-		.signatures {
-			display: block !important;
-			text-align: center;
-			span {
-				font-size: 8px;
-			}
-			div {
-				a {
-					font-size: 10px;
-				}
-			}
-		}
-	}
-}
-@media (max-width: 767px) {
-	.header, .nimble-content {
-		.content-container {
-			flex-direction: column;
-			margin-top: 20%;
-			transform: translateY(0px);
-			padding-left: 5%;
-			.text-content {
-				width: 90%;
-				// margin-top: 10% !important;
-				h1 {
-					font-size: 35px;
-					line-height: 40px;
-					br {
-						display: none;
+					text-align: center;
+					#Phone, #URL {
+						margin: 0;
+						display: block;
 					}
 				}
-				p {
-					font-size: 16px;
-					line-height: 20px;
-					br {
-						display: none;
-					}
+				.logo {
+					display: block;
+					margin: 0 auto;
 				}
-				.button {
-					font-size: 16px;
-					margin-top: 20px;
+				#Address {
+					display: block;
+					text-align: center;
+					transform: translate3d(0,10px,0);
 				}
-			}
-			.media-content {
-				width: 100%;
-				.nimble {
-					z-index: -1;
-					width: 100%;
-					transform: translateY(2px)!important;
+				#Phone::before {
+					left: 15%!important;
+					top: -20%;
 				}
-			}
-		}
-	}
-	.nimble-content {
-		margin-top: 0px;
-		height: 90vh;
-		.text-content {
-			transform: translateY(-86px);
-			.button {
-				box-shadow: -2px 5px 9px 1px #000;
-			}
-		}
-	}
-	.nimble-content::before {
-		width: 70%;
-	}
-	.benefits, .features-benefits {
-		ul {
-			padding: 70px 10px;
-			display: block;
-			.list-item {
-				margin: 20px auto;
-				width: 90%;
-				h3 {
-					font-size: 24px;
+				#URL::before {
+					left: 15%!important;
 				}
-				> p {
-					font-size: 15px;
-				}
-			}
-		}
-	}
-	.features-benefits {
-		padding: 70px 10px 0 10px;
-		h2 {
-			font-size: 30px;
-			width: 100%;
-			.except {
-				margin-bottom: 10px;
-				display: block;
-			}
-		}
-		> p {
-			width: 80%;
-		}
-		ul {
-			padding-top: 10px;
-			.list-item {
-				padding: 5px;
-			}
-		}
-	}
-	.about {
-		padding: 50px 20px 20px 20px;
-		.rectangle {
-			background: url(../img/rectangle-green.png) bottom right/contain no-repeat;
-			background-color: #0ED199;
-			background-size: 550px;
-			position: relative;
-			h4 {
-				display: block;
-			}
-			.button {
-				display: inline-block;
-				float: left;
-				transform: translate3d(0,0,0);
-				position: absolute;
-				bottom: 15%;
-			    left: 8%;
-			}
-			p {
-				display: block;
-				width: 100%;
-				margin-bottom: 70px;
 			}
 			.signatures {
 				display: block !important;
@@ -206,48 +44,199 @@
 				}
 			}
 		}
-		.info {
-			padding: 40px;
-			display: block;
-			margin-top: 0px;
-			div {
-				transform: translateX(0);
-				display: block;
-				text-align: center;
-				#Phone, #URL {
-					margin: 10px 0px;
-					display: block;
+	}
+}
+@media (max-width: 767px) {
+	.header, .nimble-content {
+		.for-logo {
+			.header-wrapper, .black-wrapper {
+				flex-direction: column;
+				margin-top: 20%;
+				transform: translateY(0px);
+				width: 100%;
+				.text-content {
+					width: 90%;
+					margin: 0 auto;
+					margin-top: 10%;
+					h1 {
+						font-size: 35px;
+						line-height: 40px;
+						br {
+							display: none;
+						}
+					}
+					p {
+						font-size: 16px;
+						line-height: 20px;
+						br {
+							display: none;
+						}
+					}
+					.button {
+						font-size: 16px;
+						margin-top: 20px;
+					}
 				}
-				#Phone::before {
-					position: absolute;
-					left: 20%;
-					top: -20%;
+				.media-content {
+					width: 100%;
+					margin-top: 10%;
+					display: flex;
+					.nimble {
+						z-index: -1;
+						width: 100%;
+						transform: translateY(2px)!important;
+						opacity: 1;
+					}
 				}
-				#URL::before {
-					position: absolute;
-					left: 20%;
-				}
-			}
-			.logo {
-				display: block;
-				margin: 0 auto;
-				width: 60%;
-			}
-			#Address {
-				display: block;
-				text-align: center;
-				transform: translate3d(0,10px,0);
 			}
 		}
-		.signatures {
-			display: block !important;
-			text-align: center;
-			span {
-				font-size: 8px;
+		.for-logo::before {
+			left: 6%;
+		}	
+	}
+	.header::before {
+		display: none;
+	}
+	.nimble-content {
+		margin-top: 0px;
+		height: 100vh;
+		.for-logo {
+			.black-wrapper {
+				width: 90%;
+				.text-content {
+					transform: translateY(-86px);
+					width: 100%!important;
+					.button {
+						box-shadow: -2px 5px 9px 1px #000;
+					}
+				}
 			}
-			div {
-				a {
-					font-size: 10px;
+		}
+	}
+
+	.nimble-content::before {
+		width: 70%;
+	}
+	.benefits, .features-benefits {
+		.wrapper {
+			ul {
+				padding: 70px 0px;
+				display: block;
+				.list-item {
+					margin: 20px auto;
+					width: 90%;
+					h3 {
+						font-size: 24px;
+					}
+					> p {
+						font-size: 15px;
+					}
+				}
+			}	
+		}
+	}
+	.features-benefits {
+		padding: 70px 10px 30px 10px;
+		.wrapper {
+				h2 {
+					font-size: 30px;
+					width: 100%;
+					.except {
+						margin-bottom: 10px;
+						display: block;
+					}
+				}
+				> p {
+					width: 80%;
+				}
+				ul {
+					padding: 10px 0 0 0;
+					.list-item {
+						padding: 0px;
+					}
+				}
+			}
+		}
+	.about {
+		padding: 50px 20px 20px 20px;
+		.wrapper {
+			.rectangle {
+				background: url(../img/rectangle-green.png) bottom right/contain no-repeat;
+				background-color: #0ED199;
+				background-size: 550px;
+				position: relative;
+				h4 {
+					display: block;
+				}
+				.button {
+					display: inline-block;
+					float: left;
+					transform: translate3d(0,0,0);
+					position: absolute;
+					bottom: 15%;
+				    left: 8%;
+				}
+				p {
+					display: block;
+					width: 100%;
+					margin-bottom: 70px;
+				}
+				.signatures {
+					display: block !important;
+					text-align: center;
+					span {
+						font-size: 8px;
+					}
+					div {
+						a {
+							font-size: 10px;
+						}
+					}
+				}
+			}
+			.info {
+				padding: 40px;
+				display: block;
+				margin-top: 0px;
+				div {
+					transform: translateX(0);
+					display: block;
+					text-align: center;
+					#Phone, #URL {
+						margin: 10px 0px;
+						display: block;
+					}
+					#Phone::before {
+						position: absolute;
+						left: 20%;
+						top: -20%;
+					}
+					#URL::before {
+						position: absolute;
+						left: 20%;
+					}
+				}
+				.logo {
+					display: block;
+					margin: 0 auto;
+					width: 60%;
+				}
+				#Address {
+					display: block;
+					text-align: center;
+					transform: translate3d(0,10px,0);
+				}
+			}
+			.signatures {
+				display: block !important;
+				text-align: center;
+				span {
+					font-size: 8px;
+				}
+				div {
+					a {
+						font-size: 10px;
+					}
 				}
 			}
 		}
@@ -258,122 +247,156 @@
 	.header, .nimble-content {
 		height: 60vh !important;
 		min-height: 60vh !important;
-		.content-container {
-			padding-left: 5%;
-			.text-content {
-				width: 60%;
-				h1 {
-					font-size: 40px;
+		.for-logo {
+			width: 90%;
+			.header-wrapper {
+				.text-content {
+					width: 60%;
+					h1 {
+						font-size: 40px;
+					}
+					p {
+						font-size: 13px;
+					}
+					.button {
+						font-size: 14px;
+					}
 				}
-				p {
-					font-size: 13px;
-				}
-				.button {
-					font-size: 14px;
-				}
+				.media-content {
+					width: 40%;
+					.nimble {
+						width: 100%;
+					}
+				}		
 			}
-			.media-content {
-				width: 40%;
-				.nimble {
-					width: 100%;
+		}
+		.for-logo::before {
+			top: 15%;
+		}
+		
+	}
+	.header::before {
+		width: 44%;
+	}
+	.nimble-content {
+		.for-logo {
+			.black-wrapper {
+				.text-content {
+					h1 {
+						font-size: 40px;
+					}
 				}
 			}
 		}
 	}
 	.benefits {
-		ul {
-			padding: 10% 1%;
+		.wrapper {
+			width: 90%;
+			ul {
+				padding: 10% 0%;
+			}
 		}
 	}
 	.features-benefits {
-		h2 {
-			.except {
-				display: block;
+		.wrapper {
+			width: 90%;
+			h2 {
+				.except {
+					display: block;
+				}
 			}
-		}
-		ul {
-			.list-item {
-				width: 40%;
-				margin: 0 auto;
+			ul {
+				.list-item {
+					width: 45%;
+				}
 			}
 		}
 	}
 	.about {
-		.info {
-			display: block;
-			margin-top: 0px;
-			div {
-				transform: translateX(0);
+		.wrapper {
+			width: 90%;
+			.info {
 				display: block;
-				text-align: center;
-				#Phone, #URL {
-					margin: 10px 0px;
+				margin-top: 0px;
+				div {
+					transform: translateX(0);
 					display: block;
+					text-align: center;
+					#Phone, #URL {
+						margin: 10px 0px;
+						display: block;
+					}
+				}
+				.logo {
+					display: block;
+					margin: 0 auto;
+				}
+				#Address {
+					display: block;
+					text-align: center;
+					transform: translate3d(0,10px,0);
+				}
+				#Phone::before {
+					left: 240px!important;
+					position: absolute;
+					top:-30%;
+					transform: translate3d(0,0,0);
+				}
+				#URL::before {
+					left: 240px!important;
+					position: absolute;
 				}
 			}
-			.logo {
-				display: block;
-				margin: 0 auto;
+			.rectangle {
+				background: url(../img/rectangle-green.png) bottom right/contain no-repeat;
+				background-color: #0ED199;
+				p {
+					width: 60%;
+				}
 			}
-			#Address {
-				display: block;
+			.signatures {
+				display: block !important;
 				text-align: center;
-				transform: translate3d(0,10px,0);
-			}
-			#Phone::before {
-				left: 240px!important;
-				position: absolute;
-				top:-30%;
-				transform: translate3d(0,0,0);
-			}
-			#URL::before {
-				left: 240px!important;
-				position: absolute;
-			}
-		}
-		.rectangle {
-			background: url(../img/rectangle-green.png) bottom right/contain no-repeat;
-			background-color: #0ED199;
-			p {
-				width: 60%;
-			}
-		}
-		.signatures {
-			display: block !important;
-			text-align: center;
-			span {
-				font-size: 8px;
-			}
-			div {
-				a {
-					font-size: 10px;
+				span {
+					font-size: 8px;
+				}
+				div {
+					a {
+						font-size: 10px;
+					}
 				}
 			}
 		}
 	}
 }
-
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1024px) and (max-width: 1180px) {
 	.header, .nimble-content {
-		height: 85vh;
-		.content-container {
-			.text-content {
-				h1 {
-					font-size: 55px;
-					br {
-						display: none;
+		.for-logo {
+				width: 90%;
+			.header-wrapper {
+				.text-content {
+					width: 50%;
+					h1 {
+						font-size: 55px;
+						br {
+							display: none;
+						}
 					}
-				}
-				p {
-					font-size: 13px;
-				}
-				.button {
-					font-size: 14px;
+					p {
+						font-size: 13px;
+					}
+					.button {
+						font-size: 14px;
+					}
 				}
 			}
 		}
 	}
-	
+	.benefits, .nimble-content, .features-benefits, .about {
+		.wrapper {
+			width: 90%;
+		}
+	}
 }
 
 
