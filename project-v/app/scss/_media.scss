@@ -230,15 +230,6 @@
 						margin: 10px 0px;
 						display: block;
 					}
-					// #Phone::before {
-					// 	position: absolute;
-					// 	left: 20%;
-					// 	top: -20%;
-					// }
-					// #URL::before {
-					// 	position: absolute;
-					// 	left: 20%;
-					// }
 				}
 				.logo {
 					display: block;
@@ -265,8 +256,23 @@
 			}
 		}
 	}
+	.version-2, .version-3 {
+		.nimble-content::before {
+			width: 70%!important;
+		    top: -60px!important;
+		}
+		.nimble {
+			width: 90%!important;
+		}
+	}
+	.version-3 {
+		.rectangle {
+			background: url(../img/rectangle-red.png) bottom right/contain no-repeat !important;
+			background-color: $red!important;
+			background-size: 550px!important;
+		}
+	}
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
 	.header, .nimble-content {
 		height: 60vh !important;

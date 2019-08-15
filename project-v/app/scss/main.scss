@@ -380,6 +380,56 @@ body {
 		transform: scale(1);
 	}
 }
+.version-2 {
+	.header:before {
+		width: 35%;
+		background: url('../img/Simplivity/header_image2.png') right bottom/contain no-repeat;
+	}
+	.nimble-content::before {
+		top: -60%;
+		right: 20%;
+		width: 15%;
+		background: url('../img/oval-green.png') bottom right/contain no-repeat;
+	}
+}
+.version-3 {
+	.header:before {
+		background: url('../img/Synergy/header_image3.png') center center/contain no-repeat;
+	}
+	.number {
+		background-color: $red!important;
+	}
+	h3 {
+		color: $red!important;
+	}
+	.nimble-content {
+		h1 {
+			.except	{
+				color: $red!important;
+			}
+		}
+	}
+	.nimble-content::before {
+		top: -60%;
+		right: 20%;
+		width: 15%;
+		background: url('../img/oval-red.png') bottom right/contain no-repeat;
+	}
+	.about {
+		.button {
+			background-color: $nimble!important;
+			color: #fff!important;
+		}
+	}
+	.rectangle {
+		background: url(../img/rectangle-red.png) center center/cover no-repeat!important;
+	}
+	.features-benefits {
+		.except {
+			color: $red!important;
+		}
+	}
+}
 
 
 
