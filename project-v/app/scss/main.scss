@@ -69,8 +69,7 @@ body {
 						transition: .3s;
 					}
 					.button:hover {
-						transform: scale(1.2);
-						transition: .3s;
+						background-color: #30a91c;
 					}
 				}
 				.media-content {
@@ -285,10 +284,6 @@ body {
 				transform: translate3d(-15%,90%,0);
 				transition: .3s;
 			}
-			.button:hover {
-				transform: translate3d(-15%,90%,0) scale(1.3);
-				transition: .3s;
-			}
 		}
 		.info {
 			display: flex;
@@ -309,7 +304,7 @@ body {
 				transition: .3s;
 			}
 			#Address:hover {
-				transform: translateY(10px) scale(1.3);
+				transform: translateY(10px);
 				transition: .3s;
 			}
 			div {
@@ -322,10 +317,6 @@ body {
 				}
 				#Phone {
 					margin-right: 20px;
-				}
-				#Phone:hover, #URL:hover {
-					transform: translateY(5px) scale(1.3);
-					transition: .3s;
 				}
 				#Phone::before {
 					content: '';
@@ -419,6 +410,9 @@ body {
 		.button {
 			background-color: $nimble!important;
 			color: #fff!important;
+		}
+		.button:hover {
+			background-color: #30a91c!important;
 		}
 	}
 	.rectangle {

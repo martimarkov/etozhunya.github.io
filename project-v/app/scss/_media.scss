@@ -75,9 +75,8 @@
 					margin: 0 auto;
 					margin-top: 10%;
 					h1 {
-						font-size: 35px;
+						font-size: 32px;
 						line-height: 40px;
-						width: 80%;
 						br {
 							display: none;
 						}
@@ -128,7 +127,7 @@
 			.black-wrapper {
 				width: 90%;
 				.text-content {
-					transform: translateY(-170px);
+					transform: translateY(-100px);
 					width: 100%!important;
 					.button {
 						box-shadow: -2px 5px 9px 1px #000;
@@ -259,7 +258,7 @@
 	.version-2, .version-3 {
 		.nimble-content::before {
 			width: 70%!important;
-		    top: -60px!important;
+		    top: -20px!important;
 		}
 		.nimble {
 			width: 90%!important;
