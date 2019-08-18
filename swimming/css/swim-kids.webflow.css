@@ -2305,6 +2305,7 @@ a {
 		padding-top: 70px;
 		padding-bottom: 80px;
 	}
+
 	.test-section {
 		height: 50vh;
 		min-height: 300px;
@@ -2420,13 +2421,13 @@ a {
 	.logo-section {
 		flex-direction: column;
 		padding: 5% 0;
-		height: 40vh;
+		height: auto;
 	}
 	.info-span {
 		display: none;
 	}
 	.logo-brand {
-		padding: 5px 0;
+		margin: 10px 0px 20px 0px ;
 	}
 	.mob-info-span {
 		display: block;
