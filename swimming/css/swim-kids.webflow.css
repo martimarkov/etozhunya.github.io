@@ -2420,7 +2420,7 @@ a {
 	}
 	.logo-section {
 		flex-direction: column;
-		padding: 5% 0;
+		padding: 5% 0 10% 0;
 		height: auto;
 	}
 	.info-span {
