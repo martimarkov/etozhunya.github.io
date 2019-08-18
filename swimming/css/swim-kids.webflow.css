@@ -1098,9 +1098,10 @@ a {
 	align-items: center;
 }
 .logo-section .info-span {
-	font-size: 22px;
+	font-size: 18px;
 	font-family: "Ubuntu";
 	color: rgb(51, 91, 162);
+	line-height: 1.2;
 	width: 20%;
 	text-align: center;
 }
@@ -2430,6 +2431,7 @@ a {
 	.mob-info-span {
 		display: block;
 		font-size: 18px;
+		line-height: 1.2;
 		font-family: "Ubuntu";
 		color: rgb(51, 91, 162);
 		width: 100%;
