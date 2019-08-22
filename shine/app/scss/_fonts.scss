@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("Apercu-b", "../fonts/Apercu-Bold");
+@include font-face("Apercu-r", "../fonts/Apercu-Regular");
+@include font-face("Apercu-bitalic", "../fonts/Apercu-BoldItalic");
+@include font-face("Apercu-m", "../fonts/Apercu-Medium");
