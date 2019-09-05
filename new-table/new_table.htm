@@ -634,8 +634,8 @@
 <p style="padding-top: 20px;">&nbsp;</p>
 <h3 style="text-align: center;">GALVESTON POSTCARD Stat Chart<br> Galveston Island Residential Sales Highlights<br> Year-End Residential Market Recap 2018 vs. 2017</h3>
 <div class="table-wrapper">
-<div id="" class="table-mod2" style="width: 100%; text-align: center; height: 998.395px;">
-<table id="schedule2" class="table" style="border-collapse: collapse; overflow-x: scroll; transform-origin: top left;" border="1" width="100%" cellspacing="4" cellpadding="2">
+<div id="" class="table-mod" style="width: 100%; text-align: center; height: 998.395px;">
+<table id="schedule" class="table" style="border-collapse: collapse; overflow-x: scroll; transform-origin: top left;" border="1" width="100%" cellspacing="4" cellpadding="2">
 <tbody>
 <tr style="mso-height-source: userset; height: 16.5pt; background-color: #16407f; color: #ffffff;">
 <td class="xl90" style="height: 32.5pt; border-top: none;" rowspan="2" height="42">
@@ -1117,55 +1117,45 @@ $(window).load(function() {
 
 
 <script>
-
 $(window).resize(function() {
-	var w = window.innerWidth,
-		wTable2 = document.getElementById("schedule2").scrollWidth,
-		hTable2 = document.getElementById("schedule2").clientHeight,
-		percentage = (w - 33) / wTable2,
-		hContainer2 = hTable2 * percentage;
+	// for (var i = 0; i < 2; i++) {
+	// 	scaleTable(i + 1);
+	// }
 
-	if ($(window).width() < 768) {
-		$('#schedule2').css({
-			"transform": "scale(" + percentage + ")"
-		})
-		$('.table-mod2').css({
-			"height": hContainer2 + "px"
-		})
-	} else {
-		$('#schedule2').css({
-			"transform": "scale(1)"
-		})
-		$('.table-mod2').css({
-			"height": "auto"
-		})
-	}
+	$('.table-mod').each(function(){
+		scaleTable(this);
+	})
 })
-$(window).resize(function() {
+$(window).trigger('resize')
+function scaleTable(table) {
+	var $table = $(table),
+		$schedule = $table.find('#schedule');
+
+		console.log($schedule)
+
 	var w = window.innerWidth,
-		wTable = document.getElementById("schedule").scrollWidth,
-		hTable = document.getElementById("schedule").clientHeight,
+		wTable = $schedule[0].scrollWidth,
+		hTable = $schedule[0].clientHeight,
 		percentage = (w - 33) / wTable,
 		hContainer = hTable * percentage;
+		
 
 	if ($(window).width() < 768) {
-		$('#schedule').css({
+		$schedule.css({
 			"transform": "scale(" + percentage + ")"
 		})
-		$('.table-mod').css({
+		$table.css({
 			"height": hContainer + "px"
 		})
 	} else {
-		$('#schedule').css({
+		$schedule.css({
 			"transform": "scale(1)"
 		})
-		$('.table-mod').css({
+		$table.css({
 			"height": "auto"
 		})
 	}
-})
-
-$(window).trigger('resize')
+}
 </script>
 
 
