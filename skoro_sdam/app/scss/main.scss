@@ -13,12 +13,17 @@ body {
 	margin: 0 auto;
 }
 .header-fixed {
-	display: none !important;
+	z-index: 1;
 	background: rgba(150, 152, 162, 0.1);
 	height: 96px;
 	opacity: 0.7;
 	box-shadow: 0px 0px 8px rgba(170, 173, 176, 0.5);
 	display: flex;
+	position: fixed;
+   	top: 0;
+    width: 1440px;
+    transition: .5s;
+    opacity: 0;
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -67,6 +72,11 @@ body {
 			}
 		}
 	}
+}
+.header-fixed.active {
+	// display: fle
+	transition: .5s;
+	opacity: .7;
 }
 .header {
 	height: 860px;
