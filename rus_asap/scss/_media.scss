@@ -494,7 +494,8 @@
 	.header-fixed_mob.active {
 		transition: .5s;
 		z-index: 1;
-		opacity: 1;
+		opacity: .7;
+		background: #fff;
 	}
 	.header-fixed_mob {
 		height: 120px;
