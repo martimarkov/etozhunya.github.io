@@ -58,7 +58,13 @@ $(document).ready(function() {
     })
 })
 var selector = '.form_button';
+if ($(window).width() < 1025) {
+  $('.header_form_button').on('click', function(){
+    $('.pop_wrapper_mob').removeClass('hide')
+      $('.pop_wrapper_mob').addClass('ipad_active');
+  });
 
+}
 $(selector).on('click', function(){
     $('.pop_wrapper').addClass('active');
     $('.form_button').addClass('deleted');

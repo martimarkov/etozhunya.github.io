@@ -1376,6 +1376,9 @@ section, header,footer {
 			.pop_wrapper.active {
 				z-index: 2;
 				opacity: 1;
+				.wrap {
+					transform: translateY(90px);
+				}
 			}
 			&_map {
 				width: 70%;
