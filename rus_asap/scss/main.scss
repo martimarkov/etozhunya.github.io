@@ -7,8 +7,6 @@ body * {
 body {
 	background-color:#fff;
 	position: relative;
-	display: block;
-
 }
 .del {
 	display: inline-block !important;
@@ -393,6 +391,7 @@ section, header,footer {
 			height: 10px;
 			z-index: -1;
 			cursor: pointer;
+			padding: 7px;
 		}
 	}
 	.pop_feedback.hide {
@@ -403,8 +402,21 @@ section, header,footer {
 		opacity: 1;
 		z-index: 2;
 		border: 1px solid #dad6d6;
+		width: 80vw;
+		left: 10.5%;
 		.header_wrapper_form {
 			z-index: 1;
+			transform: translateY(-35px);
+			.input {
+				margin: 0 auto 20px auto;
+			}
+			label {
+				transform: translateX(60px) !important;
+			}
+			button {
+				bottom: -65px;
+			    left: 58px;
+			}
 		}
 		.close {
 			z-index: 5;
@@ -1363,6 +1375,9 @@ section, header,footer {
 			.pop_wrapper.active {
 				z-index: 2;
 				opacity: 1;
+				.wrap {
+					transform: translateY(90px);
+				}
 			}
 			&_map {
 				width: 70%;
