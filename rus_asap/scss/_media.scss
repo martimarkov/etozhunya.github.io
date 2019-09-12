@@ -592,7 +592,7 @@
 					}
 					.info {
 						margin: 50px 0px 10px 0px;
-						width: 95%;
+						width: 100%;
 					}
 					.info::before {
 						left: 0px;
@@ -613,19 +613,24 @@
 		}
 	}
 	.teacher {
-		height: 650px;
+		height: 750px;
+		background: url(../img/background-image.png) no-repeat -290px 260px / cover;
+		background-size: 150%;
 		.container {
 			position: relative;
-			transform: translateY(-60px);
+			transform: translate3d(-30px,-60px,0);
 			.info-part {
 				position: initial;
 				.signature.active {
 					position: absolute;
-					left: 50px;
+					left: -30px;
 					margin-top: -10px;
 				}
 				.first::after {
 					width: 130px;
+				}
+				.title-info.active {
+					width: 100%;
 				}
 				.title-info::before {
 					left: 10px;
@@ -646,13 +651,17 @@
 				background-color: transparent;
 				.title-info {
 					padding-left: 100px;
+					width: 100%;
 				}
 				.title-info::before {
 				left: 20px;
 				}
+				a {
+					position: relative;
+				}
 				a::before {
 					left: 11px;
-					top: 512px;
+					top: 8px;
 				}
 			}
 		}
@@ -691,7 +700,7 @@
 	.preparation {
 		.container {
 			a {
-				padding: 15px 30px;
+				padding: 15px 0px;
 			}
 			h2 {
 				width: 100%;
@@ -879,7 +888,7 @@
 					label {
 						font-size: 13px;
 						transform: translateX(0);
-						width: 85%;
+						width: 95%;
 						a {
 							font-size: 13px;
 						}
@@ -987,9 +996,9 @@
 		}
 	}
 	.teacher {
-		height: 1000px;
+		height: 1100px;
 		.container {
-			transform: translateY(-50px);
+			transform: translateY(0px);
 			.info-part {
 				.title-info {
 					margin: 40px 0 365px 0;
@@ -1004,7 +1013,7 @@
 				}
 			}
 			.media-part {
-				margin-top: 200px;
+				margin-top: 250px;
 			}
 		}
 	}
@@ -1017,7 +1026,7 @@
 					font-size: 18px;
 				}
 				a::before {
-					top: 677px;
+					top: 8px;
 				}
 			}
 		}
@@ -1037,7 +1046,7 @@
 				}
 			}
 			.media {
-				bottom: 360px;
+				bottom: 430px;
 			}
 		}
 	}
@@ -1100,7 +1109,7 @@
 			.second-line {
 				.click {
 					li {
-						margin: 0 5px;
+						margin: 0;
 						.deleted, #del {
 							display: none;
 						}
