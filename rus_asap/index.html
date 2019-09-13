@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/skorosdam_favicon.ico" type="image/x-icon">
+	<!-- <link rel="icon" href="img/skorosdam_favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
 <div class="body-wrap">
@@ -28,7 +30,44 @@
 					<input class="input" type="email" placeholder="Email">
 					<input class="input" type="tel" placeholder="Телефон">
 					<textarea name="Сообщение" cols="40" rows="5" placeholder="Сообщение"></textarea>
-					<input type="checkbox" class="check" checked=""><label for="checkbox">Я принимаю условия <a href="#">cоглашения об обработке </a>персональных данных</label>
+					<div class="select select-del">
+						<select name="" id="" required="">
+							<option value="Москва">Москва</option>
+							<option value="Санкт-петербург">Санкт-петербург</option>
+							<option value="Ростов-на-Дону">Ростов-на-Дону</option>
+							<option value="Нижний Новгород">Нижний Новгород</option>
+						</select>
+						<div class="select-custom">
+							<span class="input">Москва</span>
+							<ul class="select-list">
+								<li data-option="Москва">Москва</li>
+								<li data-option="Санкт-петербург">Санкт-петербург</li>
+								<li data-option="Ростов-на-Дону">Ростов-на-Дону</li>
+								<li data-option="Нижний Новгород">Нижний Новгород</li>
+							</ul>
+						</div>
+					</div>
+					<div class="select select-del">
+						<select name="" id="">
+							<option value="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</option>
+							<option value="ст. м. Двигатей Революции">ст. м. Двигатей Революции</option>
+							<option value="ст. м. Горьковская">ст. м. Горьковская</option>
+							<option value="ст. м. Чкаловская">ст. м. Чкаловская</option>
+							<option value="ст. м. Пролетарская">ст. м. Пролетарская</option>
+						</select>
+						<div class="select-custom">
+							<span class="input">Белинского 32, «Pro-город»</span>
+							<ul class="select-list">
+								<li data-option="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</li>
+								<li data-option="ст. м. Двигатей Революции">ст. м. Двигатей Революции</li>
+								<li data-option="ст. м. Горьковская">ст. м. Горьковская</li>
+								<li data-option="ст. м. Чкаловская">ст. м. Чкаловская</li>
+								<li data-option="ст. м. Пролетарская">ст. м. Пролетарская</li>
+							</ul>
+						</div>
+					</div>	
+					<input type="checkbox" class="check" checked=""><label for="checkbox">Я принимаю условия <a href="#">
+					cоглашения об обработке </a>персональных данных</label>
 					<button  class="header_form_button">Записаться на занятие</button>
 				</form>	
 				<div class="pop_wrapper_mob">

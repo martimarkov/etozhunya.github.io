@@ -7,6 +7,9 @@
 	.del {
 		display: none !important;
 	}
+	.select-del {
+		display: none;
+	}
 	.header {
 		height: 860px;
 		background: url(../img/header_bg_mob.png) no-repeat center center/cover;
@@ -59,6 +62,12 @@
 			height: 100%;
 			.yandex_wrapper_map {
 				display: none;
+			}
+			.header_wrapper_mob {
+
+				.select {
+					display: none;
+				}
 			}
 			.pop_wrapper_mob {
 				.wrap {
@@ -489,6 +498,9 @@
 		}
 	}
 	.header-fixed {
+		display: none;
+	}
+	.header-fixed.active {
 		display: none;
 	}
 	.header-fixed_mob.active {
