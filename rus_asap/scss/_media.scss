@@ -521,7 +521,7 @@
 	}
 	.header-fixed_mob.active {
 		transition: .5s;
-		z-index: 10;
+		z-index: 1;
 		opacity:1;
 	}
 	.header-fixed_mob {
@@ -554,6 +554,13 @@
 				top: 10px;
 				font-size: 16px;
 				line-height: 20px;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 24px;
+				text-align: right;
+				color: rgba(85, 91, 97, 0.8);
 			}
 			.header_button_click {
 				font-style: normal;
@@ -609,7 +616,7 @@
 			    .yandex_wrapper_map {
 			    	iframe {
 			    		width: 280px;
-			    		height: 425px;
+			    		height: 485px;
 			    		transform: translate3d(40px, -3px, 0px);
 			    	}
 			    }
