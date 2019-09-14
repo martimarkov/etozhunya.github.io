@@ -511,9 +511,13 @@
 	}
 	.header-fixed {
 		display: none;
+		z-index: -10;
+		visibility: hidden;
 	}
 	.header-fixed.active {
 		display: none;
+		z-index: -10;
+		visibility: hidden;
 	}
 	.header-fixed_mob.active {
 		transition: .5s;
@@ -552,6 +556,7 @@
 				line-height: 20px;
 			}
 			a {
+				display: none;
 				font-style: normal;
 				font-weight: 600;
 				font-size: 16px;
@@ -565,7 +570,7 @@
 				padding: 3.5% 20px;
 				bottom: -42px;
 			    position: relative;
-				display: inline-block;
+				// display: inline-block;
 				width: 100%;
 			}
 			a:hover {
