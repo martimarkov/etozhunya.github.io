@@ -521,7 +521,7 @@
 	}
 	.header-fixed_mob.active {
 		transition: .5s;
-		z-index: 1;
+		z-index: 10;
 		opacity:1;
 	}
 	.header-fixed_mob {
@@ -529,7 +529,7 @@
 		z-index: -1;
 		background: rgba(255, 255, 255, .7);
 		height: 96px;
-		opacity: 0.7;
+		opacity: 0;
 		box-shadow: 0px 0px 8px rgba(170, 173, 176, 0.5);
 		display: flex;
 		position: fixed;
@@ -555,8 +555,7 @@
 				font-size: 16px;
 				line-height: 20px;
 			}
-			a {
-				display: none;
+			.header_button_click {
 				font-style: normal;
 				font-weight: 600;
 				font-size: 16px;
@@ -570,15 +569,15 @@
 				padding: 3.5% 20px;
 				bottom: -42px;
 			    position: relative;
-				// display: inline-block;
+				display: inline-block;
 				width: 100%;
 			}
-			a:hover {
+			.header_button_click:hover {
 				background: #F29780;
 				box-shadow: 0px 0px 8px rgba(221, 111, 83, 0.4);
 				border-radius: 3px;
 			}
-			a:focus {
+			.header_button_click:focus {
 				background: #DD6F53;
 				outline: none;
 			}
