@@ -548,7 +548,7 @@
 				left: 10px;
 			}
 			.tel {
-			    display: inline-block;
+			    display: block;
 				position: absolute;
 				right: 10px;
 				top: 10px;
@@ -560,7 +560,8 @@
 				font-size: 20px;
 				line-height: 24px;
 				text-align: right;
-				color: rgba(85, 91, 97, 0.8);
+				color: rgba(85,91,97,.8) !important;
+			    text-decoration: none !important;
 			}
 			.header_button_click {
 				font-style: normal;
