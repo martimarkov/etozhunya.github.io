@@ -14,6 +14,14 @@ $('.select-custom .input').click(function() {
     $(this).parents('.select-custom').find('.input').html(value);
   })
 })
+
+$(function() {
+  $('.ERP').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+  });
+});
+
 $(document).ready(function() {
 
     var scrolled;
