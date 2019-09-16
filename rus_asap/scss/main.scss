@@ -276,7 +276,7 @@ section, header,footer {
 					font-family: Montserrat;
 					font-style: normal;
 					font-weight: 500;
-					font-size: 11px;
+					font-size: 14px;
 					line-height: 13px;
 					color: #9698A2;
 					position: relative;
@@ -1599,28 +1599,6 @@ section, header,footer {
 				    	color:#9698A2;
 				    }			    
 				}
-				// label::before {
-				// 	content: '';
-				// 	display: inline-block;
-				// 	width: 12px;
-				// 	height: 12px;
-				// 	left: -32px;
-				//     position: absolute;
-				//     top: 4px;
-				// 	background: url('../img/checkbox_no.png') no-repeat center center/cover;
-				// }
-				// label::after {
-				//     left: -29px;
-				//     top: -6px;
-				//     width: 7px;
-				//     height: 15px;
-				//     border: 3px solid #70C9A0;
-				//     border-width: 0 3px 3px 0;
-				//     -webkit-transform: rotate(45deg);
-				//     -ms-transform: rotate(45deg);
-				//     transform: rotate(45deg);
-				//     position: absolute;
-				// }
 				input:checked ~ label::after {
 				    content: '';
 				    display: block;
@@ -2329,6 +2307,9 @@ section, header,footer {
 				display: flex;
 				li {
 					margin: 0px 5px;
+					a {
+						display: block;
+					}
 				}
 			}
 		}

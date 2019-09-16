@@ -978,12 +978,13 @@
 			transform: translate3d(-150px, 90px, 0px);
 		}
 		.container {
+
 			a {
 				transform: translateY(90px);
 				font-size: 13px !important;
 			}
 			ul {
-				transform: translateX(-250px);
+				transform: translate3d(-250px,-120px,0);
 				li {
 					a {
 						.deleted {
@@ -996,7 +997,7 @@
 				}
 			}
 			.click {
-				transform: translate3d(170px, -80px, 10px);
+				transform: translate3d(170px,-200px, 10px);
 			}
 			.second-line {
 				.text {
@@ -1187,8 +1188,14 @@
 	}
 	.footer {
 		.container {
+			.first-line {
+				ul {
+					transform: translate3d(-250px,-100px,0);
+				}
+			}
 			.second-line {
 				.click {
+					transform: translate3d(170px,-200px,10px);
 					li {
 						margin: 0;
 						.deleted, #del {
