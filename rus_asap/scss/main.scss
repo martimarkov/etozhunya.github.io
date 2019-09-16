@@ -617,7 +617,7 @@ section, header,footer {
 					content: '';
 					display: inline-block;
 					width: 24px;
-					background: url('../img/galka.svg') center center/cover no-repeat;
+					background: url('../img/galka_new1.svg') center center/contain no-repeat;
 					height: 15px;
 				    transform: translateY(5px);
 				    position: absolute;
@@ -1134,7 +1134,7 @@ section, header,footer {
 					content: '';
 					display: inline-block;
 					width: 32px;
-					background: url('../img/galka.svg') center center/cover no-repeat;
+					background: url('../img/galka_new.svg') center center/contain no-repeat;
 					height: 20px;
 					margin-right: 10px;
 				    transform: translateY(-5px);
@@ -1551,7 +1551,7 @@ section, header,footer {
 				}
 			}
 			.pop_wrapper.active {
-				z-index: 2;
+				z-index: 1;
 				opacity: 1;
 				.wrap {
 					transform: translateY(90px);

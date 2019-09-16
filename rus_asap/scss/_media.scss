@@ -94,6 +94,7 @@
 		}
 		.pop_feedback.message {
 			left: 0!important;
+			width: 100%!important;
 		}
 	}
 	.possibilities {
@@ -113,7 +114,7 @@
 						margin: 50px 0 50px 0px;
 					}
 					p::before {
-						background: url('../img/galka.svg') center center/cover no-repeat;
+						background: url('../img/galka_new1.svg') center center/contain no-repeat;
 						left: 0;
 						top: -30px;
 					}
@@ -649,6 +650,9 @@
 			    		}
 			    	}
 			    }
+			}
+			.pop_feedback.message {
+				left: 22.5%!important;
 			}
 		}
 	}
