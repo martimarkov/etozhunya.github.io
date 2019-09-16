@@ -97,6 +97,13 @@ $('.form_button, .header_form_button, .header_button_click, #write, #write_form'
 $('.header_button_click, #write_form').on('click', function(){
     $('.pop_feedback').addClass('active');
 });
+$('#write_form').on('click', function(){
+    $('.pop_feedback').addClass('message');
+});
+$('.close').on('click', function(){
+  $('.pop_feedback').removeClass('message');
+    $('.pop_feedback').addClass('hide');
+})
 
 
 
