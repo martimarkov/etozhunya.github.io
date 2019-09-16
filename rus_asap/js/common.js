@@ -21,7 +21,15 @@ $(function() {
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
   });
 });
-
+document.querySelector("#lol").addEventListener("click", function() {
+  swal({
+    title: "Show Two Buttons Inside the Alert",
+    showCancelButton: true,
+    confirmButtonText: "Confirm",
+    confirmButtonColor: "#00ff99",
+    cancelButtonColor: "#ff0099"
+  });
+});
 $(document).ready(function() {
 
     var scrolled;

@@ -57,6 +57,7 @@ section, header,footer {
 			.text {
 				margin-right: 20px;
 				.tel {
+					text-decoration: none;
 					font-family: Montserrat;
 					font-style: normal;
 					font-weight: 500;
@@ -74,7 +75,7 @@ section, header,footer {
 					color: rgba(85, 91, 97, 0.6);
 				}
 			}
-			a {
+			.header_button_click {
 				font-style: normal;
 				font-weight: 600;
 				font-size: 16px;
@@ -89,12 +90,12 @@ section, header,footer {
 				display: inline-block;
 				height: 48px;
 			}
-			a:hover {
+			.header_button_click:hover {
 				background: #F29780;
 				box-shadow: 0px 0px 8px rgba(221, 111, 83, 0.4);
 				border-radius: 3px;
 			}
-			a:focus {
+			.header_button_click:focus {
 				background: #DD6F53;
 				outline: none;
 			}
@@ -757,11 +758,14 @@ section, header,footer {
 				transition: 1s;
 				transition-delay: .9s;
 				opacity: 0;
-				span {
+				.name {
 					display: block;
 				    font-family: montserrat;
 				    color: rgba(68, 73, 79, 0.9);
 				    margin-bottom: 10px;
+				    .del_del {
+				    	display: inline-block;
+				    }
 				}
 			}
 			.signature.active {
