@@ -122,7 +122,7 @@ section, header,footer {
 			display: flex;
 		    justify-content: center;
 		    align-items: center;
-			background: #F8F9F9;
+			background: rgba(248, 249, 249, 0.8);
 			border-radius: 3px;
 			position: fixed;
 			top: 15vh;
@@ -394,7 +394,7 @@ section, header,footer {
 					height: 44px;
 					width: 70%;
 					position: absolute;
-				    bottom: -90px;
+				    bottom: -60px;
 				    left: 60px;
 				}
 				button:hover {
@@ -434,7 +434,7 @@ section, header,footer {
 						text-align: center;
 						color: #2A9D8F;
 					}
-					span{
+					span {
 						font-family: Roboto;
 						font-style: normal;
 						font-weight: normal;
@@ -442,6 +442,9 @@ section, header,footer {
 						line-height: 27px;
 						text-align: center;
 						color: #555B61;
+					}
+					.mob_span{
+						display: none;
 					}
 				}
 			}
@@ -530,12 +533,12 @@ section, header,footer {
 		opacity: 1;
 		z-index: 2;
 		border: 1px solid #dad6d6;
-		width: 80vw;
+		width: 75vw;
 		left: 10.5%;
 		animation: sweetalert 2s;
 		.header_wrapper_form {
 			z-index: 1;
-			transform: translateY(-35px);
+			transform: translate3d(20px,-35px,0);
 			.input {
 				margin: 0 auto 20px auto;
 			}
@@ -549,6 +552,9 @@ section, header,footer {
 				bottom: -65px;
 			    left: 58px;
 			}
+		}
+		.yandex_wrapper_map {
+			transform:translateX(35px);
 		}
 		.close {
 			z-index: 5;
@@ -740,6 +746,7 @@ section, header,footer {
 				transition: .7s;
 				opacity: 1;
 				transition-delay: .7s;
+				width: 80%;
 			}
 			.signature {
 				margin: 80px;
@@ -758,10 +765,16 @@ section, header,footer {
 				}
 			}
 			.signature.active {
+				width: 60%;
 				transform: translateX(0);
 				transition: .7s;
 				opacity: 1;
 				transition-delay: .9s;
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16px;
 			}
 		}
 	}
@@ -1493,8 +1506,13 @@ section, header,footer {
 						line-height: 29px;
 						text-align: center;
 						color: #2A9D8F;
+						display: block;
+
 					}
-					span{
+					span {
+						display: block;
+						margin: 20px auto 0 auto;
+						width:80%;
 						font-family: Roboto;
 						font-style: normal;
 						font-weight: normal;
