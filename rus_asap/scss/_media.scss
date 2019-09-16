@@ -694,18 +694,25 @@
 			.info-part {
 				position: initial;
 				.signature.active {
+					width: 65%;
 					position: absolute;
-					left: -30px;
-					margin-top: -10px;
+					left: 0px;
+					// margin-top: -10px;
+					margin: -10px 0 0 0px !important;
+					transform: translate3d(65px,10px,0);
 				}
 				.first::after {
 					width: 130px;
 				}
 				.title-info.active {
 					width: 100%;
+					font-size: 20px;
 				}
 				.title-info::before {
 					left: 10px;
+				}
+				.second.active {
+					width: 100%;
 				}
 			}
 		}
