@@ -104,6 +104,9 @@ $('.close').on('click', function(){
   $('.pop_feedback').removeClass('message');
     $('.pop_feedback').addClass('hide');
 })
+$(document).ready(function() {
+    $('select').select2();
+});
 
 
 

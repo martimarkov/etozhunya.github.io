@@ -10,10 +10,12 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/skorosdam_favicon.ico" type="image/x-icon">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
 	<!-- <link rel="icon" href="img/skorosdam_favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
@@ -32,13 +34,13 @@
 					<input class="input" type="tel" placeholder="Телефон">
 					<textarea name="Сообщение" cols="40" rows="5" placeholder="Сообщение"></textarea>
 					<div class="select select-del">
-						<select name="" id="" required="">
+						<select name="" id="" required="" class="web-select">
 							<option value="Москва">Москва</option>
 							<option value="Санкт-петербург">Санкт-петербург</option>
 							<option value="Ростов-на-Дону">Ростов-на-Дону</option>
 							<option value="Нижний Новгород">Нижний Новгород</option>
 						</select>
-						<div class="select-custom">
+		<!-- 				<div class="select-custom">
 							<span class="input">Москва</span>
 							<ul class="select-list">
 								<li data-option="Москва">Москва</li>
@@ -46,17 +48,17 @@
 								<li data-option="Ростов-на-Дону">Ростов-на-Дону</li>
 								<li data-option="Нижний Новгород">Нижний Новгород</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 					<div class="select select-del">
-						<select name="" id="">
+						<select name="" id="" class="web-select>
 							<option value="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</option>
 							<option value="ст. м. Двигатей Революции">ст. м. Двигатей Революции</option>
 							<option value="ст. м. Горьковская">ст. м. Горьковская</option>
 							<option value="ст. м. Чкаловская">ст. м. Чкаловская</option>
 							<option value="ст. м. Пролетарская">ст. м. Пролетарская</option>
 						</select>
-						<div class="select-custom">
+						<!-- <div class="select-custom">
 							<span class="input">Белинского 32, «Pro-город»</span>
 							<ul class="select-list">
 								<li data-option="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</li>
@@ -65,7 +67,7 @@
 								<li data-option="ст. м. Чкаловская">ст. м. Чкаловская</li>
 								<li data-option="ст. м. Пролетарская">ст. м. Пролетарская</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>	
 					<input type="checkbox" class="check" checked=""><label for="checkbox">Я принимаю условия <a href="#">
 					cоглашения об обработке </a>персональных данных</label>
@@ -254,7 +256,7 @@
 							<option value="Ростов-на-Дону">Ростов-на-Дону</option>
 							<option value="Нижний Новгород">Нижний Новгород</option>
 						</select>
-						<div class="select-custom">
+						<!-- <div class="select-custom">
 							<span class="input">Москва</span>
 							<ul class="select-list">
 								<li data-option="Москва">Москва</li>
@@ -262,19 +264,19 @@
 								<li data-option="Ростов-на-Дону">Ростов-на-Дону</li>
 								<li data-option="Нижний Новгород">Нижний Новгород</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 
 
 					<div class="select">
-						<select name="" id="">
+						<select name="" id="" class="web-select">
 							<option value="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</option>
 							<option value="ст. м. Двигатей Революции">ст. м. Двигатей Революции</option>
 							<option value="ст. м. Горьковская">ст. м. Горьковская</option>
 							<option value="ст. м. Чкаловская">ст. м. Чкаловская</option>
 							<option value="ст. м. Пролетарская">ст. м. Пролетарская</option>
 						</select>
-						<div class="select-custom">
+						<!-- <div class="select-custom">
 							<span class="input">Белинского 32, «Pro-город»</span>
 							<ul class="select-list">
 								<li data-option="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</li>
@@ -283,7 +285,7 @@
 								<li data-option="ст. м. Чкаловская">ст. м. Чкаловская</li>
 								<li data-option="ст. м. Пролетарская">ст. м. Пролетарская</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 
 <!-- 					<select class="input" name="">
@@ -349,8 +351,9 @@
 	</div>
 
 </div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.17.3/dist/sweetalert2.all.min.js"></script>	
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.17.3/dist/sweetalert2.all.min.js"></script>	
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> 
 <script src="js/common.js"></script>
 </body>
