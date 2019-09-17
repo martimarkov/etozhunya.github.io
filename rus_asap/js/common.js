@@ -82,6 +82,7 @@ $('.button_click').on('click', function(){
 $('.close').on('click', function(){
 	$('.pop_wrapper_mob').removeClass('active');
 	$('.pop_feedback').removeClass('active');
+  $('.blur').removeClass('active');
     $('.pop_feedback').addClass('hide');
     $('.pop_wrapper_mob').addClass('hide');
 
@@ -96,6 +97,7 @@ $('.form_button, .header_form_button, .header_button_click, #write, #write_form'
 })
 $('.header_button_click, #write_form').on('click', function(){
     $('.pop_feedback').addClass('active');
+    $('.blur').addClass('active');
 });
 $('#write_form').on('click', function(){
     $('.pop_feedback').addClass('message');
