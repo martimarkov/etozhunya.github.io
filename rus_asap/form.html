@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -121,40 +122,20 @@
 					<div>
 						<div class="form__flex">
 							<div class="select">
-								<select name="" id="" required="">
+								<select class="web-select" name="" id="" required="">
 									<option value="Москва">Москва</option>
 									<option value="Санкт-петербург">Санкт-петербург</option>
 									<option value="Нижний Новгород">Нижний Новгород</option>
 								</select>
-								<div class="select-custom">
-									<p class="label">Ваш город*</p>
-									<span class="input">Москва</span>
-									<ul class="select-list">
-										<li data-option="Москва">Москва</li>
-										<li data-option="Санкт-петербург">Санкт-петербург</li>
-										<li data-option="Нижний Новгород">Нижний Новгород</li>
-									</ul>
-								</div>
 							</div>
 							<div class="select">
-								<select name="" id="">
+								<select class="web-select" name="" id="">
 									<option value="ст. м. Канавинская">ст. м. Канавинская</option>
 									<option value="ст. м. Двигатей Революции">ст. м. Двигатей Революции</option>
 									<option value="ст. м. Горьковская">ст. м. Горьковская</option>
 									<option value="ст. м. Чкаловская">ст. м. Чкаловская</option>
 									<option value="ст. м. Пролетарская">ст. м. Пролетарская</option>
 								</select>
-								<div class="select-custom">
-									<p class="label">Предпочтительный центр</p>
-									<span class="input">ст. м. Канавинская</span>
-									<ul class="select-list">
-										<li data-option="ст. м. Канавинская">ст. м. Канавинская</li>
-										<li data-option="ст. м. Двигатей Революции">ст. м. Двигатей Революции</li>
-										<li data-option="ст. м. Горьковская">ст. м. Горьковская</li>
-										<li data-option="ст. м. Чкаловская">ст. м. Чкаловская</li>
-										<li data-option="ст. м. Пролетарская">ст. м. Пролетарская</li>
-									</ul>
-								</div>
 							</div>
 						</div>
 
@@ -194,7 +175,7 @@
 			<div class="first-line">
 				<a href="#" id="write_form">Написать нам</a>
 				<ul>
-					<li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+<!-- 					<li><a href="#"><img src="img/youtube.png" alt=""></a></li> -->
 					<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
 					<li><a href="#"><img src="img/instagram.png" alt=""></a></li>
 					<li><a href="#"><img src="img/vk.png" alt=""></a></li>
@@ -220,18 +201,41 @@
 		<div class="container">
 			<div class="pop_feedback">
 				<img src="img/krest.png" class="close" alt="">
+				<div class="yandex_wrapper_map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A27870f22ed87819bc1a98037e91a118c4e8669eff89aeae7d22b822a8d857e22&amp;source=constructor" width="657" height="485" frameborder="0"></iframe>
+				</div>
 				<form class="header_wrapper_form">
 					<input class="input" type="text" placeholder="Ваше имя">
+					<input class="input child" type="text" placeholder="Имя ребенка">
 					<input class="input" type="email" placeholder="Email">
 					<input class="input" type="tel" placeholder="Телефон">
 					<textarea name="Сообщение" cols="40" rows="5" placeholder="Сообщение"></textarea>
-					<input type="checkbox" class="check" checked=""><label for="checkbox">Я принимаю условия <a href="#">cоглашения об обработке </a>персональных данных</label>
-					<button  class="header_form_button">Записаться на занятие</button>
+					<div class="select select-del">
+						<select name="" id="" required="" class="web-select">
+							<option value="Москва">Москва</option>
+							<option value="Санкт-петербург">Санкт-петербург</option>
+							<option value="Ростов-на-Дону">Ростов-на-Дону</option>
+							<option value="Нижний Новгород">Нижний Новгород</option>
+						</select>
+					</div>
+					<div class="select select-del">
+						<select name="" id="" class="web-select>
+							<option value="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</option>
+							<option value="ст. м. Двигатей Революции">ст. м. Двигатей Революции</option>
+							<option value="ст. м. Горьковская">ст. м. Горьковская</option>
+							<option value="ст. м. Чкаловская">ст. м. Чкаловская</option>
+							<option value="ст. м. Пролетарская">ст. м. Пролетарская</option>
+						</select>
+					</div>	
+					<input type="checkbox" class="check" checked=""><label for="checkbox">Я принимаю условия <a href="#">
+					cоглашения об обработке </a>персональных данных</label>
+					<a  class="header_form_button">Записаться на занятие</a>
 				</form>	
 				<div class="pop_wrapper_mob">
 					<div class="wrap">
 						<h4>Спасибо!</h4>
-						<span>Мы перезвоним вам, чтобы уточнить удобное время и интересующий вас предмет, и ответим на все вопросы</span>
+							<span class="mob_span">Мы перезвоним вам, чтобы уточнить удобное время и интересующий вас предмет, и ответим на все вопросы</span>
+							<span class="desktop_span">Мы свяжемся с вами в ближайшее время</span>
 					</div>
 				</div>
 			</div>	
@@ -239,7 +243,10 @@
 	</header>
 
 
+<div class="blur"></div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.17.3/dist/sweetalert2.all.min.js"></script>	
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> 
 <script src="js/common.js"></script>
 </body>

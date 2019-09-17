@@ -95,7 +95,7 @@ $('.header_form_button, #write').on('click', function(){
 $('.form_button, .header_form_button, .header_button_click, #write, #write_form').click(function(e) {
 	e.preventDefault();
 })
-$('.header_button_click, #write_form').on('click', function(){
+$('.header_button_click').on('click', function(){
     $('.pop_feedback').addClass('active');
     $('.blur').addClass('active');
 });
