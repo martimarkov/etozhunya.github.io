@@ -101,6 +101,8 @@
 		.pop_feedback.message {
 			left: 0!important;
 			width: 100%!important;
+			height: 100vh;
+			transform: translateY(-130px);
 			.wrap {
 				.mob_span {
 					display: none;
@@ -928,6 +930,9 @@
 					span {
 						display: none;
 					}
+				}
+				.smaller.active {
+					transform: translateX(0px);
 				}
 				.smaller::before {
 					display: block;

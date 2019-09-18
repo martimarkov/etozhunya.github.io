@@ -1536,10 +1536,14 @@ section, header,footer {
 				opacity: 0;
 			}
 			.smaller.active {
-				transform: translateX(0);
+				transform: translateX(20px);
 				transition: .7s;
 				opacity: 1;
 				transition-delay: 1s;
+				.del {
+					position: absolute;
+				    left: -20px;
+				}
 			}
 			.except.active {
 				transform: translateX(0);
@@ -1696,7 +1700,7 @@ section, header,footer {
 				}
 				.select {
 					.select2 {
-						z-index: 1;
+						// z-index: 1;
 						width: 100% !important;
 						background: #fff;
 						-webkit-box-shadow: 0 0 4px rgba(73,190,170,.3);
