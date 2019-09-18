@@ -101,10 +101,12 @@ $('.header_button_click').on('click', function(){
 });
 $('#write_form').on('click', function(){
     $('.pop_feedback').addClass('message');
+    $('.blur').addClass('active');
 });
 $('.close').on('click', function(){
   $('.pop_feedback').removeClass('message');
     $('.pop_feedback').addClass('hide');
+    $('.blur').removeClass('active');
 })
 $(document).ready(function() {
     $('select').select2();
