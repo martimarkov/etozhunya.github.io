@@ -681,7 +681,8 @@
 			    }
 			}
 			.pop_feedback.message {
-				left: 22.5%!important;
+				left: 50%!important;
+			    transform: translateX(-50%);
 			}
 		}
 	}
@@ -1011,6 +1012,9 @@
 						a {
 							font-size: 13px;
 						}
+					}
+					.form_button {
+						width: 93%;
 					}
 				}
 				&_form::before, &_form::after {

@@ -310,7 +310,7 @@ section, header,footer {
 					font-weight: 500;
 					font-size: 14px;
 					line-height: 13px;
-					color: #9698A2;
+					color: rgba(150, 152, 162, .3);
 					position: relative;
 				}
 				.input:focus {
@@ -631,9 +631,7 @@ section, header,footer {
 		}
 	}
 	.pop_feedback.message {
-		width: 424px !important;
-		left: 36.5%!important;
-		z-index: 3;
+		// width: 424px !important;
 		.yandex_wrapper_map {
 			display: none;
 		}
@@ -1658,7 +1656,6 @@ section, header,footer {
 					font-style: normal;
 					font-weight: 500;
 					font-size: 14px;
-					line-height: 13px;
 					color: #9698A2;
 					position: relative;
 				}
@@ -2583,7 +2580,8 @@ section, header,footer {
 	border: 1px solid #dad6d6;
 	top: 20vh;
 	width: 75vw;
-	left: 12.5%;
+	left: 50%!important;
+    transform: translateX(-50%);
 	.header_wrapper_form {
 		z-index: 1;
 		transform: translate3d(20px,-35px,0);
@@ -2607,11 +2605,13 @@ section, header,footer {
 	.close {
 		z-index: 5;
 	}
+
+
 }
 .pop_feedback.message {
 	width: 424px !important;
-	left: 40.5% !important;
-	z-index: 3;
+	// left: 40.5% !important;
+	// z-index: 3;
 	.pop_wrapper_mob.active {
 		.wrap {
 			.desktop_span {

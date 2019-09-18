@@ -110,44 +110,4 @@ $('.close').on('click', function(){
 })
 $(document).ready(function() {
     $('select').select2();
-});
-
-
-
-
-
-
-
-
-
-// $(window).scroll(function() {
-// 	if ($(window).width() > 1025) {
-// 		if ($(window).scrollTop() > 860) {
-// 			$('.header-fixed').addClass('active')
-// 		}
-// 		if ($(window).scrollTop() < 860) {
-// 			$('.header-fixed').removeClass('active')
-// 		}
-// 		if ($(window).scrollTop() > 1300) {
-// 			$('.media-part, .first, .teacher .title-info, .signature, .second').addClass('active')
-// 		}
-// 		if ($(window).scrollTop() > 1990) {
-// 			$('.first-p, .second-p, .map .title-info, .map .smaller').addClass('active');
-// 		}
-// 		if ($(window).scrollTop() > 2700 ) {
-// 			$('.university .smaller, .university .title-info, .university .bottom, .one, .two').addClass('active');
-// 		}
-// 		if ($(window).scrollTop() > 4800 ) {
-// 			$('.paper, .paper .smaller, .paper .bottom, .paper .title-info, .paper h3').addClass('active');
-// 		}
-// 		if ($(window).scrollTop() > 5600 ) {
-// 			$('.statistic h3, .statistic .title-info, .statistic p, .button1, .button2, .statistic').addClass('active');
-// 		}
-// 		if ($(window).scrollTop() > 6400 ) {
-// 			$('.study h3, .study .title-info, .study .smaller').addClass('active')	
-// 		}
-// 	}
-// })
-// $(document).scroll(function() {
-//     console.log($(document).scrollTop());
-// })
+})
