@@ -110,4 +110,8 @@ $('.close').on('click', function(){
 })
 $(document).ready(function() {
     $('select').select2();
+    if ($(window).width() < 769 ) {
+      $('.header-fixed, .header-fixed_mob, .media-part, .first, .teacher .title-info, .signature, .second, .first-p, .second-p, .map .title-info, .map .smaller, .map a, .university .smaller, .university .title-info, .university .bottom, .one, .two, .paper, .paper .smaller, .paper .bottom, .paper .title-info, .paper h3, .statistic h3, .statistic .title-info, .statistic span, .button1, .button2, .statistic, .study h3, .study .title-info, .study .smaller').addClass('active');
+      $('.active').css({"transition": "none !important"});
+    }
 })
