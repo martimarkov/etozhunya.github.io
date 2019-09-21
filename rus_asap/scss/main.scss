@@ -1635,7 +1635,7 @@ section, header,footer {
 				}
 			}
 			.pop_wrapper.active {
-				z-index: 2501;
+				z-index: 1091;
 				opacity: 1;
 				.wrap {
 					transform: translateY(90px);
@@ -1687,6 +1687,8 @@ section, header,footer {
 					  width: 25px;
 					  position: relative;
 					  z-index: 1;
+					  left: -131px;
+					      bottom: -30px;
 				}
 				label {
 					transform:translateY(-10px);
@@ -2748,6 +2750,7 @@ section, header,footer {
 	    	position: absolute;
 	    	right: 10px;
 	    	top: 10px;
+	    	padding: 10px;
 	    }
 	    .yandex_wrapper_map {
 	    	width: 100%;
@@ -2923,7 +2926,8 @@ section, header,footer {
 				  width: 25px;
 				  position: relative;
 				  z-index: 1;
-				  left: 46px;
+				  left: -131px;
+				      bottom: -30px;
 			}
 			label {
 				display: inline-block;
