@@ -1279,34 +1279,6 @@
 			}
 		}
 	}
-	.footer {
-		.container {
-			.first-line {
-				ul {
-					transform: translate3d(-250px,-100px,0);
-				}
-			}
-			.second-line {
-				.click {
-					transform: translate3d(170px,-200px,10px);
-					li {
-						margin: 0;
-						.deleted, #del {
-							display: none;
-						}
-						a {
-							.ipad {
-								display: inline-block;
-							}
-							img {
-								width: 130px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 }
 
 
