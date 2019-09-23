@@ -1031,7 +1031,7 @@
 					}
 				}
 				.pop_wrapper.active {
-					z-index: 2;
+					// z-index: 2;
 					opacity: 1;
 				}
 				&_map {
@@ -1151,6 +1151,9 @@
 	}
 }
 @media (max-width: 321px) {
+	.pop_feedback.active {
+	    padding: 20px;
+	}
 	.header {
 		.container {
 			img {

@@ -130,7 +130,7 @@ section, header,footer {
 }
 .header-fixed.active {
 	transition: .5s;
-	z-index: 1100;
+	z-index: 1089;
 	opacity: 1;
 }
 #headel {
@@ -1635,7 +1635,7 @@ section, header,footer {
 				}
 			}
 			.pop_wrapper.active {
-				z-index: 1091;
+				z-index: 1089;
 				opacity: 1;
 				.wrap {
 					transform: translateY(90px);
@@ -1712,7 +1712,7 @@ section, header,footer {
 				}
 				.select {
 					.select2 {
-						// z-index: 1;
+						z-index: 1 !important;
 						width: 100% !important;
 						background: #fff;
 						-webkit-box-shadow: 0 0 4px rgba(73,190,170,.3);
