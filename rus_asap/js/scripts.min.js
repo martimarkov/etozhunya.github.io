@@ -98,10 +98,7 @@ $(document).ready(function() {
   $('.form_button, .header_form_button, .header_button_click, #write, #write_form').click(function(e) {
   	e.preventDefault();
   })
-// $('.header_button_click').on('click', function(){
-//     $('.pop_feedback').addClass('active');
-//     $('.blur').addClass('active');
-// });
+
 
     $('select').select2();
     if ($(window).width() < 769 ) {
@@ -114,12 +111,13 @@ $(document).ready(function() {
         Swal.fire({
           // title: '<strong>HTML <u>example</u></strong>',
           html:
-            '<div class="pop_feedback active"><img src="img/krest.png" class="close" alt=""><div class="yandex_wrapper_map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A27870f22ed87819bc1a98037e91a118c4e8669eff89aeae7d22b822a8d857e22&amp;source=constructor"  frameborder="0"></iframe></div><form class="header_wrapper_form"><input class="input" type="text" placeholder="Ваше имя"><input class="input child" type="text" placeholder="Имя ребенка"><input class="input" type="email" placeholder="Email"><input class="input" type="tel" placeholder="Телефон"><textarea name="Сообщение" cols="40" rows="5" placeholder="Сообщение"></textarea><div class="select select-del"><select name="" id="" required="" class="web-select"><option value="Москва">Москва</option><option value="Санкт-петербург">Санкт-петербург</option><option value="Ростов-на-Дону">Ростов-на-Дону</option><option value="Нижний Новгород">Нижний Новгород</option></select></div><div class="select select-del"><select name="" id="" class="web-select><option value="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</option><option value="ст. м. Двигатей Революции">ст. м. Двигатей Революции</option><option value="ст. м. Горьковская">ст. м. Горьковская</option><option value="ст. м. Чкаловская">ст. м. Чкаловская</option><option value="ст. м. Пролетарская">ст. м. Пролетарская</option></select></div><input type="checkbox" id="checkbox" class="check" checked=""><label for="checkbox">Я принимаю условия <a href="#">cоглашения об обработке </a>персональных данных</label><a class="header_form_button">Записаться на занятие</a></form><div class="pop_wrapper_mob"><div class="wrap"><h4>Спасибо!</h4><span class="mob_span">Мы перезвоним вам, чтобы уточнить удобное время и интересующий вас предмет, и ответим на все вопросы</span><span class="desktop_span">Мы свяжемся с вами в ближайшее время</span></div></div></div>',
+            '<div class="pop_feedback active"><img src="img/krest.png" class="close" alt=""><div class="yandex_wrapper_map"><iframe data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A27870f22ed87819bc1a98037e91a118c4e8669eff89aeae7d22b822a8d857e22&amp;source=constructor"  frameborder="0"></iframe></div><form class="header_wrapper_form"><input class="input" type="text" placeholder="Ваше имя"><input class="input child" type="text" placeholder="Имя ребенка"><input class="input" type="email" placeholder="Email"><input class="input" type="tel" placeholder="Телефон"><textarea name="Сообщение" cols="40" rows="5" placeholder="Сообщение"></textarea><div class="select select-del"><select name="" id="" required="" class="web-select"><option value="Москва">Москва</option><option value="Санкт-петербург">Санкт-петербург</option><option value="Ростов-на-Дону">Ростов-на-Дону</option><option value="Нижний Новгород">Нижний Новгород</option></select></div><div class="select select-del"><select name="" id="" class="web-select><option value="Белинского 32, «Pro-город»">Белинского 32, «Pro-город»</option><option value="ст. м. Двигатей Революции">ст. м. Двигатей Революции</option><option value="ст. м. Горьковская">ст. м. Горьковская</option><option value="ст. м. Чкаловская">ст. м. Чкаловская</option><option value="ст. м. Пролетарская">ст. м. Пролетарская</option></select></div><input type="checkbox" id="checkbox" class="check" checked=""><label for="checkbox">Я принимаю условия <a href="#">cоглашения об обработке </a>персональных данных</label><a class="header_form_button">Записаться на занятие</a></form><div class="pop_wrapper_mob"><div class="wrap"><h4>Спасибо!</h4><span class="mob_span">Мы перезвоним вам, чтобы уточнить удобное время и интересующий вас предмет, и ответим на все вопросы</span><span class="desktop_span">Мы свяжемся с вами в ближайшее время</span></div></div></div>',
           showCloseButton: false,
           showCancelButton: false,
           focusConfirm: false,
           onOpen: function(){
             $('.pop_feedback select').select2();
+              $('iframe').attr('src', $('iframe').data('src'));
           }
         })
 
@@ -130,10 +128,7 @@ $(document).ready(function() {
            '<div class="wrap"><img src="img/krest.png" class="close" alt=""><h4>Спасибо!</h4><span class="mob_span">Мы перезвоним вам, чтобы уточнить удобное время и интересующий вас предмет, и ответим на все вопросы</span>',
          showCloseButton: false,
          showCancelButton: false,
-         focusConfirm: false,
-         onOpen: function(){
-           // $('.pop_feedback select').select2();
-         }
+         focusConfirm: false
        })
     });
 
@@ -168,5 +163,10 @@ $(document).ready(function() {
      Swal.close()
     });
 });
+$(window).on('load',function() {
+  setTimeout(function(){
+    $('iframe').attr('src', $('iframe').data('src'));
 
+  }, 100)
+});
 
