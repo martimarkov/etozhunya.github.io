@@ -9,22 +9,34 @@ html {
 	box-sizing: inherit;
 }
 .text {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
     position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
 }
-.title_animated {
+.title-animated {
     display: inline-block;
+    color: black !important;
     vertical-align: top;
     margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
 }
 .word {
   position: absolute;
-  width: 220px;
+  width: 250px;
   opacity: 0;
-  left: 112px;
-  top: 70px;
+  left: 37%;
+  top: 85px;
 }
 .letter {
   display: inline-block;
@@ -65,11 +77,6 @@ html {
 
 .midnight {
   color: #2c3e50;
-}
-.word {
-  position: absolute;
-  width: 220px;
-  opacity: 0;
 }
 .main-container {
     overflow: hidden;
@@ -2236,7 +2243,17 @@ form .clearfix {
 
 
 /* Responsive Other Pages */
-
+@media (min-width: 1px) and (max-width: 1200px) {
+    .word {
+        left: 0;
+        top: 255px;
+    }
+}
+@media (min-width: 1132px) and (max-width: 1200px) {
+    .word {
+        top: 175px;
+    }
+}
 @media only screen and (max-width: 1300px) {
 
     /* Other Pages Content */
