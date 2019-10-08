@@ -2294,16 +2294,19 @@ form .clearfix {
         min-height: 0;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .getdown {
         display: block;
         transform: translateY(0);
         font-size: 25px;
     }
+    .getup {
+        margin-top: 40px;
+    }
     .word {
         font-size: 25px;
         left: 125px;
-        top: 5px;
+        top: 45px;
     }
     .title-animated {
         font-size: 25px;
@@ -2314,7 +2317,10 @@ form .clearfix {
         width: 480px;
     }
 }
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 767px) {
+    .getup {
+        margin-top: 40px;
+    }
     .getdown {
         display: block;
         transform: translateY(0);
@@ -2323,7 +2329,7 @@ form .clearfix {
     .word {
         font-size: 30px;
         left: 150px;
-        top: 8px;
+        top: 46px;
     }
     .title-animated {
         font-size: 30px;
