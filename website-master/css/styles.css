@@ -11,7 +11,7 @@ html {
 .text {
     position: relative;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 700;
     font-style: normal;
     font-stretch: normal;
@@ -30,13 +30,17 @@ html {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: 1px;
+    margin-bottom: 0 !important;
+}
+.getdown {
+    transform: translateY(-20px);
 }
 .word {
   position: absolute;
-  width: 250px;
+  width: 350px;
   opacity: 0;
-  left: 37%;
-  top: 85px;
+  left: 240px;
+  top: 10px;
 }
 .letter {
   display: inline-block;
@@ -2243,15 +2247,21 @@ form .clearfix {
 
 
 /* Responsive Other Pages */
-@media (min-width: 1px) and (max-width: 1200px) {
+@media (min-width: 1px) and (max-width: 1085px) {
+    .text {
+        font-size: 40px;
+    }
+    .title-animated {
+        font-size: 40px;
+    }
     .word {
-        left: 0;
-        top: 255px;
+        left: 200px;
+        top: 8px;
     }
 }
 @media (min-width: 1132px) and (max-width: 1200px) {
     .word {
-        top: 175px;
+        top: 10px;
     }
 }
 @media only screen and (max-width: 1300px) {
@@ -2284,10 +2294,58 @@ form .clearfix {
         min-height: 0;
     }
 }
+@media (max-width: 768px) {
+    .getdown {
+        display: block;
+        transform: translateY(0);
+        font-size: 25px;
+    }
+    .word {
+        font-size: 25px;
+        left: 125px;
+        top: 5px;
+    }
+    .title-animated {
+        font-size: 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .getdown {
+        width: 480px;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    .getdown {
+        display: block;
+        transform: translateY(0);
+        font-size: 30px;
+    }
+    .word {
+        font-size: 30px;
+        left: 150px;
+        top: 8px;
+    }
+    .title-animated {
+        font-size: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .text {
+        font-size: 28px;
+    }
+    .getdown {
+        transform: translateY(-10px);
+    }
+    .word {
+        left: 140px;
+        top: 5px;
+    }
+    .title-animated {
+        font-size: 28px;
+    }
+}
 
 @media only screen and (max-width: 991px) {
-
-    /* Other Pages Content */
 
     .other-block .text-right .text-part-additional {
         padding: 60px 50px 60px 40px;
