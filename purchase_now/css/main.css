@@ -1,5 +1,5 @@
 .screen {
-	background: url('../img/background.png') center center / cover no-repeat;
+	background: url('../img/background.jpg') center top / cover no-repeat;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -13,6 +13,11 @@
 	height: 50px;
 	transform: translateY(-20px);
 	padding: 20px;
+}
+.coming {
+	color: #000;
+	font-size: 25px;
+	font-family: 'EB Garamond';
 }
 @media (max-width: 1024px) {
 	.transfer {
