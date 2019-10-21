@@ -4,14 +4,14 @@
 }
 .logo-img {
     display: inline-block;
-    width: 130px;
+    width: 510%;
     margin-left: 5px;
 }
 #root::after {
     content: '';
     display: block;
     position: fixed;
-    width: 680px;
+    width: 40%;
     height: 540px;
     top: 250px;
     background: url('../img/new-splash.svg') center center/cover no-repeat;
@@ -8236,13 +8236,13 @@
 
     .btn-primary {
         color: #fff;
-        background-color: #0074d9;
-        border-color: #0074d9;
+        background-color: #b54936;
+        border-color: #333;
     }
 
     .btn-primary:hover {
         color: #fff;
-        background-color: #0060b3;
+        background-color: #b51e05;
         border-color: #0059a6;
     }
 
@@ -9955,7 +9955,7 @@
         display: block;
         content: '';
         position: fixed;
-        width: 640px;
+        width: 44%;
         height: 670px;
         right: 0px;
         top: 100px;
