@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="gr__localhost" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style id="__________cytoscape_stylesheet">.__________cytoscape_container {
+        position: relative;
+    }</style>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <title>ARGUS</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main2.css">
+</head>
+
+<body data-gr-c-s-loaded="true" class="" style="background: #f7f7f7">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root" style="position: relative;">
+    <div style="height:100%; overflow: hidden;" role="navigation" class="gradient">
+        <div class="navbar-dark1" style="height: 1880px;width: 14%; z-index: 2; position: absolute; top: 0px; bottom: 0px; transition: none 0s ease 0s; will-change: transform; overflow-y: auto; left: 0px; transform: translateX(0%); box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px;">
+            <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 logo-argus">
+                <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><img src="img/logo.png" class="logo-img" alt=""></a>
+            </nav>
+            <nav>
+                <ul class="nav flex-column">
+                    <hr>
+                    <li class="nav-item"><a class="nav-link" href="#/nodes"><i class="fas fa-laptop"></i> Nodes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#/logStreams"><i class="fas fa-project-diagram"></i> Services</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div style="z-index: 1; position: fixed; inset: 0px; opacity: 0; visibility: hidden; transition: none 0s ease 0s; background-color: rgba(0, 0, 0, 0.3);"></div>
+        <div style="position: absolute; right:0px; width: 85%; overflow-y: auto; transition: none 0s ease 0s;">
+            <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 navbar-gen">
+                <ul class="navbar-nav px-3"></ul>
+                <ul class="navbar-nav px-3 ml-auto">
+                    <li class="nav-item text-nowrap"><a class="nav-link pull-right" href="#">Sign out</a></li>
+                </ul>
+            </nav>
+            <div class="h-100" style="margin-top: -60px; padding-top: 60px; margin-left: 20px; margin-right: 20px;">
+                <div class="container-fluid h-100">
+                    <div class="h-100 d-flex flex-column">
+                        <div class="row justify-content-center">
+                            <div class="input-group"><input class="form-control form-control-dark" type="text" placeholder="Search..." aria-label="Search">
+                                <div class="input-group-append"><span class="input-group-text"><i class="fas fa-network-wired "></i></span></div>
+                                <button class="btn btn-primary ml-2">+</button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center flex-grow-1 mt-2 mb-2">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Hostname</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Info</th>
+                                    <th scope="col">Parent</th>
+                                    <th scope="col">Sync</th>
+                                    <th scope="col">State</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Andreas-MBP.fritz.box</td>
+                                    <td>Andreas-MBP.fritz.box</td>
+                                    <td>Mac OS X 10.14.6</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>SYNCED</td>
+                                    <td>ONLINE</td>
+                                    <td>
+                                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                            <div class="btn-group mr-2" role="group" aria-label="Edit">
+                                                <button class="btn btn-secondary"><i class="fas fa-edit"></i></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Andreas-MBP.fritz.box</td>
+                                    <td>Andreas-MBP.fritz.box</td>
+                                    <td>Mac OS X 10.14.6</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>PENDING</td>
+                                    <td>OFFLINE</td>
+                                    <td>
+                                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                            <div class="btn-group mr-2" role="group" aria-label="Edit">
+                                                <button class="btn btn-secondary"><i class="fas fa-edit"></i></button>
+                                            </div>
+                                            <div class="btn-group mr-2" role="group" aria-label="Peering">
+                                                <button class="btn btn-secondary btn-danger"><i class="fas fa-times-circle"></i></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="999" class="text-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item"><a class="page-link">1</a></li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row justify-content-center" style="height: 40px;">
+                            <div class="text-black-50">Footer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>                <div class="page-container" style="position: relative;z-index: 1020;">
+                    <div class="main-container gray-bg"><h2>Service</h2>
+                        <form class="" _lpchecked="1">
+                            <div class="mb-3 card">
+                                <div class="card-body">
+                                    <div class="form-group"><label for="node.uid">Node</label>
+                                        <div class="css-ssi0ig-container" id="node.uid">
+                                            <div class="css-14ojxsb-control">
+                                                <div class="css-1hwfws3">
+                                                    <div class="css-ue83k8-singleValue">Andreas-MBP.fritz.box (#1)</div>
+                                                    <div class="css-1g6gooi">
+                                                        <div class="" style="display: inline-block;"><input autocapitalize="none" autocomplete="off"
+                                                                                                            autocorrect="off" id="react-select-2-input"
+                                                                                                            spellcheck="false" tabindex="0" type="text"
+                                                                                                            aria-autocomplete="list"
+                                                                                                            style="box-sizing: content-box; width: 2px; background: rgba(0, 0, 0, 0) none repeat scroll 0px center; border: 0px none; font-size: inherit; opacity: 1; outline: currentcolor none 0px; padding: 0px; color: inherit;"
+                                                                                                            disabled="disabled">
+                                                            <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="css-1wy0on6"><span class="css-622gbt-indicatorSeparator"></span>
+                                                    <div aria-hidden="true" class="css-16pqwjk-indicatorContainer">
+                                                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                                                             class="css-19bqh2r">
+                                                            <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"><label for="metaConfiguration.uid">Type</label>
+                                        <div class="css-ssi0ig-container" id="metaConfiguration.uid">
+                                            <div class="css-14ojxsb-control">
+                                                <div class="css-1hwfws3">
+                                                    <div class="css-ue83k8-singleValue">Network Listener (#22)</div>
+                                                    <div class="css-1g6gooi">
+                                                        <div class="" style="display: inline-block;"><input disabled="disabled" autocapitalize="none"
+                                                                                                            autocomplete="off" autocorrect="off"
+                                                                                                            id="react-select-3-input" spellcheck="false"
+                                                                                                            tabindex="0" type="text" aria-autocomplete="list"
+                                                                                                            style="box-sizing: content-box; width: 2px; background: rgba(0, 0, 0, 0) none repeat scroll 0px center; border: 0px none; font-size: inherit; opacity: 1; outline: currentcolor none 0px; padding: 0px; color: inherit;">
+                                                            <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="css-1wy0on6"><span class="css-622gbt-indicatorSeparator"></span>
+                                                    <div aria-hidden="true" class="css-16pqwjk-indicatorContainer">
+                                                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                                                             class="css-19bqh2r">
+                                                            <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 card">
+                                <div class="card-title h5">Configuration</div>
+                                <div class="card-body">
+                                    <div class="form-group"><label for="name">Name</label><input id="name" type="text" class="form-control" required=""
+                                                                                                 value="Network Listener"
+                                                                                                 style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                                    </div>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">Remote nodes</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group"><label for="serviceAttribute.remoteNodes.0.remoteNodeId">Remote node id &nbsp;<small>
+                                                    (remoteNodes.0.remoteNodeId)
+                                                </small>
+                                                </label><input type="input" class="form-control" id="serviceAttribute.remoteNodes.0.remoteNodeId" required=""
+                                                               value="0a76814fe95a729d802f4270a0956f6817edff34"></div>
+                                                <div class="form-group"><label for="serviceAttribute.remoteNodes.0.remoteThumbprint">Remote thumbprint &nbsp;<small>
+                                                    (remoteNodes.0.remoteThumbprint)
+                                                </small>
+                                                </label><input type="input" class="form-control" id="serviceAttribute.remoteNodes.0.remoteThumbprint"
+                                                               required="" value="0a76814fe95a729d802f4270a0956f6817edff34"></div>
+                                            </td>
+                                            <td class="align-middle text-center">
+                                                <button type="button" class="btn btn-primary">X</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group"><label for="serviceAttribute.remoteNodes.1.remoteNodeId">Remote node id &nbsp;<small>
+                                                    (remoteNodes.1.remoteNodeId)
+                                                </small>
+                                                </label><input type="input" class="form-control" id="serviceAttribute.remoteNodes.1.remoteNodeId" required=""
+                                                               value="805bfe9257357715e3236977b3d63e275b92185d"></div>
+                                                <div class="form-group"><label for="serviceAttribute.remoteNodes.1.remoteThumbprint">Remote thumbprint &nbsp;<small>
+                                                    (remoteNodes.1.remoteThumbprint)
+                                                </small>
+                                                </label><input type="input" class="form-control" id="serviceAttribute.remoteNodes.1.remoteThumbprint"
+                                                               required="" value="805bfe9257357715e3236977b3d63e275b92185d"></div>
+                                            </td>
+                                            <td class="align-middle text-center">
+                                                <button type="button" class="btn btn-primary">X</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="text-right">
+                                                <button type="button" class="btn btn-primary">+</button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="form-group"><label for="serviceAttribute.listenAddress">Listen address &nbsp;<small>(listenAddress)</small>
+                                    </label><input type="input" class="form-control" id="serviceAttribute.listenAddress" required="" value="0.0.0.0"></div>
+                                    <div class="form-group"><label for="serviceAttribute.listenPort">Listen port &nbsp;<small>(listenPort)</small>
+                                    </label><input type="input" class="form-control" id="serviceAttribute.listenPort" required="" placeholder="46464"
+                                                   value="46464"></div>
+                                    <div class="form-group"><label for="serviceAttribute.keepAliveInterval">Keep alive interval &nbsp;<small>
+                                        (keepAliveInterval)
+                                    </small>
+                                    </label><input type="input" class="form-control" id="serviceAttribute.keepAliveInterval" required="" placeholder="30"
+                                                   value="30"></div>
+                                    <div class="form-check"><input type="checkbox" class="form-check-input" id="serviceAttribute.acceptPeeringRequests"
+                                                                   value="false" checked="checked"><label for="serviceAttribute.acceptPeeringRequests">Accept
+                                        peering requests &nbsp;<small>(acceptPeeringRequests)</small>
+                                    </label></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 card">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Destination</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td></td>
+                                            <td>
+                                                <div class="css-1pcexqc-container" id="route.destinationService">
+                                                    <div class="css-bg1rzq-control">
+                                                        <div class="css-1hwfws3">
+                                                            <div class="css-dvua67-singleValue">Switchboard@Andreas-MBP.fritz.box (#6@4)</div>
+                                                            <div class="css-1g6gooi">
+                                                                <div class="" style="display: inline-block;"><input autocapitalize="none" autocomplete="off"
+                                                                                                                    autocorrect="off" id="react-select-4-input"
+                                                                                                                    spellcheck="false" tabindex="0" type="text"
+                                                                                                                    aria-autocomplete="list"
+                                                                                                                    style="box-sizing: content-box; width: 2px; background: rgba(0, 0, 0, 0) none repeat scroll 0px center; border: 0px none; font-size: inherit; opacity: 0; outline: currentcolor none 0px; padding: 0px; color: inherit;">
+                                                                    <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="css-1wy0on6"><span class="css-bgvzuu-indicatorSeparator"></span>
+                                                            <div aria-hidden="true" class="css-16pqwjk-indicatorContainer">
+                                                                <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"
+                                                                     class="css-19bqh2r">
+                                                                    <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-toolbar" role="toolbar">
+                                                    <div class="btn-group mr-2" role="group" aria-label="Peering">
+                                                        <button class="btn btn-secondary btn-primary"><i class="fas fa-trash"></i></button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="99" class="text-right">
+                                                <button type="button" class="btn btn-primary">+</button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mb-1">
+                                <div role="toolbar" class="btn-toolbar">
+                                    <div class="btn-group mr-2" role="group">
+                                        <button class="btn btn-primary" type="submit">Save</button>
+                                    </div>
+                                    <div class="btn-group mr-2" role="group">
+                                        <button type="button" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                    <div class="btn-group ml-auto" role="group">
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="font-family: &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-style: normal; font-size: 20px; font-weight: bold; position: absolute; left: -9999px; top: -9999px; z-index: -1; visibility: hidden; pointer-events: none; padding: 0px; line-height: 1; white-space: pre;">
+    Jmx server configuration
+    @Andreas-MBP.fritz.box
+</div>
+</body>
+</html>
