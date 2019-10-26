@@ -9,7 +9,7 @@ body {
 	position: relative;
 }
 .header {
-	background-color: #000;
+	// background-color: #000;
 	position: relative;
 	display: flex;
 	height: 95vh;
@@ -27,6 +27,7 @@ body {
 		position: fixed;
 		right: 30px;
 		top: 30vh;
+		z-index: 100;
 		li {
 			display: block;
 			display: flex;
@@ -37,7 +38,7 @@ body {
 				color: #fff;
 				text-decoration: none;
 				font-family: "Montserrat";
-				font-size: 20px;
+				font-size: 16px;
 				> img {
 					width: 25px;
 					height: 25px;
@@ -61,7 +62,7 @@ body {
 	.header-info {
 		position: relative;
 		h1 {
-			font-family: Montserrat;
+			font-family: Montserrat-b;
 			font-size: 80px;
 			color: #7fcbdf;
 			display: inline-block;
@@ -84,7 +85,7 @@ body {
 			display: block;
 			margin-top: 100px;
 			color: #fff;
-			font-family: 'Montserrat';
+			font-family: 'Montserrat-r';
 			font-size: 19px;
 			width: 40%;
 			line-height: 1.4;
@@ -106,6 +107,72 @@ body {
 	position: absolute;
 	box-shadow: inset 1px 0 260px 43px;
 	z-index: -1;
+}
+.gradient {
+	height: 2px;
+	width: 100vw;
+	background-color: #7fcbdf;
+}
+.what_is_it {
+	background: linear-gradient(to top,#74993a 1%,#000);
+	position: relative;
+	.logo {
+		position: absolute;
+		left: 50px;
+		top: 70px;
+		width: 35px;
+	}
+	.container {
+		max-width: 80%;
+		margin: 0 auto;
+		color: #fff;
+		h2 {
+			padding-top: 100px;
+			text-align:center;
+			display: block;
+			font-size: 50px;
+			font-family: 'Montserrat-b';
+			font-weight: bold;
+			color: #7fcbdf;
+			span {
+				color: #f5c342;
+			}
+		}
+		> p {
+			text-align: center;
+			display: block;
+			width: 70%;
+			margin: 25px auto 70px auto; 
+			font-size: 19px;
+			font-family: Montserrat-r;
+			font-weight: 500;
+			line-height: 1.4;
+		}
+		ul {
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			flex-flow: wrap;
+			padding-bottom: 100px;
+			li {
+				width: 40%;
+				position: relative;
+				margin-bottom: 25px;
+				img {
+					position: absolute;
+					left: -45px;
+				}
+				p {
+					width: 85%;
+					line-height: 1.3;
+					font-size: 17px;
+				}
+			}
+			li:nth-child(2),li:nth-child(4),li:nth-child(6) {
+				margin-left: 110px;
+			}
+		}
+	}
 }
 
 @import "media";

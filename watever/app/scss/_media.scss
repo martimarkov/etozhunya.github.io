@@ -14,6 +14,13 @@
 			}
 		}
 	}
+	.what_is_it {
+		.container {
+			h2 {
+				font-size: 41px;
+			}
+		}
+	}
 }
 @media (min-width: 1024px) and (max-width: 1366px) {
 	.header {
@@ -141,6 +148,32 @@
 		}
 		.hamburger_button::before {
 			top: 7px;
+		}
+	}
+	.what_is_it {
+		.logo {
+			position: absolute;
+		    left: 20px;
+		    top: 20px;
+		    width: 35px;
+		}
+		.container {
+			h2 {
+				padding-top: 120px;
+			}
+			p {
+				width: 95%;
+			}
+			ul {
+				li {
+					width: 100%;
+					margin-left: 25px !important;
+					margin-bottom: 50px;
+					p {
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 }
