@@ -16,3 +16,6 @@ $(function() {
 
 	});
 });
+// $('.links').onClick() {
+// 	$('.menu').addClass('hidden');
+// }

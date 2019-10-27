@@ -51,12 +51,20 @@
 	}	
 }
 @media (max-width: 767px) {
+	body {
+		background-color: #000;
+	}
 	.header {
 		padding: 15px;
+		z-index: 1;
+		background: url('../img/bg-image.png') center center/cover no-repeat;
 		.logo {
 			left: 20px;
 			top: 25px;
 			width: 45px;
+		}
+		video {
+			display: none;
 		}
 		.menu {
 			background: linear-gradient(to top, #1c6165, #000 90%);
@@ -149,6 +157,11 @@
 		.hamburger_button::before {
 			top: 7px;
 		}
+	}
+	.gradient {
+		width: 60vw;
+		background-color: #7fcbdf;
+		margin: 0 auto;
 	}
 	.what_is_it {
 		.logo {
