@@ -19,6 +19,11 @@ $(function() {
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
 
 	});
+    $('.how').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+
+	});
   $('.up').on('click', function() {
   	$('html, body').animate({ scrollTop:0}, 400, 'linear');
   })

@@ -37,7 +37,7 @@
 	    <div class="menu hidden toTop">
 	    	<ul>
 	    		<li><a href="#what" class="what links">What is It<img src="img/tear.png" alt=""></a></li>
-	    		<li><a href="#how" class="links">How It works<img src="img/tear.png" alt=""></a></li>
+	    		<li><a href="#how" class="how links">How It works<img src="img/tear.png" alt=""></a></li>
 	    		<li><a href="#care">Who we care<img src="img/tear.png" alt=""></a></li>
 	    		<li><a href="#who" class="links">Who to contact<img src="img/tear.png" alt=""></a></li>
 	    	</ul>
@@ -47,7 +47,8 @@
 	    	<p>Have peace of mind knowing that we will manage your irrigation and reduce your water bill by 25% or more</p>
 	    </div>
 	</header>
-	<div class="what_is_it" id="what">
+
+	<section class="what_is_it" id="what">
 		<img src="img/logo.png" alt="" class="logo">
 		<div class="container">
 			<h2>What Is It?</h2>
@@ -83,7 +84,44 @@
 			<p>We charge a flat fee of $39/month  to manage your water</p>
 			<a href="#">Contact US</a>
 		</div>
-	</div>
+	</section>
+	<section class="how_it_works" id="how">
+		<div class="container">
+			<h2>How It Works</h2>
+			<div class="content">
+				<div class="media">
+					<img src="img/miner.png" alt="">
+					<img src="img/map.png" alt="">
+					<img src="img/tools.png" alt="">
+					<img src="img/kid.png" alt="">
+				</div>
+				<div class="text">
+					<p>We start by doing a geophysical survey to characterize the near surface soils down to 9 feet. That enables us to understand uniformed soil areas and where to position the soil sensors to define a correct plan for precision irrigation. We use electromagnetic terrain conductivity and ground penetrating radar surveys to map the vineyard or orchard. </p>
+					<p>
+						Once we have mapped the vineyard or orchard, we install our Internet-based soil sensors in the active root zone and measure everything from soil texture to soil moisture and temperature.
+					</p> 
+					<p>
+						An Arduino Pro single-board computer transmits data from the soil sensors to the Internet over a Low Range Wide Area Network (LoRaWAN) gateway. Using LoRa, a license-free, long-range wireless technology, we can connect up to 300 sensor stations at a time across a 6 miles radius. All components are FCC approved.	
+					</p>
+					<p>
+						Each sensor station is designed for continuous unattended operation, and is powered by a small solar panel. The battery charger keeps the battery fully charged to keep the system working during the night and during periods with dense cloud cover. It has a built-in power switch that delivers power to active sensors, saving power by activating the sensors only when a measurement is taken.
+					</p>
+					<p>An artificial intelligence system developed by UC Davis, and programmed in the free Python programming language environment, is used to calculate the exact amount of water needed per vine based on local weather-station data and daily evapotranspiration data
+					</p>
+					<p>
+						One single controller can support up to five irrigation valves. Common practice in vineyard and orchard management is to water only once a week. But our system can water every day and within specific time period to give the plants a better chance to pick up all the moisture and replace.			
+					</p>
+					<p>
+						Our computer system constantly monitor evapotranspiration and soil moisture, and can tell us when to start irrigating, as well as allowing us to remotely control the irrigation valves.  The system will automatically turn off the irrigation valves when the optimal soil moisture levels have been reached to save water and produce better fruit quality and yield.
+					</p>
+					<p>
+						The precise data also allow us to practice regulated deficit irrigation, to “stress” the vines during the setting period, and produce more concentrate fruit without killing the vine.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8.17.3/dist/sweetalert2.all.min.js"></script>	
