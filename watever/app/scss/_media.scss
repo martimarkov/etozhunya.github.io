@@ -31,6 +31,9 @@
 					display: block;
 				}
 			}
+			h1::after {
+				top: 310px;
+			}
 		}
 	}
 }
@@ -41,14 +44,27 @@
 			width: 70px;
 		}
 		.header-info {
+			transform: translateX(-120px);
 			h1::after {
 				top: 320px;
 			}
 			p {
-				width: 60%;
+				width: 100%;
 			}
 		}
 	}	
+	.what_is_it {
+		.contact {
+			a {
+				right: 90px;
+			}
+			p {
+				margin-left: 5%;
+				font-size: 30px;
+				max-width: 60%;
+			}
+		}
+	}
 }
 @media (max-width: 767px) {
 	body {
@@ -58,6 +74,14 @@
 		padding: 15px;
 		z-index: 1;
 		background: url('../img/bg-image.png') center center/cover no-repeat;
+		.scroll {
+			.up, .down {
+				display: none;
+			}
+		}
+		.header-info {
+			max-width: 100%;
+		}
 		.logo {
 			left: 20px;
 			top: 25px;
@@ -84,9 +108,7 @@
 					justify-content: center;
 					a {
 						img {
-							position: absolute;
-							left: -45px;
-							transform: translateY(-5px);
+							display: none;
 						}
 					}
 				}
@@ -98,11 +120,15 @@
 		}
 		.header-info {
 			h1 {
-				font-size: 50px;
-				line-height: 1.2;
+				font-size: 60px;
+			    line-height: 1.2;
+			    margin-top: 40px;
 				.ipad-pro {
 					display: block;
 				}
+			}
+			h1::after {
+				top: 290px;
 			}
 			p {
 				width: 80%;
@@ -112,7 +138,7 @@
 			height: 46px;
 			width: 50px;
 			display: block;
-			position: absolute;
+			position: fixed;
 			z-index: 11;
 			border-radius: 30%;
 			right: 20px;
@@ -175,6 +201,7 @@
 				width: 95%;
 			}
 			ul {
+				padding-bottom: 50px;
 				li {
 					width: 100%;
 					margin-left: 25px !important;
@@ -183,6 +210,24 @@
 						width: 100%;
 					}
 				}
+			}
+		}
+		.contact {
+			height: auto;
+			padding: 30px;
+			p {
+				margin: 0 auto;
+				font-size: 18px;
+			    max-width: 52%;
+			}
+			a {
+				position: relative;
+				top: inherit;
+				right: inherit;
+				text-align: center;
+				display: block;
+				width: 200px;
+				margin: 10px auto;
 			}
 		}
 	}
