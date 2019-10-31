@@ -1,7 +1,7 @@
 @import "_mixins/font-face";
 
 @include font-face("Calibri", "fonts/Calibri");
-@include font-face("Calibribold", "fonts/Calibri-bold");
+@include font-face("Calibribold", "../fonts/calibrib");
 @include font-face("Calibriitalic", "fonts/Calibri-italic");
 @include font-face("montserratregular", "fonts/Montserrat-Medium");
 @include font-face("montserratbold", "fonts/Montserrat-bold");
