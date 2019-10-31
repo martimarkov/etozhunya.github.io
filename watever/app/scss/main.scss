@@ -37,7 +37,7 @@ body {
 		justify-content: space-between;
 		right: 50px;
 		.up, .down {
-			font-family: Roboto-r;
+			font-family: 'montserrat';
 			color: #fff;
 			letter-spacing: 5px;
 			display: flex;
@@ -116,7 +116,7 @@ body {
 		position: relative;
 		max-width: 50%;
 		h1 {
-			font-family: Calibri-b;
+			font-family: 'calibri-bold';
 			font-size: 90px;
 			color: #7fcbdf;
 			display: inline-block;
@@ -139,7 +139,7 @@ body {
 			display: block;
 			margin-top: 100px;
 			color: #fff;
-			font-family: 'Calibri-b';
+			font-family: 'calibribold';
 			font-size: 29px;
 			width: 80%;
 			line-height: 1.4;
@@ -177,7 +177,7 @@ body {
 			text-align:center;
 			display: block;
 			font-size: 60px;
-			font-family: 'Calibri-b';
+			font-family: 'calibribold';
 			font-weight: bold;
 			color: #7fcbdf;
 		}
@@ -187,7 +187,7 @@ body {
 			width: 65%;
 			margin: 25px auto 70px auto; 
 			font-size: 22px;
-			font-family: Calibri-i;
+			font-family: 'Calibriitalic';
 			font-weight: 500;
 			line-height: 1.4;
 		}
@@ -197,7 +197,7 @@ body {
 			justify-content: flex-start;
 			flex-flow: wrap;
 			padding-bottom: 100px;
-			font-family: 'Calibri-l';
+			font-family: 'calibrilight';
 			li {
 				width: 40%;
 				position: relative;
@@ -257,7 +257,7 @@ body {
 		text-align:center;
 		display: block;
 		font-size: 60px;
-		font-family: 'Calibri-b';
+		font-family: 'calibribold';
 		font-weight: bold;
 		color: #7fcbdf;
 	}
@@ -274,7 +274,7 @@ body {
 			}
 		}
 		.text {
-			font-family: Calibri-l;
+			font-family: 'calibrilight';
 		    width: 60%;
 		    margin-left: 50px;
 		    font-size: 18px;
