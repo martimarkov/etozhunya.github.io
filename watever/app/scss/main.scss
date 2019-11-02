@@ -167,12 +167,12 @@ body {
 	.logo {
 		position: absolute;
 		left: 50px;
-		top: 70px;
+		top: 35px;
 		width: 35px;
 	}
 	.container {
 		h2 {
-			padding-top: 100px;
+			padding-top: 50px;
 			text-align:center;
 			display: block;
 			font-size: 60px;
@@ -183,7 +183,7 @@ body {
 		> p {
 			text-align: center;
 			display: block;
-			width: 65%;
+			width: 85%;
 			margin: 25px auto 70px auto; 
 			font-size: 22px;
 			font-family: 'Calibri-i';
@@ -195,12 +195,12 @@ body {
 			display: flex;
 			justify-content: flex-start;
 			flex-flow: wrap;
-			padding-bottom: 100px;
+			padding-bottom: 50px;
 			font-family: 'calibri-l';
 			li {
 				width: 40%;
 				position: relative;
-				margin-bottom: 25px;
+				margin-bottom: 20px;
 				img {
 					position: absolute;
 					left: -45px;
@@ -221,7 +221,7 @@ body {
 		background: #fff;
 		position: relative;
 		height: 150px;
-		padding-top: 50px;
+		padding-top: 25px;
 		padding-bottom: 25px;
 		p {
 			margin-left: 20%;
@@ -231,6 +231,7 @@ body {
 		    line-height: 28px;
 		    text-align: center;
 		    letter-spacing: 1px;
+		    margin-top: 15px;
 		}
 		a {
 			padding: 12px 21px;
@@ -238,7 +239,7 @@ body {
 			border-radius: 3px;
 			position: absolute;
 			right: 320px;
-			top: 60px;
+			top: 40px;
 			font-family: Roboto;
 			text-decoration: none;
 			font-size: 19px;
@@ -250,11 +251,11 @@ body {
 		}
 	}
 }
-.how_it_works {
+.how_it_works, .why_we_care {
 	background-color: #837688;
 	padding-bottom: 100px;
 	h2 {
-		padding-top: 100px;
+		padding-top: 50px;
 		text-align:center;
 		display: block;
 		font-size: 60px;
@@ -290,7 +291,48 @@ body {
 	}
 }
 .why_we_care {
-	display: none;
+	background: url('../img/example.png') top/cover no-repeat;
+	background-size: 110%;
+	position: relative;
+	background-position-y: -50px;
+	padding-bottom: 0;
+	color: #000;
+	.logo {
+		position: absolute;
+		left: 50px;
+		top: 35px;
+		width: 35px;
+	}
+	.container {
+		max-width: 80%;
+	    background-color: #ffffffb5;;
+	    margin: 0;
+	    padding-left: 10%;
+	    > p {
+    		text-align: center;
+    		display: block;
+    		width: 68%;
+    		margin: 25px auto 70px auto; 
+    		font-size: 22px;
+    		font-family: 'Calibri-i';
+    		font-weight: 500;
+    		line-height: 1.4;
+	    	color: #000;
+	    }
+	    .content {
+	    	.media {
+				width: 40%;
+				position: relative;
+				img {
+					width: 100%;
+					margin-bottom: 30px;
+				}
+	    	}
+	    	.text {
+	    		color: #000;
+	    	}
+	    }
+	}
 }
 
 @import "media";

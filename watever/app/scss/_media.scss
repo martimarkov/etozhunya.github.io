@@ -82,7 +82,7 @@
 			}
 		}
 	}
-	.how_it_works {
+	.how_it_works, .why_we_care {
 		.container {
 			position: relative;
 			.content {
@@ -110,7 +110,11 @@
 		}
 	}
 	.why_we_care {
-		display: none;
+		.container {
+			padding: 35px !important;
+			width: 100%;
+			min-width: 100%;
+		}	
 	}
 }
 @media (max-width: 767px) {
@@ -275,7 +279,7 @@
 			}
 		}
 	}
-	.how_it_works {
+	.how_it_works, .why_we_care  {
 		.container {
 			h2 {
 				font-size: 50px;
@@ -300,6 +304,22 @@
 		}
 	}
 	.why_we_care {
-		display: none;
+		background: url('../img/example.png') top/cover no-repeat;
+		.logo {
+			display: none;
+		}
+		.container {
+			padding: 35px !important;
+			width: 100%;
+			min-width: 100%;
+			p {
+				width: 100%;
+			}
+			.content {
+				.media {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
