@@ -45,6 +45,10 @@ body {
 			z-index: 100;
 			transition: .4s;
 			cursor: pointer;
+			.hover.color {
+				color: #3a95e4;
+				transition: 1s;
+			}
 			img {
 				margin-right: 15px;
 			}
@@ -84,7 +88,7 @@ body {
 				color: #fff;
 				text-decoration: none;
 				font-family: "Calibri";
-				font-size: 16px;
+				font-size: 18px;
 				> img {
 					width: 25px;
 					height: 25px;
@@ -92,6 +96,14 @@ body {
 					position: relative;
 					top: 5px;
 				}
+			}
+			.links.color {
+				color: #3a95e4;
+				transition: 1s;
+			}
+			.links {
+				color: #fff;
+				transition: 1s;
 			}
 		}
 		li:nth-child(1) {
@@ -217,39 +229,6 @@ body {
 			}
 	}
 }
-	.contact {
-		background: #fff;
-		position: relative;
-		height: 150px;
-		padding-top: 25px;
-		padding-bottom: 25px;
-		p {
-			margin-left: 20%;
-		    font-family: calibri;
-		    font-size: 38px;
-		    max-width: 42%;
-		    line-height: 28px;
-		    text-align: center;
-		    letter-spacing: 1px;
-		    margin-top: 15px;
-		}
-		a {
-			padding: 12px 21px;
-			background: #de8344;
-			border-radius: 3px;
-			position: absolute;
-			right: 320px;
-			top: 40px;
-			font-family: 'Calibri';
-			text-decoration: none;
-			font-size: 19px;
-			color: #000;
-			text-transform: uppercase;
-		}
-		a:hover {
-			background-color: #c1580f;
-		}
-	}
 }
 .how_it_works, .why_we_care, .who_to_contact{
 	background-color: #837688;
@@ -336,6 +315,7 @@ body {
 .who_to_contact {
 	background: #74993a;
 	position: relative;
+	padding-bottom: 0;
 	.logo {
 		position: absolute;
 		left: 50px;
@@ -353,6 +333,7 @@ body {
 	}
 	.container {
 		.content {
+			margin-bottom: 90px;
 			.media {
 				img {
 
@@ -374,6 +355,50 @@ body {
 				}
 			}
 		}
+	}
+}
+.contact {
+	background: #fff;
+	position: relative;
+	height: 130px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	p {
+		margin-left: 20%;
+	    font-family: calibri;
+	    font-size: 35px;
+	    max-width: 42%;
+	    line-height: 28px;
+	    text-align: center;
+	    letter-spacing: 1px;
+	    margin-top: 15px;
+	}
+	a {
+		padding: 12px 21px;
+		background: #de8344;
+		border-radius: 3px;
+		position: absolute;
+		right: 320px;
+		top: 40px;
+		font-family: 'Calibri';
+		text-decoration: none;
+		font-size: 19px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	a:hover {
+		background-color: #c1580f;
+	}
+}
+.signature {
+	width: 100vw;
+	font-family: 'Calibri-l';
+	position: absolute;
+	bottom: 10px;
+	a {
+		color: #000;
+		text-decoration: none;
+		padding: 0px 10px;
 	}
 }
 

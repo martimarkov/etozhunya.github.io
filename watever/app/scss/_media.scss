@@ -71,15 +71,15 @@
 				width: 85% !important;
 			}
 		}
-		.contact {
-			a {
-				right: 90px;
-			}
-			p {
-				margin-left: 5%;
-				font-size: 30px;
-				max-width: 60%;
-			}
+	}
+	.contact {
+		a {
+			right: 90px;
+		}
+		p {
+			margin-left: 5%;
+			font-size: 30px;
+			max-width: 60%;
 		}
 	}
 	.how_it_works, .why_we_care {
@@ -260,7 +260,8 @@
 				}
 			}
 		}
-		.contact {
+	}
+	.contact {
 			height: auto;
 			padding: 30px;
 			p {
@@ -278,7 +279,6 @@
 				margin: 10px auto;
 			}
 		}
-	}
 	.how_it_works, .why_we_care  {
 		.container {
 			h2 {
@@ -352,6 +352,19 @@
 					}
 				}
 			}
+		}
+	}
+	.signature {
+		position: relative;
+		bottom: auto;
+		background-color: #fff;
+		.container {
+			text-align: center;
+			a {
+				padding: 10px 0px;
+				display: block;
+			}
+
 		}
 	}
 }

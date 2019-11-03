@@ -17,16 +17,27 @@ $(function() {
   $('.what').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+});
 
-	});
-    $('.how').on('click', function(e) {
+  $('.how').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+});
 
-	});
+    $('.who').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+  });
+
+    $('.care').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+  });
+  
   $('.up').on('click', function() {
   	$('html, body').animate({ scrollTop:0}, 400, 'linear');
-  })
+ })
+
   $('.down').on('click', function() {
   	$('html, body').animate({ scrollTop:$(document).height() - $(window).height()}, 400, 'linear');
   })
@@ -48,6 +59,14 @@ $(function() {
 			$('.down').addClass('hide');
 		} else {
 			$('.down').removeClass('hide');
+		}
+		if ($(window).scrollTop() > 950) {
+			$('.links, .hover').addClass('color');
+		} else {
+			$('.links, .hover').removeClass('color');
+		}
+		if ($(window).scrollTop() > 2920) {
+			$('.links, .hover').removeClass('color');
 		}
 		console.log($(document).height() - $(window).height())
 		console.log($(window).scrollTop())
