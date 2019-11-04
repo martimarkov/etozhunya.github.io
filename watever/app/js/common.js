@@ -34,13 +34,13 @@ $(function() {
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
   });
   
-  $('.up').on('click', function() {
-  	$('html, body').animate({ scrollTop:0}, 400, 'linear');
- })
+ //  $('.up').on('click', function() {
+ //  	$('html, body').animate({ scrollTop:0}, 400, 'linear');
+ // })
 
-  $('.down').on('click', function() {
-  	$('html, body').animate({ scrollTop:$(document).height() - $(window).height()}, 400, 'linear');
-  })
+ //  $('.down').on('click', function() {
+ //  	$('html, body').animate({ scrollTop:$(document).height() - $(window).height()}, 400, 'linear');
+ //  })
 
 	$(window).scroll(function(){
 		if ($(window).scrollTop() == 0) {
@@ -60,15 +60,57 @@ $(function() {
 		} else {
 			$('.down').removeClass('hide');
 		}
-		if ($(window).scrollTop() > 950) {
-			$('.links, .hover').addClass('color');
+		if ($(window).scrollTop() > 950 && $(window).scrollTop() < 1250)  {
+			$('.links').addClass('color');
 		} else {
-			$('.links, .hover').removeClass('color');
+			$('.links').removeClass('color');
+		}
+		if ($(window).scrollTop() > 2050) {
+			$('.links').addClass('color');
 		}
 		if ($(window).scrollTop() > 2920) {
-			$('.links, .hover').removeClass('color');
+			$('.links').removeClass('color');
+		}
+		if ($(window).scrollTop() > 1250 && $(window).scrollTop() < 1550 || $(window).scrollTop() > 2600 && $(window).scrollTop() < 3400)  {
+			$('.hoverone').addClass('color');
+		} else {
+			$('.hoverone').removeClass('color');
+		}
+		if ($(window).scrollTop() > 600 && $(window).scrollTop() < 950 || $(window).scrollTop() > 2000 && $(window).scrollTop() < 2800)  {
+			$('.hovertwo').addClass('color');
+		} else {
+			$('.hovertwo').removeClass('color');
 		}
 		console.log($(document).height() - $(window).height())
 		console.log($(window).scrollTop())
 	});
+	var $section = $('section').first();
+
+	$('#scrollWindowDown').click(function(e){
+	    e.preventDefault();
+
+	    if ($section.is('section:last')) {
+	        return;
+	    }
+
+	    $section = $section.next();
+
+	    scroll();
+	});
+
+	$('#scrollWindowUp').click(function(e){
+	    e.preventDefault();
+
+	    if ($section.is('section:first')) {
+	        return;
+	    }
+
+	    $section = $section.prev();
+
+	    scroll();
+	});
+
+	function scroll() {
+	    $('html, body').animate({ scrollTop: ($section.offset().top)},500);    
+	}
 });

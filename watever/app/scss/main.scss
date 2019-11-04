@@ -13,6 +13,12 @@ body {
 	margin: 0 auto;
 	color: #fff;
 }
+.logo {
+	position: absolute;
+	left: 50px;
+	top: 15px;
+	width: 50px;
+}
 .header {
 	position: relative;
 	display: flex;
@@ -34,7 +40,7 @@ body {
 		display: flex;
 		flex-flow: column;
 		justify-content: space-between;
-		right: 50px;
+		right: 65px;
 		.up, .down {
 			font-family: 'montserrat';
 			color: #fff;
@@ -45,7 +51,10 @@ body {
 			z-index: 100;
 			transition: .4s;
 			cursor: pointer;
-			.hover.color {
+			span {
+				transition: .4s;
+			}
+			.hoverone.color, .hovertwo.color {
 				color: #3a95e4;
 				transition: 1s;
 			}
@@ -69,7 +78,7 @@ body {
 			height: 15vh;
 			width: 3px;
 			background-color: #f5c342;
-			right: -10px;
+			right: -25px;
 		}
 	}
 	.menu {
@@ -98,7 +107,7 @@ body {
 				}
 			}
 			.links.color {
-				color: #3a95e4;
+				color: #7fcbdf;
 				transition: 1s;
 			}
 			.links {
@@ -126,6 +135,10 @@ body {
 	.header-info {
 		position: relative;
 		max-width: 50%;
+		display: flex;
+		flex-flow: column;
+		height: 90%;
+		justify-content: space-between;
 		h1 {
 			font-family: 'calibribold';
 			font-size: 90px;
@@ -137,15 +150,15 @@ body {
 				display: none;
 			}
 		}
-		h1::after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 230px;
-			height: 2px;
-			width: 250px;
-			background-color: #fff;
-		}
+		// h1::after {
+		// 	content: '';
+		// 	display: block;
+		// 	position: absolute;
+		// 	top: 230px;
+		// 	height: 2px;
+		// 	width: 250px;
+		// 	background-color: #fff;
+		// }
 		p {
 			display: block;
 			margin-top: 100px;
@@ -154,13 +167,8 @@ body {
 			font-size: 29px;
 			width: 80%;
 			line-height: 1.4;
+			padding-bottom: 20%;
 		}
-	}
-	.logo {
-		position: absolute;
-		left: 50px;
-		top: 15px;
-		width: 50px;
 	}
 }
 .header::after {
@@ -173,15 +181,9 @@ body {
 	box-shadow: inset 1px 0 260px 43px;
 	z-index: -1;
 }
-.what_is_it {
+.what_is_it, .contact_us {
 	background: #74993a;
 	position: relative;
-	.logo {
-		position: absolute;
-		left: 50px;
-		top: 35px;
-		width: 35px;
-	}
 	.container {
 		h2 {
 			padding-top: 50px;
@@ -233,6 +235,7 @@ body {
 .how_it_works, .why_we_care, .who_to_contact{
 	background-color: #837688;
 	padding-bottom: 100px;
+	position: relative;
 	h2 {
 		padding-top: 50px;
 		text-align:center;
@@ -274,15 +277,9 @@ body {
 	position: relative;
 	padding-bottom: 0;
 	color: #000;
-	.logo {
-		position: absolute;
-		left: 50px;
-		top: 35px;
-		width: 55px;
-	}
 	.container {
 		max-width: 80%;
-	    background-color: #ffffff5c;
+	    background-color: #ffffff30;
 	    margin: 0;
 	    padding-left: 10%;
 	    padding-bottom: 50px;
@@ -316,12 +313,6 @@ body {
 	background: #74993a;
 	position: relative;
 	padding-bottom: 0;
-	.logo {
-		position: absolute;
-		left: 50px;
-		top: 25px;
-		width: 55px;
-	}
 	> p {
 		position: absolute;
 		left: 95px;
@@ -399,6 +390,92 @@ body {
 		color: #000;
 		text-decoration: none;
 		padding: 0px 10px;
+	}
+}
+.rules {
+	background-color: #fff;
+	font-family: 'Calibri-l';
+	padding: 50px;
+	h2 {
+		font-size: 18px;
+		margin: 15px 0px;
+	}
+	p {
+		margin: 10px 0px;
+	}
+	span {
+		display: block;
+	}
+}
+.contact_us {
+	min-height: 100vh;
+	background: url('../img/contact-bg.jpg') center center/cover no-repeat;
+	.container {
+		max-width: 80%;
+		padding-left: 10%;
+		margin: 0;
+		p {
+			width: 50%;
+		}
+		.contact-form {
+			font-family: 'Calibri';
+			.label {
+				font-size: 13px;
+				line-height: 16px;
+				color: rgba(85, 91, 97, 0.8);
+				margin-bottom: 10px;
+			}
+			.input {
+				background: #FFFFFF;
+				box-shadow: 0px 0px 4px rgba(73, 190, 170, 0.3);
+				border-radius: 3px;
+				-webkit-appearance: none;
+				border: none;
+				padding: 15px;
+				display: block;
+				margin-bottom: 20px;
+				width: 70%;
+				height: 44px;
+				font-family: 'Calibri';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 13px;
+				color: #9698A2;
+			}
+			textarea {
+					background: #FFFFFF;
+					box-shadow: 0px 0px 4px rgba(73, 190, 170, 0.3);
+					border-radius: 3px;
+					-webkit-appearance: none;
+					border: none;
+					padding: 10px 15px;
+					display: block;
+					width: 70%;
+					font-family: 'Calibri';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 13px;
+					color: #9698A2;
+					position: relative;
+					margin-bottom: 20px;
+			}
+			.button {
+				border: none;
+				position: relative;
+				display: inline-block;
+				font-family: 'Calibribold';
+				text-transform: uppercase;
+				font-size: 18px;
+				color: #000;
+				text-align: center;
+				background: #de8344;
+				border-radius: 6px;
+				padding: 10px 55px;
+				box-shadow: 0 8px 27px rgba(0,20,99,.4);
+			}
+		}
 	}
 }
 
