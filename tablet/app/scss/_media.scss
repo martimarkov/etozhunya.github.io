@@ -132,6 +132,22 @@
 		.hamburger_button::before {
 			top: 10px;
 		}
+	.how_it_works {
+		padding-bottom: 40px;
+		h2 {
+			font-size: 40px !important;
+		}
+		ul {
+			display: block;
+			li {
+				margin: 0 auto;
+				width: 90%;
+				p {
+					width: 80%;
+				}
+			}
+		}
+	}	
 }
 @media (min-width: 768px) and (max-width: 1366px) {
 	.header {

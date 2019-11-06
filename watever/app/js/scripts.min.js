@@ -113,4 +113,9 @@ $(function() {
 	function scroll() {
 	    $('html, body').animate({ scrollTop: ($section.offset().top)},500);    
 	}
+	$(document).ready(function() {
+	    $("body").children().each(function() {
+	        $(this).html($(this).html().replace(/&#8232;/g," "));
+	    });
+	});
 });
