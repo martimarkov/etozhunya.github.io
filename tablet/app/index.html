@@ -89,14 +89,59 @@
 			<p>Upload image of Presciption</p>
 			<form action="mailto:joseph@bruun-Jensen.com" method="POST">
 				<input  class="upload" type="file" name="pic" accept="image/*">
-				<label><span>Full Name</span><input class="input" type="text"></label>
-				<label><span>Last Name</span><input class="input" type="text"></label>
-				<label><span>Street Address</span><input class="input" type="text"></label>
-				<label><span>City</span><input class="input" type="text"></label>
-				<label><span>Province</span><input class="input" type="text"></label>
-				<label><span>Postal Code</span><input class="input" type="text"></label>
-				<label><span>Phone Number</span><input class="input" type="text"></label>
-				<label><span>Email Address</span><input class="input" type="text"></label>	
+				<div class="labels">
+					<label><span>Full Name</span><input class="input" type="text"></label>
+					<label><span>Last Name</span><input class="input" type="text"></label>
+					<label><span>Street Address</span><input class="input" type="text"></label>
+					<label><span>City</span><input class="input" type="text"></label>
+<!-- 					<label><span>Province</span>
+						<select class="input select" type="text">
+						<option value="">Ontario</option>
+						<option value="">Quebec</option>
+						<option value="">Nova Scotia</option>
+						<option value="">New Brunswick</option>
+						<option value="">Manitoba</option>
+						<option value="">British Columbia</option>
+						<option value="">Prince Edward Island</option>
+						<option value="">Saskatchewan</option>
+						<option value="">Alberta</option>
+						<option value="">Newfoundland and Labrador</option> -->
+					<div class="try">
+						<label><span>Provinces</span>
+							<div class="cont_select_center">
+
+							  <!-- Custom select structure --> 
+							<div class="select_mate" data-mate-select="active" >
+							<select name="" onchange="" onclick="return false;" id="">
+							<option value="">Ontario</option>	
+							<option value="1">Quebec</option>
+							<option value="2">Nova Scotia</option>
+							<option value="3">New Brunswick</option>
+							<option value="4">Manitoba</option>
+							<option value="5">British Columbia</option>
+							<option value="6">Prince Edward Island</option>
+							<option value="7">Saskatchewan</option>
+							<option value="8">Alberta</option>
+							<option value="9">Newfoundland and Labrador</option>
+							  </select>
+							<p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+							    <path d="M0-.75h24v24H0z" fill="none"/>
+							</svg></span>
+							<div class="cont_list_select_mate">
+							  <ul class="cont_select_int">  </ul> 
+							</div>
+							  </div>
+							</div>
+						</label>
+					</div>
+					</select>
+					</label>
+					<label><span>Postal Code</span><input class="input" type="text"></label>
+					<label><span>Phone Number</span><input class="input" type="text"></label>
+					<label><span>Email Address</span><input class="input" type="text"></label>
+					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
+				</div>
 			</form>
 		</div>
 	</div>

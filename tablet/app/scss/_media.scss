@@ -7,13 +7,22 @@
 	}
 } 
 @media (max-width: 767px) {
+	.cont_select_int {
+		width: 116% !important;
+	}
 	.container {
 		max-width: 95%;
 		width: 95%;
 	}
 	.header {
 		&__nav {
-			padding-top: 29px;
+			padding-top: 15px;
+			position: fixed;
+		    z-index: 1;
+		    background-color: #03c9d533;
+		    width: 100vw;
+		    left: 0;
+		    padding-bottom: 10px;
 			.logo {
 				width: auto;
 				height: 30px;
@@ -91,7 +100,7 @@
 		z-index: 11;
 		border-radius: 30%;
 		right: 5px;
-		top: 22px;
+		top: 8px;
 		z-index: 100;
 		cursor: pointer;
 			}
