@@ -474,6 +474,12 @@ body {
 				border-radius: 6px;
 				padding: 10px 55px;
 				box-shadow: 0 8px 27px rgba(0,20,99,.4);
+				position: relative;
+				top: -35px;
+				left: 30px;
+			}
+			.g-recaptcha {
+				display: inline-block;
 			}
 		}
 	}
