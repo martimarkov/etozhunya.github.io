@@ -133,3 +133,24 @@
 			top: 10px;
 		}
 }
+@media (min-width: 768px) and (max-width: 1366px) {
+	.header {
+		h1 {
+			font-size: 45px !important;
+			transform: translate3d(-15px,-20px,0);
+		}
+		.header__bottom {
+			> p {
+				font-size: 22px;
+			}
+			ul {
+				li {
+					width: 62%;
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+}
