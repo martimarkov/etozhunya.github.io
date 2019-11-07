@@ -33,14 +33,6 @@ $(function() {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
   });
-  
- //  $('.up').on('click', function() {
- //  	$('html, body').animate({ scrollTop:0}, 400, 'linear');
- // })
-
- //  $('.down').on('click', function() {
- //  	$('html, body').animate({ scrollTop:$(document).height() - $(window).height()}, 400, 'linear');
- //  })
 
 	$(window).scroll(function(){
 		if ($(window).scrollTop() == 0) {
@@ -81,9 +73,8 @@ $(function() {
 		} else {
 			$('.hovertwo').removeClass('color');
 		}
-		console.log($(document).height() - $(window).height())
-		console.log($(window).scrollTop())
 	});
+
 	var $section = $('section').first();
 
 	$('#scrollWindowDown').click(function(e){
@@ -113,9 +104,4 @@ $(function() {
 	function scroll() {
 	    $('html, body').animate({ scrollTop: ($section.offset().top)},500);    
 	}
-	$(document).ready(function() {
-	    $("body").children().each(function() {
-	        $(this).html($(this).html().replace(/&#8232;/g," "));
-	    });
-	});
 });
