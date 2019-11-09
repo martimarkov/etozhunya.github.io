@@ -83,29 +83,17 @@
 		</div>
 	</section>
 
-	<div class="order_now">
+	<section class="order_now">
 		<div class="container">
 			<h2>Order Now!</h2>
-			<p>Upload image of Presciption</p>
-			<form action="mailto:joseph@bruun-Jensen.com" method="POST">
+			<p class="text">Upload image of Presciption</p>
+			<form action="https://www.api.gotablet.co/orders" method="POST">
 				<input  class="upload" type="file" name="pic" accept="image/*">
 				<div class="labels">
-					<label><span>Full Name</span><input class="input" type="text"></label>
-					<label><span>Last Name</span><input class="input" type="text"></label>
-					<label><span>Street Address</span><input class="input" type="text"></label>
-					<label><span>City</span><input class="input" type="text"></label>
-<!-- 					<label><span>Province</span>
-						<select class="input select" type="text">
-						<option value="">Ontario</option>
-						<option value="">Quebec</option>
-						<option value="">Nova Scotia</option>
-						<option value="">New Brunswick</option>
-						<option value="">Manitoba</option>
-						<option value="">British Columbia</option>
-						<option value="">Prince Edward Island</option>
-						<option value="">Saskatchewan</option>
-						<option value="">Alberta</option>
-						<option value="">Newfoundland and Labrador</option> -->
+					<label><span>Full Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>Last Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>Street Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>City<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<div class="try">
 						<label><span>Provinces</span>
 							<div class="cont_select_center">
@@ -137,15 +125,68 @@
 					</div>
 					</select>
 					</label>
-					<label><span>Postal Code</span><input class="input" type="text"></label>
-					<label><span>Phone Number</span><input class="input" type="text"></label>
-					<label><span>Email Address</span><input class="input" type="text"></label>
+					<label><span>Postal Code<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>Phone Number<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>Email Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
 				</div>
+				<p class="text">We also deliver over-the-counter products. <br> Please enter name of product and quantity in the additional notes section in your order</p>
+				<button type="submit" class="submit">SUBMIT</button>
 			</form>
 		</div>
-	</div>
-	
+	</section>
+
+	<section class="info">
+		<div class="container">
+			<ul>
+				<li>
+					<p>Questions? We’re here to help.</p>
+				</li>
+				<li>
+					<p>Text: <span>(647) 496 - 0546</span></p>
+				</li>
+				<li>
+					<p>Email: <span>info@gotablet.com</span></p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="FAQ">
+		<container>
+			<h2>FAQ'S</h2>
+			<ul>
+				<li>
+					<p class="title">+ What is Tablet?</p>
+					<p>Tablet is a pharmacy of the digital age. We provide you with all your medication needs, without <span>you</span> having to go anywhere. Think Amazon of your pharmacy.</p>
+				</li>
+				<li>
+					<p class="title">+ How do I send you my prescription?</p>
+					<p>You can take a picture of your prescription on your phone, upload it through the order form and we will take care of the rest.</p>
+				</li>
+				<li>
+					<p class="title">+ How soon can you deliver my medications?</p>
+					<p>We <span>offer</span> same-day delivery, so you can start using <span>your</span> medication right away.</p>
+				</li>
+				<li>
+					<p class="title">+ How much does this cost?</p>
+					<p>Same day delivery service is free with Tablet. All you have to <span>pay</span> is the dispensing fee, similar to any other pharmacy.</p>
+				</li>
+				<li>
+					<p class="title">+ Do you deal directly with my insurance?</p>
+					<p>Yes! We work with all insurance providers. <span>Simply let us know your plan details,</span> and we will take care of payments for you.</p>
+				</li>
+				<li>
+					<p class="title">+ When and where will you be launching?</p>
+					<p><span>We will initially be launching in the Downtown Toronto area,</span> and expand from there. We expect to launch at the end of 2019 - stay tuned!</p>
+				</li>
+				<li>
+					<p class="title">+ Where can I get more information?</p>
+					<p>You can email us at <span>info@gotablet.co,</span> and we will be happy to have a more detailed conversation with you.</p>
+				</li>
+			</ul>
+		</container>
+	</section>		
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script src="js/common.js"></script>
 </body>

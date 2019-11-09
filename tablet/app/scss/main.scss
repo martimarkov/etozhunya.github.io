@@ -168,11 +168,11 @@ body {
 			padding: 50px 0px 35px 0px;
 			color: #161616;
 		}
-		> p {
+		.text {
 			font-family: Opensans;
 			text-align: center;
 			font-size: 25px;
-			margin-bottom: 50px;
+			margin-bottom: 35px;
 			display: block;
 			position: relative;
 		}
@@ -188,6 +188,7 @@ body {
 			z-index: -5;
 		}
 		form {
+			padding-bottom: 80px;
 			position: relative;
 			.upload {
 				padding: 20px 0px;
@@ -219,6 +220,10 @@ body {
 					margin-bottom: 20px;
 					display: block;
 					color: #161616;
+				}
+				.req {
+					display: inline-block;
+					color:#03c9d5;
 				}
 				.input {
 					background: #FFFFFF;
@@ -374,6 +379,46 @@ body {
 					    display: block;
 					    margin: 0px;
 					    cursor: pointer;
+					}
+				}
+			}
+			.submit {
+				background-color: #03c9d5;
+				padding: 13px 40px;
+				border-radius: 6px;
+				border: none;
+				box-shadow: 0px 2px 14px -6px #000;
+				font-family: "opensans-bold";
+				font-size: 18px;
+				color: #fff;
+				margin: 0 auto;
+				display: block;
+				cursor: pointer;
+			}
+			.submit:focus {
+				outline: none;
+			}
+		}
+	}
+}
+.info {
+	background-color: #161616;
+	padding: 80px 0;
+	.container {
+		ul {
+			padding: 0px 10%;
+			display: flex;
+			justify-content: space-between;
+			flex-flow: nowrap;
+			li {
+				width: 33%;
+				text-align: center;
+				p {
+					font-family: 'OpenSans-bold';
+					font-size: 18px;
+					color: #fff;
+					span {
+						color: #03c9d5;
 					}
 				}
 			}
