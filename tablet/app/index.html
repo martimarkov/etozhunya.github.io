@@ -21,10 +21,10 @@
 		<div class="hamburger" id="hamburger">
 			<span class="hamburger_button"></span>
 		</div>
-		<div class="container">
-			<div class="header__nav">
+		<div class="fixed">
+			<div class="fixed__nav">
 				<img src="img/logo.png" alt="" class="logo">
-				<div class="header__nav-links">
+				<div class="fixed__nav-links">
 					<div class="menu hidden">
 						<ul>
 							<li><a href="#">HOME</a></li>
@@ -35,6 +35,8 @@
 					<a href="#" class="button">ORDER NOW!</a>
 				</div>
 			</div>
+		</div>	
+		<div class="container">
 			<div class="header__content">
 				<div class="header__content-text">
 					<h1>​<span>tablet</span> is <br>Toronto's <br> new age <br>	 pharmacy</h1>
@@ -101,16 +103,16 @@
 							  <!-- Custom select structure --> 
 							<div class="select_mate" data-mate-select="active" >
 							<select name="" onchange="" onclick="return false;" id="">
-							<option value="">Ontario</option>	
-							<option value="1">Quebec</option>
-							<option value="2">Nova Scotia</option>
+							<option value="">Alberta</option>
+							<option value="1">British Columbia</option>
+							<option value="2">Manitoba</option>
 							<option value="3">New Brunswick</option>
-							<option value="4">Manitoba</option>
-							<option value="5">British Columbia</option>
+							<option value="4">Newfoundland and Labrador</option>
+							<option value="5">Nova Scotia</option>
+							<option value="" selected="">Ontario</option>
 							<option value="6">Prince Edward Island</option>
 							<option value="7">Saskatchewan</option>
-							<option value="8">Alberta</option>
-							<option value="9">Newfoundland and Labrador</option>
+							<option value="8">Quebec</option>
 							  </select>
 							<p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 							    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
@@ -153,40 +155,60 @@
 	</section>
 
 	<section class="FAQ">
-		<container>
-			<h2>FAQ'S</h2>
+		<div class="container">
+			<h2>FAQ's</h2>
 			<ul>
 				<li>
 					<p class="title">+ What is Tablet?</p>
-					<p>Tablet is a pharmacy of the digital age. We provide you with all your medication needs, without <span>you</span> having to go anywhere. Think Amazon of your pharmacy.</p>
+					<p class="animated">Tablet is a pharmacy of the digital age. We provide you with all your medication needs, without <span>you</span> having to go anywhere. Think Amazon of your pharmacy.</p>
 				</li>
 				<li>
 					<p class="title">+ How do I send you my prescription?</p>
-					<p>You can take a picture of your prescription on your phone, upload it through the order form and we will take care of the rest.</p>
+					<p class="animated">You can take a picture of your prescription on your phone, upload it through the order form and we will take care of the rest.</p>
 				</li>
 				<li>
 					<p class="title">+ How soon can you deliver my medications?</p>
-					<p>We <span>offer</span> same-day delivery, so you can start using <span>your</span> medication right away.</p>
+					<p class="animated">We <span>offer</span> same-day delivery, so you can start using <span>your</span> medication right away.</p>
 				</li>
 				<li>
 					<p class="title">+ How much does this cost?</p>
-					<p>Same day delivery service is free with Tablet. All you have to <span>pay</span> is the dispensing fee, similar to any other pharmacy.</p>
+					<p class="animated">Same day delivery service is free with Tablet. All you have to <span>pay</span> is the dispensing fee, similar to any other pharmacy.</p>
 				</li>
 				<li>
 					<p class="title">+ Do you deal directly with my insurance?</p>
-					<p>Yes! We work with all insurance providers. <span>Simply let us know your plan details,</span> and we will take care of payments for you.</p>
+					<p class="animated">Yes! We work with all insurance providers. <span>Simply let us know your plan details,</span> and we will take care of payments for you.</p>
 				</li>
 				<li>
 					<p class="title">+ When and where will you be launching?</p>
-					<p><span>We will initially be launching in the Downtown Toronto area,</span> and expand from there. We expect to launch at the end of 2019 - stay tuned!</p>
+					<p class="animated"><span>We will initially be launching in the Downtown Toronto area,</span> and expand from there. We expect to launch at the end of 2019 - stay tuned!</p>
 				</li>
 				<li>
 					<p class="title">+ Where can I get more information?</p>
-					<p>You can email us at <span>info@gotablet.co,</span> and we will be happy to have a more detailed conversation with you.</p>
+					<p class="animated">You can email us at <span>info@gotablet.co,</span> and we will be happy to have a more detailed conversation with you.</p>
 				</li>
 			</ul>
-		</container>
-	</section>		
+		</div>
+	</section>
+	<footer class="footer">
+				<div class="container">
+					<ul class="content">
+						<li>
+							<img src="img/bottom_logo.png" alt="">
+						</li>
+						<li>
+							<p>© 2019 Tablet Inc. All Rights Reserved.</p>
+						</li>
+						<li>
+							<ul>
+								<li><a target="blank" href="https://www.linkedin.com/company/gotablet"><img src="img/linkedin.png" alt=""></a></li>
+								<li><a target="blank" href="https://m.facebook.com/GoTablet/"><img src="img/facebook.png" alt=""></a></li>
+								<li><a target="blank" href="twitter.com/Go_tablet"><img src="img/twitter.png" alt=""></a></li>
+								<li><a target="blank" href="https://www.instagram.com/gotablet/"><img src="img/instagram.png" alt=""></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</footer>		
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script src="js/common.js"></script>
 </body>
