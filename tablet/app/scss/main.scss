@@ -37,11 +37,15 @@ body {
 					li {
 						position: relative;
 						margin: 0px 20px;
-						a {
-							font-family: 'opensans';
+						.href {
+							font-family: 'opensans-l';
 							text-decoration: none;
 							color:#333132;
-							font-size: 15px;
+							font-size: 17px;
+							text-transform: uppercase;
+						}
+						.href.clicked {
+							color: #03c9d5;
 						}
 					}
 					li:first-child::after, li:nth-child(2)::after {

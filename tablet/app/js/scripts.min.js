@@ -148,9 +148,14 @@ $(function() {
     }
     
   })
+    $('.href').click( function() {
+         $(this).parent().siblings().children().removeClass('clicked');
+         $(this).addClass('clicked');
+     });
   if ($(window).width() < 768) {  
     $('.href').on('click', function() {
       $('.menu').addClass('hidden');
+      $('#hamburger').removeClass('active');
     })
   }
 });
