@@ -10,12 +10,15 @@
 			}
 		}
 	}
+	.text {
+		font-size: 20px !important;
+	}
 	.order_now {
 		.container {
 			form {
 				.labels {
 					span {
-						font-size: 16px;
+						font-size: 15px !important;
 						height: 36px;
 					}
 				}
@@ -34,7 +37,7 @@
 	}
 	.container {
 		max-width: 95%;
-		width: 95%;
+		width: 90%;
 	}
 	.header {
 		.fixed {
@@ -59,7 +62,7 @@
 					}
 					.menu {
 						position: fixed;
-						background-color: #fff;
+						background: linear-gradient(to bottom, #fff 53%, #03c9d5 110%);
 						top: 0;
 						height: 100vh;
 						width: 100vw;
@@ -74,6 +77,7 @@
 							li {
 								margin: 20px 0px;
 								a {
+									font-size: 20px;
 								}
 							}
 							li:first-child::after, li:nth-child(2)::after {
@@ -214,10 +218,44 @@
 		}
 	}
 	.FAQ {
-		display: none;
+		.container {
+			ul {
+				li {
+					.animated {
+						width: 100%;
+						font-size: 20px;
+					}
+				}
+			}
+		}
 	}
 	.footer {
-		display: none;
+		.container {
+			.content {
+				position: relative;
+				flex-flow: wrap column-reverse;
+				justify-content: center;
+				li {
+					ul {
+						height: 50px;
+					}
+					img {
+						display: block;
+						margin: 0 auto;
+						padding-bottom: 45px;
+					}
+					p {
+						transform: translateY(0);
+						position: absolute;
+						bottom: 0;
+						width: 220px;
+						left: 50%;
+						transform: translateX(-50%);
+						font-size: 12px;
+					}
+				}
+			}
+		}
 	}	
 }
 @media (min-width: 768px) and (max-width: 1366px) {

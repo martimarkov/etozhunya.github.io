@@ -125,23 +125,32 @@ $(function() {
 			$('.menu').addClass('hidden');
 		})
 	}
-  $('.what').on('click', function(e) {
+  $('.home').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
 });
 
-  $('.how').on('click', function(e) {
+  $('.about').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
 });
 
-    $('.who').on('click', function(e) {
+    $('.FAQ').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
   });
-
-    $('.care').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
-  });
+  $('.FAQ .title').click(function(){
+    $(this).find('.rotate').toggleClass('active');
+    if (!($(this).next('.FAQ .animated').hasClass('active'))) {
+      $(this).next('.FAQ .animated').slideDown(300).addClass('active')
+    } else {
+      $(this).next('.FAQ .animated').slideUp(300).removeClass('active')
+    }
+    
+  })
+  if ($(window).width() < 768) {  
+    $('.href').on('click', function() {
+      $('.menu').addClass('hidden');
+    })
+  }
 });

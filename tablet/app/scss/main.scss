@@ -439,6 +439,7 @@ body {
 }
 .FAQ {
 	.container {
+		position: relative;
 		h2 {
 			font-family: OpenSans-bold;
 			font-size: 50px;
@@ -447,16 +448,36 @@ body {
 		}
 		ul {
 			padding-bottom: 50px;
+			margin-left: 25px;
 			li {
 				.title {
 					font-family: 'OpenSans-bold';	
 					font-size: 25px;
-					color: 000;
 					cursor: pointer;
 					margin: 0 auto;
+					margin: 10px 0px;
+					.rotate {
+						transition: .3s ease-in-out;
+						position: absolute;
+						display: block;
+						left: 0px;
+					}
+					.rotate.active {
+						transform: rotate(135deg);
+						transition: .3s ease-in-out;
+					}
 				}
 				.animated {
 					display: none;
+					color: #03c9d5;
+					font-family: Opensans;
+					line-height: 1.3;
+					font-size: 23px;
+					margin: 5px 0;
+					width: 70%;
+					span {
+						font-family: 'Opensans-bold';
+					}
 				}
 			}
 		}
