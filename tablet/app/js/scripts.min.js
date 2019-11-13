@@ -125,8 +125,8 @@ $(function() {
 			$('.menu').addClass('hidden');
 		})
 	}
-  $('.submit').submit(function() {
-      $(this).addClass('active');
+  $('.submit').click(function() {
+      $('form').addClass('active');
   })
   $('.submit_bottom').click(function() {
       $(this).addClass('active');
@@ -138,7 +138,7 @@ $(function() {
 
   $('.about').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 100}, 800, 'linear');
 });
 
   $('.order').on('click', function(e) {
@@ -177,7 +177,7 @@ $('.google_form').submit(function(e) {
 
    function formSubmit(form) {
     var $form = form,
-       url = 'https://script.google.com/macros/s/AKfycbyIa9POshCXU0gE-N0Kzf1Br2iFMwGBTb8QahC9cPyg4voq1fd7/exec';
+       url = 'https://script.google.com/macros/s/AKfycbzeaYhRQDvUTDuqMT4fPss9Y8lGbwOp5fS75Pbtphr02x0H25Wl/exec';
     $.ajax({
         url: url,
         method: "GET",

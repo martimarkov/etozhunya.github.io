@@ -414,17 +414,22 @@ body {
 				cursor: pointer;
 				position: relative;
 			}
-			.submit.active::before {
-				content: '';
-				width: 15px;
-				height: 15px;
-				position: absolute;
-				right: 20px;
-				top: 32%;
-				background: url('../img/check.svg') center center/cover no-repeat;
+			.check_img {
+				display: none !important;
+				width: 169px;
+				margin: 0 auto;
+				display: block;
 			}
 			.submit:focus {
 				outline: none;
+			}
+		}
+		form.active {
+			.submit {
+				display: none;
+			}
+			.check_img {
+				display: block !important;
 			}
 		}
 	}
@@ -556,15 +561,6 @@ body {
 			}
 			.submit_bottom {
 				outline: none;
-			}
-			.submit_bottom.active::before {
-				content: '';
-				width: 15px;
-				height: 15px;
-				position: absolute;
-				right: -25px;
-				top: 30%;
-				background: url('../img/check.svg') center center/cover no-repeat;
 			}
 		}
 	}
