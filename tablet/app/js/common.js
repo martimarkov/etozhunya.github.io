@@ -125,7 +125,10 @@ $(function() {
 			$('.menu').addClass('hidden');
 		})
 	}
-  $('.submit').click(function() {
+  $('.submit').submit(function() {
+      $(this).addClass('active');
+  })
+  $('.submit_bottom').click(function() {
       $(this).addClass('active');
   })
   $('.home').on('click', function(e) {
@@ -167,3 +170,21 @@ $(function() {
     })
   }
 });
+$('.google_form').submit(function(e) {
+    e.preventDefault();
+    formSubmit($(this));
+   });
+
+   function formSubmit(form) {
+    var $form = form,
+       url = 'https://script.google.com/macros/s/AKfycbyIa9POshCXU0gE-N0Kzf1Br2iFMwGBTb8QahC9cPyg4voq1fd7/exec';
+    $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serialize(),
+        success: function(response) {
+         console.log('form submitted');
+        }
+    }) 
+   }

@@ -526,6 +526,7 @@ body {
 		}
 		form {
 			display: flex;
+			position: relative;
 			.input {
 				width: 175px;
 				border-radius: 7px 0px 0px 7px;
@@ -541,7 +542,7 @@ body {
 			.input:focus {
 				border: none;
 			}
-			button {
+			.submit_bottom {
 				border-radius: 0px 7px 7px 0px;
 				background-color: #03c9d5;
 				border: none;
@@ -553,8 +554,17 @@ body {
 				display: block;
 				cursor: pointer;
 			}
-			button:focus {
+			.submit_bottom {
 				outline: none;
+			}
+			.submit_bottom.active::before {
+				content: '';
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				right: -25px;
+				top: 30%;
+				background: url('../img/check.svg') center center/cover no-repeat;
 			}
 		}
 	}
