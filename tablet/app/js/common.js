@@ -110,6 +110,14 @@ select_optiones[indx].selected = true;
   salir_select(selc); 
 }
 
+$('#form').submit(function(e) {
+    e.preventDefault();
+    formSubmit($(this));
+    $('form').addClass('active');
+    console.log('form1 submitted');
+    alert("Thank you for joining Tablet's mailing list! We will be in touch.");
+   });
+
 
 $(function() {
 	var hamburger = document.getElementById('hamburger'),
@@ -125,9 +133,6 @@ $(function() {
 			$('.menu').addClass('hidden');
 		})
 	}
-  $('.submit').click(function() {
-      $('form').addClass('active');
-  })
   $('.submit_bottom').click(function() {
       $(this).addClass('active');
   })
@@ -188,3 +193,9 @@ $('.google_form').submit(function(e) {
         }
     }) 
    }
+   // $(".submit").submit(function() {
+   //     $('form').addClass('active');
+   //     console.log('form1 submitted');
+   // }); 
+
+
