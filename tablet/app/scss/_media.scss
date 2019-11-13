@@ -1,5 +1,8 @@
 @import "vars";
 @media (max-width: 321px) {
+	h2 {
+		font-size: 40px !important;
+	}
 	.fixed {
 		&__nav {
 			padding: 5px;
@@ -11,7 +14,7 @@
 		}
 	}
 	.text {
-		font-size: 20px !important;
+		font-size: 18px !important;
 	}
 	.order_now {
 		.container {
@@ -230,10 +233,18 @@
 			}
 		}
 	}
+	.info {
+		p {
+			font-size: 16px !important;
+		}
+	}
 	.FAQ {
 		.container {
 			ul {
 				li {
+					.title {
+						font-size: 22px;
+					}
 					.animated {
 						width: 100%;
 						font-size: 20px;
@@ -251,9 +262,10 @@
 				li {
 					ul {
 						height: 35px;
+						margin: 25px 0px;
 						li {
 							img {
-								width: 25px;
+								width: 30px;
 								margin: 0 5px;
 							}
 						}
@@ -261,14 +273,14 @@
 					> img {
 						display: block;
 						margin: 0 auto;
-						padding-bottom: 20px;
+						padding-bottom: 40px;
 						width: 150px;
 					}
 					p {
 						transform: translateY(0);
 						position: absolute;
 						bottom: -10px;
-						width: 206px;
+						width: 213px;
 						left: 50%;
 						transform: translateX(-50%);
 						font-size: 12px;
@@ -314,10 +326,18 @@
 				padding: 0;
 				li {
 					p {
-						font-size: 16px;
+						font-size: 14px;
 					}
 				}
 			}
+		}
+	}
+	.FAQ {
+		.title {
+			font-size: 22px !important;
+		}
+		.animated {
+			font-size: 20px !important;
 		}
 	}
 	.order_now {

@@ -32,7 +32,7 @@
 							<li><a href="#FAQ" class="FAQ href">Help Center</a></li>
 						</ul>
 					</div>
-					<a href="#" class="button">ORDER NOW!</a>
+					<a href="#" class="button">ORDER NOW</a>
 				</div>
 			</div>
 		</div>	
@@ -49,10 +49,10 @@
 				<p>Tablet is the new way Canadians receive their prescription medication!</p>
 				<ul>
 					<li>
-						<p>Let us handle your insurance claims, so you don’t have to</p>
+						<p>We do Same-Day delivery in Toronto</p>
 					</li>
 					<li>
-						<p>We do Same-Day delivery in Toronto</p>
+						<p>Let us handle your insurance claims, so you don’t have to</p>
 					</li>
 					<li>
 						<p>Directly chat or call our pharmacists at any time.</p>
@@ -89,7 +89,7 @@
 		<div class="container">
 			<h2>Order Now!</h2>
 			<p class="text">Upload image of Presciption</p>
-			<form action="https://www.api.gotablet.co/orders" method="POST">
+			<form action="http://34.229.240.68:8001/orders" method="POST">
 				<input  class="upload" type="file" name="pic" accept="image/*">
 				<div class="labels">
 					<label><span>Full Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
@@ -132,7 +132,7 @@
 					<label><span>Email Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
 				</div>
-				<p class="text">We also deliver over-the-counter products. <br> Please enter name of product and quantity in the additional notes section in your order.End-to-end encryption ensures that data is transferred securely between endpoints.</p>
+				<p class="text">We also deliver over-the-counter products. <br> Please enter name of product and quantity in the additional notes section in your order. <br> End-to-end encryption ensures that data is transferred securely between endpoints.</p>
 				<button type="submit" class="submit">SUBMIT</button>
 			</form>
 		</div>
@@ -142,7 +142,7 @@
 		<div class="container">
 			<ul>
 				<li>
-					<p>Questions? We’re here to help.</p>
+					<p s>Questions? We’re here to help.</p>
 				</li>
 				<li>
 					<p>Text: <span>(647) 496 - 0546</span></p>
@@ -156,7 +156,7 @@
 
 	<section class="FAQ" id="FAQ">
 		<div class="container">
-			<h2>FAQ's</h2>
+			<h2>Help Center</h2>
 			<ul>
 				<li>
 					<p class="title"><span class="rotate">+</span> What is Tablet?</p>
@@ -190,25 +190,32 @@
 		</div>
 	</section>
 	<footer class="footer">
-				<div class="container">
-					<ul class="content">
-						<li>
-							<img src="img/bottom_logo.png" alt="">
-						</li>
-						<li>
-							<p>© 2019 Tablet Inc. All Rights Reserved.</p>
-						</li>
-						<li>
-							<ul>
-								<li><a target="blank" href="https://www.linkedin.com/company/gotablet"><img src="img/linkedin.png" alt=""></a></li>
-								<li><a target="blank" href="https://m.facebook.com/GoTablet/"><img src="img/facebook.png" alt=""></a></li>
-								<li><a target="blank" href="twitter.com/Go_tablet"><img src="img/twitter.png" alt=""></a></li>
-								<li><a target="blank" href="https://www.instagram.com/gotablet/"><img src="img/instagram.png" alt=""></a></li>
-							</ul>
-						</li>
+		<div class="mail">
+			<p>Join our Mailing List</p>
+			<form action="http://34.229.240.68:8001/orders" method="POST">
+									<input class="input" type="text" placeholder="youmail@email.com">
+									<button>SUBMIT</button>
+								</form>
+		</div>		
+		<div class="container">					
+			<ul class="content">
+				<li>
+					<img src="img/bottom_logo.png" alt="">
+				</li>
+				<li>
+					<p>© 2019 Tablet Inc. All Rights Reserved.</p>
+				</li>
+				<li>
+					<ul>
+						<li><a target="blank" href="https://www.linkedin.com/company/gotablet"><img src="img/linkedin.png" alt=""></a></li>
+						<li><a target="blank" href="https://m.facebook.com/GoTablet/"><img src="img/facebook.png" alt=""></a></li>
+						<li><a target="blank" href="twitter.com/Go_tablet"><img src="img/twitter.png" alt=""></a></li>
+						<li><a target="blank" href="https://www.instagram.com/gotablet/"><img src="img/instagram.png" alt=""></a></li>
 					</ul>
-				</div>
-			</footer>		
+				</li>
+			</ul>
+		</div>
+	</footer>		
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script src="js/common.js"></script>
 </body>
