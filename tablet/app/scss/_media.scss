@@ -31,6 +31,9 @@
 	.header__content-text {
 		h1 {
 			font-size: 30px !important;
+			span {
+				font-size: 32px !important;
+			}
 		}
 	}
 } 
@@ -107,6 +110,9 @@
 				h1 {
 					transform: translate3d(10px,0,0);
 					font-size: 35px;
+					span {
+						font-size: 37px;
+					}
 				}
 			}
 			&-img {
@@ -280,7 +286,7 @@
 						transform: translateY(0);
 						position: absolute;
 						bottom: -10px;
-						width: 213px;
+						width: 255px;
 						left: 50%;
 						transform: translateX(-50%);
 						font-size: 12px;

@@ -125,6 +125,9 @@ $(function() {
 			$('.menu').addClass('hidden');
 		})
 	}
+  $('.submit').click(function() {
+      $(this).addClass('active');
+  })
   $('.home').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
@@ -134,6 +137,11 @@ $(function() {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
 });
+
+  $('.order').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 100}, 800, 'linear');
+  });
 
     $('.FAQ').on('click', function(e) {
       e.preventDefault();

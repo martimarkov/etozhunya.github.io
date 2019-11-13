@@ -90,6 +90,7 @@ body {
 				span {
 					color: #03c9d5;
 					font-family: "Spinnaker-r";
+					font-size: 68px;
 				}
 			}
 		}
@@ -411,6 +412,16 @@ body {
 				margin: 0 auto;
 				display: block;
 				cursor: pointer;
+				position: relative;
+			}
+			.submit.active::before {
+				content: '';
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				right: 20px;
+				top: 32%;
+				background: url('../img/check.svg') center center/cover no-repeat;
 			}
 			.submit:focus {
 				outline: none;
