@@ -471,7 +471,10 @@ body {
 		ul {
 			padding-bottom: 50px;
 			margin-left: 25px;
+			max-width: 45%;
+			margin: 0 auto;
 			li {
+				position: relative;
 				.title {
 					font-family: 'opensans-bold';	
 					font-size: 25px;
@@ -482,7 +485,7 @@ body {
 						transition: .3s ease-in-out;
 						position: absolute;
 						display: block;
-						left: 0px;
+						left: -20px;
 					}
 					.rotate.active {
 						transform: rotate(135deg);
@@ -496,7 +499,7 @@ body {
 					line-height: 1.3;
 					font-size: 23px;
 					margin: 5px 0;
-					width: 70%;
+					width:100%;
 					span {
 						font-family: 'opensans-bold';
 					}
@@ -534,6 +537,9 @@ body {
 				font-size: 14px;
 				line-height: 13px;
 				color: #161616;
+			}
+			.input:focus {
+				border: none;
 			}
 			button {
 				border-radius: 0px 7px 7px 0px;
