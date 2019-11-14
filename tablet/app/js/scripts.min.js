@@ -109,7 +109,6 @@ select_optiones[indx].selected = true;
   select_.onchange();
   salir_select(selc); 
 }
-
 $('#form').submit(function(e) {
     e.preventDefault();
     formSubmit($(this));
@@ -117,8 +116,11 @@ $('#form').submit(function(e) {
     console.log('form1 submitted');
     alert("Thank you for joining Tablet's mailing list! We will be in touch.");
    });
-
-
+$('.google_form').submit(function(e) {
+    e.preventDefault();
+    formSubmit($(this));
+    $('.submit_bottom').addClass('active');
+   });
 $(function() {
 	var hamburger = document.getElementById('hamburger'),
 	menu = document.querySelector('.menu');
@@ -133,9 +135,9 @@ $(function() {
 			$('.menu').addClass('hidden');
 		})
 	}
-  $('.submit_bottom').click(function() {
-      $(this).addClass('active');
-  })
+  // $('.submit_bottom').click(function() {
+  //     $(this).addClass('active');
+  // })
   $('.home').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');

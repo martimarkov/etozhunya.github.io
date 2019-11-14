@@ -127,9 +127,9 @@
 					</div>
 					</select>
 					</label>
-					<label><span>Postal Code<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span id="postal">Postal Code<span class="req">*</span></span><input class="input postal" type="text" required=""></label>
 					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{10,10}" type="text" required="" title="digital mode please"></label>
-					<label><span>Email Address<span class="req">*</span></span><input class="input" type="email" title="Contact's email (format: xxx@xxx.xxx)" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required=""></label>
+					<label><span>Email Address<span class="req">*</span></span><input class="input" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required=""></label>
 					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
 				</div>
 				<p class="text">We also deliver over-the-counter products. <br> Please enter name of product and quantity in the additional notes section in your order. <br> End-to-end encryption ensures that data is transferred securely between endpoints.</p>
@@ -169,7 +169,7 @@
 				</li>
 				<li>
 					<p class="title"><span class="rotate">+</span> How soon can you deliver my medications?</p>
-					<p class="animated">We offer <span>same-day</span> delivery, so you can start using <span>your</span> medication right away.</p>
+					<p class="animated">We offer <span>same-day</span> delivery, so you can start using your medication right away.</p>
 				</li>
 				<li>
 					<p class="title"><span class="rotate">+</span> How much does this cost?</p>
@@ -194,7 +194,7 @@
 		<div class="mail">
 			<p>Join our Mailing List</p>
 			<form class="google_form">
-				<input  name="email_submit" class="input" type="text" placeholder="youmail@email.com">
+				<input  name="email_submit" class="input" placeholder="youmail@email.com" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required="">
 				<button type="submit" class="submit_bottom">SUBMIT</button>
 			</form>
 		</div>		
@@ -216,8 +216,11 @@
 				</li>
 			</ul>
 		</div>
-	</footer>		
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	</footer>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/
+jquery/3.4.1/jquery.min.js"></script> 
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
 <script src="js/common.js"></script>
 </body>
 </html>

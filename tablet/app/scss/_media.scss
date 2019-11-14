@@ -20,6 +20,18 @@
 		.container {
 			form {
 				.labels {
+					label {
+						position: relative;
+						#postal {
+							position: absolute;
+							top: 60px;
+							width: 100px;
+						}
+						.postal {
+							margin-top: 130px;
+							position: relative;
+						}
+					}
 					span {
 						font-size: 15px !important;
 						height: 36px;
@@ -225,17 +237,38 @@
 	.order_now {
 		.container {
 			.text {
-				font-size: 23px;
+				font-size: 18px;
 				width: 80%;
 				margin: 0 auto 35px auto;
 			}
 			form {
+				display: block;
 				.labels {
+					display: block;
+					label {
+						position: relative;
+						#postal {
+							position: absolute;
+							top: 65px;
+							width: 100px;
+						}
+						.postal {
+							margin-top: 130px;
+							position: relative;
+						}
+					}
+					.try {
+						width: 100%;
+					}
 					span {
 						font-size: 16px;
 						height: 36px;
 					}
+					textarea {
+						width: 100%;
+					}
 				}
+
 			}
 		}
 	}
