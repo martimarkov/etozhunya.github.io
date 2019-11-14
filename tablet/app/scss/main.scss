@@ -446,12 +446,13 @@ body {
 			li {
 				width: 33%;
 				text-align: center;
-				p {
+				> p {
 					font-family: 'opensans-bold';
 					font-size: 18px;
 					line-height: 1.3;
 					color: #fff;
-					span {
+					> span, a {
+						text-decoration: none !important;
 						color: #000;
 					}
 				}
