@@ -92,9 +92,9 @@
 			<form action="http://34.229.240.68:8001/orders" target="blank" id="form">
 				<input  class="upload" type="file" name="pic" accept="image/*">
 				<div class="labels">
-					<label><span>Full Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>First Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<label><span>Last Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
-					<label><span>Street Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>Apt/unit - Street Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<label><span>City<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<div class="try">
 						<label><span>Provinces</span>
@@ -128,8 +128,8 @@
 					</select>
 					</label>
 					<label><span>Postal Code<span class="req">*</span></span><input class="input" type="text" required=""></label>
-					<label><span>Phone Number<span class="req">*</span></span><input class="input" type="text" required=""></label>
-					<label><span>Email Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{5,10}" type="text" required="" title="digital mode please"></label>
+					<label><span>Email Address<span class="req">*</span></span><input class="input" type="email" title="Contact's email (format: xxx@xxx.xxx)" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required=""></label>
 					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
 				</div>
 				<p class="text">We also deliver over-the-counter products. <br> Please enter name of product and quantity in the additional notes section in your order. <br> End-to-end encryption ensures that data is transferred securely between endpoints.</p>
