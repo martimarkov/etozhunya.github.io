@@ -113,7 +113,7 @@ $('#form').submit(function(e) {
     e.preventDefault();
     formSubmit($(this));
     $('form').addClass('active');
-    $(this).children('input').val('')
+    $('.labels label .input').val('')
    });
 $('.google_form').submit(function(e) {
     e.preventDefault();
