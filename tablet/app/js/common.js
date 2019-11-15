@@ -113,13 +113,14 @@ $('#form').submit(function(e) {
     e.preventDefault();
     formSubmit($(this));
     $('form').addClass('active');
-    console.log('form1 submitted');
-    alert("Thank you for joining Tablet's mailing list! We will be in touch.");
+    $(this).children('input').val('')
    });
 $('.google_form').submit(function(e) {
     e.preventDefault();
     formSubmit($(this));
     $('.submit_bottom').addClass('active');
+    $(this).children('input').val('')
+    alert("Thank you for joining Tablet's mailing list! We will be in touch.");
    });
 $(function() {
 	var hamburger = document.getElementById('hamburger'),
@@ -191,7 +192,6 @@ $('.google_form').submit(function(e) {
         dataType: "json",
         data: $form.serialize(),
         success: function(response) {
-         console.log('form submitted');
         }
     }) 
    }

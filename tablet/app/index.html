@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="shortcut icon" href="img/?" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicone.png" type="image/x-icon">
 </head>
 <body>
 	<section class="header" id="home">
@@ -28,7 +28,7 @@
 					<div class="menu hidden">
 						<ul>
 							<li><a href="#home" class="home href clicked">Home</a></li>
-							<li><a href="#about" class="about href">About</a></li>
+							<li><a href="#about" class="about href">How it works</a></li>
 							<li><a href="#FAQ" class="FAQ href">Help Center</a></li>
 						</ul>
 					</div>
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 			<div class="header__bottom">
-				<p>Tablet is the new way Canadians receive their prescription medication!</p>
+				<p>Tablet is the new way Canadians receive their prescription medication</p>
 				<ul>
 					<li>
 						<p>We do Same-Day delivery in Toronto</p>
@@ -87,17 +87,17 @@
 
 	<section class="order_now" id="order">
 		<div class="container">
-			<h2>Order Now!</h2>
-			<p class="text">Upload image of Presciption</p>
+			<h2>Order Now</h2>
+			<p class="text">Upload image of Prescription</p>
 			<form action="http://34.229.240.68:8001/orders" target="blank" id="form">
 				<input  class="upload" type="file" name="pic" accept="image/*">
 				<div class="labels">
 					<label><span>First Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<label><span>Last Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
-					<label><span>Apt/unit - Street Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<label><span>City<span class="req">*</span></span><input class="input" type="text" required=""></label>
 					<div class="try">
-						<label><span>Provinces</span>
+						<label><span>Province<span class="req">*</span></span>
 							<div class="cont_select_center">
 
 							  <!-- Custom select structure --> 
@@ -127,12 +127,12 @@
 					</div>
 					</select>
 					</label>
-					<label><span id="postal">Postal Code<span class="req">*</span></span><input class="input postal" type="text" required=""></label>
-					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{10,10}" type="text" required="" title="digital mode please"></label>
-					<label><span>Email Address<span class="req">*</span></span><input class="input" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required=""></label>
+					<label><span id="postal">Postal Code<span class="req">*</span></span><input class="input postal" type="text" required="" pattern="[0-9]{5}" placeholder="e.g. 132-12 check"></label>
+					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{10,10}" type="text" required="" title="Please enter a valid phone number" placeholder="(647) 555-5555"></label>
+					<label><span>Email Address<span class="req">*</span></span><input class="input" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required="" title="Please enter a valid email address"></label>
 					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
 				</div>
-				<p class="text">We also deliver over-the-counter products. <br> Please enter name of product and quantity in the additional notes section in your order. <br> End-to-end encryption ensures that data is transferred securely between endpoints.</p>
+				<p class="text">“We also deliver over-the-counter (OTC) products.<br> Please enter the name of product and quantity in the <i>Additional Notes</i> section above in your order.<br>Note: we offer end-to-end data encryption to ensure your personal data is transferred securely.”</p>
 				<button type="submit" class="submit">SUBMIT</button>
 				<img src="img/submit_check.png" alt="" class="check_img">
 			</form>
@@ -194,7 +194,7 @@
 		<div class="mail">
 			<p>Join our Mailing List</p>
 			<form class="google_form">
-				<input  name="email_submit" class="input" placeholder="youmail@email.com" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required="">
+				<input  name="email_submit" class="input" placeholder="me@email.com" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required="">
 				<button type="submit" class="submit_bottom">SUBMIT</button>
 			</form>
 		</div>		
@@ -204,12 +204,12 @@
 					<img src="img/bottom_logo.png" alt="">
 				</li>
 				<li>
-					<p>© 2019 Tablet Health Inc. All Rights reserved.</p>
+					<p>© 2019 Tablet Health Inc. All Rights Reserved.</p>
 				</li>
 				<li>
 					<ul>
 						<li><a target="blank" href="https://www.linkedin.com/company/gotablet"><img src="img/linkedin.png" alt=""></a></li>
-						<li><a target="blank" href="https://m.facebook.com/GoTablet/"><img src="img/facebook.png" alt=""></a></li>
+						<li><a target="blank" href="https://www.facebook.com/GoTablet/"><img src="img/facebook.png" alt=""></a></li>
 						<li><a target="blank" href="https://twitter.com/go_tablet"><img src="img/twitter.png" alt=""></a></li>
 						<li><a target="blank" href="https://www.instagram.com/gotablet/"><img src="img/instagram.png" alt=""></a></li>
 					</ul>
