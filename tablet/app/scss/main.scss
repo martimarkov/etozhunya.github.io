@@ -90,7 +90,6 @@ body {
 				span {
 					color: #03c9d5;
 					font-family: "Spinnaker-r";
-					font-size: 68px;
 				}
 			}
 		}
@@ -230,6 +229,13 @@ body {
 					line-height: 16px;
 					color: rgba(85, 91, 97, 0.8);
 					margin-bottom: 10px;
+					position: relative;
+				}
+				.label {
+					left: 0;
+				}
+				#lable {
+					left: 0;
 				}
 				span {
 					font-family: 'Opensans-r';
