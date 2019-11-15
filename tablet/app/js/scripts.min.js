@@ -109,8 +109,7 @@ select_optiones[indx].selected = true;
   select_.onchange();
   salir_select(selc); 
 }
-$('#form').submit(function(e) {
-    e.preventDefault();
+$('#form').submit(function() {
     formSubmit($(this));
     $('form').addClass('active');
     $('.labels label .input').val('')
@@ -195,9 +194,5 @@ $('.google_form').submit(function(e) {
         }
     }) 
    }
-   // $(".submit").submit(function() {
-   //     $('form').addClass('active');
-   //     console.log('form1 submitted');
-   // }); 
 
 

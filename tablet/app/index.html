@@ -127,7 +127,7 @@
 					</div>
 					</select>
 					</label>
-					<label><span id="postal">Postal Code<span class="req">*</span></span><input class="input postal" type="text" required="" pattern="[0-9]{5}" placeholder="e.g. 132-12 check"></label>
+					<label><span id="postal">Postal Code<span class="req">*</span></span><input class="input postal" type="text" required="" pattern="[0-9]{5,6}" maxlength="6" placeholder="e.g. 132-12"></label>
 					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{10,10}" type="text" required="" title="Please enter a valid phone number" placeholder="(647) 555-5555"></label>
 					<label><span>Email Address<span class="req">*</span></span><input class="input" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required="" title="Please enter a valid email address"></label>
 					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
