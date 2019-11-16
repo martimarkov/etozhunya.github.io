@@ -238,6 +238,15 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('tel-code').oninput = function(e) {
             e.target.setCustomValidity("");
         };
+        document.getElementById('postal-code').oninvalid = function(e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                e.target.setCustomValidity(" Please enter a valid postal code");
+            }
+        };
+        document.getElementById('postal-code').oninput = function(e) {
+            e.target.setCustomValidity("");
+        };
 })
 function readURL(input) {
     if (input.files && input.files[0]) {
