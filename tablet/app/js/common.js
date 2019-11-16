@@ -246,6 +246,7 @@ function readURL(input) {
         reader.onload = function (e) {
             $('#blah').attr('src', e.target.result);
             $('#blah').addClass('visible');
+            alert('Upload has been successful.');
         }
         
         reader.readAsDataURL(input.files[0]);
