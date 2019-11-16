@@ -207,6 +207,7 @@ $('.google_form').submit(function(e) {
 }
 document.addEventListener("DOMContentLoaded", function() {
     var elements = document.getElementsByTagName("INPUT");
+
     for (var i = 0; i < elements.length; i++) {
         elements[i].oninvalid = function(e) {
             e.target.setCustomValidity("");
@@ -218,30 +219,40 @@ document.addEventListener("DOMContentLoaded", function() {
             e.target.setCustomValidity("");
         };
     }
-    // for (var i = 0; i < emailElement.length; i++) {
-    //     emailElement[i].oninvalid = function(e) {
-    //         e.target.setCustomValidity("");
-    //         if (!e.target.validity.valid) {
-    //             e.target.setCustomValidity("email");
-    //         }
-    //     };
-    //     emailElement[i].oninput = function(e) {
-    //         e.target.setCustomValidity("");
-    //     };
-    // }
+        document.getElementById('emailcode').oninvalid = function(e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                e.target.setCustomValidity("email");
+            }
+        };
+        document.getElementById('emailcode').oninput = function(e) {
+            e.target.setCustomValidity("");
+        };
+
+        document.getElementById('tel-code').oninvalid = function(e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                e.target.setCustomValidity("emailsadasda");
+            }
+        };
+        document.getElementById('tel-code').oninput = function(e) {
+            e.target.setCustomValidity("");
+        };
 })
-// document.addEventListener("DOMContentLoaded", function() {
-//     var elements = document.getElementById('tel-code')
-//     for (var i = 0; i < elements.length; i++) {
-//         elements[i].oninvalid = function(e) {
-//             e.target.setCustomValidity("");
-//             if (!e.target.validity.valid) {
-//                 e.target.setCustomValidity("Please enter a valid phone number");
-//             }
-//         };
-//         elements[i].oninput = function(e) {
-//             e.target.setCustomValidity("");
-//         };
-//     }
-// })
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function (e) {
+            $('#blah').attr('src', e.target.result);
+            $('#blah').addClass('visible');
+        }
+        
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInp").change(function(){
+    readURL(this);
+});
 
