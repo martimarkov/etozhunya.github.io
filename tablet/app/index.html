@@ -89,7 +89,7 @@
 		<div class="container">
 			<h2>Order Now</h2>
 			<p class="text">Upload image of Prescription</p>
-			<form action="http://34.229.240.68:8001/orders" target="blank" id="form">
+			<form name="myform" action="http://34.229.240.68:8001/orders" target="blank" id="form">
 				<input  class="upload" type="file" name="pic" accept="image/*">
 				<div class="labels">
 					<label><span>First Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
@@ -127,12 +127,20 @@
 					</div>
 					</select>
 					</label>
-					<label><span id="postal">Postal Code<span class="req">*</span></span><input class="input postal" type="text" required="" pattern="[0-9]{5,6}" maxlength="6" placeholder="e.g. 132-12"></label>
-					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{10,10}" type="text" required="" title="Please enter a valid phone number" placeholder="(647) 555-5555"></label>
-					<label><span>Email Address<span class="req">*</span></span><input class="input" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required="" title="Please enter a valid email address"></label>
+					<label for="postal-code">
+						<span>Postal Code
+							<span class="req">*</span>
+						</span>
+						<input class="input postal" id="postal-code" type="text" required="" pattern="([0-9]{3}[-]{1}[0-9]{2})" maxlength="6" placeholder="e.g. 132-12">
+					</label>
+					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{10,10}" id="tel-code" maxlength="10" name="cardcode" type="tel" required="" title="Please enter a valid phone number" placeholder="(647) 555-5555"></label>
+					<label>
+						<span>Email Address<span class="req">*</span></span>
+						<input class="input checkthis" id="emailcode" title="Please enter a valid email address" type="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+					</label>
 					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
 				</div>
-				<p class="text">“We also deliver over-the-counter (OTC) products.<br> Please enter the name of product and quantity in the <i>Additional Notes</i> section above in your order.<br>Note: we offer end-to-end data encryption to ensure your personal data is transferred securely.”</p>
+				<p class="text">We also deliver over-the-counter (OTC) products.<br> Please enter the name of product and quantity in the <i>Additional Notes</i> section above in your order.<br><br>Note: we offer end-to-end data encryption to ensure your personal data is transferred securely.”</p>
 				<button type="submit" class="submit">SUBMIT</button>
 				<img src="img/submit_check.png" alt="" class="check_img">
 			</form>

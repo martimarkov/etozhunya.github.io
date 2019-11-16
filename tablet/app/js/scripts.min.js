@@ -177,6 +177,17 @@ $(function() {
     })
   }
 });
+$('#postal-code').on('keypress change blur', function () {
+    $('#postal-code').val(function (index, value) {
+        return value.replace(/[^a-z0-9]+/gi, '').replace(/(.{3})/g, '$1-');
+    });
+});
+
+$('#postal-code').on('copy cut paste', function () {
+    setTimeout(function () {
+        $('#postal-code').trigger("change");
+    });
+});
 $('.google_form').submit(function(e) {
     e.preventDefault();
     formSubmit($(this));
@@ -193,6 +204,44 @@ $('.google_form').submit(function(e) {
         success: function(response) {
         }
     }) 
-   }
-
+}
+document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.getElementsByTagName("INPUT");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].oninvalid = function(e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                e.target.setCustomValidity("oh really?");
+            }
+        };
+        elements[i].oninput = function(e) {
+            e.target.setCustomValidity("");
+        };
+    }
+    // for (var i = 0; i < emailElement.length; i++) {
+    //     emailElement[i].oninvalid = function(e) {
+    //         e.target.setCustomValidity("");
+    //         if (!e.target.validity.valid) {
+    //             e.target.setCustomValidity("email");
+    //         }
+    //     };
+    //     emailElement[i].oninput = function(e) {
+    //         e.target.setCustomValidity("");
+    //     };
+    // }
+})
+// document.addEventListener("DOMContentLoaded", function() {
+//     var elements = document.getElementById('tel-code')
+//     for (var i = 0; i < elements.length; i++) {
+//         elements[i].oninvalid = function(e) {
+//             e.target.setCustomValidity("");
+//             if (!e.target.validity.valid) {
+//                 e.target.setCustomValidity("Please enter a valid phone number");
+//             }
+//         };
+//         elements[i].oninput = function(e) {
+//             e.target.setCustomValidity("");
+//         };
+//     }
+// })
 
