@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
         elements[i].oninvalid = function(e) {
             e.target.setCustomValidity("");
             if (!e.target.validity.valid) {
-                e.target.setCustomValidity("oh really?");
+                e.target.setCustomValidity("choose the message to all inputs except email and tel");
             }
         };
         elements[i].oninput = function(e) {
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('emailcode').oninvalid = function(e) {
             e.target.setCustomValidity("");
             if (!e.target.validity.valid) {
-                e.target.setCustomValidity("email");
+                e.target.setCustomValidity("Please enter a valid email address");
             }
         };
         document.getElementById('emailcode').oninput = function(e) {
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('tel-code').oninvalid = function(e) {
             e.target.setCustomValidity("");
             if (!e.target.validity.valid) {
-                e.target.setCustomValidity("emailsadasda");
+                e.target.setCustomValidity("Please enter a valid phone number");
             }
         };
         document.getElementById('tel-code').oninput = function(e) {

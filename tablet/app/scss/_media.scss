@@ -1,5 +1,16 @@
 @import "vars";
 @media (max-width: 321px) {
+	#blah {
+		top: -10px!important;
+		right: -2%!important;
+		position: absolute;
+		width: 70px!important;
+		height: 70px !important;
+		border-radius: 8px;
+		-o-object-fit: contain;
+		object-fit: contain;
+		opacity: 0;
+	}
 	h2 {
 		font-size: 40px !important;
 	}
@@ -242,6 +253,17 @@
 				margin: 0 auto 35px auto;
 			}
 			form {
+				#blah {
+					top: -10px;
+					right: 5%;
+					position: absolute;
+					width: 70px!important;
+					height: 70px !important;
+					border-radius: 8px;
+					-o-object-fit: contain;
+					object-fit: contain;
+					opacity: 0;
+				}
 				display: block;
 				.labels {
 					display: block;
