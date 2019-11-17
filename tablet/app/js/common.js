@@ -177,9 +177,9 @@ $(function() {
     })
   }
 });
-$('#postal-code').on('keypress change blur', function () {
-    $('#postal-code').val(function (index, value) {
-        return value.replace(/[^a-z0-9]+/gi, '').replace(/(.{3})/g, '$1-');
+$('#postal-code, #tel-code').on('keypress change blur', function () {
+    $(this).val(function (index, value) {
+        return value.replace(/[^a-z0-9]+/gi, '').replace(/(.{3})/g, '$1 ');
     });
 });
 
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
         elements[i].oninvalid = function(e) {
             e.target.setCustomValidity("");
             if (!e.target.validity.valid) {
-                e.target.setCustomValidity("choose the message to all inputs except email and tel");
+                e.target.setCustomValidity("Please fill in this field");
             }
         };
         elements[i].oninput = function(e) {
