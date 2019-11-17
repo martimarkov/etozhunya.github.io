@@ -135,9 +135,6 @@ $(function() {
 			$('.menu').addClass('hidden');
 		})
 	}
-  // $('.submit_bottom').click(function() {
-  //     $(this).addClass('active');
-  // })
   $('.home').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 800, 'linear');
