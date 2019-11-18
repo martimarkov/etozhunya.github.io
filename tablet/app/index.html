@@ -89,7 +89,7 @@
 		<div class="container">
 			<h2>Order Now</h2>
 			<p class="text">Upload image of Prescription</p>
-			<form name="myform" action="http://34.229.240.68:8001/orders" target="blank" id="form">
+			<form name="myform" action="http://34.229.240.68:8001/orders" id="form" method="POST">
 				<input  class="upload" type="file" name="pic" accept="image/*" id="imgInp">
 				<img id="blah" src="#" alt="your image"/>
 				<div class="labels">
@@ -130,7 +130,7 @@
 						<span>Postal Code
 							<span class="req">*</span>
 						</span>
-						<input class="input postal" id="postal-code" type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" maxlength="7" placeholder="e.g. 132-12">
+						<input class="input postal" id="postal-code" type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" maxlength="7" placeholder="e.g. A1A 1A1">
 					</label>
 					<label><span>Phone Number<span class="req">*</span></span><input class="input" pattern="[0-9]{3} [0-9]{3} [0-9]{3} [0-9]{1}" id="tel-code" maxlength="13" name="cardcode" type="tel" required="" placeholder="(647) 555-5555"></label>
 					<label>
