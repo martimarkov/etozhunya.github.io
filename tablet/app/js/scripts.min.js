@@ -242,35 +242,54 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var letters;
 
+        // document.getElementById('postal-code').oninvalid = function(e) {
+        //     e.target.setCustomValidity("");
+        //     if(letters == 'M6A' || letters == 'M6B' || letters == 'M6E') {
+        //       e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
+        //     } else {
+        //       e.target.setCustomValidity("");
+        //     }
+        //     if (!e.target.validity.valid) {
+
+        //       letters = $(this).val().slice(0,3);
+        //        if(!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
+        //         e.target.setCustomValidity("Please enter a valid postal code");
+        //       }
+        //     } else {
+        //       e.target.setCustomValidity("");
+        //     }
+        // };
         document.getElementById('postal-code').oninvalid = function(e) {
             e.target.setCustomValidity("");
-            if(letters == 'M6A' || letters == 'M6B' || letters == 'M6E') {
+
+            letters = $(this).val().slice(0,3);
+            if (!e.target.validity.valid) {
+              e.target.setCustomValidity("");
+              console.log('запиши норм');
+              e.target.setCustomValidity("Please enter a valid postal code");
+            } else if (!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
+              console.log('мы не доставляем');
               e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
             } else {
-              e.target.setCustomValidity("");
-            }
-            if (!e.target.validity.valid) {
-
-              letters = $(this).val().slice(0,3);
-               if(!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
-                e.target.setCustomValidity("Please enter a valid postal code");
-              }
-            } else {
+              console.log('успех')
               e.target.setCustomValidity("");
             }
         };
         document.getElementById('postal-code').oninput = function(e) {
+          e.target.setCustomValidity("");
+
+          letters = $(this).val().slice(0,3);
+          if (!e.target.validity.valid) {
             e.target.setCustomValidity("");
-
-            letters = $(this).val().slice(0,3);
-            if(letters == 'M6A' || letters == 'M6B' || letters == 'M6E') {
-              e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
-            } else if (!e.target.validity.valid) {
-              e.target.setCustomValidity("Please enter a valid postal code");
-            } else {
-              e.target.setCustomValidity("");
-            }
-
+            console.log('запиши норм');
+            e.target.setCustomValidity("Please enter a valid postal code");
+          } else if (!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
+            console.log('мы не доставляем');
+            e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
+          } else {
+            console.log('успех')
+            e.target.setCustomValidity("");
+          }
         };
 })
 function readURL(input) {
