@@ -178,7 +178,7 @@ $(function() {
     })
   }
 });
-$('#postal-code, #tel-code').on('keypress change blur', function () {
+$('#postal-code').on('keypress change blur', function () {
     $(this).val(function (index, value) {
         return value.replace(/[^a-z0-9]+/gi, '').replace(/(.{3})/g, '$1 ').trim();
     });
@@ -259,6 +259,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //       e.target.setCustomValidity("");
         //     }
         // };
+       $('.phone').mask('(000) 000-0000');
         document.getElementById('postal-code').oninvalid = function(e) {
             e.target.setCustomValidity("");
 
