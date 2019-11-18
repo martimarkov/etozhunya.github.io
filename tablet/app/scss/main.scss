@@ -574,6 +574,10 @@ body {
 			.input:focus {
 				border: none;
 			}
+			.input::placeholder {
+				height: 44px;
+				line-height: 1.4;
+			}
 			.submit_bottom {
 				border-radius: 0px 7px 7px 0px;
 				background-color: #03c9d5;
