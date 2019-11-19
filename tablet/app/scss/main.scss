@@ -250,9 +250,6 @@ body {
 				.label {
 					left: 0;
 				}
-				#lable {
-					left: 0;
-				}
 				span {
 					font-family: 'Opensans-r';
 					font-size: 18px;
@@ -281,7 +278,6 @@ body {
 					font-size: 18px;
 					line-height: 13px;
 					color: #161616;
-					text-transform: uppercase;
 				}
 				.input:focus, textarea:focus {
 				    outline: 2px solid #03c9d5;
@@ -289,6 +285,9 @@ body {
 				.input::placeholder {
 					height: 44px;
 					line-height: 1.4;
+				}
+				#postal-code {
+					text-transform: uppercase;
 				}
 				.select {
 					-webkit-appearance: none;
