@@ -55,19 +55,6 @@ function open_select(idx) {
     var hg = 0;
     var slect_open = document.querySelectorAll("[data-indx-select='" + idx1 + "']")[0].getAttribute('data-selec-open');
     var slect_element_open = document.querySelectorAll("[data-indx-select='" + idx1 + "'] select")[0];
-    // if (isMobileDevice()) {
-    //     if (window.document.createEvent) { // All
-    //         var evt = window.document.createEvent("MouseEvents");
-    //         evt.initMouseEvent("mousedown", false, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    //         slect_element_open.dispatchEvent(evt);
-    //     } else if (slect_element_open.fireEvent) { // IE
-    //         slect_element_open.fireEvent("onmousedown");
-    //     } else {
-    //         slect_element_open.click();
-    //     }
-    // } else {
-
-
         for (var i = 0; i < ul_cont_li.length; i++) {
             hg += ul_cont_li[i].offsetHeight;
         };
@@ -113,11 +100,7 @@ function _select_option(indx, selc) {
     select_.onchange();
     salir_select(selc);
 }
-$('#form').submit(function() {
-    formSubmit($(this));
-    $('form').addClass('active');
-    $('.labels label .input').val('')
-});
+
 $('.google_form').submit(function(e) {
     e.preventDefault();
     formSubmit($(this));
@@ -194,7 +177,9 @@ $('.google_form').submit(function(e) {
     formSubmit($(this));
    });
 
-   function formSubmit(form) {
+
+
+function formSubmit(form) {
     var $form = form,
        url = 'https://script.google.com/macros/s/AKfycbzeaYhRQDvUTDuqMT4fPss9Y8lGbwOp5fS75Pbtphr02x0H25Wl/exec';
     $.ajax({
@@ -203,9 +188,43 @@ $('.google_form').submit(function(e) {
         dataType: "json",
         data: $form.serialize(),
         success: function(response) {
+
         }
     }) 
 }
+
+$('#form').submit(function(e){
+    e.preventDefault();
+
+    var order = {
+        "first_name": $('#first_name').val(),
+        "last_name": $('#last_name').val(),
+        "street_address": $('#address').val(),
+        "city": $('#city').val(),
+        "province": $('#province').val(),
+        "postal_code": $('#postal-code').val().toUpperCase(),
+        "phone_number":$('#tel-code').val(),
+        "email": $('#emailcode').val(),
+        "notes": $('#textarea').val(),
+        "s3_url": "http://34.229.240.68:8001/orders",
+        "status": "awaiting"
+    }
+
+    $.ajax({
+        url: 'http://34.229.240.68:8001/orders',
+        method: "POST",
+        dataType: "json",
+        data: JSON.stringify(order),
+        // contentType: 'application/json; charset=utf-8',
+        success: function(response) {
+            $('#form').addClass('active');
+            $('.labels label .input').val('');
+
+            alert('Your form was successfully submitted!')
+        }
+    }) 
+})
+
 document.addEventListener("DOMContentLoaded", function() {
     var elements = document.getElementsByTagName("INPUT");
 

@@ -89,30 +89,31 @@
 		<div class="container">
 			<h2>Order Now</h2>
 			<p class="text">Upload image of Prescription</p>
-			<form name="myform" action="http://34.229.240.68:8001/orders" id="form" method="POST">
+			<form name="myform" action="http://34.229.240.68:8001/orders" id="form" method="POST" target="blank">
 				<input  class="upload" type="file" name="pic" accept="image/*" id="imgInp">
 				<img id="blah" src="#" alt="your image"/>
 				<div class="labels">
-					<label><span>First Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
-					<label><span>Last Name<span class="req">*</span></span><input class="input" type="text" required=""></label>
-					<label><span>Address<span class="req">*</span></span><input class="input" type="text" required=""></label>
-					<label><span>City<span class="req">*</span></span><input class="input" type="text" required=""></label>
+					<label><span>First Name<span class="req">*</span></span><input id="first_name" class="input" type="text" required=""></label>
+					<label><span>Last Name<span class="req">*</span></span><input id="last_name"class="input" type="text" required=""></label>
+					<label><span>Address<span class="req">*</span></span><input id="address"class="input" type="text" required=""></label>
+					<label><span>City<span class="req">*</span></span><input id="city" class="input" type="text" required=""></label>
 					<div class="try">
-						<label><span>Province<span class="req">*</span></span>
+						<label>
+							<span>Province<span class="req">*</span></span>
 							<div class="cont_select_center">
 							<div class="select_mate" data-mate-select="active" >
-							<select name="" onchange="" onclick="return false;" id="">
-							<option value="">Alberta</option>
-							<option value="1">British Columbia</option>
-							<option value="2">Manitoba</option>
-							<option value="3">New Brunswick</option>
-							<option value="4">Newfoundland and Labrador</option>
-							<option value="5">Nova Scotia</option>
-							<option value="" selected="">Ontario</option>
-							<option value="6">Prince Edward Island</option>
-							<option value="7">Saskatchewan</option>
-							<option value="8">Quebec</option>
-							  </select>
+							<select name="" onchange="" onclick="return false;" id="province">
+								<option value="">Alberta</option>
+								<option value="1">British Columbia</option>
+								<option value="2">Manitoba</option>
+								<option value="3">New Brunswick</option>
+								<option value="4">Newfoundland and Labrador</option>
+								<option value="5">Nova Scotia</option>
+								<option value="" selected="">Ontario</option>
+								<option value="6">Prince Edward Island</option>
+								<option value="7">Saskatchewan</option>
+								<option value="8">Quebec</option>
+						    </select>
 							<p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 							    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
 							    <path d="M0-.75h24v24H0z" fill="none"/>
@@ -123,12 +124,9 @@
 							  </div>
 							</div>
 						</label>
-					</div>
-					</select>
-					</label>
+					</div>	
 					<label for="postal-code">
-						<span>Postal Code
-							<span class="req">*</span>
+						<span>Postal Code<span class="req">*</span>
 						</span>
 						<input class="input postal" id="postal-code" type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" maxlength="7" placeholder="e.g. A1A 1A1">
 					</label>
@@ -137,7 +135,7 @@
 						<span>Email Address<span class="req">*</span></span>
 						<input class="input" id="emailcode" type="email" required="">
 					</label>
-					<label><span>Additional Notes</span><textarea name="Message" cols="40" rows="10"></textarea></label>
+					<label><span>Additional Notes</span><textarea id="textarea" name="Message" cols="40" rows="10"></textarea></label>
 				</div>
 				<p class="text">We also deliver over-the-counter (OTC) products.<br> Please enter the name of product and quantity in the <i>Additional Notes</i> section above in your order.<br><br>Note: we offer end-to-end data encryption to ensure your personal data is transferred securely.</p>
 				<button type="submit" class="submit">SUBMIT</button>
