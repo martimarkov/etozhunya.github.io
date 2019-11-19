@@ -242,23 +242,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var letters;
 
-        // document.getElementById('postal-code').oninvalid = function(e) {
-        //     e.target.setCustomValidity("");
-        //     if(letters == 'M6A' || letters == 'M6B' || letters == 'M6E') {
-        //       e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
-        //     } else {
-        //       e.target.setCustomValidity("");
-        //     }
-        //     if (!e.target.validity.valid) {
 
-        //       letters = $(this).val().slice(0,3);
-        //        if(!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
-        //         e.target.setCustomValidity("Please enter a valid postal code");
-        //       }
-        //     } else {
-        //       e.target.setCustomValidity("");
-        //     }
-        // };
        $('.phone').mask('(000) 000-0000');
         document.getElementById('postal-code').oninvalid = function(e) {
             e.target.setCustomValidity("");
@@ -269,8 +253,9 @@ document.addEventListener("DOMContentLoaded", function() {
               e.target.setCustomValidity("Please enter a valid postal code");
             } else if (!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
               e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
+              console.log(111);
             } else {
-              e.target.setCustomValidity("");
+              e.target.validity.valid
             }
         };
         document.getElementById('postal-code').oninput = function(e) {
