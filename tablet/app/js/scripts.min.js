@@ -247,13 +247,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('postal-code').oninvalid = function(e) {
             e.target.setCustomValidity("");
 
-            letters = $(this).val().slice(0,3);
+            letters = $(this).val().slice(0,3).toUpperCase();
             if (!e.target.validity.valid) {
               e.target.setCustomValidity("");
               e.target.setCustomValidity("Please enter a valid postal code");
+              console.log('polnaya huynya');
             } else if (!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
               e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
-              console.log(111);
+              console.log('mi ne dostavlyaem');
             } else {
               e.target.validity.valid
             }
@@ -261,14 +262,16 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('postal-code').oninput = function(e) {
           e.target.setCustomValidity("");
 
-          letters = $(this).val().slice(0,3);
+          letters = $(this).val().slice(0,3).toUpperCase();
           if (!e.target.validity.valid) {
             e.target.setCustomValidity("");
             e.target.setCustomValidity("Please enter a valid postal code");
+            console.log('polnaya huynya');
           } else if (!(letters == 'M6A' || letters == 'M6B' || letters == 'M6E')) {
             e.target.setCustomValidity("We currently do not deliver in that area. For a list of serviceable areas, please see our Help Center");
-          } else {
-            e.target.setCustomValidity("");
+            console.log('mi ne dostavlyaem');
+          } else if (e.target.validity.valid) {
+            console.log('uspex');
           }
         };
 })
