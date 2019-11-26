@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>skoro_sdam</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="shortcut icon" type="image/png" href="//d33v4339jhl8k0.cloudfront.net/docs/assets/545958a8e4b046b09a7605eb/images/5db992bf04286364bc9117ac/PanoramaFavicon.png">
+	<link href="//db.onlinewebfonts.com/c/f14eee643541cf03a10f26c944cc29f5?family=Proxima+Nova" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+	<section class="header">
+		<div class="hamburger" id="hamburger">
+			<span class="hamburger_button"></span>
+		</div>
+		<div class="container">
+			<nav class="header__nav">
+				<img src="https://i.imgur.com/vf29SSb.png" alt="">
+				<div class="navigation">
+					<div class="menu hidden">
+						<ul>
+							<li><a href="#">Social Emotional Learning</a></li>
+							<li><a href="/collection/474-student-success">Student Success</a></li>
+							<li><a href="#">Feedback Surveys</a></li>
+						</ul>
+					</div>
+					<a class="contact" href="#">Contact</a>
+				</div>
+			</nav>
+		</div>
+		<div class="header__welcome">
+			<div class="container">
+				<h1>Welcome!</h1>
+				<p>Let our support articles help your community <br>
+				with meaningful data.</p>
+				<form action="/search" method="GET" id="searchBar" autocomplete="off">
+				                <input type="text" name="query" title="search-query" class="search-query" placeholder="How we can help you?" aria-labelledby="Search the knowledge base" value="">
+				                <button type="submit" aria-labelledby="Search"><i class="icon-search lp"></i></button>
+				                <div id="serp-dd" style="display:none;">
+				                    <ul class="result"></ul>
+				                </div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/
+	jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var hamburger = document.getElementById('hamburger'),
+			menu = document.querySelector('.menu');
+
+			hamburger.addEventListener('click', function() {
+				hamburger.classList.toggle('active');
+				menu.classList.toggle('hidden');
+			})
+			if ($(window).width() < 768) {	
+				$('.menu').addClass('hidden');
+				$('.links').on('click', function() {
+					$('.menu').addClass('hidden');
+				})
+			}
+		  
+		});
+	</script>
+
+</body>
+</html>
