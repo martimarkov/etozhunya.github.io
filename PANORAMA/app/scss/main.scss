@@ -12,6 +12,13 @@ body {
 	width: 1100px;
 	margin: 0 auto;
 	position: relative;
+	h2 {
+		text-align: center;
+		font-family: "Proxima Nova";
+		margin: 50px 0px;
+		color: #4a4a4a;
+		font-size: 44px;
+	}
 }
 .header {
 	&__nav {
@@ -35,7 +42,7 @@ body {
 					font-family: 'Proxima Nova';
 					a {
 						text-decoration: none;
-						color: #000;
+						color: #4a4a4a;
 						font-size: 17px;
 					}
 				}
@@ -123,6 +130,164 @@ body {
 		        border-radius: 0 0 5px 5px;
 		        z-index: 1;
 		    }
+		}
+	}
+}
+.getting_started {
+	.container {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			li {
+				text-align: center;
+				width: 33%;
+				img {
+					width: 180px;
+				}
+				span {
+					display: block;
+					font-family: 'Proxima Nova';
+					margin: 20px 0px;
+					font-size: 20px;
+					color: #4a4a4a;
+				}
+				p {
+					font-size: 16px;
+					display: block;
+					line-height: 22px;
+				}
+			}
+			li:first-child {
+				img {
+					height: 120px;
+					width: auto;
+					transform: translateY(5px);
+				}
+			}
+		}
+	}
+}
+.popular_searches {
+	padding-bottom: 80px;
+	.container {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			li {
+				width: 16.5%;
+				text-align: center;
+				a {
+					border-radius: 7px;
+					position: relative;
+					height: 250px;
+					text-decoration: none;
+					display: block;
+					border: 1px solid #d8dff0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					transition: .2s;
+					img {
+						// padding: 25px 0px;
+						display: block;
+						margin: 20px auto 20px auto;
+					}
+					span {
+						color: #4a4a4a;
+						display: block;
+						font-family: 'Proxima Nova';
+						font-size: 24px;
+						max-width: 80%;
+						margin: 0 auto;
+						line-height: 30px;
+					}
+				}
+				a:hover {
+					box-shadow:1px 5px 11px 1px #d8dff0;
+					transform: scale(1.05);
+					transition: .2s;
+				}
+			}
+			li:nth-child(2), li:nth-child(3) {
+				a {
+					img {
+						transform: translateY(10px);
+					}
+					span {
+						transform: translateY(10px);
+					}
+				}
+			}
+		}
+	}
+}
+.footer {
+	border-top: solid 2px #006db0;
+	background: url(https://cdn2.hubspot.net/hubfs/459153/Panorama_January2019%20/Image/chalkboard-bg.jpg) center center/cover no-repeat;
+	.container {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		.links {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			width: 75%;
+			display: flex;
+			justify-content: space-between;
+			a {
+				color: #fff;
+				font-family: 'Proxima Nova';
+				text-decoration: none;
+				margin: 10px 0px;
+				display: block;
+				font-size: 13px;
+			}
+			> li {
+				width: 22%;
+				.title_links {
+					font-size: 15px;
+					margin-bottom: 15px;
+				}
+			}
+			> li:nth-child(3) {
+				width: 25%;
+			}
+		}
+		.soc-links {
+			width: 20%;
+			padding-top: 50px;
+			.logo-container {
+				.logo {
+					width: 120px;
+				}
+				.hidden-phone {
+					ul {
+						li {
+							display: flex;
+							a {
+								img {
+									width: 20px;
+									margin: 0px 5px;
+								}
+							}
+						}
+					}
+					> a {
+						color: #fff;
+						font-family: 'Proxima Nova';
+						text-decoration: none;
+						margin: 10px 0px 3px 10px;
+						display: block;
+						font-size: 13px;
+
+					}
+				}
+				.visible-phone {
+					display: none;
+				}
+			}
 		}
 	}
 }
