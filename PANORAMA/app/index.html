@@ -17,7 +17,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
-	<section class="header">
+	<section class="header" id="back">
 		<div class="hamburger" id="hamburger">
 			<span class="hamburger_button"></span>
 		</div>
@@ -192,7 +192,7 @@
 			            </ul>
 						<a href="/privacy" class="subsection-link">Privacy</a>
 			        </div>
-			        <a href="#" id="back-to-top" class="visible-phone" data-scroll="">↑ Back to Top</a>
+			        <a href="#back" class="visible-phone" data-scroll="">↑ Back to Top</a>
 			    </div>
 			</div>    
 		</div>
@@ -213,9 +213,12 @@
 				$('.links').on('click', function() {
 					$('.menu').addClass('hidden');
 				})
-			}
-		  
+			}  
 		});
+		 	$('.visible-phone').on('click', function(e) {
+			    e.preventDefault();
+			    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top},800, 'linear');
+			});
 	</script>
 </body>
 </html>
