@@ -47,6 +47,9 @@ body {
 						font-size: 17px;
 					}
 				}
+				.mob_only {
+					display: none;
+				}
 			}
 			.contact {
 				font-family: 'Proxima Nova_sb';
@@ -398,6 +401,7 @@ body {
 					}
 				    .menu {
 				    	position: fixed;
+				    	box-shadow: 9px 0px 22px 9px #1f1c1c;
 				    	background-color: #1f1c1c;
 				    	top: 0;
 				    	height: 100vh;
@@ -406,13 +410,15 @@ body {
 				    	z-index: 1;
 				    	display: flex;
 				    	justify-content: center;
-				    	align-items: start;
+				    	align-items: flex-start;
 				    	transition: .5s;
 				    	ul {
-				    		padding-top: 35%;
+				    		height: auto;
 				    		display: block;
+				    		padding-top: 35%;
 				    		li {
 				    			margin: 25px 0px 25px 10px;
+				    			max-width: 90%;
 				    			a {
 				    				color:#fff;
 				    				font-family: 'Proxima Nova_sb';
@@ -423,6 +429,9 @@ body {
 				    		}
 				    		li:first-child::after, li:nth-child(2)::after {
 				    			display: none;
+				    		}
+				    		.mob_only {
+				    			display: block;
 				    		}	
 				    	}
 				    }
@@ -456,7 +465,7 @@ body {
 				width: 100%;
 				li {
 					width: 100%;
-					margin: 35px 0px;
+					margin: 90px 0px;
 					span {
 
 					}
