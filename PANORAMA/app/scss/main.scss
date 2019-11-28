@@ -14,7 +14,7 @@ body {
 	position: relative;
 	h2 {
 		text-align: center;
-		font-family: "Proxima Nova";
+		font-family: "Proxima Nova_sb";
 		margin: 50px 0px;
 		color: #4a4a4a;
 		font-size: 44px;
@@ -39,7 +39,7 @@ body {
 				align-items: center;
 				li {
 					margin: 0px 15px;
-					font-family: 'Proxima Nova';
+					font-family: 'Proxima Nova_sb';
 					a {
 						text-decoration: none;
 						color: #4a4a4a;
@@ -48,6 +48,7 @@ body {
 				}
 			}
 			.contact {
+				box-shadow: 4px 3px 11px -3px #023810;
 				margin-left: 20px;
 				font-size: 17px;
 				padding: 14px 35px;
@@ -56,6 +57,12 @@ body {
 				color: #fff;
 				text-decoration: none;
 				line-height: 1;
+				transition: .2s;
+			}
+			.contact:hover {
+				background-color: #257312;
+				transform: scale(1.05);
+				transition: .2s;
 			}
 		}
 	}
@@ -67,13 +74,13 @@ body {
 		align-items: center;
 		h1 {
 			color: #fff;
-			font-family: 'Proxima Nova';
+			font-family: 'Proxima Nova_b';
 			font-weight: 400;
 			font-size: 56px;
 		}
 		p {
 			color: #fff;
-			font-family: 'Proxima Nova';
+			font-family: 'Proxima Nova_sb';
 			font-size: 22px;
 			line-height: 30px;
 			margin: 25px 0px;
@@ -142,27 +149,40 @@ body {
 			li {
 				text-align: center;
 				width: 33%;
-				img {
-					width: 180px;
-				}
-				span {
+				a {
 					display: block;
-					font-family: 'Proxima Nova';
-					margin: 20px 0px;
-					font-size: 20px;
+					text-decoration:none;
 					color: #4a4a4a;
-				}
-				p {
-					font-size: 16px;
-					display: block;
-					line-height: 22px;
+					img {
+						width: 180px;
+						transition: .2s;
+					}
+					img:hover {
+						transform: scale(1.05);
+						transition: .2s;
+					}
+					span {
+						display: block;
+						font-family: 'Proxima Nova_sb';
+						margin: 20px 0px;
+						font-size: 20px;
+						color: #4a4a4a;
+					}
+					p {
+						font-size: 16px;
+						display: block;
+						line-height: 22px;
+						font-family: 'Proxima Nova';
+					}
 				}
 			}
 			li:first-child {
-				img {
-					height: 120px;
-					width: auto;
-					transform: translateY(5px);
+				a {
+					transform: translateY(15px);
+					img {
+						height: 120px;
+						width: auto;
+					}
 				}
 			}
 		}
@@ -197,7 +217,7 @@ body {
 					span {
 						color: #4a4a4a;
 						display: block;
-						font-family: 'Proxima Nova';
+						font-family: 'Proxima Nova_sb';
 						font-size: 24px;
 						max-width: 80%;
 						margin: 0 auto;
@@ -254,6 +274,7 @@ body {
 				.title_links {
 					font-size: 15px;
 					margin-bottom: 15px;
+					font-family: 'Proxima Nova_sb';
 				}
 			}
 			> li:nth-child(3) {
@@ -433,11 +454,22 @@ body {
 				width: 100%;
 				li {
 					width: 100%;
-					margin: 25px 0px;
+					margin: 35px 0px;
+					span {
+
+					}
 					p {
-						font-size: 15px;
+						font-size: 13px;
 						width: 80%;
 						margin: 0 auto;
+					}
+					img {
+
+					}
+				}
+				li:first-child {
+					img {
+						height: 90px;
 					}
 				}
 			}
@@ -508,6 +540,9 @@ body {
 		}
 	}
 }
+@font-face {font-family: "Proxima Nova"; src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot"); src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff") format("woff"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova") format("svg"); }
+@font-face {font-family: "Proxima Nova_sb"; src: url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.eot"); src: url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.woff") format("woff"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.svg#Proxima Nova") format("svg"); }
+@font-face {font-family: "Proxima Nova_b"; src: url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.eot"); src: url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.woff") format("woff"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.svg#Proxima Nova") format("svg"); }
 
 @import "media";
 
