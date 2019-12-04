@@ -1,6 +1,17 @@
 @import "vars";
 
 @media (max-width: 961px) {
+	.text_container::before {
+		display: none;
+	}
+	.text_container {
+		p {
+			font-size: 14px !important;
+		}
+	}
+	.link {
+		font-size: 15px !important;
+	}
 	 .hamburger {
 	     height: 46px;
 	     width: 55px;
@@ -98,5 +109,38 @@
 	 .menu.hidden {
 	     left: 100%;
 	     transition: .5s;
+	}
+	.header {
+		&__nav {
+			height: 0;
+		}
+		&__content {
+			display: block;
+			.container {
+				width: 100%;
+				margin: 0 auto;
+				height: auto;
+				.image {
+
+				}
+				.links {
+					li {
+						a {
+							p {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			.text {
+				width: 100%;
+			}
+		}
+	}
+}
+@media (min-width: 1023px) {
+	.header__nav {
+		padding-left: 32% !important;
 	}
 }

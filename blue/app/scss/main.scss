@@ -56,10 +56,10 @@ body {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		height: 735px;
+		height: 675px;
 		position: relative;
 		.container {
-			height: 716px;
+			height: 670px;
 			width: 38%;
 			display: flex;
 			justify-content: space-between;
@@ -134,7 +134,6 @@ body {
 					font-family: 'arial';
 					padding: 8px;
 					font-size: 14px;
-					margin-bottom: 30px;
 				}
 				.link {
 					font-family: 'arial';
@@ -171,13 +170,13 @@ body {
 				.text_container {
 					height: 76%;
 					h1 {
-						color: #0e34c0;
+						color: #152cbb;
 						font-size: 30px;
 						font-family: 'arial';
 						font-weight: bold;
 					}
 					span {
-						color: blue;
+						color: rgb(62,124,223);
 						font-family: 'arial';
 						margin: 15px 0px;
 						display: block;
@@ -213,7 +212,7 @@ body {
 			.for_image {
 				background-color: grey;
 				width: 15%;
-				height: 735px;
+				height: 675px;
 			}
 		}
 	}
