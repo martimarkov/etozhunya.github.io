@@ -1,0 +1,125 @@
+@import "vars";
+@import "fonts";
+
+body * {
+	box-sizing: border-box;
+}
+body {
+	background-color: #fff;
+	position: relative;
+	color: #333132;
+}
+.header {
+	&__nav {
+		background-color: #222466;
+		height: 90px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding-left: 40%;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			height: 40%;
+			position: relative;
+			z-index: 1;
+			li {
+				display: flex;
+				align-items: center;
+				margin: 0px 15px;
+				border: 1px solid #5E5F80;
+				box-shadow: 5px 5px 10px #171741;
+				background-color: #323473;
+				border-radius: 4px;
+				a {
+					padding: 0px 10px;
+					font-size: 11px;
+					font-weight: bold;
+					font-family: "Verdana-Bold";
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+	}
+	&__content {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		height: 735px;
+		.animated {
+			width: 15%;
+			background: url('../img/blue.png') center center/cover no-repeat;
+		}
+		.text {
+			width: 76%;
+			ul {
+				padding-left: 50px;
+				li {
+					display: flex;
+					justify-content: space-between;
+					margin: 50px 0px 50px 0px;
+					.left {
+						width: 70%;
+						h1 {
+							color: #0e34c0;
+							font-size: 35px;
+							font-family: "Verdana-Bold";
+						}
+						span {
+							color: blue;
+							font-family: "Verdana-Bold";
+							margin: 15px 0px;
+							display: block;
+							font-size: 20px;
+						}
+						p {
+							font-family: "sans-serif";
+							width: 100%;
+							font-size: 20px;
+						}	
+					}
+					.right {
+						width: 30%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: relative;
+						img {
+							border: 2px solid #000;
+							display: inline-block;
+							width: 80%;
+							height: 170px;
+							background-color: grey;
+						}	
+					}
+				}
+				li:nth-child(3) {
+					width: 70%;
+					img {
+						border: 2px solid #000;
+						width: 100%;
+						height: 130px;
+						background-color: grey;
+					}
+				}
+			}
+		}
+		.text::before {
+					content: '';
+					width: 74%;
+					height: 106%;
+					position: absolute;
+					top: -45px;
+					left: 241px;
+					background: 0 0;
+					border: solid grey 1px;
+				}
+		.image {
+			width: 133px;
+			background-color: grey;
+		}
+	}
+}
+
+@import "media2";

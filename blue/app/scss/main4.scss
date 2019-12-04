@@ -1,0 +1,47 @@
+@import "vars";
+@import "fonts";
+
+body * {
+	box-sizing: border-box;
+}
+body {
+	background-color: #fff;
+	position: relative;
+	color: #333132;
+}
+.header {
+	&__nav {
+		background-color: #222466;
+		height: 90px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding-left: 40%;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			height: 40%;
+			position: relative;
+			z-index: 1;
+			li {
+				display: flex;
+				align-items: center;
+				margin: 0px 15px;
+				border: 1px solid #5E5F80;
+				box-shadow: 5px 5px 10px #171741;
+				background-color: #323473;
+				border-radius: 4px;
+				a {
+					padding: 0px 10px;
+					font-size: 11px;
+					font-weight: bold;
+					font-family: "Verdana-Bold";
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@import "media4";
