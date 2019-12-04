@@ -17,6 +17,12 @@ $(function() {
 	    e.preventDefault();
 	    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top},800, 'linear');
 	});
+	if ($(window).width() < 768) {  
+	  $('.href').on('click', function() {
+	    $('.menu').addClass('hidden');
+	    $('#hamburger').removeClass('active');
+	  })
+	}
 
 // setInterval(function() {
 

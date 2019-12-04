@@ -5,6 +5,7 @@ body * {
 	box-sizing: border-box;
 }
 body {
+	font-family: 'arial';
 	background-color: #fff;
 	position: relative;
 	color: #333132;
@@ -43,6 +44,9 @@ body {
 						font-family: "Verdana-Bold";
 						text-decoration: none;
 						color: #fff;
+					}
+					a:hover {
+						color: #417adc;
 					}
 				}
 			}
@@ -96,35 +100,57 @@ body {
 			}
 			li:first-child {
 				background-color: #d6e6f4;
+				a {
+					.case {
+						background-color: #E1EDF7;
+					}
+				}
 			}
 			li:nth-child(2) {
 				background-color: #bcd8f1;
+				.case {
+					background-color: #CFE3F5;
+				}
 			}
 			li:nth-child(3) {
 				 background-color: #8ab3d9;
+				 .case {
+				 	background-color: #9EB7D4;
+				 }
 			}
 			a {
 				color: #2a2a6a;
 				display: block;
 				text-align: center;
 				text-decoration: none;
-				span {
-					font-family: "Verdana-Bold";
-					margin: 10px 0px;
+				.case {
+					font-family: 'arial';
+					font-weight: bold;
 					display: block;
+					width: 100%;
+					padding: 8px;
 				}
 				p {
-					font-family: sans-serif;
-					padding: 5px;
+					font-family: 'arial';
+					padding: 8px;
+					font-size: 14px;
+					margin-bottom: 30px;
 				}
 				.link {
-					font-family: "Verdana-Bold";
+					font-family: 'arial';
+					font-weight: bold;
 					color: #fff;
 					background-color: #222668;
 					display: block;
 					height: 40px;
 					padding: 10px;
 					margin: 0px;
+					border-top: 2px solid #fff;
+				}
+			}
+			a:hover {
+				.link {
+					color: #417adc;
 				}
 			}
 		}
@@ -133,6 +159,7 @@ body {
 			display: flex;
 			justify-content: space-between;
 			position: relative;
+			font-family: 'arial';
 			&__content {
 				width: 85%;
 				background-color: #f0f2f7;
@@ -146,16 +173,17 @@ body {
 					h1 {
 						color: #0e34c0;
 						font-size: 30px;
-						font-family: "Verdana-Bold";
+						font-family: 'arial';
+						font-weight: bold;
 					}
 					span {
 						color: blue;
-						font-family: "Verdana-Bold";
+						font-family: 'arial';
 						margin: 15px 0px;
 						display: block;
 					}
 					p {
-						font-family: "sans-serif";
+						font-family: 'arial';
 					}
 				}
 				.text_container::before {
