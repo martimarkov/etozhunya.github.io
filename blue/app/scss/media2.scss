@@ -17,7 +17,7 @@
 	     position: fixed;
 	}
 	 .hamburger.active .hamburger_button {
-	     background-color: #1f1c1c;
+	     background-color: #222466a1;
 	}
 	 .hamburger.active .hamburger_button::before {
 	     background-color: #fff;
@@ -60,11 +60,11 @@
 	.menu {
 	     position: fixed;
 	     box-shadow: 9px 0px 22px 9px #1f1c1c;
-	     background-color: #1f1c1c;
+	     background-color: #222466a1;
 	     top: 0;
 	     height: 100vh !important;
-	     width: 50vw;
-	     left: 50%;
+	     width: 100vw;
+	     left: 0%;
 	     z-index: 1;
 	     display: flex;
 	     justify-content: center;
@@ -78,6 +78,7 @@
 	             margin: 25px 0px 25px 10px !important;
 	             max-width: 90%;
 	             padding: 10px 0px;
+	             justify-content: center;
 	             a {
 	                 color:#fff;
 	                 font-family: 'Proxima Nova_sb';
@@ -97,5 +98,44 @@
 	 .menu.hidden {
 	     left: 100%;
 	     transition: .5s;
+	} 
+	.header {
+		&__content {
+			display: block;
+			.text {
+				width: 100%;
+				ul {
+					padding: 0;
+					li {
+						display: block;
+						.left {
+							width: 90%;
+							margin: 20px auto;
+							h1, span {
+								text-align: center;
+							}
+						}
+						.right {
+							width: 90%;
+							margin: 20px auto;
+						}
+					}
+					li:nth-child(3) {
+						display: block;
+						border: 2px solid #000;
+						width: 80%;
+						height: 120px;
+						background-color: grey;
+						margin: 0 auto 50px auto;
+					}
+				}
+			}
+			.text::before {
+				display: none;
+			}
+			.image {
+				display: none;
+			}
+		}
 	}
 }
