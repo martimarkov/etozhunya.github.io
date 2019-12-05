@@ -58,7 +58,17 @@ body {
 		height: 735px;
 		.animated {
 			width: 15%;
-			background: url('../img/blue.png') center center/cover no-repeat;
+			background: url('../img/blue.png') center center/ cover;
+			background-position: 100% center;
+			animation: bg-animated 3s linear forwards;
+		}
+		@keyframes bg-animated {
+			0% {
+				background-position: 100% center;
+			}
+			100% {
+				background-position: 0% center;
+			}
 		}
 		.text {
 			width: 76%;

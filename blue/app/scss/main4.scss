@@ -60,6 +60,31 @@ body {
 			width: 15%;
 			background: url('../img/blue.png') center center/cover no-repeat;
 		}
+		.text {
+			width: 76%;
+			h1 {
+				color: #0e34c0;
+				font-size: 35px;
+				font-family: 'arial';
+				font-weight: bold;
+				padding: 50px;
+			}
+			ul {
+				display: flex;
+			    justify-content: flex-start;
+			    padding-left: 50px;
+			    h2 {
+			    	color: blue;
+			    	font-family: 'arial';
+			    	margin: 15px 0px;
+			    	display: block;
+			    	font-size: 20px;
+			    }
+			    li {
+			    	width: 50%;
+			    }
+			}
+		}
 		.text::before {
 					content: '';
 					width: 74%;

@@ -23,23 +23,24 @@ $(function() {
 	    $('#hamburger').removeClass('active');
 	  })
 	}
-
+var i = 0;
 setInterval(function() {
-
-	for ( i = 0; i < $('.wrapper li').length; i++) {	
-		if ($($('.wrapper li')[i]).hasClass('white')) {
-			$($('.wrapper li')[i]).removeClass('white')
-		} else {
-			$($('.wrapper li')[i]).addClass('white');
-		}
-		if (i = $('.wrapper li').length; i++) {
-			setTimeout(function() {
-				i = 0
-			}, 2000)
-		}
+	if ($($('.wrapper li')[i]).hasClass('white')) {
+		$($('.wrapper li')[i]).removeClass('white')
+	} else {
+		$($('.wrapper li')[i]).addClass('white');
 	}
-	
-},1500)
+
+	if (i == 2) {
+		// setTimeout(function(){
+			i = 0;
+
+		// },1000)
+		
+	} else {
+		i++;
+	}
+},2000)
 
 // В нем 
 // for(i=0; i<$(ul).length; i++) {
