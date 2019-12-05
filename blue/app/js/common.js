@@ -24,21 +24,22 @@ $(function() {
 	  })
 	}
 
-// setInterval(function() {
+setInterval(function() {
 
-// 	for ( i = 0; i < $('.wrapper li').length; i++) {	
-// 		if ($($('.wrapper li')[i]).hasClass('white')) {
-// 			$($('.wrapper li')[i]).removeClass('white')
-// 		} else {
-// 			$($('.wrapper li')[i]).addClass('white');
-// 		}
-// 		if (i = $('.wrapper li').length; i++) {
-// 			setTimeout(function() {
-// 				i = 0
-// 			}, 2000)
-// 		}
-// 	}
-// },1500)
+	for ( i = 0; i < $('.wrapper li').length; i++) {	
+		if ($($('.wrapper li')[i]).hasClass('white')) {
+			$($('.wrapper li')[i]).removeClass('white')
+		} else {
+			$($('.wrapper li')[i]).addClass('white');
+		}
+		if (i = $('.wrapper li').length; i++) {
+			setTimeout(function() {
+				i = 0
+			}, 2000)
+		}
+	}
+	
+},1500)
 
 // В нем 
 // for(i=0; i<$(ul).length; i++) {

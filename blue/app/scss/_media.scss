@@ -1,6 +1,9 @@
 @import "vars";
 
 @media (max-width: 961px) {
+	h1 {
+		display: none;
+	}
 	.text_container::before {
 		display: none;
 	}
@@ -20,7 +23,7 @@
 	     z-index: 11;
 	     border-radius: 30%;
 	     right: 5px;
-	     top: 17px;
+	     top: 10px;
 	     z-index: 100;
 	     cursor: pointer;
 	}
@@ -112,7 +115,10 @@
 	}
 	.header {
 		&__nav {
-			height: 90px;
+			position: fixed;
+			height: 60px;
+			    width: 100vw;
+			    z-index: 1;
 		}
 		&__content {
 			display: block;
@@ -127,6 +133,7 @@
 					li {
 						a {
 							p {
+								text-align: center;
 								margin-bottom: 0;
 							}
 						}
