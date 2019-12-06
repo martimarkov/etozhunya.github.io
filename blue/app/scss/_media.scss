@@ -26,8 +26,8 @@
 		width: 120px;
 		background-color: grey;
 	    display: block;
-	    position: relative;
-	    left: -90px;
+	    position: absolute;
+	    left: 30px;
 	}
 	.text_container::before {
 		display: none;
