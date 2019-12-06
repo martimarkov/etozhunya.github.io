@@ -76,6 +76,21 @@ body {
 		.text {
 			width: 76%;
 			position: relative;
+			padding-left: 50px;
+			padding-top: 30px;
+			h1 {
+				color: #0e34c0;
+				font-size: 28px;
+				font-family: 'arial';
+				font-weight: bold;
+			}
+			p {
+				color: blue;
+				font-family: 'arial';
+				margin: 15px 0px;
+				display: block;
+				font-size: 20px;
+			}
 		}
 		.text::before {
 					content: '';
