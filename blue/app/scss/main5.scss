@@ -78,6 +78,7 @@ body {
 			position: relative;
 			padding-left: 50px;
 			padding-top: 30px;
+			background-color: #f0f2f7;
 			h1 {
 				color: #0e34c0;
 				font-size: 28px;
@@ -91,17 +92,68 @@ body {
 				display: block;
 				font-size: 20px;
 			}
-		}
-		.text::before {
-					content: '';
-					width: 97%;
-					height: 106%;
-					position: absolute;
-					top: -45px;
-					left: 10px;
-					background: 0 0;
-					border: solid grey 1px;
+			form {
+				.labels {
+					position: relative;
+					display: flex;
+					.first_labels {
+						width: 50%;
+						h2 {
+							color: #427edc;
+							font-family: 'arial';
+							margin: 15px 0 0 0;
+							font-weight: bold;	
+							font-size: 18px;
+						}
+						label {
+							position: relative;
+							margin-top: 20px;
+							display: block;
+							font-size: 18px;
+							span {
+								width: 35%;
+								font-size: 18px;
+								font-family: "Arial";
+								text-transform: capitalize;
+								width: 200px;
+								display: inline-block;
+							}
+							input {
+								width: 55%;
+								font-size: 18px;
+								font-family: "Arial";
+							}
+							.wrap {
+								width: 55%;
+								position: relative;
+								display: inline-flex;
+								justify-content: space-around;
+								select {
+									width: 20%;
+									height: 25px;
+								}
+								input {
+									width: 60%;
+								}
+							}
+						}
+					}
+					.second_labels {
+						width: 50%;
+					}
 				}
+			}
+		}
+		// .text::before {
+		// 			content: '';
+		// 			width: 97%;
+		// 			height: 106%;
+		// 			position: absolute;
+		// 			top: -45px;
+		// 			left: 10px;
+		// 			background: 0 0;
+		// 			border: solid grey 1px;
+		// 		}
 		.image {
 			width: 10%;
 			background-color: grey;
