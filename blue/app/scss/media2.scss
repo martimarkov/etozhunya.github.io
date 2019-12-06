@@ -133,7 +133,11 @@
 		} 
 		&__content {
 			display: block;
-			 margin-top: 100px;
+			 margin-top: 60px;
+			 .animated {
+			 	height: 350px;
+			 	width: 100vw;
+			 }
 			.text {
 				width: 100%;
 				ul {

@@ -9,6 +9,9 @@ body {
 	position: relative;
 	color: #333132;
 }
+.mob_only {
+	display: none;
+}
 .header {
 	&__nav {
 		background-color: #222466;

@@ -9,6 +9,9 @@ body {
 	position: relative;
 	color: #333132;
 }
+.mob_only {
+	display: none;
+}
 .header {
 	&__nav {
 		background-color: #222466;
@@ -38,7 +41,7 @@ body {
 					border-radius: 4px;
 					a {
 						padding: 0px 10px;
-						font-size: 14px;
+						font-size: 11px;
 						font-weight: bold;
 						font-family: "Verdana-Bold";
 						text-decoration: none;
@@ -58,20 +61,34 @@ body {
 		height: 735px;
 		.animated {
 			width: 15%;
-			background: url('../img/blue.png') center center/cover no-repeat;
+			background: url('../img/blue.png') center center/ cover;
+			background-position: 100% center;
+			animation: bg-animated 3s linear forwards;
+		}
+		@keyframes bg-animated {
+			0% {
+				background-position: 100% center;
+			}
+			100% {
+				background-position: 0% center;
+			}
+		}
+		.text {
+			width: 76%;
+			position: relative;
 		}
 		.text::before {
 					content: '';
-					width: 74%;
+					width: 97%;
 					height: 106%;
 					position: absolute;
 					top: -45px;
-					left: 241px;
+					left: 10px;
 					background: 0 0;
 					border: solid grey 1px;
 				}
 		.image {
-			width: 133px;
+			width: 10%;
 			background-color: grey;
 		}
 	}

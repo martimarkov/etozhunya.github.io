@@ -9,6 +9,9 @@ body {
 	position: relative;
 	color: #333132;
 }
+.mob_only {
+	display: none;
+}
 .header {
 	&__nav {
 		background-color: #222466;
@@ -58,40 +61,84 @@ body {
 		height: 735px;
 		.animated {
 			width: 15%;
-			background: url('../img/blue.png') center center/cover no-repeat;
+			background: url('../img/blue.png') center center/ cover;
+			background-position: 100% center;
+			animation: bg-animated 3s linear forwards;
+		}
+		@keyframes bg-animated {
+			0% {
+				background-position: 100% center;
+			}
+			100% {
+				background-position: 0% center;
+			}
 		}
 		.text {
 			width: 76%;
+			position: relative;
 			h1 {
 				color: #0e34c0;
-				font-size: 35px;
+				font-size: 28px;
 				font-family: 'arial';
 				font-weight: bold;
-				padding: 50px;
+				padding: 25px 0px 20px 50px;
 			}
-			ul {
+			> ul {
 				display: flex;
 			    justify-content: flex-start;
 			    padding-left: 50px;
-			    h2 {
-			    	color: blue;
-			    	font-family: 'arial';
-			    	margin: 15px 0px;
-			    	display: block;
-			    	font-size: 20px;
-			    }
+			    height: 250px;
 			    li {
-			    	width: 50%;
+			    	width: 33%;
+			    	position: relative;
+			    	h2 {
+			    		color: blue;
+			    		font-family: 'arial';
+			    		margin:  0px 0px 10px 0px;
+			    		display: block;
+			    		font-size: 20px;
+			    	}
+			    	p {
+			    		font-family: 'arial'
+			    	}
+			    	img {
+			    		width: 80%;
+			    		margin: 0 auto;
+			    		display: block;
+			    		height: 220px;
+			    		background-color: grey;
+			    	}
 			    }
+			}
+			.info {
+				display: block;
+				li {
+					display: block;
+					margin-bottom: 50px;
+					h3 {
+						color: blue;
+						font-family: 'arial';
+						margin:  0px 0px 10px 0px;
+						display: block;
+						font-size: 20px;
+					}
+				}
+			}
+			img {
+				background-color: grey;
+				width: 80%;
+				height: 120px;
+				display: block;
+				margin-left: 50px;
 			}
 		}
 		.text::before {
 					content: '';
-					width: 74%;
+					width: 97%;
 					height: 106%;
 					position: absolute;
 					top: -45px;
-					left: 241px;
+					left: 10px;
 					background: 0 0;
 					border: solid grey 1px;
 				}
