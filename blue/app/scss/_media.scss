@@ -4,17 +4,13 @@
 	.header__content {
 		.container {
 			height: auto !important;
+			min-height: auto !important;
 			.links {
 				p {
 					font-size: 14px !important;
 				}
 			}
 		}
-	}
-}
-@media (max-width: 320px) {
-	.links {
-		transform: translateY(-25px);
 	}
 }
 @media (max-width: 961px) {
@@ -149,11 +145,12 @@
 		&__content {
 			display: block;
 			.container {
+				height: auto;
 				width: 100%;
 				margin: 0 auto;
-				height: 100vh;
+				min-height: 100vh;
 				.image {
-
+					height: auto;
 				}
 				.links {
 					li {
@@ -164,7 +161,7 @@
 							}
 							p {
 								text-align: center;
-								font-size: 11px;
+								// font-size: 11px;
 								margin-bottom: 0;
 							}
 						}
