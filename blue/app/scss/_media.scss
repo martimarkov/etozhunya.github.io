@@ -1,8 +1,33 @@
 @import "vars";
 
+@media (min-width: 768px) and (max-width: 961px) { 
+	.header__content {
+		.container {
+			height: auto !important;
+			.links {
+				p {
+					font-size: 14px !important;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 320px) {
+	.links {
+		transform: translateY(-25px);
+	}
+}
 @media (max-width: 961px) {
 	h1 {
 		display: none;
+	}
+	.mob_only {
+		height: 40px;
+		width: 120px;
+		background-color: grey;
+	    display: block;
+	    position: relative;
+	    left: -90px;
 	}
 	.text_container::before {
 		display: none;
@@ -93,6 +118,7 @@
 	             max-width: 90%;
 	             padding: 10px 0px;
 	             justify-content: center;
+	             background-color: #222466 !important;
 	             a {
 	                 color:#fff;
 	                 font-family: 'Proxima Nova_sb';
@@ -125,15 +151,20 @@
 			.container {
 				width: 100%;
 				margin: 0 auto;
-				height: auto;
+				height: 100vh;
 				.image {
 
 				}
 				.links {
 					li {
 						a {
+							.case {
+								height: auto;
+								padding: 8px;
+							}
 							p {
 								text-align: center;
+								font-size: 11px;
 								margin-bottom: 0;
 							}
 						}
@@ -148,6 +179,28 @@
 }
 @media (min-width: 962px) and (max-width: 1200px) {
 	.header__nav {
-		padding-left: 25% !important;
+		padding-left: 38% !important;
+	}
+	.links {
+		p {
+			font-size: 11px !important; 
+		}
+	}
+}
+@media (min-width: 1550px) and (max-width: 1920px) {
+	.header__nav {
+		padding-left: 42% !important;
+	}
+}
+@media (min-width: 961px) and (max-width: 1450px) { 
+	.header__nav {
+		.menu {
+			ul {
+				li {
+					margin: 0 5px !important;
+				}
+			}
+
+		}
 	}
 }
