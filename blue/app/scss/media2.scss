@@ -1,6 +1,29 @@
 @import "vars";
-
+@media (min-width: 961px) and (max-width: 1350px) {
+	.header__nav {
+		padding-left: 18%;
+	}
+}
 @media (max-width: 961px) {
+	.mob_only {
+		height: 40px;
+		width: 120px;
+		background-color: grey;
+	    display: block;
+	    position: absolute;
+	    left: 30px;
+	}
+	.text_container::before {
+		display: none;
+	}
+	.text_container {
+		p {
+			font-size: 14px !important;
+		}
+	}
+	.link {
+		font-size: 15px !important;
+	}
 	 .hamburger {
 	     height: 46px;
 	     width: 55px;
@@ -9,7 +32,7 @@
 	     z-index: 11;
 	     border-radius: 30%;
 	     right: 5px;
-	     top: 17px;
+	     top: 10px;
 	     z-index: 100;
 	     cursor: pointer;
 	}
@@ -79,6 +102,7 @@
 	             max-width: 90%;
 	             padding: 10px 0px;
 	             justify-content: center;
+	             background-color: #222466 !important;
 	             a {
 	                 color:#fff;
 	                 font-family: 'Proxima Nova_sb';
@@ -98,10 +122,18 @@
 	 .menu.hidden {
 	     left: 100%;
 	     transition: .5s;
-	} 
+	}
 	.header {
+		&__nav {
+			position: fixed;
+			height: 60px;
+			    width: 100vw;
+			    z-index: 1;
+			    top: 0;
+		} 
 		&__content {
 			display: block;
+			 margin-top: 100px;
 			.text {
 				width: 100%;
 				ul {
