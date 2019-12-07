@@ -1,8 +1,33 @@
 @import "vars";
 
 @media (min-width: 962px) {
+	body {
+		
+	}
+	.header__content {
+		.text__content {
+			.text_container {
+				width: 98%;
+				margin: 0 auto;
+			}
+		}
+		.links {
+			height: 35% !important;
+		}
+		.text {
+			height: calc(100vh - 90px);
+			.for_image {
+				height: calc(100vh - 90px);
+			}
+		}
+	}
 	.container {
 		height: calc(100vh - 90px) !important;
+		min-height: calc(100vh - 90px) !important;
+		position: relative;
+		.image {
+			height: 65% !important;
+		}
 	}
 }
 @media (min-width: 768px) and (max-width: 961px) { 
@@ -115,15 +140,17 @@
 	         display: block !important;
 	         padding-top: 35%;
 	         li {
-	             margin: 25px 0px 25px 10px !important;
+	             margin: 30px 0 30px 10px !important;
 	             max-width: 90%;
-	             padding: 10px 0px;
+	             padding: 12px 0px;
 	             justify-content: center;
 	             background-color: #222466 !important;
 	             a {
 	                 color:#fff;
+	                 padding: 0 15px;
+	                 transform: translateY(1px);
 	                 font-family: 'Proxima Nova_sb';
-	                 font-size: 17px;
+	                 font-size: 12px;
 	                 line-height: 1.2;
 	                 text-transform: none;
 	            }
