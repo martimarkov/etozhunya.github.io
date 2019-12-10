@@ -216,7 +216,7 @@ body {
 				.text_container::before {
 					content: '';
 					width: 96%;
-					height: 102.5%;
+					height: 103.5%;
 					position: absolute;
 					top: -45px;
 					left: 15.5px;
@@ -229,7 +229,7 @@ body {
 					justify-content: center;
 					align-items: center;
 					.text__image {
-						background: url('../img/logo.png') center center / cover;
+						background: url('../img/logo.png') center center/contain no-repeat;
 						width: 100%;
 						height: 80px;
 						border: solid 2px #000;
@@ -239,7 +239,7 @@ body {
 			}
 			.for_image {
 				background-color: grey;
-				width: 5%;
+				width: 7%;
 				height: 675px;
 			}
 		}
