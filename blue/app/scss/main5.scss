@@ -12,14 +12,19 @@ body {
 .mob_only {
 	display: none;
 }
+.mob_only {
+	display: none;
+}
 .header {
+	min-height: 100vh;
+	height: auto;
 	&__nav {
 		background-color: #222466;
 		height: 90px;
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding-left: 37%;
+		padding-left: 41%;
 		.menu {
 			display: flex;
 			justify-content: center;
@@ -41,7 +46,7 @@ body {
 					border-radius: 4px;
 					a {
 						padding: 0px 10px;
-						font-size: 11px;
+						font-size: 12px;
 						font-weight: bold;
 						font-family: "Verdana-Bold";
 						text-decoration: none;
@@ -55,26 +60,19 @@ body {
 		}
 	}
 	&__content {
-		position: relative;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		height: 735px;
+		height: 675px;
+		position: relative;
 		.animated {
-			width: 15%;
+			width: 16%;
 			background: url('../img/blue.png') center center/ cover;
 			background-position: 100% center;
 			animation: bg-animated 3s linear forwards;
 		}
-		@keyframes bg-animated {
-			0% {
-				background-position: 100% center;
-			}
-			100% {
-				background-position: 0% center;
-			}
-		}
 		.text {
-			width: 76%;
+			width: 77%;
 			position: relative;
 			padding-left: 50px;
 			padding-top: 30px;
@@ -155,10 +153,17 @@ body {
 		// 			border: solid grey 1px;
 		// 		}
 		.image {
-			width: 10%;
+			width: 7%;
 			background-color: grey;
 		}
 	}
 }
-
+@keyframes bg-animated {
+	0% {
+		background-position: 100% center;
+	}
+	100% {
+		background-position: 0% center;
+	}
+}
 @import "media5";
