@@ -258,3 +258,8 @@
 		height: 50% !important;
 	}
 }
+@media (max-width: 1200px) {
+	.image_container {
+		transform: translateY(-20px);
+	}
+}
