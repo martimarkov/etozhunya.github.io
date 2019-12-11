@@ -102,7 +102,7 @@ body {
 			height: auto;
 			overflow-x: hidden;
 			li {
-				width: 35%;
+				width: 33%;
 				position: relative;
 			}
 			li:first-child {
@@ -116,8 +116,8 @@ body {
 			}
 			li:nth-child(2) {
 				background-color: #bcd8f1;
-				border-left: 3px solid #fff;
-				border-right: 3px solid #fff;
+				// border-left: 3px solid #fff;
+				// border-right: 3px solid #fff;
 				.case {
 					background-color: #CFE3F5;
 				}
@@ -211,6 +211,7 @@ body {
 						font-size: 14px;
 						text-align: justify;
 						font-family: 'arial';
+						margin-bottom: 25vh;
 					}
 				}
 				.text_container::before {
@@ -226,14 +227,15 @@ body {
 				.text_container::after {
 				    content: '';
 				    background: url(../img/logo.png) center center/contain no-repeat;
-				    width: 91%;
+				    width: 90%;
 				    height: 80px;
 				    border: solid 2px #000;
 				    height: 90px;
 				    display: block;
 				    position: absolute;
 				    bottom: 50px;
-				    left: 4%;
+				    left: 5.5%;
+				    transform: translateX(-4px);
 				}
 				.image_container {
 					transform: translateY(-20px);
@@ -253,7 +255,7 @@ body {
 			.for_image {
 				background-color: grey;
 				width: 12%;
-				height: 675px;
+				height: auto;
 			}
 		}
 	}
