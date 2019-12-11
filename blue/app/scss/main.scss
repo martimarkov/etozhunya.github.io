@@ -22,13 +22,15 @@ body {
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding-left: 41%;
+		padding-left: 40%;
 		.menu {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 40%;
+			width: 86%;
 			ul {
+				width: 100%;
 				display: flex;
 				justify-content: space-between;
 				height: 100%;
