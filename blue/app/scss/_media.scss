@@ -30,7 +30,6 @@
 		}
 	}
 	.container {
-		height: calc(100vh - 90px) !important;
 		min-height: calc(100vh - 90px) !important;
 		position: relative;
 		.image {
@@ -64,7 +63,7 @@
 	.mob_only {
 		background: url('../img/logo-mob.png') center center / contain no-repeat;
 		height: 40px;
-		width: 120px;
+		width: 150px;
 	    display: block;
 	    position: absolute;
 	    left: 30px;
