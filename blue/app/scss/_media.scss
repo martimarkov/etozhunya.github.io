@@ -23,9 +23,9 @@
 			}
 		}
 		.text {
-			height: calc(100vh - 90px);
+			min-height: calc(100vh - 90px);
 			.for_image {
-				height: calc(100vh - 90px);
+				min-height: calc(100vh - 90px);
 			}
 		}
 	}
