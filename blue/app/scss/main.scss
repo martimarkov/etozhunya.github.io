@@ -45,7 +45,7 @@ body {
 					a {
 						padding: 0px 10px;
 						font-size: 12px;
-						font-weight: bold;
+						font-weight: 500;
 						font-family: "Verdana-Bold";
 						text-decoration: none;
 						color: #fff;
@@ -140,7 +140,7 @@ body {
 				height: 100%;
 				.case {
 					font-family: 'arial';
-					font-weight: bold;
+					font-weight: 500;
 					display: block;
 					width: 100%;
 					padding: 8px;
@@ -155,7 +155,7 @@ body {
 				}
 				.link {
 					font-family: 'arial';
-					font-weight: bold;
+					font-weight: 500;
 					color: #fff;
 					background-color: #222668;
 					display: block;
@@ -215,11 +215,11 @@ body {
 				}
 				.text_container::before {
 					content: '';
-					width: 96%;
+					width: 96.5%;
 					height: 103.5%;
 					position: absolute;
 					top: -45px;
-					left: 15.5px;
+					left: 12.5px;
 					background: transparent;
 					border: solid grey 1px;
 				}
@@ -239,7 +239,7 @@ body {
 			}
 			.for_image {
 				background-color: grey;
-				width: 7%;
+				width: 12%;
 				height: 675px;
 			}
 		}

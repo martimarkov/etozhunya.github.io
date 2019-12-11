@@ -52,8 +52,11 @@
 	}
 }
 @media (max-width: 961px) {
+	.text__content {
+		padding-top: 50px !important;
+	}
 	.for_image {
-		width: 10% !important;
+		width: 12% !important;
 	}
 	h1 {
 	
@@ -188,11 +191,11 @@
 		&__content {
 			display: block;
 			.container {
-				height: auto;
+				height: 100vh;
 				width: 100%;
 				margin: 0 auto;
 				.image {
-					height: 350px;
+					height: 60%;
 					.wrapper {
 						li {
 							height: 74vh;
@@ -200,6 +203,7 @@
 					}
 				}
 				.links {
+					height: 40%;
 					li {
 						a {
 							.case {
@@ -207,7 +211,7 @@
 								padding: 8px;
 							}
 							p {
-								text-align: justify;
+								text-align: left;
 								// font-size: 11px;
 								margin-bottom: 0;
 							}
@@ -241,5 +245,16 @@
 			}
 
 		}
+	}
+}
+@media (max-width: 320px) {
+	.links {
+		height: 50% !important;
+		.link {
+			font-size: 14px !important;
+		}
+	}
+	.image {
+		height: 50% !important;
 	}
 }
