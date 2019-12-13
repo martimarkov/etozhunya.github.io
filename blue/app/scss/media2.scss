@@ -140,7 +140,9 @@
 			 }
 			.text {
 				width: 100%;
+				display: flex;
 				ul {
+					width: 90%;
 					padding: 0;
 					li {
 						display: block;
@@ -170,7 +172,7 @@
 				display: none;
 			}
 			.image {
-				display: none;
+				width: 10% !important;
 			}
 		}
 	}

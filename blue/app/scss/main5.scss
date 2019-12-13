@@ -63,7 +63,7 @@ body {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		height: 675px;
+		height: auto;
 		position: relative;
 		.animated {
 			width: 16%;
@@ -94,8 +94,8 @@ body {
 				.labels {
 					position: relative;
 					display: flex;
-					.first_labels {
-						width: 50%;
+					.first_labels, .second_labels {
+						width: 40%;
 						h2 {
 							color: #427edc;
 							font-family: 'arial';
@@ -113,33 +113,72 @@ body {
 								font-size: 18px;
 								font-family: "Arial";
 								text-transform: capitalize;
-								width: 200px;
+								width: 150px;
 								display: inline-block;
 							}
 							input {
+								border: 1px solid grey;
 								width: 55%;
 								font-size: 18px;
 								font-family: "Arial";
+							}
+							input:focus {
+								outline: none;
 							}
 							.wrap {
 								width: 55%;
 								position: relative;
 								display: inline-flex;
-								justify-content: space-around;
+								justify-content: space-between;
 								select {
 									width: 20%;
 									height: 25px;
 								}
 								input {
 									width: 60%;
+									transform: translateX(-5px);
 								}
 							}
+						}
+						button {
+							font-size: 18px;
+							font-family: "Arial";
+							padding: 4px 25px;
+							position: relative;
+							bottom: -80px;
+							left: 170px;
 						}
 					}
 					.second_labels {
 						width: 50%;
+						label {
+							.box {
+								width: 70%;
+								display: inline-flex;
+								justify-content: space-between;
+								input {
+									width: 5%;
+								}
+							}
+						}
+						.textarea_label {
+						    display: flex;
+						    justify-content: end;
+						    textarea {
+						    	width: 60%;
+						    	height: 80px;
+						    }
+						}
 					}
 				}
+			}
+			.image-container {
+				margin-top: 50px;
+				margin-bottom: 50px;
+				background-color: grey;
+				border: 1px solid #000;
+				width: 70%;
+				height: 80px;
 			}
 		}
 		// .text::before {

@@ -119,8 +119,7 @@ body {
 			}
 			li:nth-child(2) {
 				background-color: #bcd8f1;
-				// border-left: 3px solid #fff;
-				// border-right: 3px solid #fff;
+				border-left: 1px solid #fff;
 				.case {
 					background-color: #CFE3F5;
 				}
@@ -219,7 +218,7 @@ body {
 				}
 				.text_container::before {
 					content: '';
-					width: 95%;
+					width: 96%;
 					height: 103.5%;
 					position: absolute;
 					top: -45px;
@@ -230,14 +229,14 @@ body {
 				.text_container::after {
 				    content: '';
 				    background: url(../img/logo.png) center center/contain no-repeat;
-				    width: 87%;
+				    width: 89%;
 				    height: 80px;
 				    border: solid 2px #000;
 				    height: 90px;
 				    display: block;
 				    position: absolute;
 				    bottom: 50px;
-				    left: 7%;
+				    left: 43px;
 				    transform: translateX(-4px);
 				}
 				.image_container {

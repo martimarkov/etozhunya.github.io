@@ -19,13 +19,15 @@ body {
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding-left: 37%;
+		padding-left: 40%;
 		.menu {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 40%;
+			width: 86%;
 			ul {
+				width: 100%;
 				display: flex;
 				justify-content: space-between;
 				height: 100%;
@@ -40,9 +42,10 @@ body {
 					background-color: #323473;
 					border-radius: 4px;
 					a {
+						letter-spacing: 1px;
 						padding: 0px 10px;
-						font-size: 11px;
-						font-weight: bold;
+						font-size: 12px;
+						font-weight: 600;
 						font-family: "Verdana-Bold";
 						text-decoration: none;
 						color: #fff;
@@ -60,16 +63,17 @@ body {
 		justify-content: space-between;
 		height: 735px;
 		.animated {
-			width: 17%;
+			width: 15%;
 			background: url('../img/blue.png') center center/ cover;
 			background-position: 100% center;
 			animation: bg-animated 3s linear forwards;
 		}
 		.text {
-			width: 76%;
-			position: relative;
+			width: 85%;
+			position: inherit;
+			display: flex;
 			ul {
-				padding-left: 50px;
+				padding-left: 35px;
 				li {
 					display: flex;
 					justify-content: space-between;
@@ -122,20 +126,20 @@ body {
 					}
 				}
 			}
+			.image {
+				width: 25%;
+				background-color: grey;
+			}
 		}
 		.text::before {
-					content: '';
-					width: 97%;
-					height: 106%;
-					position: absolute;
-					top: -45px;
-					left: 10px;
-					background: 0 0;
-					border: solid grey 1px;
-				}
-		.image {
-			width: 7%;
-			background-color: grey;
+			content: '';
+			width: 91%;
+			height: 106%;
+			position: absolute;
+			top: -45px;
+			left: 10px;
+			background: 0 0;
+			border: solid grey 1px;
 		}
 	}
 }
