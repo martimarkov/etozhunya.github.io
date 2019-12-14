@@ -59,7 +59,6 @@
      display: none;
 }
 #contentArea {
-    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -90,6 +89,7 @@
         width: 33%;
         margin-bottom: 180px;
         border: none;
+        margin-top: 150px;
     }
     #collection-category-474:hover, #collection-category-464:hover, #collection-category-483:hover {
         box-shadow: none;
@@ -351,6 +351,10 @@
     }
 }
  @media (max-width: 768px) {
+    #collection-category-474::before, #collection-category-483::before, #collection-category-560::before, #collection-category-464::before, #collection-category-567::before, #collection-category-570::before, #collection-category-564::before, #collection-category-526::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .btn {
          width: 42px !important;
          height: 35px !important;
@@ -366,8 +370,8 @@
          padding: 0!important;
     }
      .nav {
-         height: 200px !important;
-         display: block !important;
+         height: 170px !important;
+         display: none !important;
          li {
              a {
                  text-align: left;
@@ -384,7 +388,7 @@
              a {
                  position: absolute;
                  left: 0;
-                 top: 155px;
+                 top: 122px;
                  background-color: transparent !important;
                  display: block !important;
                  text-align: left !important;
@@ -407,8 +411,8 @@
     #contentArea {
         display: block;
         .collection-category {
-        width: 80% !important;
-        margin: 0 auto;
+        width: 60% !important;
+        margin: 0 auto 50px auto;
         transform: translateX(-5px);
         }
         #collection-category-474, #collection-category-464, #collection-category-483 {
@@ -419,14 +423,8 @@
             top: -505px;
             left: 48%;
         }
-        #collection-category-464::before, #collection-category-483::before  {
-            left:45px;
-        }
-        #collection-category-474::before {
-            left: 20px;
-        }
         #collection-category-560::after {
-            top: -555px;
+            top: -290%;
         }
         #collection-category-526 {
             margin-top: 230px;
