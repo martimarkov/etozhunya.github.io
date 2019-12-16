@@ -1,4 +1,9 @@
 @import "vars";
+@media (min-height: 700px) {
+	.text_container::before {
+		height: 103.5% !important;
+	}
+}
 @media (min-height: 500px) and (max-height: 600px) {
 	.header {
 		.header__content {
