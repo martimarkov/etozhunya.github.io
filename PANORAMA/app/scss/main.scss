@@ -97,6 +97,18 @@
         transform: none;
     }
 }
+#sidebar {
+    h3 {
+        display: none;
+    }
+    .nav-list {
+        li {
+            a {
+                font-family: 'Gotham', Helvetica, sans-serif;
+            }
+        }
+    }
+}
 #collection-category-474::before {
     content: '';
     background: url(https://i.imgur.com/2bOynR8.png) center center/contain no-repeat;
@@ -143,6 +155,7 @@
 }
 #collection-category-464::after {
     content: 'Getting Started';
+    cursor: auto;
     display: block;
     position: absolute;
     width: 305px;
@@ -207,6 +220,7 @@
 }
 #collection-category-560::after {
     content: 'Popular Searches';
+    cursor: auto;
     display: block;
     position: absolute;
     width: 350px;
