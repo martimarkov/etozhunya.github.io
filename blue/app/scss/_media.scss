@@ -1,7 +1,7 @@
 @import "vars";
 @media (min-height: 700px) {
 	.text_container::before {
-		height: 103.5% !important;
+		height: 110.5% !important;
 	}
 }
 @media (min-height: 500px) and (max-height: 700px) {
@@ -125,7 +125,7 @@
 	.link {
 		// font-size: 14px !important;
 	}
-	 .hamburger {
+	.hamburger {
 	     height: 46px;
 	     width: 55px;
 	     display: block;
