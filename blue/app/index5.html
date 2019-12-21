@@ -66,11 +66,17 @@
 						<label><span>Oplage</span><input class="input" type="text" required=""></label>
 						<label><span>Formaat(bxh)</span><input class="input" type="text" required=""></label>
 						<label><span>Materiaal</span><input class="input" type="text" required=""></label>
-						<label><span>belijiming</span><div class="box"><input type="checkbox">Permanent<input type="checkbox">Afneembar<input type="checkbox">Overig</div>
-						<label><span>Aantal kleuren</span><input class="input" type="text" required=""></label>	
-						<label><span>Aantal teksen</span><input class="input" type="text" required=""></label>	
-						<label><span>Aantal per rol/vel</span><input class="input" type="text" required=""></label>
-						<label class="textarea_label"><span>Opmerking(en)</span><textarea name="" id="" cols="30" rows="10"></textarea></label>
+						<label class="spec"><span class="beli">belijiming</span>
+							<div class="box">
+								<input type="radio" id="1" class="forbox" name="choose">
+								<label for="1">Permanent</label>
+								<input type="radio" id="2" class="forbox margin" name="choose">
+								<label for="2">Afneembaar</label>
+								<input type="radio" id="3" class="forbox margin" name="choose">
+								<label for="3">Overig</label>
+							</div>	
+						</label>
+						<label class="textarea_label"><span>Opmerking(en)</span><textarea name="" id="" cols="30" rows="10"></textarea>
 					</div>
 				</div>
 			</form>

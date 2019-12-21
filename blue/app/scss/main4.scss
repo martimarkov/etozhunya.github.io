@@ -13,19 +13,23 @@ body {
 	display: none;
 }
 .header {
+	min-height: 100vh;
+	height: auto;
 	&__nav {
 		background-color: #222466;
 		height: 90px;
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding-left: 37%;
+		padding-left: 40%;
 		.menu {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 40%;
+			width: 86%;
 			ul {
+				width: 100%;
 				display: flex;
 				justify-content: space-between;
 				height: 100%;
@@ -40,9 +44,10 @@ body {
 					background-color: #323473;
 					border-radius: 4px;
 					a {
+						letter-spacing: 1px;
 						padding: 0px 10px;
-						font-size: 14px;
-						font-weight: bold;
+						font-size: 12px;
+						font-weight: 600;
 						font-family: "Verdana-Bold";
 						text-decoration: none;
 						color: #fff;
@@ -77,10 +82,10 @@ body {
 			width: 76%;
 			position: relative;
 			h1 {
-				color: #0e34c0;
+				color: #2b4ec0;
 				font-size: 28px;
 				font-family: 'arial';
-				font-weight: bold;
+				font-weight: 500;
 				padding: 25px 0px 20px 50px;
 			}
 			> ul {
@@ -92,11 +97,11 @@ body {
 			    	width: 33%;
 			    	position: relative;
 			    	h2 {
-			    		color: blue;
+			    		color: #427edc;
 			    		font-family: 'arial';
-			    		margin:  0px 0px 10px 0px;
+			    		margin:  15px 0 4px 0;
+			    		font-weight: bold;
 			    		display: block;
-			    		font-size: 20px;
 			    	}
 			    	p {
 			    		font-family: 'arial'
@@ -116,11 +121,11 @@ body {
 					display: block;
 					margin-bottom: 50px;
 					h3 {
-						color: blue;
+						color: #427edc;
 						font-family: 'arial';
-						margin:  0px 0px 10px 0px;
+						margin:  15px 0 4px 0;
+						font-weight: bold;
 						display: block;
-						font-size: 20px;
 					}
 				}
 			}

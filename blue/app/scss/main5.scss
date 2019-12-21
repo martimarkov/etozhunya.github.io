@@ -24,13 +24,15 @@ body {
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding-left: 41%;
+		padding-left: 40%;
 		.menu {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 40%;
+			width: 86%;
 			ul {
+				width: 100%;
 				display: flex;
 				justify-content: space-between;
 				height: 100%;
@@ -39,15 +41,16 @@ body {
 				li {
 					display: flex;
 					align-items: center;
-					margin: 0px 15px;
+					margin: 0px 5px;
 					border: 1px solid #5E5F80;
 					box-shadow: 5px 5px 10px #171741;
 					background-color: #323473;
 					border-radius: 4px;
 					a {
+						letter-spacing: 1px;
 						padding: 0px 10px;
 						font-size: 12px;
-						font-weight: bold;
+						font-weight: 600;
 						font-family: "Verdana-Bold";
 						text-decoration: none;
 						color: #fff;
@@ -63,8 +66,8 @@ body {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		height: auto;
 		position: relative;
+		min-height: calc(100vh - 90px);
 		.animated {
 			width: 16%;
 			background: url('../img/blue.png') center center/ cover;
@@ -78,10 +81,10 @@ body {
 			padding-top: 30px;
 			background-color: #f0f2f7;
 			h1 {
-				color: #0e34c0;
+				color: #2b4ec0;
 				font-size: 28px;
 				font-family: 'arial';
-				font-weight: bold;
+				font-weight: 500;
 			}
 			p {
 				color: blue;
@@ -108,6 +111,10 @@ body {
 							margin-top: 20px;
 							display: block;
 							font-size: 18px;
+							font-family: arial;
+							.beli {
+								width: 28%;
+							}
 							span {
 								width: 35%;
 								font-size: 18px;
@@ -131,7 +138,7 @@ body {
 								display: inline-flex;
 								justify-content: space-between;
 								select {
-									width: 20%;
+									width: 30%;
 									height: 25px;
 								}
 								input {
@@ -145,7 +152,7 @@ body {
 							font-family: "Arial";
 							padding: 4px 25px;
 							position: relative;
-							bottom: -80px;
+							bottom: -20px;
 							left: 170px;
 						}
 					}
@@ -156,10 +163,18 @@ body {
 								width: 70%;
 								display: inline-flex;
 								justify-content: space-between;
-								input {
-									width: 5%;
+								.forbox {
+									width: 10%
+								}
+								> label {
+									margin: 0px 0px 0px 5px;
+									width: 80%;
+									font-size: 16px;
 								}
 							}
+						}
+						.spec {
+							width: 120%;
 						}
 						.textarea_label {
 						    display: flex;

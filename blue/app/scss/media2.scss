@@ -13,7 +13,12 @@
 }
 @media (min-width: 961px) and (max-width: 1350px) {
 	.header__nav {
-		padding-left: 18%;
+		padding-left: 35%;
+	}
+}
+@media (min-width: 962px) and (max-width: 1050px) {
+	.header__nav {
+		padding-left: 28% !important;
 	}
 }
 @media (max-width: 961px) {
@@ -25,7 +30,7 @@
 	    position: absolute;
 	    left: 30px;
 	}
-	.text_container::before {
+	ul::before {
 		display: none;
 	}
 	.text_container {
@@ -149,14 +154,14 @@
 			display: block;
 			 margin-top: 60px;
 			 .animated {
-			 	height: 350px;
+			 	height: 55vh;
 			 	width: 100vw;
 			 }
 			.text {
 				width: 100%;
 				display: flex;
 				ul {
-					width: 90%;
+					width: 88%;
 					padding: 0;
 					li {
 						display: block;
@@ -189,7 +194,7 @@
 				display: none;
 			}
 			.image {
-				width: 10% !important;
+				width: 12% !important;
 			}
 		}
 	}
