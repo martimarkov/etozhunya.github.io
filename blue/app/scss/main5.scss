@@ -9,6 +9,9 @@ body {
 	position: relative;
 	color: #333132;
 }
+.margin {
+	transform: translateY(-5px);	
+}
 .mob_only {
 	display: none;
 }
@@ -210,6 +213,7 @@ body {
 						    textarea {
 						    	width: 55%;
 						    	height: 80px;
+						    	font-size: 16px;
 						    }
 						}
 					}
