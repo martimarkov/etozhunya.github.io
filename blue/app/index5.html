@@ -37,7 +37,7 @@
 		<div class="text">
 			<h1>Prijsaandrag</h1>
 			<p>here comes text</p>
-			<form action="" mailto='s.kregel@live.nl'>
+			<form  mailto='s.kregel@live.nl' method="POST">
 				<div class="labels">
 					<div class="first_labels">
 						<h2>Gegevens anvrager</h2>
@@ -45,11 +45,13 @@
 						<label>
 							<span>contactpersoon</span>
 							<span class="wrap">
-								<select name="" id="">
-									<option value="">Dhr.</option>
-									<option value="">Ddrs</option>
-									<option value="">Dsad</option>
-								</select>
+								<span>
+									<select name="" id="">
+										<option value="">Dhr.</option>
+										<option value="">Ddrs</option>
+										<option value="">Dsad</option>
+									</select>
+								</span>
 								<input class="input" type="text" required="">
 							</span>
 						</label>
@@ -58,7 +60,7 @@
 						<label><span>telefoonnumber</span><input class="input" type="text" required=""></label>
 						<label><span>faxnumber</span><input class="input" type="text" required=""></label>
 						<label><span>emailadress</span><input class="input" type="text" required=""></label>
-						<button>Verzend aavrag</button>
+						<button type="submit">Verzend aavrag</button>
 					</div>
 					<div class="second_labels">
 						<h2>Specifications</h2>
