@@ -76,7 +76,7 @@ body {
 			position: inherit;
 			display: flex;
 			ul {
-				padding-left: 35px;
+				padding-left: 30px;
 				position: relative;
 				li {
 					display: flex;
@@ -121,7 +121,7 @@ body {
 				}
 				li:nth-child(3) {
 					width: 70%;
-					margin: 50px 0px 0px 0px;
+					margin: 50px 0 20px 0;
 					img {
 						border: 2px solid #000;
 						width: 100%;
@@ -133,7 +133,7 @@ body {
 			ul::before {
 			content: '';
 			width: calc(100% - 32px);
-			height: 106%;
+			height: 120%;
 			position: absolute;
 			top: -45px;
 			left: 16px;

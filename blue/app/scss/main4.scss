@@ -15,6 +15,7 @@ body {
 .header {
 	min-height: 100vh;
 	height: auto;
+	overflow: hidden;
 	&__nav {
 		background-color: #222466;
 		height: 90px;
@@ -38,7 +39,7 @@ body {
 				li {
 					display: flex;
 					align-items: center;
-					margin: 0px 15px;
+					margin: 0px 5px;
 					border: 1px solid #5E5F80;
 					box-shadow: 5px 5px 10px #171741;
 					background-color: #323473;
@@ -63,7 +64,7 @@ body {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		height: 735px;
+		min-height: calc(100vh - 90px);
 		.animated {
 			width: 17%;
 			background: url('../img/blue.png') center center/ cover;
@@ -92,7 +93,8 @@ body {
 				display: flex;
 			    justify-content: flex-start;
 			    padding-left: 50px;
-			    height: 250px;
+			    height: auto;
+			    margin-bottom: 15px;
 			    li {
 			    	width: 33%;
 			    	position: relative;
@@ -112,6 +114,7 @@ body {
 			    		display: block;
 			    		height: 220px;
 			    		background-color: grey;
+			    		border: 2px solid black;
 			    	}
 			    }
 			}
@@ -134,7 +137,8 @@ body {
 				width: 80%;
 				height: 120px;
 				display: block;
-				margin-left: 50px;
+				margin: 20px 0px 20px 50px;
+				border: 2px solid black;
 			}
 		}
 		.text::before {
@@ -146,6 +150,7 @@ body {
 					left: 10px;
 					background: 0 0;
 					border: solid grey 1px;
+					border-bottom: none;
 				}
 		.image {
 			width: 7%;

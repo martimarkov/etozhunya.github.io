@@ -1,7 +1,12 @@
 @import "vars";
-@media (min-width: 961px) and (max-width: 1350px) {
+@media (max-width: 1200px) and (min-width: 962px) {
 	.header__nav {
-		padding-left: 18%;
+    	padding-left: 35%!important;
+    }
+}
+@media (max-width: 1050px) and (min-width: 962px) {
+	.header__nav {
+    	padding-left: 28%!important;
 	}
 }
 @media (max-width: 961px) {
