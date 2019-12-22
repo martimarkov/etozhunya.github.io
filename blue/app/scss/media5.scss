@@ -1,4 +1,13 @@
-
+@media (max-width: 1200px) and (min-width: 1050px) {
+    .header__nav {
+        padding-left: 35%!important;
+    }
+}
+@media (max-width: 1050px) and (min-width: 962px) {
+    .header__nav {
+        padding-left: 28%!important;
+    }
+}
 @media (max-width: 962px) {
     .text__content {
         padding-top: 50px !important;
@@ -134,15 +143,5 @@
         &__content {
             display: block;
         }
-    }
-}
-@media (max-width: 1050px) and (min-width: 962px) {
-    .header__nav {
-        padding-left: 28%!important;
-    }
-}
-@media (max-width: 1200px) and (min-width: 962px) {
-    .header__nav {
-        padding-left: 35%!important;
     }
 }
