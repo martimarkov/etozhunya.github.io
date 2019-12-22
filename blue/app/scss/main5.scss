@@ -179,15 +179,6 @@ body {
 								}
 							}
 						}
-						button {
-							font-size: 18px;
-							font-family: "Arial";
-							padding: 4px 25px;
-							position: relative;
-							bottom: -20px;
-							left: 170px;
-							cursor: pointer;
-						}
 					}
 					.second_labels {
 						width: 40%;
@@ -215,17 +206,26 @@ body {
 						}
 						.textarea_label {
 						    display: flex;
-						    justify-content: end;
+						    justify-content: space-between;
 						    textarea {
-						    	width: 60%;
+						    	width: 55%;
 						    	height: 80px;
 						    }
 						}
 					}
+					button {
+						font-size: 18px;
+						font-family: "Arial";
+						padding: 4px 25px;
+						position: absolute;
+						bottom: -50px;
+						left: 170px;
+						cursor: pointer;
+					}
 				}
 			}
 			.image-container {
-				margin-top: 50px;
+				margin-top: 100px;
 				margin-bottom: 50px;
 				background-color: grey;
 				border: 1px solid #000;
