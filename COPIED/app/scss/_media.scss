@@ -1,6 +1,26 @@
 @import "vars";
 
 @media (max-width: 767px) {
+	#header-page {
+		.container {
+			width: 100%!important;
+		}
+	}
+	.find {
+		width: 90% !important;
+		form {
+			padding: 20px 30px !important;
+			.form-elements {
+				width: 100% !important;
+				margin-bottom: 20px;
+				margin: 0 auto;
+				padding-right: 0 !important;
+				select {
+					background-color: #fff;
+				}
+			}
+		}
+	}
 	.search-box {
 	    right: 75px;
 	}
@@ -179,20 +199,72 @@
 	        }
 	    }
 	}
-}
-@media (max-width: 480px) {
-	.find {
-		width: 90% !important;
-		form {
-			padding: 20px 30px !important;
-			.form-elements {
+	.triple-info {
+		padding: 50px 0px !important;
+		ul {
+			position: relative;
+			display: block;
+			li {
 				width: 100% !important;
-				margin-bottom: 20px;
-				margin: 0 auto;
-				padding-right: 0 !important;
-				select {
-					background-color: #fff;
+				margin-top: 50px;
+			}
+		}
+	}
+	.fly {
+		ul {
+			li {
+				.one-fourth {
+					width: 100% !important;
 				}
+			}
+		}
+	}
+	.footer {
+		padding: 50px 0px !important;
+		height: auto;
+		box-shadow: none;
+		.wrap {
+			.row {
+				.one-fourth {
+					width: 100%;
+				}
+				.bottom {
+					bottom: -181px;
+					nav {
+						ul {
+							margin-top: 10px;
+							display: flex;
+							    justify-content: space-around;
+							    flex-flow: wrap;
+							    position: relative;
+							    width: 100%;
+							li {
+								padding: 0;
+								margin: 4px;
+								width: 40%;
+								a {
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+	.awe-navigation {
+		.menu-list {
+			li {
+				padding: 0 5px;
+			}
+		}
+	}
+	.main {
+		.find {
+			.form-elements {
+				width: 33%!important;
 			}
 		}
 	}
