@@ -12,11 +12,13 @@
 			padding: 20px 30px !important;
 			.form-elements {
 				width: 100% !important;
-				margin-bottom: 20px;
 				margin: 0 auto;
 				padding-right: 0 !important;
 				select {
 					background-color: #fff;
+				}
+				label {
+					margin: 10px 0px;
 				}
 			}
 		}
