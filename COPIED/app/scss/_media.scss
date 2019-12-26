@@ -1,5 +1,9 @@
 @import "vars";
-
+@media (min-width: 1200px) {
+	.search-box {
+		right: 0 !important;
+	}
+}
 @media (max-width: 767px) {
 	#header-page {
 		.container {
@@ -16,9 +20,16 @@
 				padding-right: 0 !important;
 				select {
 					background-color: #fff;
+					line-height: 20px !important;
 				}
 				label {
 					margin: 10px 0px;
+				}
+			}
+			.form-actions {
+				input {
+					margin: 0 auto;
+					width: 100%;
 				}
 			}
 		}
@@ -213,6 +224,7 @@
 		}
 	}
 	.fly {
+		height: 1610px;
 		ul {
 			li {
 				.one-fourth {

@@ -40,7 +40,7 @@
     }
 
     function placeholder() {
-        var $ph = $('input[type="search"], input[type="text"], input[type="email"], textarea');
+        var $ph = $('input[type="search"], .city, input[type="text"], input[type="email"], textarea');
         $ph.each(function() {
             var value = $(this).val();
             $(this).focus(function() {
