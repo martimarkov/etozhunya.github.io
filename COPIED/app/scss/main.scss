@@ -749,6 +749,7 @@ body {
 	}
 }
 .footer {
+	font-size: 13px;
 	float: left;
 	height: 300px;
 	width: 100%;
@@ -783,22 +784,23 @@ body {
 			.links {
 				li {
 					position: relative;
+					margin: 5px 0px;
 					a {
 						color: #454545;
 					    font-weight: 400;
 					    text-decoration: none;
 					    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+					    position: relative;
+					}
+					a:before {
+						color: #5FC8C2;
+					    content: "\2022";
+					    font-size: 24px;
+					    position: absolute;
+					    top: -3px;
+					    left: -12px;
 					}
 				}
-				li:before {
-					color: #5FC8C2;
-				    content: "\2022";
-				    font-size: 24px;
-				    position: absolute;
-				    top: -7px;
-				    left: 0;
-				}
-
 			}
 			.social {
 				> li {
@@ -889,8 +891,8 @@ body {
 			border-top: 1px solid #ccc;
 			padding-top: 20px;
 			margin: 0 auto;
-			width: 90%;
-			font-size: 13px;
+			width: 80%;
+			font-size: 11px !important;
 			margin-bottom: 30px;
 			position: absolute;
 		    bottom: 0;
@@ -923,6 +925,7 @@ body {
 	}
 }
 .copy {
+	font-size: 13px;
 	color: #858585;
 	display: block;
 	float: left;
