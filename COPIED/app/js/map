@@ -1,0 +1,101 @@
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawTrendlines);
+
+function drawTrendlines() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Motivation Level');
+      data.addColumn('number', 'Energy Level');
+
+      data.addRows([
+        [{v: [8, 0, 0], f: '8 am'}, 1, .25],
+        [{v: [9, 0, 0], f: '9 am'}, 2, .5],
+        [{v: [10, 0, 0], f:'10 am'}, 3, 1],
+        [{v: [11, 0, 0], f: '11 am'}, 4, 2.25],
+        [{v: [12, 0, 0], f: '12 pm'}, 5, 2.25],
+        [{v: [13, 0, 0], f: '1 pm'}, 6, 3],
+        [{v: [14, 0, 0], f: '2 pm'}, 7, 4],
+        [{v: [15, 0, 0], f: '3 pm'}, 8, 5.25],
+        [{v: [16, 0, 0], f: '4 pm'}, 9, 7.5],
+        [{v: [17, 0, 0], f: '5 pm'}, 10, 10],
+      ]);
+
+      var options = {
+        title: 'Motivation and Energy Level Throughout the Day',
+        trendlines: {
+          0: {type: 'linear', lineWidth: 5, opacity: .3},
+          1: {type: 'exponential', lineWidth: 10, opacity: .3}
+        },
+        hAxis: {
+          title: 'Time of Day',
+          format: 'h:mm a',
+          viewWindow: {
+            min: [7, 30, 0],
+            max: [17, 30, 0]
+          }
+        },
+        vAxis: {
+          title: 'Rating (scale of 1-10)'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    mapboxgl.accessToken = '<your access token here>';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v10',
+    zoom: 12,
+    center: [-122.447303, 37.753574]
+    });
+     
+    map.on('load', function() {
+    /* Sample feature from the `examples.8fgz4egr` tileset:
+    {
+    "type": "Feature",
+    "properties": {
+    "ethnicity": "White"
+    },
+    "geometry": {
+    "type": "Point",
+    "coordinates": [ -122.447303, 37.753574 ]
+    }
+    }
+    */
+    map.addLayer({
+    'id': 'population',
+    'type': 'circle',
+    'source': {
+    type: 'vector',
+    url: 'mapbox://examples.8fgz4egr'
+    },
+    'source-layer': 'sf2010',
+    'paint': {
+    // make circles larger as the user zooms from z12 to z22
+    'circle-radius': {
+    'base': 1.75,
+    'stops': [
+    [12, 2],
+    [22, 180]
+    ]
+    },
+    // color circles by ethnicity, using a match expression
+    // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
+    'circle-color': [
+    'match',
+    ['get', 'ethnicity'],
+    'White',
+    '#fbb03b',
+    'Black',
+    '#223b53',
+    'Hispanic',
+    '#e55e5e',
+    'Asian',
+    '#3bb2d0',
+    /* other */ '#ccc'
+    ]
+    }
+    });
+    });
+    
