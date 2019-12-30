@@ -34,6 +34,53 @@
 			}
 		}
 	}
+	.main2 {
+		.container {
+			h1 {
+				font-size: 40px;
+			}
+			ul {
+				width: 100%;
+			}
+			.links {
+				display: block !important;
+				.red {
+					font-size: 14px;
+					margin: 20px auto 0 auto;
+					display: block;
+					width: 80%;
+				}
+				.white {
+					font-size: 14px;
+					margin: 20px auto 0 auto;
+					display: block;
+					width: 80%;
+				}
+			}
+		}
+	}
+	.cards {
+		padding: 25px 0px;
+		ul {
+			.text, .chart, .v_image, .h_image, .chart2, #map {
+				width: 100%;
+				margin: 0px auto 25px 0px;
+			}
+			.charts {
+				width: 100%;
+				margin: 0% !important;
+			}
+			.charts2, .text {
+				margin-bottom: 0 !important;
+			}
+			.text {
+				height: auto;
+				p {
+					font-size: 15px;
+				}
+			}
+		}
+	}
 	.search-box {
 	    right: 75px;
 	}
@@ -268,6 +315,17 @@
 		}
 	}
 }
+@media (min-width: 1000px) and (max-width: 1024px) {
+	.cards {
+		ul {
+			.text {
+				p {
+					font-size: 17px !important;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 768px) and (max-width: 1366px) {
 	.search-box {
 		right: 70px;
@@ -340,6 +398,49 @@
 	            // @include transition(all .4s cubic-bezier(.28,-0.24,.8,-0.13));
 	        }
 	    }
+	}
+	.cards {
+		.container {
+			position: relative;
+		}
+		ul {
+			position: relative;
+			#map {
+				position: absolute;
+			    bottom: 0px;
+			    right: 0;
+			    width: 45% !important;
+			    height: 250px!important;
+			}
+			.v_image {
+				width: 45% !important;
+				margin-top: 0px !important;
+				margin-bottom: 50px;
+			}
+			.charts {
+				margin: 0px;
+				width: 60%;
+			}
+			.text {
+				width: 35%;
+				font-size: 16px;
+				display: flex;
+				justify-content: center;
+				align-items:center;
+				p {
+					font-size: 13.5px;
+				}
+			}
+
+		}
+		// .text, .charts, .v_image, .h_image {
+		// 	width: 45% !important;
+		// 	font-size: 16px;
+		// }
+		.text {
+			
+		}
+
 	}
 	.awe-navigation-hamburger {
 	    .toggle-menu-responsive {
