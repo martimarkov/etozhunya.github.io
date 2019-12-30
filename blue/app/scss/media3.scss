@@ -9,6 +9,16 @@ body {
 	position: relative;
 	color: #333132;
 }
+@media (min-width: 962px) and (max-width: 1200px) {
+	.header__nav {
+		padding-left: 35% !important;
+	}
+}
+@media (min-width: 962px) and (max-width: 1050px) {
+	.header__nav {
+		padding-left: 28% !important;
+	}
+}
 .header {
 	&__nav {
 		background-color: #222466;

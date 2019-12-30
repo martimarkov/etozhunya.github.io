@@ -80,7 +80,7 @@ body {
 			}
 		}
 		.text {
-			width: 76%;
+			width: calc(83% - 100px);
 			position: relative;
 			h1 {
 				color: #2b4ec0;
@@ -143,17 +143,17 @@ body {
 		}
 		.text::before {
 					content: '';
-					width: 97%;
-					height: 116%;
+					width: calc(100% - 32px);
+					height: 120%;
 					position: absolute;
 					top: -45px;
-					left: 10px;
+					left: 16px;
 					background: 0 0;
 					border: solid grey 1px;
 					border-bottom: none;
 				}
 		.image {
-			width: 7%;
+			width: 100px;
 			background-color: grey;
 		}
 	}

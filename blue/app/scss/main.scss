@@ -185,7 +185,7 @@ body {
 			position: relative;
 			font-family: 'arial';
 			&__content {
-				width: 95%;
+				width: calc(100% - 100px);
 				background-color: #f0f2f7;
 				padding: 15px 30px 0px 30px;
 				display: flex;
@@ -217,11 +217,11 @@ body {
 				}
 				.text_container::before {
 					content: '';
-					width: 96%;
-					height: 110.5%;
+					width: calc(100% - 32px);
+					height: 120%;
 					position: absolute;
 					top: -45px;
-					left: 1.8%;
+					left: 16px;
 					background: transparent;
 					border: solid grey 1px;
 					border-bottom: none;
@@ -237,7 +237,7 @@ body {
 			}
 			.for_image {
 				background-color: grey;
-				width: 12%;
+				width: 100px;
 				height: auto;
 			}
 		}

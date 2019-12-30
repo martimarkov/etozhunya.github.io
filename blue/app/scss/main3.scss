@@ -9,20 +9,28 @@ body {
 	position: relative;
 	color: #333132;
 }
+.mob_only {
+	display: none;
+}
 .header {
+	min-height: 100vh;
+	height: auto;
+	overflow: hidden;
 	&__nav {
 		background-color: #222466;
 		height: 90px;
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding-left: 37%;
+		padding-left: 40%;
 		.menu {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 40%;
+			width: 86%;
 			ul {
+				width: 100%;
 				display: flex;
 				justify-content: space-between;
 				height: 100%;
@@ -37,9 +45,10 @@ body {
 					background-color: #323473;
 					border-radius: 4px;
 					a {
+						letter-spacing: 1px;
 						padding: 0px 10px;
-						font-size: 14px;
-						font-weight: bold;
+						font-size: 12px;
+						font-weight: 600;
 						font-family: "Verdana-Bold";
 						text-decoration: none;
 						color: #fff;
@@ -55,15 +64,21 @@ body {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		height: 735px;
+		min-height: calc(100vh - 90px);
 		.animated {
 			width: 15%;
-			background: url('../img/blue.png') center center/cover no-repeat;
+			background: url('../img/blue.png') center center/ cover;
+			background-position: 100% center;
+			animation: bg-animated 3s linear forwards;
 		}
 		.text {
-			width: 76%;
+			width: 85%;
+			position: inherit;
+			display: flex;
 			ul {
-				padding-left: 50px;
+				padding-left: 30px;
+				position: relative;
+				width: calc(100% - 100px);
 				li {
 					display: flex;
 					justify-content: space-between;
@@ -71,17 +86,17 @@ body {
 					.left {
 						width: 70%;
 						h1 {
-							color: #0e34c0;
+							color: #2b4ec0;
 							font-size: 28px;
 							font-family: 'arial';
-							font-weight: bold;
+							font-weight: 500;
 						}
 						span {
-							color: blue;
+							color: #427edc;
 							font-family: 'arial';
-							margin: 15px 0px;
+							margin:  15px 0 4px 0;
+							font-weight: bold;
 							display: block;
-							font-size: 20px;
 						}
 						p {
 							font-family: 'arial';
@@ -90,6 +105,7 @@ body {
 						}	
 					}
 					.right {
+						display: none;
 						width: 30%;
 						display: flex;
 						justify-content: center;
@@ -106,30 +122,51 @@ body {
 				}
 				li:nth-child(3) {
 					width: 70%;
+					margin: 50px 0 20px 0;
 					img {
 						border: 2px solid #000;
 						width: 100%;
-						height: 130px;
+						height: 80px;
 						background-color: grey;
 					}
 				}
 			}
+			ul::before {
+			content: '';
+			width: calc(100% - 32px);
+			height: 120%;
+			position: absolute;
+			top: -45px;
+			left: 16px;
+			background: 0 0;
+			border: solid grey 1px;
+			border-bottom: none;
+			}
+			.image {
+				width: 100px;
+				background-color: grey;
+			}
 		}
-		.text::before {
-					content: '';
-					width: 74%;
-					height: 106%;
-					position: absolute;
-					top: -45px;
-					left: 241px;
-					background: 0 0;
-					border: solid grey 1px;
-				}
-		.image {
-			width: 133px;
-			background-color: grey;
-		}
+		// .text::before {
+		// 	content: '';
+		// 	width: 90%;
+		// 	height: 106%;
+		// 	position: absolute;
+		// 	top: -45px;
+		// 	left: 16px;
+		// 	background: 0 0;
+		// 	border: solid grey 1px;
+		// 	border-bottom: none;
+		// }
+	}
+}
+@keyframes bg-animated {
+	0% {
+		background-position: 100% center;
+	}
+	100% {
+		background-position: 0% center;
 	}
 }
 
-@import "media3";
+@import "media2";
