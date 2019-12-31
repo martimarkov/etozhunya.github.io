@@ -66,13 +66,13 @@ body {
 		justify-content: space-between;
 		min-height: calc(100vh - 90px);
 		.animated {
-			width: 15%;
+			width: 17%;
 			background: url('../img/blue.png') center center/ cover;
 			background-position: 100% center;
 			animation: bg-animated 3s linear forwards;
 		}
 		.text {
-			width: 85%;
+			width: 83%;
 			position: inherit;
 			display: flex;
 			ul {

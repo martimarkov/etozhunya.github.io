@@ -118,6 +118,7 @@ body {
 							font-size: 18px;
 							font-family: arial;
 							span {
+								padding-top: 4px;
 								font-size: 16px;
 								width: 40%;
 								font-family: "Arial";
@@ -185,11 +186,12 @@ body {
 					}
 					.second_labels {
 						width: 40%;
-						margin-left: 20px;
+						margin-left: 50px;
 						label {
 							.box {
 								width: 80%;
 								display: inline-flex;
+								flex-flow: wrap;
 								justify-content: space-between;
 								.forbox {
 									width: 10%
@@ -201,7 +203,7 @@ body {
 								}
 							}
 							.beli {
-								width: 20%;
+								width: 33%;
 							}
 						}
 						.spec {
@@ -222,8 +224,8 @@ body {
 						font-family: "Arial";
 						padding: 4px 25px;
 						position: absolute;
-						bottom: -50px;
-						left: 170px;
+						bottom: 125px;
+						left: 18%;
 						cursor: pointer;
 						background: linear-gradient(to top, grey -51%, #fff);
 						border: 1px solid grey;
@@ -232,7 +234,7 @@ body {
 			}
 			.image-container {
 				margin: 100px 0px 50px 0px;
-				background-color: grey;
+				background: url(../img/logo.png) center center/contain no-repeat;
 				border: 1px solid #000;
 				width: 70%;
 				height: 80px;
