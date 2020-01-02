@@ -82,6 +82,7 @@
 @media (max-width: 961px) {
 	.text__content {
 		padding-top: 50px !important;
+		width: calc(100% - 12%) !important;
 	}
 	.for_image {
 		width: 12% !important;
