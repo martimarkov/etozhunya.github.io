@@ -2,25 +2,25 @@
 	display: none !important;
 }
 #u33559-2 a {
-	display: block;
-	margin: 0px 0px 15px 0px;
+	display: block !important;
+	margin: 0px 0px 15px 0px !important;
 }
 #u33559-5 {
-	left: 15px;
-	width: 450px;
+	left: 15px !important;
+	width: 450px !important;
 }
 .additional span, #u33559-2 span {
-	font-weight: bold;
-	color: #000;
-	font-size: 15px;
-	margin-bottom: 10px;
+	font-weight: bold !important;
+	color: #000 !important;
+	font-size: 15px !important;
+	margin-bottom: 10px !important;
 }
 .additional a, #u33559-2 a {
-	font-size: 14px;
+	font-size: 14px !important;
 }
 #u33679, #u33679-4 {
-	margin: 5px;
-    display: block;
+	margin: 5px !important;
+    display: block !important;
 }
 .html
 {
