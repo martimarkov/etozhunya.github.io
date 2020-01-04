@@ -1,3 +1,20 @@
-#u33541, #u33559-5, #u33555-9 {
+#u33541, #u33555-9 {
 	display: none !important;
+}
+#u33559-2 a {
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+#u33559-5 {
+	left: 15px;
+	width: 450px;
+}
+.additional span, #u33559-2 span {
+	font-weight: bold;
+	color: #000;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.additional a, #u33559-2 a {
+	font-size: 14px;
 }
