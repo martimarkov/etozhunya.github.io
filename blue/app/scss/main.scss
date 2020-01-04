@@ -112,7 +112,11 @@ body {
 				a {
 					color: #2a2a6a;
 					.case {
+						font-size: 16px;
 						background-color: #E1EDF7;
+					}
+					p {
+						font-size: 14px;
 					}
 				}
 			}
@@ -201,6 +205,7 @@ body {
 						font-weight: 500;
 					}
 					span {
+						font-size: 16px;
 						color: #427edc;
 						font-family: 'arial';
 						margin:  15px 0 4px 0;

@@ -9,6 +9,9 @@
     }
 }
 @media (max-width: 962px) {
+    .wrap {
+        transform: translateY(-5px);
+    }
     .text__content {
         padding-top: 50px !important;
     }
