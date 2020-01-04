@@ -225,7 +225,7 @@
 	left: 332px;
 }
 
-#u33601-9,#u33601-17
+#u33601-9,#u33601-17, #u34262-spec
 {
 	color: #000000;
 	font-weight: normal;
@@ -280,16 +280,27 @@
 	margin-right: -10000px;
 	position: relative;
 }
-
+#u35179, .title_spec {
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 50px;
+	display: block;
+}
+.engver {
+	width: 350px;
+	margin-left: 500px;
+	margin-top: 20px;
+}
 #u35179-5
 {
 	z-index: 96;
-	width: 318px;
+	width: 350px;
 	min-height: 587px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 21px;
-	left: 332px;
+	left: 20px;
 }
 
 #u33601-2,#u33601-3,#u33601-4,#u33601-5,#u33601-6,#u33601-7,#u34262-2,#u34262-3,#u34262-4,#u34262-5,#u34262-6,#u34262-7,#u35179-2
