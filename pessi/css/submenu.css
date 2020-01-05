@@ -36,3 +36,18 @@
 		display: none !important;
 	}
 }
+@media (max-width: 767px) {
+.achievements__list-info span {
+font-size: 32px;
+line-height: 1;
+}
+}
+.achievements__list-info span {
+font-size: 42px;
+line-height: 1;
+}
+.achievements__list-info .million{
+margin-left: 6px;
+font-size: 32px;
+vertical-align: text-top;
+}

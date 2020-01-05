@@ -1,3 +1,7 @@
+
+window.odometerOptions = {
+  format: '(,ddd).dd'
+}
 $(function() {
 
 	$('a[href^="#"]').click(function(e) {
