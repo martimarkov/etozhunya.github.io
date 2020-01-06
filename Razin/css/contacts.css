@@ -278,18 +278,9 @@
 	position: relative;
 }
 
-#u33506.MuseMenuActive
-{
-	background: #040404 url("../images/u33506-a-grad.png") repeat-x left top;
-	background: -webkit-gradient(linear, center top, center bottom, from(#666666),color-stop(66%, #040404));
-	background: -webkit-linear-gradient(top,#666666 ,#040404 66%);
-	background: -moz-linear-gradient(top,#666666 ,#040404 66%);
-	background: -ms-linear-gradient(top,#666666 ,#040404 66%);
-	background: -o-linear-gradient(top,#666666 ,#040404 66%);
-	background: linear-gradient(to bottom,#666666 ,#040404 66%);
-	margin: 0px;
+#u33506:hover, #u33492:hover, #u33485:hover, #u33499:hover {
+	background: linear-gradient(to bottom,#AAAAAA ,#000000 66%);
 }
-
 #u33489
 {
 	width: 182px;
@@ -314,17 +305,6 @@
 	position: relative;
 }
 
-#u33492.MuseMenuActive
-{
-	background: #040404 url("../images/u33506-a-grad.png") repeat-x left top;
-	background: -webkit-gradient(linear, center top, center bottom, from(#666666),color-stop(66%, #040404));
-	background: -webkit-linear-gradient(top,#666666 ,#040404 66%);
-	background: -moz-linear-gradient(top,#666666 ,#040404 66%);
-	background: -ms-linear-gradient(top,#666666 ,#040404 66%);
-	background: -o-linear-gradient(top,#666666 ,#040404 66%);
-	background: linear-gradient(to bottom,#666666 ,#040404 66%);
-	margin: 0px;
-}
 
 #u33482
 {
@@ -348,18 +328,6 @@
 	border-color: #000000;
 	padding-bottom: 23px;
 	position: relative;
-}
-
-#u33485.MuseMenuActive
-{
-	background: #040404 url("../images/u33506-a-grad.png") repeat-x left top;
-	background: -webkit-gradient(linear, center top, center bottom, from(#666666),color-stop(66%, #040404));
-	background: -webkit-linear-gradient(top,#666666 ,#040404 66%);
-	background: -moz-linear-gradient(top,#666666 ,#040404 66%);
-	background: -ms-linear-gradient(top,#666666 ,#040404 66%);
-	background: -o-linear-gradient(top,#666666 ,#040404 66%);
-	background: linear-gradient(to bottom,#666666 ,#040404 66%);
-	margin: 0px;
 }
 
 #u33508-4,#u33494-4,#u33488-4
@@ -401,19 +369,6 @@
 	padding-bottom: 23px;
 	position: relative;
 }
-
-#u33499.MuseMenuActive
-{
-	background: #040404 url("../images/u33506-a-grad.png") repeat-x left top;
-	background: -webkit-gradient(linear, center top, center bottom, from(#666666),color-stop(66%, #040404));
-	background: -webkit-linear-gradient(top,#666666 ,#040404 66%);
-	background: -moz-linear-gradient(top,#666666 ,#040404 66%);
-	background: -ms-linear-gradient(top,#666666 ,#040404 66%);
-	background: -o-linear-gradient(top,#666666 ,#040404 66%);
-	background: linear-gradient(to bottom,#666666 ,#040404 66%);
-	margin: 0px;
-}
-
 #u33502-4
 {
 	width: 175px;
