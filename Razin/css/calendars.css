@@ -1,3 +1,10 @@
+#u11818_img, #u17266_img, #u17365_img, #u11817_img, #u11816_img, #u11819_img {
+	height: 100%;
+	 padding: 0 !important;
+	 display:block;
+	 margin: 0 auto;
+	 width: 100%;
+}
 .html
 {
 	background-color: #000000;
@@ -463,12 +470,12 @@
 	left: 20px;
 }
 
-#u11804_img,#u17292_img,#u11798_img,#u11800_img,#u17341_img
+/*#u11804_img,#u17292_img,#u11798_img,#u11800_img,#u17341_img
 {
 	margin-left: -23px;
 	margin-right: -23px;
 }
-
+*/
 #u17368
 {
 	z-index: 81;
@@ -506,8 +513,7 @@
 
 #u11805_img
 {
-	margin-left: -66px;
-	margin-right: -2px;
+	width: 90px;
 }
 
 #u11799
@@ -562,13 +568,6 @@
 {
 	margin: 286px -10000px 0px 0px;
 }
-
-#u11807_img
-{
-	margin-left: -103px;
-	margin-right: -1px;
-}
-
 #u11802
 {
 	z-index: 91;
@@ -1156,6 +1155,7 @@
 
 #menuu17733
 {
+	display: none;
 	z-index: 216;
 	width: 149px;
 	border-style: none;
