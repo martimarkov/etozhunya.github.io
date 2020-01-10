@@ -48,6 +48,12 @@
      background-color:#fff;
      position: relative;
 }
+.lu {
+    font-family: "Proxima Nova" !important;
+}
+.articleFoot time.lu {
+    font-family: "Proxima Nova" !important;
+}
 .footer {
     font-family: 'Proxima Nova';
 }
@@ -154,7 +160,7 @@
     }
     #collection-category-474, #collection-category-464, #collection-category-483 {
         width: 33%;
-        margin-bottom: 250px;
+        margin-bottom: 340px;
         border: none;
         margin-top: 150px;
     }
@@ -310,7 +316,7 @@
     font-size: 44px;
     color: #4a4a4a;
     left: 50%;
-    top: -125px;
+    top: -95px;
     transform: translateX(-47%);
     pointer-events: none;
 }

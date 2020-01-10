@@ -87,12 +87,13 @@ body {
 				font-size: 28px;
 				font-family: 'arial';
 				font-weight: 500;
-				padding: 25px 0px 20px 50px;
+				padding: 25px 0px 20px 30px;
 			}
 			> ul {
 				display: flex;
-			    justify-content: flex-start;
-			    padding-left: 50px;
+			    justify-content: space-between;
+			    padding-left: 30px;
+			    padding-right: 30px;
 			    height: auto;
 			    margin-bottom: 15px;
 			    li {
@@ -101,7 +102,7 @@ body {
 			    	h2 {
 			    		color: #427edc;
 			    		font-family: 'arial';
-			    		margin:  15px 0 4px 0;
+			    		margin:  0px 0 4px 0;
 			    		font-weight: bold;
 			    		display: block;
 			    	}
@@ -111,7 +112,7 @@ body {
 			    	}
 			    	img {
 			    		width: 80%;
-			    		margin: 0 auto;
+			    		float: right;
 			    		display: block;
 			    		height: 220px;
 			    		background-color: grey;
@@ -138,13 +139,13 @@ body {
 				width: 80%;
 				height: 80px;
 				display: block;
-				margin: 20px 0px 20px 50px;
+				margin: 20px 0px 20px 30px;
 				border: 2px solid black;
 			}
 		}
 		.text::before {
 					content: '';
-					width: calc(100% - 32px);
+					width: calc(100% - 33px);
 					height: 120%;
 					position: absolute;
 					top: -45px;

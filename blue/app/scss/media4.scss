@@ -9,6 +9,19 @@
     	padding-left: 28%!important;
 	}
 }
+@media (min-width: 962px) {
+	.header__content {
+		.text {
+			> img {
+				position: absolute;
+				bottom: 0px;
+			}
+		}
+	}
+	.info {
+		margin-bottom: 130px !important;
+	}
+}
 @media (max-width: 961px) {
 	.text__content {
 		padding-top: 50px !important;
@@ -158,6 +171,7 @@
 			 		padding-left: 0;
 			 	}
 			 	.info {
+			 		margin-top: 260px;
 			 		li {
 			 			margin-bottom: 25px;
 			 		}
@@ -175,7 +189,7 @@
 			 			}
 			 			img {
 			 				margin: 0;
-			 				width: 90% !important;
+			 				width: 100% !important;
 			 			}
 			 		}
 			 	}

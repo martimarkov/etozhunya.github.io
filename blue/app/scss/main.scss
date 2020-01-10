@@ -122,7 +122,9 @@ body {
 			}
 			li:nth-child(2) {
 				background-color: #bcd8f1;
-				border-left: 1px solid #fff;
+				transform: translateX(0.5px);
+				// border-left: 2px solid #fff;
+				// border-right: 2px solid #fff;
 				.case {
 					background-color: #CFE3F5;
 				}
@@ -222,7 +224,7 @@ body {
 				}
 				.text_container::before {
 					content: '';
-					width: calc(100% - 32px);
+					width: calc(100% - 33px);
 					height: 120%;
 					position: absolute;
 					top: -45px;

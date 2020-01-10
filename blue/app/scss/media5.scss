@@ -169,9 +169,8 @@
                             width: 100% !important;
                             display: block !important;
                             .box {
-                                margin-top: 10px;
+                                transform: translate3d(45%, -20%, 0px);
                                 width: 100% !important;
-                                margin-left: 40%;
                             }
                         }
                         .textarea_label {
