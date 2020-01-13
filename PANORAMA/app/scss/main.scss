@@ -73,6 +73,40 @@
 #fullArticle .callout-yellow, #fullArticle .callout-blue, #fullArticle .callout-red, #fullArticle .callout-green, #fullArticle .callout, #fullArticle .private-note {
     font-family: "Proxima Nova" !important;
 }
+#main-content .contentWrapper #fullArticle h4 {
+                font-family: "Proxima Nova_b" !important;   
+            }
+#fullArticle p strong {
+      font-family: "Proxima Nova_b"
+}
+#fullArticle  ol li {
+  padding-left: 30px
+}
+#fullArticle > ol > li:first-child::before {
+content: '1. ';
+}
+#fullArticle > ol > li:nth-child(2)::before {
+content: '2. ';
+}
+#fullArticle > ol > li:nth-child(3)::before {
+content: '3. ';
+}
+#fullArticle ol ul {
+padding-top: 20px;
+}
+#fullArticle ol ul li {
+position: relative;
+}
+#fullArticle ol ul li::before {
+content:'';
+width:3px;
+height:3px;
+  border:1px solid #000;
+position: absolute;
+  left:18px;
+  top:6.5px;
+border-radius: 50px;;  
+}
 #main-content {
     .contentWrapper{
         h1 {
@@ -98,15 +132,18 @@
                     font-family: "Proxima Nova_sb";
                 }
             }
-            h4, #groupplan {
+            #groupplan {
                 font-family: "Proxima Nova_sb" !important;
+            }
+            h4 {
+                font-family: "Proxima Nova_b" !important;   
             }
             ol {
                 font-family: "Proxima Nova";
             }
             ul {
                 li {
-                    font-family: 'Proxima Nova_sb';
+                    font-family: 'Proxima Nova';
                 }
             }
         }
@@ -200,8 +237,8 @@
     display: block;
     position: absolute;
     height: 200px;
-    left: 30px;
-    top: -30px;
+    top:-10px;
+    left:15px;
 }
  #collection-474::after {
     content: 'Track students’ progress across academics, attendance, behavior, and social-emotional learning, so every student receives the support they need.';
@@ -222,8 +259,8 @@
     display: block;
     position: absolute;
     height: 170px;
-    left: 65px;
-    top: -30px;
+    top:-10px;
+    left:40px;
 }
 #collection-464::after {
    content: 'Collect reliable feedback from students, families, teachers, and staff about school climate and culture, engagement, communication, and more.';
@@ -258,8 +295,8 @@
     display: block;
     position: absolute;
     height: 170px;
-    left: 60px;
-    top: -15px;
+    top:5px;
+    left:35px;
 }
 #collection-483::after {
    content: 'Find resources based on your role or the type of work you are currently doing to support students.';
@@ -474,6 +511,80 @@
         }
     }
 }
+#contactModal.in {
+      border-top: 4px solid #1D75BC;      
+}
+#contactModal h2 {
+    text-align: center;
+    background: none;
+    border-bottom: none;
+  font-weight: 700 !important;
+  font-family: "Proxima Nova_sb";
+    padding-top: 35px;
+}
+h1, h2, h3 {
+    line-height: 36px;
+    font-familt: "Proxima Nova_sb"
+}
+.form-horizontal .control-group {
+    font-family: "Proxima Nova_sb";
+}
+label, input, button, select, textarea {
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    line-height: 18px;
+}
+.controls input {
+          padding: 12px 6px !important;
+}
+#file-upload {
+    height: auto !important;
+cursor:pointer;
+  padding: 3px !important;
+  font-family: "Proxima Nova" !important;
+}
+.controls {
+      font-family: "Proxima Nova";
+}
+input {
+  width:220px;
+}
+textarea {
+        padding-top: 5px !important;
+}
+.formActions {
+        font-family: "Proxima Nova";
+}
+.btn {
+    border:none;
+    text-shadow: none;
+    font-family: "Proxima Nova_sb";
+  color:#fff !important;
+            text-align: center;
+          padding: 10px 20px;
+      background: #1D75BC;
+}
+.btn:hover {
+            background: #1D75BC !important;
+}
+#contentArea #collection-category-474, #contentArea #collection-category-464, #contentArea #collection-category-483 {
+  height:360px !important;
+}
+#contentArea h2 {
+      top: 175px !important;
+}
+#contentArea #collection-category-474, #contentArea #collection-category-464, #contentArea #collection-category-483 {
+    width: 27%!important;
+}
+#collection-category-464 {
+  margin-left:7% !important;
+  margin-right:7% !important;
+}
+#contentArea #collection-category-474:hover, #contentArea #collection-category-464:hover, #contentArea #collection-category-483:hover {
+box-shadow: 1px 5px 11px 1px #d8dff0;
+}
+
 #docsSearch::before {
         content: '';
         width: 100vw;
@@ -488,6 +599,12 @@
 
 }
  @media (max-width: 768px) {
+    .nav li:nth-child(5) {
+        display: none;
+    }
+    #sidebar .nav-list {
+        margin-bottom: 80px;
+    }
     .nav {
         height: 160px !important;
     }
@@ -500,7 +617,7 @@
         margin-top: 150px !important;
     }
     #collection-category-474::before, #collection-category-483::before, #collection-category-560::before, #collection-category-464::before, #collection-category-567::before, #collection-category-570::before, #collection-category-564::before, #collection-category-526::before {
-        left: 50%;
+        left: 50% !important;
         transform: translateX(-50%);
     }
     .btn {
@@ -566,10 +683,10 @@
         }
         #collection-category-474, #collection-category-464, #collection-category-483 {
             width: 80%!important;
-            margin: 0 auto 140px auto;
+            margin: 0 auto 140px auto !important;
         }
         #collection-category-464::after {
-            top: -505px;
+            top: -585px;
             left: 48%;
         }
         #collection-category-560::after {

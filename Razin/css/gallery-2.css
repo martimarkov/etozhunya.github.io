@@ -71,7 +71,7 @@
 {
 	z-index: 265;
 	width: 122px;
-	left: 296px;
+	left: -26px;
 	position: relative;
 }
 
@@ -86,7 +86,7 @@
 {
 	z-index: 269;
 	width: 122px;
-	left: 296px;
+	left: -26px;
 	margin-top: 10px;
 	position: relative;
 }
@@ -101,7 +101,7 @@
 #pu9108
 {
 	width: 0.01px;
-	left: 297px;
+	left: -26px;
 	margin-top: 9px;
 	position: relative;
 }
@@ -133,7 +133,7 @@
 #pu27223
 {
 	width: 0.01px;
-	left: 296px;
+	left: -26px;
 	margin-top: 31px;
 	position: relative;
 }
@@ -925,12 +925,12 @@
 
 #u27226
 {
-	z-index: 282;
+	z-index: 43;
 	width: 122px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 519px;
-	left: 296px;
+	left: 76px;
 }
 
 #u9106_clip,#u9114_clip,#u9108_clip,#u27226_clip
