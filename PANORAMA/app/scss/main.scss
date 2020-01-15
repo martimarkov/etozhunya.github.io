@@ -54,8 +54,13 @@
 .articleFoot time.lu {
     font-family: "Proxima Nova" !important;
 }
-.footer {
+footer {
     font-family: 'Proxima Nova';
+    width: 100%;
+    font-size: 12px;
+}
+#serp {
+    font-family: "Proxima Nova";
 }
 .help {
     font-family: "Proxima Nova" !important;
@@ -70,6 +75,23 @@
         }
     }
 }
+#fullArticle > ol > li:nth-child(4)::before {
+content: '4. ';
+}
+#fullArticle > ol > li:nth-child(5)::before {
+content: '5. ';
+}
+#fullArticle > ul li ul li ul > li::before {
+background-color: #4a4a4a;
+      width: 2px !important;
+    height: 2px !important;
+border:1px solid #4a4a4a
+}
+#fullArticle ol li ol li {
+    padding-left:0;
+    transform:translateX(40px)
+}
+
 #fullArticle .callout-yellow, #fullArticle .callout-blue, #fullArticle .callout-red, #fullArticle .callout-green, #fullArticle .callout, #fullArticle .private-note {
     font-family: "Proxima Nova" !important;
 }
@@ -129,7 +151,7 @@ border-radius: 50px;;
             }
             table {
                 tbody {
-                    font-family: "Proxima Nova_sb";
+                    font-family: "Proxima Nova";
                 }
             }
             #groupplan {
@@ -178,7 +200,7 @@ border-radius: 50px;;
         width: 17%;
         text-align: center;
         margin: 20px 0px;
-        height: 240px;
+        height: 280px;
         position: relative;
         border: 1px solid #d8dff0;
         h2 {
@@ -197,9 +219,9 @@ border-radius: 50px;;
     }
     #collection-category-474, #collection-category-464, #collection-category-483 {
         width: 33%;
-        margin-bottom: 340px;
+        margin-bottom:140px;
         border: none;
-        margin-top: 150px;
+        margin-top: 80px;
     }
     #collection-category-474:hover, #collection-category-464:hover, #collection-category-483:hover {
         box-shadow: none;
@@ -237,18 +259,33 @@ border-radius: 50px;;
     display: block;
     position: absolute;
     height: 200px;
-    top:-10px;
+    top:10px;
     left:15px;
 }
+#fullArticle ul {
+padding-left:40px;
+position: relative;
+}
+#fullArticle ul li::before {
+content:'';
+width:4px;
+height:4px;
+border-radius:25px;
+background-color: #4a4a4a;
+display:block;
+position: absolute;
+left:25px;
+transform:translateY(7px);
+}
  #collection-474::after {
-    content: 'Track students’ progress across academics, attendance, behavior, and social-emotional learning, so every student receives the support they need.';
+    content: 'Track students progress across academics, attendance, behavior, and social-emotional learning, so every student receives the support they need.';
     display: block;
     position: relative;
     font-size: 16px;
     display: block;
     line-height: 22px;
     font-family: 'Proxima Nova';
-    bottom: -38px;
+    bottom: -20px;
     width: 85%;
     margin: 0 auto;
  }
@@ -259,7 +296,7 @@ border-radius: 50px;;
     display: block;
     position: absolute;
     height: 170px;
-    top:-10px;
+    top:10px;
     left:40px;
 }
 #collection-464::after {
@@ -284,7 +321,7 @@ border-radius: 50px;;
     font-size: 44px;
     color: #4a4a4a;
     left: 50%;
-    top: -105px;
+    top: -75px;
     transform: translateX(-47%);
     pointer-events: none;
 }
@@ -295,7 +332,7 @@ border-radius: 50px;;
     display: block;
     position: absolute;
     height: 170px;
-    top:5px;
+    top:25px;
     left:35px;
 }
 #collection-483::after {
@@ -306,7 +343,7 @@ border-radius: 50px;;
    display: block;
    line-height: 22px;
    font-family: 'Proxima Nova';
-    bottom: -40px;
+    bottom: -20px;
     width: 90%;
     margin: 0 auto;
 }
@@ -353,7 +390,7 @@ border-radius: 50px;;
     font-size: 44px;
     color: #4a4a4a;
     left: 50%;
-    top: -95px;
+    top: -120px;
     transform: translateX(-47%);
     pointer-events: none;
 }
@@ -437,7 +474,7 @@ border-radius: 50px;;
  #docsSearch {
      background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Panorama%20Banner%20Photo.jpg) center 34%/cover no-repeat!important;
      width: 100%;
-     height: 400px;
+     height: 350px;
      position: relative;
      h1 {
          color: #fff;
@@ -522,9 +559,15 @@ border-radius: 50px;;
   font-family: "Proxima Nova_sb";
     padding-top: 35px;
 }
+.articleRatings {
+    font-family: "proxima nova";
+}
 h1, h2, h3 {
     line-height: 36px;
-    font-familt: "Proxima Nova_sb"
+    font-family: "Proxima Nova_sb"
+}
+#contactModal .control-label {
+    transform: translateX(11px);
 }
 .form-horizontal .control-group {
     font-family: "Proxima Nova_sb";
@@ -569,7 +612,7 @@ textarea {
             background: #1D75BC !important;
 }
 #contentArea #collection-category-474, #contentArea #collection-category-464, #contentArea #collection-category-483 {
-  height:360px !important;
+  height:400px !important;
 }
 #contentArea h2 {
       top: 175px !important;
@@ -588,17 +631,45 @@ box-shadow: 1px 5px 11px 1px #d8dff0;
 #docsSearch::before {
         content: '';
         width: 100vw;
-        height: 400px;
+        height: 100%;
         display: block;
         left: 0;
         top: 0;
         position: absolute;
        background: linear-gradient(to right, #48a0de, #fff0);
 }
+#fullArticle dt { 
+	background: #006db0; 
+}
 #contactModal.in {
 
 }
+h3 input[type="button"]:hover {
+    background: #439fe0!important;
+}
  @media (max-width: 768px) {
+ 	#docsSearch #searchBar input[type=text] {
+ 	    font-size: 12px;
+ 	}
+ 	#fullArticle ol li {
+ 	    padding-left: 30px;
+ 	    width: calc(100% - 30px);
+ 	}
+   	#main-content {
+ 	   width: 100%;
+ 	   margin: 0px;
+ 	   padding:0px;
+ 	}
+ 	.contentWrapper {
+ 	    padding: 25px 5px !important;
+
+ 	}
+ 	#main-content .contentWrapper #fullArticle table tbody {
+ 	   font-size: 10px;
+ 	}
+ 	#fullArticle table th, #fullArticle table td {
+ 	   padding:2px}
+ 	}
     .nav li:nth-child(5) {
         display: none;
     }
@@ -612,9 +683,6 @@ box-shadow: 1px 5px 11px 1px #d8dff0;
         a {
             top: 160px !important;
         }
-    }
-    #collection-category-474 {
-        margin-top: 150px !important;
     }
     #collection-category-474::before, #collection-category-483::before, #collection-category-560::before, #collection-category-464::before, #collection-category-567::before, #collection-category-570::before, #collection-category-564::before, #collection-category-526::before {
         left: 50% !important;
@@ -663,7 +731,7 @@ box-shadow: 1px 5px 11px 1px #d8dff0;
      #docsSearch {
          width: 100vw;
          position: relative;
-         margin: 0px 0px 20px 0px !important;
+         margin: 0px 0px 100px 0px !important;
          #searchBar {
              width: 80%!important;
              margin: 0 auto !important;
@@ -683,7 +751,7 @@ box-shadow: 1px 5px 11px 1px #d8dff0;
         }
         #collection-category-474, #collection-category-464, #collection-category-483 {
             width: 80%!important;
-            margin: 0 auto 140px auto !important;
+            margin: 0 auto 0px auto !important;
         }
         #collection-category-464::after {
             top: -585px;
@@ -691,6 +759,9 @@ box-shadow: 1px 5px 11px 1px #d8dff0;
         }
         #collection-category-560::after {
             top: -290%;
+        }
+        #collection-category-560::after, #collection-category-464::after {
+            font-size: 40px !important;
         }
         #collection-category-526 {
             margin-top: 230px;
