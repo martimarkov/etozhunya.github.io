@@ -82,12 +82,13 @@ body {
 		.text {
 			width: calc(83% - 100px);
 			position: relative;
+			background-color: #f0f2f7;
 			h1 {
 				color: #2b4ec0;
 				font-size: 28px;
 				font-family: 'arial';
 				font-weight: 500;
-				padding: 25px 0px 20px 30px;
+				padding: 15px 30px 20px 30px;
 			}
 			> ul {
 				display: flex;
@@ -114,9 +115,10 @@ body {
 			    		width: 80%;
 			    		float: right;
 			    		display: block;
-			    		height: 220px;
 			    		background-color: grey;
 			    		border: 2px solid black;
+			    		height: 183px;
+			    		background: url(../img/paris.jpg) no-repeat center center / cover;
 			    	}
 			    }
 			}
@@ -136,7 +138,7 @@ body {
 			}
 			> img {
 				background: url(../img/logo.png) center center/contain no-repeat;
-				width: 80%;
+			    width: 63%;
 				height: 80px;
 				display: block;
 				margin: 20px 0px 20px 30px;

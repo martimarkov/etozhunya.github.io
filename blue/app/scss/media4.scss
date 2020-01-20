@@ -166,12 +166,11 @@
 			 .text {
 			 	width: 88%;
 			 	margin: 0 auto;
-			 	padding-left: 20px;
+			 	padding-left: 15px;
 			 	h1 {
 			 		padding-left: 0;
 			 	}
 			 	.info {
-			 		margin-top: 260px;
 			 		li {
 			 			margin-bottom: 25px;
 			 		}
@@ -188,8 +187,9 @@
 			 				margin: 5px 0px;
 			 			}
 			 			img {
-			 				margin: 0;
-			 				width: 100% !important;
+			 				margin: 0 auto;
+			 				width: auto;
+			 				float: none;
 			 			}
 			 		}
 			 	}

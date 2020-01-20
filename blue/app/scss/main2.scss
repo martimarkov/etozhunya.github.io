@@ -80,6 +80,7 @@ body {
 				padding-right: 30px;
 				position: relative;
 				width: calc(100% - 100px);
+			    background-color: #f0f2f7;
 				h1 {
 					color: #2b4ec0;
 					font-size: 28px;
@@ -87,10 +88,10 @@ body {
 					font-weight: 500;
 					display: block;
 					position: absolute;
-					top: 50px;
+					top: 30px;
 				}
 				li:first-child {
-					margin-top: 100px;
+					margin-top: 80px;
 				}
 				li {
 					display: flex;
@@ -128,7 +129,7 @@ body {
 					}
 				}
 				li:nth-child(4) {
-					width: 70%;
+				    width: calc(98% - 253px);
 					height: 80px;
 					border: 2px solid #000;
 					margin: 50px 0 20px 0;

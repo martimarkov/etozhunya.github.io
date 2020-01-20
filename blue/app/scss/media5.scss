@@ -161,6 +161,9 @@
                     .first_labels {
                         width: 100% !important;
                         margin: 0 auto;
+                        .terms {
+                            margin-top: 20px !important;
+                        }
                     }
                     .second_labels {
                         margin: 0 auto!important;
@@ -171,6 +174,7 @@
                         .spec {
                             width: 100% !important;
                             display: block !important;
+                            height: 80px;
                             .box {
                                 transform: translate3d(45%, -20%, 0px);
                                 width: 100% !important;

@@ -110,14 +110,42 @@ body {
 							font-weight: bold;	
 							font-size: 18px;
 						}
-						label {
+						.terms {
+								display: flex;
+								margin-top: 65px;
+								justify-content: space-around;
+								> input {
+									width: 50px;
+									height: 25px;
+									margin-right: 10px;
+									transform: translateY(-6px);
+								}
+								> label {
+									> .db {
+										display: block;
+										color: #427edc;
+										font-family: arial;
+										font-weight: 700;
+										font-size: 18px;
+									}
+									> p {
+										color: #333132;
+										font-family: arial;
+									    margin: 5px 0;
+									    display: block;
+									    font-size: 15px;
+									    text-align: justify;
+									}
+								}
+							}
+						> label {
 							position: relative;
 							margin-top: 20px;
 							display: flex;
 							justify-content: space-between;
 							font-size: 18px;
 							font-family: arial;
-							span {
+							> span {
 								padding-top: 4px;
 								font-size: 16px;
 								width: 40%;
@@ -131,6 +159,7 @@ body {
 								font-size: 16px;
 								height: 25px;
 								font-family: "Arial";
+								border-radius: 4px;
 							}
 							input:focus {
 								outline: none;
@@ -189,21 +218,21 @@ body {
 					}
 					.second_labels {
 						width: 40%;
-						margin-left: 50px;
+						margin-left: 10%;
 						label {
 							.box {
 								width: 80%;
-								display: inline-flex;
-								flex-flow: wrap;
-								justify-content: flex-start;
-								.forbox {
-									width: auto;
-								}
-								> label {
-									margin: 0px 0px 0px 5px;
-									width: 90%;
-									font-size: 16px;
-									transform: translateY(5px);
+								.test {
+									display: flex;
+									.forbox {
+										width: auto;
+									}
+									> label {
+										margin: 0px 0px 0px 5px;
+										width: 90%;
+										font-size: 16px;
+										transform: translateY(5px);
+									}
 								}
 							}
 							.beli {
@@ -230,6 +259,7 @@ body {
 						position: absolute;
 						bottom: 50px;
 						left: 18%;
+					    border-radius: 4px;
 						cursor: pointer;
 						background: linear-gradient(to top, grey -51%, #fff);
 						border: 1px solid grey;
@@ -237,7 +267,7 @@ body {
 				}
 			}
 			.image-container {
-				margin: 100px 0px 50px 0px;
+				margin: 100px 0px 20px 0px;
 				background: url(../img/logo.png) center center/contain no-repeat;
 				border: 1px solid #000;
 				width: 70%;
