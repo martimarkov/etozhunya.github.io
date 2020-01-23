@@ -1,0 +1,778 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot");
+  src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff") format("woff"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova") format("svg");
+}
+@font-face {
+  font-family: "Proxima Nova_sb";
+  src: url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.eot");
+  src: url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.woff") format("woff"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f14eee643541cf03a10f26c944cc29f5.svg#Proxima Nova") format("svg");
+}
+@font-face {
+  font-family: "Proxima Nova_b";
+  src: url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.eot");
+  src: url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.woff") format("woff"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d5c268c3a4d933ac5d95f079876dc08b.svg#Proxima Nova") format("svg");
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+.container-fluid {
+height:100px;
+}
+.brand > span {
+display: none;
+}
+.brand::before {
+    content: '';
+    background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Panorama%20Logo.png) no-repeat center center/ contain;
+    width: 210px;
+    display: block;
+    position: absolute;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+#fullArticle dd {
+    font-family: "Proxima Nova";
+}
+#fullArticle h5 {
+    font-family: "Proxima Nova_sb";
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  position: relative;
+}
+.lu {
+  font-family: "Proxima Nova" !important;
+}
+.articleFoot time.lu {
+  font-family: "Proxima Nova" !important;
+}
+footer {
+  font-family: 'Proxima Nova';
+  width: 100%;
+  font-size: 12px;
+}
+#serp {
+  font-family: "Proxima Nova";
+}
+.help {
+  font-family: "Proxima Nova" !important;
+}
+.articleList li a {
+  font-family: 'Proxima Nova';
+}
+.articleList li a .icon-article-doc {
+  display: none;
+}
+#fullArticle > ol > li:nth-child(4)::before {
+  content: '4. ';
+}
+#fullArticle > ol > li:nth-child(5)::before {
+  content: '5. ';
+}
+#fullArticle > ul li ul li ul > li::before {
+  background-color: #4a4a4a;
+  width: 2px !important;
+  height: 2px !important;
+  border: 1px solid #4a4a4a;
+}
+#fullArticle ol li ol li {
+  padding-left: 0;
+  transform: translateX(40px);
+}
+#fullArticle .callout-yellow, #fullArticle .callout-blue, #fullArticle .callout-red, #fullArticle .callout-green, #fullArticle .callout, #fullArticle .private-note {
+  font-family: "Proxima Nova" !important;
+}
+#main-content .contentWrapper #fullArticle h4 {
+  font-family: "Proxima Nova_b" !important;
+}
+#fullArticle p strong {
+  font-family: "Proxima Nova_b";
+}
+#fullArticle ol li {
+  padding-left: 30px;
+}
+#fullArticle > ol > li:first-child::before {
+  content: '1. ';
+}
+#fullArticle > ol > li:nth-child(2)::before {
+  content: '2. ';
+}
+#fullArticle > ol > li:nth-child(3)::before {
+  content: '3. ';
+}
+#fullArticle ol ul {
+  padding-top: 20px;
+}
+#fullArticle ol ul li {
+  position: relative;
+}
+#fullArticle ol ul li::before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  border: 1px solid #000;
+  position: absolute;
+  left: 18px;
+  top: 6.5px;
+  border-radius: 50px;
+}
+#main-content .contentWrapper h1 {
+  margin-right: 0 !important;
+  color: #4a4a4a;
+  font-family: 'Proxima nova_sb';
+}
+#main-content .contentWrapper .sort {
+  display: none;
+}
+#main-content .contentWrapper .descrip {
+  font-family: 'Proxima Nova';
+  font-size: 14px;
+  margin: 20px 0px;
+  color: #757575;
+}
+#main-content .contentWrapper #fullArticle p {
+  font-family: "Proxima Nova";
+}
+#main-content .contentWrapper #fullArticle table tbody {
+  font-family: "Proxima Nova";
+}
+#main-content .contentWrapper #fullArticle #groupplan {
+  font-family: "Proxima Nova_sb" !important;
+}
+#main-content .contentWrapper #fullArticle h4 {
+  font-family: "Proxima Nova_b" !important;
+}
+#main-content .contentWrapper #fullArticle ol {
+  font-family: "Proxima Nova";
+}
+#main-content .contentWrapper #fullArticle ul li {
+  font-family: 'Proxima Nova';
+}
+#main-content .contentWrapper .articleFoot {
+  font-family: "Proxima Nova";
+}
+#main-content .contentWrapper .articleFoot .help #sbContact, #main-content .contentWrapper .articleFoot .help #sbContactMobile {
+  font-family: "Proxima Nova_sb";
+}
+.center {
+  width: 100vw;
+  margin-top: 50px;
+}
+.icon-search {
+  opacity: 0;
+}
+#browse-our-faqs, #submit-a-success-story, #join-a-community-workshop, #explore-our-research, #read-our-case-studies {
+  display: none;
+}
+#fullArticle strong {
+  font-family: "proxima Nova_sb";
+}
+#contentArea {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-flow: wrap;
+  padding: 0 !important;
+}
+#contentArea .collection-category {
+  cursor: pointer;
+  width: 17%;
+  text-align: center;
+  margin: 20px 0px;
+  height: 280px;
+  position: relative;
+  border: 1px solid #d8dff0;
+}
+#contentArea .collection-category h2 {
+  position: relative;
+  top: 160px;
+  font-family: 'Proxima nova_sb';
+  font-size: 20px;
+}
+#contentArea .collection-category h2 a:hover {
+  border-bottom: none;
+}
+#contentArea .collection-category:hover {
+  box-shadow: 1px 5px 11px 1px #d8dff0;
+  transition: 0.2s;
+}
+#contentArea #collection-category-474, #contentArea #collection-category-464, #contentArea #collection-category-483 {
+  width: 33%;
+  margin-bottom: 140px;
+  border: none;
+  margin-top: 80px;
+}
+#contentArea #collection-category-474:hover, #contentArea #collection-category-464:hover, #contentArea #collection-category-483:hover {
+  box-shadow: none;
+  transform: none;
+}
+#sidebar h3 {
+  display: none;
+}
+#sidebar .nav-list li {
+  margin: 0px 0px 30px 0px;
+  position: relative;
+}
+#sidebar .nav-list li a {
+  font-size: 15px !important;
+  font-family: 'Proxima nova_sb';
+}
+#sidebar .nav-list li.active::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 85%;
+  height: 4px;
+  bottom: -5px;
+  background-color: #68be51;
+}
+#collection-category-474::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Student%20Success-26.svg) no-repeat center center/ contain;
+  width: 250px;
+  display: block;
+  position: absolute;
+  height: 200px;
+  top: 10px;
+  left: 15px;
+}
+.callout-blue  > ol > li:first-child::before {
+  content: '1. ';
+}
+.callout-blue > ol > li:nth-child(2)::before {
+  content: '2. ';
+}
+.callout-blue > ol > li:nth-child(3)::before {
+  content: '3. ';
+}
+.callout-blue > ol > li:nth-child(4)::before {
+  content: '4. ';
+}
+.callout-blue > ol > li:nth-child(5)::before {
+  content: '5. ';
+}
+.callout-blue ol ul li::before {
+   background-color: #fff !important;
+transform:translateY(0px) !important;
+}
+#fullArticle ul {
+  padding-left: 40px;
+  position: relative;
+}
+#fullArticle ul li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 25px;
+  background-color: #4a4a4a;
+  display: block;
+  position: absolute;
+  left: 25px;
+  transform: translateY(7px);
+}
+#collection-474::after {
+  content: 'Track students progress across academics, attendance, behavior, and social-emotional learning, so every student receives the support they need.';
+  display: block;
+  position: relative;
+  font-size: 16px;
+  display: block;
+  line-height: 22px;
+  font-family: 'Proxima Nova';
+  bottom: -20px;
+  width: 85%;
+  margin: 0 auto;
+}
+#collection-category-464::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Surveys.svg) no-repeat center center/ contain;
+  width: 210px;
+  display: block;
+  position: absolute;
+  height: 170px;
+  top: 10px;
+  left: 40px;
+}
+#collection-464::after {
+  content: 'Collect reliable feedback from students, families, teachers, and staff about school climate and culture, engagement, communication, and more.';
+  display: block;
+  position: relative;
+  font-size: 16px;
+  display: block;
+  line-height: 22px;
+  font-family: 'Proxima Nova';
+  bottom: -20px;
+  width: 85%;
+  margin: 0 auto;
+}
+#collection-category-464::after {
+  content: 'Getting Started';
+  cursor: auto;
+  display: block;
+  position: absolute;
+  width: 305px;
+  font-family: 'Proxima Nova_sb';
+  font-size: 44px;
+  color: #4a4a4a;
+  left: 50%;
+  top: -75px;
+  transform: translateX(-47%);
+  pointer-events: none;
+}
+#collection-category-483::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Learning%20Paths.svg) no-repeat center center/ contain;
+  width: 220px;
+  display: block;
+  position: absolute;
+  height: 170px;
+  top: 25px;
+  left: 35px;
+}
+#collection-483::after {
+  content: 'Find resources based on your role or the type of work you are currently doing to support students.';
+  display: block;
+  position: relative;
+  font-size: 16px;
+  display: block;
+  line-height: 22px;
+  font-family: 'Proxima Nova';
+  bottom: -20px;
+  width: 90%;
+  margin: 0 auto;
+}
+#collection-category-526::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_FAQs.svg) no-repeat center center/ contain;
+  width: 100px;
+  display: block;
+  position: absolute;
+  height: 110px;
+  left: 40px;
+  top: 30px;
+}
+#collection-category-564::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Join%20a%20Community%20Workshop.svg) no-repeat center center/ contain;
+  width: 110px;
+  display: block;
+  position: absolute;
+  height: 130px;
+  left: 35px;
+  top: 30px;
+}
+#collection-category-560::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Share%20a-Success-Story.svg) no-repeat center center/ contain;
+  width: 90px;
+  display: block;
+  position: absolute;
+  height: 120px;
+  left: 43px;
+  top: 30px;
+}
+.caret {
+  display: none !important;
+}
+#collection-category-560::after {
+  content: 'Popular Searches';
+  cursor: auto;
+  display: block;
+  position: absolute;
+  width: 350px;
+  font-family: 'Proxima Nova_sb';
+  font-size: 44px;
+  color: #4a4a4a;
+  left: 50%;
+  top: -120px;
+  transform: translateX(-47%);
+  pointer-events: none;
+}
+#collection-category-567::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Explore%20our-Research.svg) no-repeat center center/ contain;
+  width: 80px;
+  display: block;
+  position: absolute;
+  height: 120px;
+  left: 50px;
+  top: 30px;
+}
+#collection-category-570::before {
+  content: '';
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Read%20our-Case%20Studies.svg) no-repeat center center/ contain;
+  width: 100px;
+  display: block;
+  position: absolute;
+  height: 120px;
+  left: 40px;
+  top: 35px;
+}
+#serp-dd {
+  font-family: "Proxima Nova" !important;
+}
+.navbar .navbar-inner .container-fluid .nav {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.navbar .navbar-inner .container-fluid .nav li {
+  font-family: 'Proxima Nova_sb';
+}
+.navbar .navbar-inner .container-fluid .nav li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 15px;
+}
+.navbar .navbar-inner .container-fluid .nav li .contactUs {
+  font-family: 'Proxima Nova_sb';
+  padding: 10px;
+  background: 0;
+  opacity: 1;
+  color: white;
+  text-decoration: none;
+  margin: 0px 8px;
+  border-radius: 4px;
+  background-color: #68be51;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.navbar .navbar-inner .container-fluid .nav li .contactUs:hover {
+  background-color: #5ab343;
+}
+.navbar .navbar-inner .container-fluid .btn {
+  border: 1px solid #68be51;
+  top: 25px;
+  right: 5px;
+  margin: 0 !important;
+}
+.navbar .navbar-inner .container-fluid .btn .icon-bar {
+  margin-top: 4px;
+  background-color: #68be51;
+  width: 22px;
+  transform: translate3d(-3px, -1px, 0px);
+}
+.related {
+  font-family: "Proxima Nova";
+}
+#main-content {
+  background: none !important;
+}
+#docsSearch {
+  background: url(https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Panorama%20Banner%20Photo.jpg) center 34%/cover no-repeat !important;
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+#docsSearch h1 {
+  color: #fff;
+  font-family: 'Proxima Nova_b';
+  font-weight: 400;
+  font-size: 50px;
+  text-align: left;
+  margin: 60px 0px 0px 13%;
+  position: relative;
+}
+#docsSearch #searchBar {
+  position: relative;
+  width: 450px;
+  margin-left: 13%;
+}
+#docsSearch #searchBar .search-query {
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  width: 100%;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#docsSearch #searchBar input {
+  color: #728191;
+  background: #F9F9F9;
+  font-family: "Proxima Nova_sb" !important;
+  border: none;
+}
+#docsSearch #searchBar input:focus {
+  outline: none;
+}
+#docsSearch #searchBar input.search-query {
+  border-radius: 8px;
+  padding: 0px 25px;
+}
+#docsSearch #searchBar input[type=text] {
+  font-family: "Proxima Nova" !important;
+}
+#docsSearch #searchBar button {
+  border: none;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+  font-family: "Proxima-Nova";
+  background: #4F92CA;
+  border-radius: 0 5px 5px 0;
+  font-size: 18px;
+  padding: 0 1.5em;
+  height: 24px !important;
+  position: absolute;
+  top: 45px !important;
+  right: -30px !important;
+  background: url('https://panorama-www.s3.amazonaws.com/Panorama%20Academy/Academy%20Icon%20Files/Icons_Search%20Icon.svg') center center no-repeat !important;
+  cursor: pointer;
+}
+#docsSearch #searchBar button span {
+  opacity: 0;
+}
+#docsSearch #searchBar button:focus {
+  outline: none;
+}
+#docsSearch #searchBar #serp-dd {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  top: 70px;
+  box-shadow: 0 2px 5px rgba(100, 100, 100, 0.2);
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+}
+#contactModal.in {
+  border-top: 4px solid #1D75BC;
+}
+#contactModal h2 {
+  text-align: center;
+  background: none;
+  border-bottom: none;
+  font-weight: 700 !important;
+  font-family: "Proxima Nova_sb";
+  padding-top: 35px;
+}
+.articleRatings {
+  font-family: "proxima nova";
+}
+h1, h2, h3 {
+  line-height: 36px;
+  font-family: "Proxima Nova_sb";
+}
+#contactModal .control-label {
+  transform: translateX(11px);
+}
+.form-horizontal .control-group {
+  font-family: "Proxima Nova_sb";
+}
+label, input, button, select, textarea {
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 4px;
+  line-height: 18px;
+}
+.controls input {
+  padding: 12px 6px !important;
+}
+#file-upload {
+  height: auto !important;
+  cursor: pointer;
+  padding: 3px !important;
+  font-family: "Proxima Nova" !important;
+}
+.controls {
+  font-family: "Proxima Nova";
+}
+input {
+  width: 220px;
+}
+textarea {
+  padding-top: 5px !important;
+}
+.formActions {
+  font-family: "Proxima Nova";
+}
+.btn {
+  border: none;
+  text-shadow: none;
+  font-family: "Proxima Nova_sb";
+  color: #fff !important;
+  text-align: center;
+  padding: 10px 20px;
+  background: #1D75BC;
+}
+.btn:hover {
+  background: #1D75BC !important;
+}
+#contentArea #collection-category-474, #contentArea #collection-category-464, #contentArea #collection-category-483 {
+  height: 400px !important;
+}
+#contentArea h2 {
+  top: 175px !important;
+}
+#contentArea #collection-category-474, #contentArea #collection-category-464, #contentArea #collection-category-483 {
+  width: 27% !important;
+}
+#collection-category-464 {
+  margin-left: 7% !important;
+  margin-right: 7% !important;
+}
+#contentArea #collection-category-474:hover, #contentArea #collection-category-464:hover, #contentArea #collection-category-483:hover {
+  box-shadow: 1px 5px 11px 1px #d8dff0;
+}
+#docsSearch::before {
+  content: '';
+  width: 100vw;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: linear-gradient(to right, #48a0de, #fff0);
+}
+#fullArticle dt {
+  background: #006db0;
+}
+h3 input[type="button"]:hover {
+  background: #439fe0 !important;
+}
+#fullArticle > ul > li > ul > li::before {
+ background-color:#fff;
+border:1px solid #4a4a4a;
+}
+@media (max-width: 768px) {
+  #docsSearch #searchBar input[type=text] {
+    font-size: 12px;
+  }
+  #fullArticle ol li {
+    padding-left: 30px;
+    width: calc(100% - 30px);
+  }
+  #main-content {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .contentWrapper {
+    padding: 25px 5px !important;
+  }
+  #main-content .contentWrapper #fullArticle table tbody {
+    font-size: 10px;
+  }
+  #fullArticle table th, #fullArticle table td {
+    padding: 2px;
+  }
+.nav li:nth-child(5) {
+  display: none;
+}
+#sidebar .nav-list {
+  margin-bottom: 80px;
+}
+.nav {
+  height: auto !important;
+}
+#contactMobile a {
+  top: 160px !important;
+}
+#collection-category-474::before, #collection-category-483::before, #collection-category-560::before, #collection-category-464::before, #collection-category-567::before, #collection-category-570::before, #collection-category-564::before, #collection-category-526::before {
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+.btn {
+  width: 42px !important;
+  height: 35px !important;
+  padding: 8px 12px !important;
+}
+.navbar {
+  margin: 0 !important;
+}
+.nav-bar {
+  margin: 0 !important;
+}
+.navbar-inner {
+  padding: 0 !important;
+}
+.nav {
+  display: block !important;
+}
+.nav li a {
+  text-align: left;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: black !important;
+  line-height: 20px !important;
+  padding: 10px 8px !important;
+  transition: all 0.1s ease 0s !important;
+  margin: 0px !important;
+}
+.nav li:last-child a {
+  position: relative;
+  left: 0;
+  background-color: transparent !important;
+  display: block !important;
+  text-align: left !important;
+}
+#docsSearch {
+  width: 100vw;
+  position: relative;
+  margin: 0px 0px 170px 0px !important;
+}
+#docsSearch #searchBar {
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+#docsSearch #searchBar button {
+  top: 33px !important;
+  right: -13px !important;
+}
+#contentArea {
+  display: block;
+  padding: 0px !important;
+}
+#contentArea .collection-category {
+  width: 60% !important;
+  margin: 0 auto 50px auto;
+  transform: translateX(-5px);
+}
+#contentArea #collection-category-474, #contentArea #collection-category-464, #contentArea #collection-category-483 {
+  width: 80% !important;
+  margin: 0 auto 0px auto !important;
+}
+#contentArea #collection-category-464::after {
+  top: -500px;
+  left: 48%;
+}
+#contentArea #collection-category-560::after {
+  top: -280%;
+}
+#contentArea #collection-category-560::after, #contentArea #collection-category-464::after {
+  font-size: 37px !important;
+  width: 315px !important;
+}
+#contentArea #collection-category-526 {
+  margin-top: 130px;
+}
