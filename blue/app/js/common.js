@@ -42,34 +42,6 @@ setInterval(function() {
 	}
 },2000)
 
-// В нем 
-// for(i=0; i<$(ul).length; i++) {
-// if $(li[i]) has class
-//   $(li[i]).removeclass
-// else
-//  addclass 
-
-// if i = $(ul).length 
-//   setTimeout(f(){
-//     i = 0
-//   }, 2000)
-// }
-
-
-
-
-
-
-// // var itemsArray = $('.wrapper li')
-
-
-// // // setTimeout(function iter(i) {
-// //   itemsArray[i].classList.add('white');
-// //   if(++i < itemsArray.length) {
-// //   	setTimeout(iter, 1 * 1000, i);	
-// //   } 
-// // // }, 0, 0);
-
 
 
 

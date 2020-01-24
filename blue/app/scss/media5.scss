@@ -9,6 +9,20 @@
     }
 }
 @media (max-width: 962px) {
+    .wrapper {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+        li {
+            width: 34%;
+            height: 665px;
+            transition: 1.5s;
+        }
+        li.white {
+            background-color: #ffffff54;
+            transition: 1.5s;
+        }
+    }
     .wrap {
         transform: translateY(-5px);
     }
