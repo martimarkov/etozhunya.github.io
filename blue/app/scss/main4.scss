@@ -102,7 +102,7 @@ body {
 			    height: auto;
 			    margin-bottom: 15px;
 			    li {
-			    	width: 33%;
+			    	width: 35%;
 			    	position: relative;
 			    	h2 {
 			    		color: #427edc;
@@ -116,14 +116,12 @@ body {
 			    		font-family: 'arial'
 			    	}
 			    	img {
-			    		width: 80%;
-			    		float: right;
-			    		display: block;
-			    		background-color: grey;
+			    		width: 100%;
 			    		border: 2px solid black;
-			    		height: 183px;
-			    		background: url(../img/paris.jpg) no-repeat center center / cover;
 			    	}
+			    }
+			    li:last-child {
+			    	width: 30%;
 			    }
 			}
 			.info {

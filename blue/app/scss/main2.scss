@@ -100,8 +100,9 @@ body {
 					display: flex;
 					justify-content: space-between;
 					margin: 50px 0px 50px 0px;
+					align-items: flex-start;
 					.left {
-						width: calc(98% - 253px);
+						width: calc(98% - 25%);
 						span {
 							color: #427edc;
 							font-family: 'arial';
@@ -117,18 +118,15 @@ body {
 						}	
 					}
 					.right {
-						width: auto;
+						width: 25%;
 						display: flex;
 						justify-content: flex-end;
 						align-items: center;
 						position: relative;
+						border: 2px solid #000;
 						img {
-							background: url('../img/paris.jpg') no-repeat center center / contain;
-							border: 2px solid #000;
-							display: inline-block;
-							width: 253px;
-							height: 170px;
-						}	
+							width: 100%;
+						}
 					}
 				}
 				li:nth-child(4) {
