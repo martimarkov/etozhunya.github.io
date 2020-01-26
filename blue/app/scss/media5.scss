@@ -178,7 +178,7 @@
                         .terms {
                             margin-top: 20px !important;
                             position: absolute;
-                            bottom: -120px;
+                            bottom: -135px;
                         }
                     }
                     .second_labels {
@@ -194,6 +194,11 @@
                             .box {
                                 transform: translate3d(45%, -20%, 0px);
                                 width: 100% !important;
+                                .test {
+                                    > label {
+                                        transform:translateY(5px);
+                                    }
+                                }
                             }
                         }
                         .textarea_label {

@@ -41,9 +41,9 @@ $(function() {
 		}
 	},2000)
 
-	$('.cut').shave(180);
-	if ($(window).width() < 768) {	
-		$('.cut').shave(180);
+	$('.cut').shave(120);
+	if ($(window).width() > 1125) {	
+		$('.cut').shave(175);
 	}
 });
 
