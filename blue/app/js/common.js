@@ -41,10 +41,12 @@ $(function() {
 		}
 	},2000)
 
-	$('.cut').shave(120);
-	if ($(window).width() > 1125) {	
-		$('.cut').shave(165);
-	}
+	$( window ).resize(function() {
+	  $('.cut').shave(120);
+	  if ($(window).width() > 1125) {	
+	  	$('.cut').shave(165);
+	  }
+	});
 });
 
 
