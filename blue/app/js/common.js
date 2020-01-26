@@ -43,7 +43,7 @@ $(function() {
 
 	$('.cut').shave(120);
 	if ($(window).width() > 1125) {	
-		$('.cut').shave(175);
+		$('.cut').shave(165);
 	}
 });
 
