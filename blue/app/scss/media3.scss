@@ -30,6 +30,20 @@
 	}
 }
 @media (max-width: 961px) {
+	.wrapper {
+		width: 100%;
+		display: flex !important;
+		justify-content: space-between;
+		li {
+			width: 34%;
+			height: 665px;
+			transition: 1.5s;
+		}
+		li.white {
+			background-color: rgba(255, 255, 255, 0.3);
+			transition: 1.5s;
+		}
+	}
 	.mob_only {
 		background: url('../img/logo-mob.png') center center / contain no-repeat;
 		height: 60px;
@@ -177,14 +191,15 @@
 					li {
 						display: block;
 						.left {
-							width: 90%;
+							width: 100%;
 							margin: 20px auto;
+							padding: 0px 15px;
 						}
 						.right {
 							width: 90%;
 							margin: 20px auto;
 							img {
-								width: 100%;
+								margin: 0 auto;
 							}
 						}
 					}
