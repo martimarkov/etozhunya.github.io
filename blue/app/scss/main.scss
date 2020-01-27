@@ -104,7 +104,7 @@ body {
 			height: auto;
 			overflow: hidden;
 			li {
-				width: 33%;
+				width: 33.33333333%;
 				position: relative;
 			}
 			li:first-child {
@@ -122,12 +122,29 @@ body {
 			}
 			li:nth-child(2) {
 				background-color: #bcd8f1;
-				transform: translateX(0.5px);
-				// border-left: 2px solid #fff;
-				// border-right: 2px solid #fff;
 				.case {
 					background-color: #CFE3F5;
 				}
+			}
+			li:nth-child(2)::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			height: 100%;
+			width: 2px;
+			background-color: #fff;
+			z-index: 1;
+			top: 0;
+			}
+			li:nth-child(2)::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			height: 100%;
+			width: 2px;
+			background-color: #fff;
+			z-index: 1;
+			top: 0;
 			}
 			li:nth-child(3) {
 				 background-color: #8ab3d9;
