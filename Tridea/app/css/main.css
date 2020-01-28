@@ -8937,3 +8937,70 @@ body.FAQPage .quick-answers h3 {
 
 body.FAQPage .quick-answers .question {
   padding: 1rem 0px; }
+@media (min-width: 768px) and (max-width: 1366px) {
+  .padd0 {
+    padding: 0!important;
+  }
+  .AboutPage {
+    padding:2em !important;
+  }
+  nav.navbar {
+    width: calc(100% - 5rem)!important;
+  }
+  .pseudo:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #2E1A46;
+    position: absolute;
+    bottom: 60px;
+  }
+  .site-container {
+    padding: 0;
+  }
+  .AboutPage .main-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex !important;
+    flex-flow: wrap;
+  }
+  .editrow {
+    width: 100%;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: relative;
+  }
+  .navbar {
+    position: fixed !important;
+    top: 51px;
+  }
+  .editfz{
+      font-size: 32px !important;
+  }
+  .editrow2 {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .editleft {
+    width: 25%;
+  }
+  .editright {
+    width: 65%;
+  }
+  .edimg {
+    width: 80%;
+  }
+}
