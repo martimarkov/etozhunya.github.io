@@ -194,11 +194,6 @@
                             .box {
                                 transform: translate3d(45%, -20%, 0px);
                                 width: 100% !important;
-                                .test {
-                                    > label {
-                                        transform:translateY(-1px);
-                                    }
-                                }
                             }
                         }
                         .textarea_label {
