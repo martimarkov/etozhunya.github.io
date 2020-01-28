@@ -9,6 +9,12 @@
     }
 }
 @media (max-width: 962px) {
+    .terms {
+        display: none !important;
+    }
+    .mobile {
+        display: flex !important;
+    }
     .wrapper {
         width: 100%;
         display: flex !important;
@@ -175,11 +181,6 @@
                     .first_labels {
                         width: 100% !important;
                         margin: 0 auto;
-                        .terms {
-                            margin-top: 20px !important;
-                            position: absolute;
-                            bottom: -135px;
-                        }
                     }
                     .second_labels {
                         margin: 0 auto!important;
@@ -207,9 +208,12 @@
                                 width: 100% !important;
                             }
                         }
+                        .mobile {
+                            margin-top: 20px !important;
+                        }
                     }
                     button {
-                        bottom: -175px !important;
+                        bottom: -55px !important;
                         left: 50% !important;
                         cursor: pointer;
                         transform: translateX(-50%);
@@ -217,7 +221,7 @@
                     }
                 }
                 .image-container {
-                    margin: 200px auto 30px auto;
+                    margin: 100px auto 30px auto;
                     width: 100% !important;
                 }
             }

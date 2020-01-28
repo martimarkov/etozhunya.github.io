@@ -9,6 +9,9 @@ body {
 	position: relative;
 	color: #333132;
 }
+.mobile {
+	display: none !important;
+}
 .margin {
 	transform: translateY(-5px);	
 }
