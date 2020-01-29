@@ -9,6 +9,9 @@
     }
 }
 @media (max-width: 962px) {
+    .animated {
+        animation: none!important;
+    }
     .terms {
         display: none !important;
     }

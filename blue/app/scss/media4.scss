@@ -174,8 +174,10 @@
 			flex-flow: wrap;
 			 margin-top: 60px;
 			 .animated {
-			 	height: 55vh;
+			 	height: 55vh !important;
 			 	width: 100%;
+			 	animation:none !important;
+			 	min-height: auto !important;
 			 }
 			 .text {
 			 	width: 88%;

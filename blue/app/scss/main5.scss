@@ -231,10 +231,11 @@ body {
 										width: auto;
 									}
 									> label {
-										margin: 0px 0px 0px 5px;
+										margin: 0 0 0 5px;
 										width: 90%;
 										font-size: 16px;
-										transform: translateY(5px);
+										display: flex;
+										align-items: center;
 									}
 								}
 							}
