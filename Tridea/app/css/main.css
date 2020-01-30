@@ -118,7 +118,10 @@ strong {
 
 small {
   font-size: 80%; }
-
+.navbar {
+    position: fixed !important;
+    top: 51px;
+  }
 sub,
 sup {
   position: relative;
@@ -1628,6 +1631,9 @@ textarea.form-control {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 @media (max-width: 768px) {
+    .padd0 {
+      padding: 0 !important;
+    }
     .site-container {
       padding: 0px !important;
     }
@@ -2980,6 +2986,7 @@ input[type="button"].btn-block {
   display: block; }
 
 .navbar {
+  transition: all 1s ease;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
@@ -8339,7 +8346,7 @@ nav.navbar {
   margin-top: 100px;
 }
 .padd0 {
-    padding: 10px!important;
+    padding: 10px;
 }
 .pr0 {
   padding-right: 0 !important;
@@ -8937,9 +8944,53 @@ body.FAQPage .quick-answers h3 {
 
 body.FAQPage .quick-answers .question {
   padding: 1rem 0px; }
-@media (min-width: 768px) and (max-width: 1366px) {
+  .AboutPage .navbar.active, .ContactPage .navbar.active {
+      padding-top: 10px;
+      top: 0px;
+      background-color: #fff;
+      transition: all 0.2s ease;
+  }
+  .HowToPage .navbar.active, .GalleryPage .navbar.active {
+      padding-top: 10px;
+      top: 0px;
+      background-color: #FDD756;
+      transition: all 0.2s ease;
+  }
+  .ParticipatePage .navbar.active {
+      padding-top: 10px;
+      top: 0px;
+      background-color: #F6CDD7;
+      transition: all 1s ease;
+  }
+  .navbar.color {
+    background-color: transparent !important;
+    transition: all 0.2s ease !important;
+  }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .lisa-winstanley-photo::before {
+    content: none;
+  }
+  .lisa-img {
+    max-width: 100%;
+  }
+  .lisa-winstanley-photo {
+  margin-top: 20px;
+  }
+  .w25 {
+    width: 25% !important;
+  }
+  .w75 {
+    width: 75% !important;
+  }
+  .ord4 {
+    order: 4;
+    padding: 0;
+  }
   .padd0 {
     padding: 0!important;
+  }
+  .pl20 {
+    padding:0px 0px 0px 20px;
   }
   .AboutPage {
     padding:2em !important;
@@ -8978,10 +9029,6 @@ body.FAQPage .quick-answers .question {
     display: flex;
     position: relative;
   }
-  .navbar {
-    position: fixed !important;
-    top: 51px;
-  }
   .editfz{
       font-size: 32px !important;
   }
@@ -9002,5 +9049,23 @@ body.FAQPage .quick-answers .question {
   }
   .edimg {
     width: 80%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .pseudo::after {
+    bottom: -40px;
+    height: 3px;
+  }
+  .pad15 {
+    padding: 0px 15px 0px 15px !important;
+  }
+  .editright {
+    width: 75%;
+  }
+  .lisa-winstanley-photo  {
+    margin-top: 100px;
+  }
+  .spec {
+    margin-top: 0;
   }
 }

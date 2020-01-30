@@ -17673,9 +17673,18 @@ var
   $(document).ready(function() {
     console.log('Document Ready');
   });
+  $(window).on("scroll",function(){
+    if ($(window).scrollTop() > 100) {
+      $('.navbar').addClass('active');
+    }
+    if ($(window).scrollTop() < 100) {
+      $('.navbar').removeClass('active');
+    }  
+  }) 
 
   $(".hamburger.toggle").click(function(e) {
     $("body").toggleClass('menu-visible');
+    $(".navbar").toggleClass('color');
   });
 
   $("body.ParticipatePage .modal#thank-you").on('hidden.bs.modal', function() {

@@ -115,7 +115,7 @@ body {
 								margin-top: 55px;
 								justify-content: space-around;
 								> input {
-									width: 80px;
+									width: 30px;
 									height: 25px;
 									margin-right: 10px;
 									transform: translateY(-6px);
@@ -123,10 +123,13 @@ body {
 								> label {
 									> .db {
 										display: block;
-										color: #427edc;
+										color: #2b4ec0;
 										font-family: arial;
 										font-weight: 700;
 										font-size: 18px;
+										a {
+										    color: #00f;
+										}
 									}
 									> p {
 										color: #333132;
