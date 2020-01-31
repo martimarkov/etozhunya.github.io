@@ -1304,7 +1304,7 @@ pre {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
-  padding: 2px 150px 2px 5px;
+  padding: 2px 5px;
   font-size: 1rem;
   position: relative;
   font-weight: 400;
@@ -1336,6 +1336,27 @@ pre {
   background-color: #000;
   height: 30px;
   width: 1px;
+}
+.mb-3::after {
+  content: '\25BC';
+  position: absolute;
+  top: 6px;
+  z-index: 1;
+  right: 15px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+}
+.pl25 {
+  padding-left: 25px;
+}
+.p0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.increase {
+  
 }
   @media (prefers-reduced-motion: reduce) {
     .form-control {
@@ -5694,6 +5715,7 @@ button.bg-dark:focus {
 
 .mb-3,
 .my-3 {
+  position: relative;
   margin-bottom: 1rem !important; }
 
 .ml-3,
@@ -8580,6 +8602,13 @@ form .rightTitle {
 .fz15 {
   font-size: 1.5rem;
 }
+.w72 {
+  flex: 0 0 72.66667% !important;
+  max-width: 72.66667% !important;
+}
+.jcsb {
+  justify-content: space-between;
+}
 .pl0 {
   padding-left: 0 !important;
 }
@@ -8833,7 +8862,7 @@ body.TeamPage a.share {
   text-transform: none;
   font-weight: normal;
   padding-left: 3rem;
-  background-image: url("../images/share-icon.png");
+  background-image: url("../images/share-icon-new.svg");
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -8883,12 +8912,12 @@ body.ThankYouPage .thank-you-next-step {
   background-position: left center;
   margin: 2rem 0px; }
   body.ThankYouPage .thank-you-next-step.icon-eye {
-    background-image: url("../images/eye-icon.png"); }
+    background-image: url("../images/eye-icon-new.svg"); }
   body.ThankYouPage .thank-you-next-step.icon-shop-round {
     background-image: url("../images/cart-round-icon.png"); }
 
 body.GalleryPage form#sort-gallery select.form-control {
-  width: auto; }
+  width: 205px; }
 
 body.GalleryArtworkPage .artwork-title {
   border-bottom: 3px solid #2E1A46;
@@ -8947,14 +8976,14 @@ body.ContactPage .contact-details > div {
   body.ContactPage .contact-details > div h3 {
     font-size: 1.5rem; }
   body.ContactPage .contact-details > div.email {
-    background-image: url("../images/email-icon.png"); }
+    background-image: url("../images/email-icon-new.svg"); }
     body.ContactPage .contact-details > div.email a {
       text-transform: inherit;
       font-weight: normal; }
   body.ContactPage .contact-details > div.address {
-    background-image: url("../images/marker-icon.png"); }
+    background-image: url("../images/marker-icon-new.svg"); }
   body.ContactPage .contact-details > div.follow {
-    background-image: url("../images/share-icon.png");
+    background-image: url("../images/share-icon-new.svg");
     padding: 5px 0px 5px 50px; }
     body.ContactPage .contact-details > div.follow a {
       text-transform: inherit;
@@ -8992,7 +9021,7 @@ body.FAQPage .quick-answers h3 {
 
 body.FAQPage .quick-answers .question {
   padding: 1rem 0px; }
-  .AboutPage .navbar.active, .ContactPage .navbar.active {
+  .AboutPage .navbar.active, .ContactPage .navbar.active, .GalleryArtworkPage .navbar.active {
       padding-top: 10px;
       top: 0px;
       background-color: #fff;
