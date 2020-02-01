@@ -58,7 +58,7 @@
 
     </div>
 
-    <div class="col-12 col-lg-9 right-side d-flex flex-row align-items-end">
+    <div class="col-12 col-lg-9 right-side d-flex flex-row align-items-end pr0">
       <h2 class="border-bottom w-100 page-intro">Welcome!</h2>
     </div>
   </div>
@@ -77,16 +77,16 @@
       <a href="#" class="mt-2 d-inline-block">If you're lost,<br/> click here.</a>
     </div>
 
-    <div class="col-12 col-lg-9 right-side">
+    <div class="col-12 col-lg-9 right-side pr0">
       <form action="#" class="form">
         <fieldset>
           <legend>Personal Information</legend>
 
           <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 pl0">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" maxlength="25">
 
                 <span class="rightTitle">
                   <strong>Note:</strong> This can be your given name or a pseudonym. Please be aware that this will appear wherever your artwork is published.
@@ -122,52 +122,52 @@
               </div>
 
               <div class="form-group">
-                <label for="email">Age (21 and over)</label>
+                <label for="email">Age (You have to be 21 and over)</label>
                 <input type="text" id="email" class="form-control" size="2">
               </div>
             </div>
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 pr0">
               <div class="form-group">
                 <label for="">Ethnicity</label>
 
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity1" name="ethnicity" class="">
-                    <label for="ethnicity1" class="">Caucasian</label>
+                    <label for="ethnicity1" class="ethnicity">Caucasian</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity2" name="ethnicity" class="">
-                    <label for="ethnicity2" class="">Caribbean</label>
+                    <label for="ethnicity2" class="ethnicity">Caribbean</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity3" name="ethnicity" class="">
-                    <label for="ethnicity3" class="">Middle Eastern</label>
+                    <label for="ethnicity3" class="ethnicity">Middle Eastern</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity4" name="ethnicity" class="">
-                    <label for="ethnicity4" class="">East Asian</label>
+                    <label for="ethnicity4" class="ethnicity">East Asian</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity5" name="ethnicity" class="">
-                    <label for="ethnicity5" class="">Latino/Hispanic</label>
+                    <label for="ethnicity5" class="ethnicity">Latino/Hispanic</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity6" name="ethnicity" class="">
-                    <label for="ethnicity6" class="">South Asian</label>
+                    <label for="ethnicity6" class="ethnicity">South Asian</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity7" name="ethnicity" class="">
-                    <label for="ethnicity7" class="">African</label>
+                    <label for="ethnicity7" class="ethnicity">African</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 p0">
                     <input type="radio" id="ethnicity8" name="ethnicity" class="">
-                    <label for="ethnicity8" class="">Mixed</label>
+                    <label for="ethnicity8" class="ethnicity">Mixed</label>
                   </div>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-group pseudo">
                 <label for="nationality">Nationality</label>
                 <select name="nationality" id="nationality" class="form-control">
                   <option value="">Select One</option>
@@ -181,7 +181,7 @@
           <legend>Survey Questions</legend>
 
           <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 pl0">
               <div class="form-group">
                 <label for="creative-industry">1. Do you work in the creative industry or study/teach a creative subject?</label>
                 <div class="d-block">
@@ -284,7 +284,7 @@
         <fieldset class="mt-5 border-bottom-0">
           <legend>Study Information Sheet</legend>
 
-          <p class="font-weight-bold">Thank you for agreeing to participate in the Tridea Project.<br/>
+          <p class="font-weight-bold mb50">Thank you for agreeing to participate in the Tridea Project.<br/>
             Please read the following terms and conditions and check “I agree” before proceeding.</p>
 
           <div class="terms">
@@ -318,7 +318,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="thank-you">
+  <div class="modal fade flexxx" id="thank-you">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-center">

@@ -1337,6 +1337,42 @@ pre {
   height: 30px;
   width: 1px;
 }
+.flexxx {
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+}
+.pseudo {
+  position: relative;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.ethnicity {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.pseudo::after {
+  content: '\25BC';
+  position: absolute;
+  top: 43px;
+  z-index: 1;
+  right: 15px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+}
+.pseudo::before {
+  content: '';
+  position: absolute;
+  top: 43px;
+  z-index: 1;
+  right:40px;
+  background-color: #000;
+  height: 30px;
+  width: 1px;
+}
 .mb-3::after {
   content: '\25BC';
   position: absolute;
@@ -8863,7 +8899,7 @@ body.TeamPage a.share {
   font-weight: normal;
   padding-left: 3rem;
   background-image: url("../images/share-icon-new.svg");
-  background-size: contain;
+  background-size: inherit;
   background-repeat: no-repeat; }
 
 body.UploadArtworkPage a.btn-upload {
@@ -9033,7 +9069,7 @@ body.FAQPage .quick-answers .question {
       background-color: #FDD756;
       transition: all 0.2s ease;
   }
-  .ParticipatePage .navbar.active {
+  .ParticipatePage .navbar.active, .TeamPage .navbar.active {
       padding-top: 10px;
       top: 0px;
       background-color: #F6CDD7;
