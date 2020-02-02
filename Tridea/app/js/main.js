@@ -17685,7 +17685,11 @@ var
   $(".hamburger.toggle").click(function(e) {
     $("body").toggleClass('menu-visible');
     $(".navbar").toggleClass('color');
+    $(".social-media").toggleClass('fixed');
   });
+  if ($(".navbar").hasClass("color")) {
+      console.log(1);
+  }
 
   $("body.ParticipatePage .modal#thank-you").on('hidden.bs.modal', function() {
     window.location = '/searching-team.html'
