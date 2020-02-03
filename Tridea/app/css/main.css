@@ -9131,7 +9131,6 @@ body.FAQPage .quick-answers .question {
   .special.special-color {
     padding: 0;
     background-color: transparent !important;
-    transition: all 0.2s ease !important;
   }
 @media (min-width: 768px) and (max-width: 1024px) {
   .lisa-winstanley-photo::before {
