@@ -72,7 +72,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
-.site-container {
+.site-container, .paddyel {
   padding-top: calc(55px - 3rem);
   padding-left: calc(131px - 3rem);
   padding-right: calc(131px - 3rem);
@@ -121,6 +121,7 @@ small {
 .navbar {
     position: fixed !important;
     top: 51px;
+    left: 131px;
   }
 sub,
 sup {
@@ -8490,7 +8491,7 @@ nav.navbar {
     font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
-    left: 3rem;
+    left: 131px;
     bottom: 3rem;
     border-bottom: 3px solid #fff; }
     .overlay-menu a.faq:hover {
@@ -8640,9 +8641,16 @@ form .rightTitle {
     border-bottom: 3px solid #2E1A46;
     width: 100%;
     padding: 0px 3rem;
-    margin: 3rem 0rem; }
+    margin: 3rem;
+  }
 .fz15 {
   font-size: 1.5rem;
+}
+.bgfff {
+  padding-left: 131px;
+  padding-right: 131px;
+  padding-top: 50px;
+  background-color: #fff !important;
 }
 .w72 {
   flex: 0 0 72.66667% !important;
@@ -9030,7 +9038,24 @@ body.ContactPage .contact-details > div {
     body.ContactPage .contact-details > div.follow a {
       text-transform: inherit;
       text-decoration: none; }
-
+.paddyel {
+    padding-right: 131px;
+    padding-left: 131px;
+}
+.yellow {
+  padding-top: 11rem;
+  background-color: #FDD756;
+}
+.GalleryPage, .GalleryPage .main-content, .GalleryPage .site-container {
+  padding-top: 0;
+  margin-top: 0; 
+} 
+.GalleryPage .navbar {
+  width: 100%;
+  left: 0;
+  padding-left: 131px;
+  padding-right: 131px;
+}
 body.FAQPage .search-form {
   border-bottom: 3px solid #2E1A46; }
   body.FAQPage .search-form .search-input {
@@ -9040,7 +9065,16 @@ body.FAQPage .search-form {
     background-repeat: no-repeat;
     background-position: 98% center;
     padding-right: 10px; }
-
+.special {
+  padding-top: 45px;
+  margin-top: 0;
+  padding-right: 131px;
+  padding-bottom: 45px;
+  background-color: #fff;
+}
+.GalleryPage {
+  background-color: #fff !important;
+}
 body.FAQPage .quick-answers h2 {
   text-transform: uppercase;
   max-width: 250px;
@@ -9075,6 +9109,13 @@ body.FAQPage .quick-answers .question {
       background-color: #FDD756;
       transition: all 0.2s ease;
   }
+  .GalleryPage {
+    padding-bottom: 0rem !important;
+  }
+  .GalleryPage, .GalleryPage .site-container {
+    padding-left: 0;
+    padding-right: 0; 
+  }
   .ParticipatePage .navbar.active, .TeamPage .navbar.active {
       padding-top: 10px;
       top: 0px;
@@ -9086,6 +9127,11 @@ body.FAQPage .quick-answers .question {
     background-color: transparent !important;
     transition: all 0.2s ease !important;
     top: 51px !important;
+  }
+  .special.special-color {
+    padding: 0;
+    background-color: transparent !important;
+    transition: all 0.2s ease !important;
   }
 @media (min-width: 768px) and (max-width: 1024px) {
   .lisa-winstanley-photo::before {

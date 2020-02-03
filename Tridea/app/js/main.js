@@ -17685,6 +17685,7 @@ var
   $(".hamburger.toggle").click(function(e) {
     $("body").toggleClass('menu-visible');
     $(".navbar").toggleClass('color');
+    $(".special").toggleClass('special-color');
     $(".social-media").toggleClass('fixed');
   });
   if ($(".navbar").hasClass("color")) {
