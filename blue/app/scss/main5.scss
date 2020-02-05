@@ -101,6 +101,58 @@ body {
 				.labels {
 					position: relative;
 					display: flex;
+					.spec2 {
+						.wrap {
+							width: 55%;
+							position: relative;
+							display: inline-flex;
+							justify-content: space-between;
+							span {
+								position: relative;
+								width: 35%;
+								height: 25px;
+								margin-right: 15px;
+								select {
+									border-radius: 4px !important;
+									cursor: pointer;
+									height: 100%;
+									width: 100%;
+									-webkit-appearance: none;
+									-moz-appearance: none;
+									-ms-appearance: none;
+									appearance: none;
+									outline: 0;
+									box-shadow: none;
+									border: 1px solid grey;
+									background-image: none;
+									border-radius: none;
+									border-radius: 0;
+									background-color: #fff;
+									font-size: 16px;
+							    	font-family: 'Arial';
+								    padding-left: 5px;
+								    height: 25px;
+								}
+								select:focus {
+									outline: none;
+								}
+							}
+							span::after {
+							  content: '\25BC';
+							  position: absolute;
+							  top: 5px;
+							  right: 3px;
+							  padding: 0;
+							  background: #fff;
+							  cursor: pointer;
+							  transform: scale(0.8);
+							  pointer-events: none;
+							}
+							input {
+								width: 60%;
+							}
+						}
+					}
 					.first_labels, .second_labels {
 						width: 40%;
 						h2 {
@@ -141,7 +193,7 @@ body {
 									}
 								}
 							}
-						> label, .spec {
+						> label, .spec, .spec2 {
 							position: relative;
 							margin-top: 20px;
 							display: flex;
@@ -166,56 +218,6 @@ body {
 							}
 							input:focus {
 								outline: none;
-							}
-							.wrap {
-								width: 55%;
-								position: relative;
-								display: inline-flex;
-								justify-content: space-between;
-								span {
-									position: relative;
-									width: 35%;
-									height: 25px;
-									margin-right: 15px;
-									select {
-										border-radius: 4px !important;
-										cursor: pointer;
-										height: 100%;
-										width: 100%;
-										-webkit-appearance: none;
-										-moz-appearance: none;
-										-ms-appearance: none;
-										appearance: none;
-										outline: 0;
-										box-shadow: none;
-										border: 1px solid grey;
-										background-image: none;
-										border-radius: none;
-										border-radius: 0;
-										background-color: #fff;
-										font-size: 16px;
-								    	font-family: 'Arial';
-									    padding-left: 5px;
-									    height: 25px;
-									}
-									select:focus {
-										outline: none;
-									}
-								}
-								span::after {
-								  content: '\25BC';
-								  position: absolute;
-								  top: 5px;
-								  right: 3px;
-								  padding: 0;
-								  background: #fff;
-								  cursor: pointer;
-								  transform: scale(0.8);
-								  pointer-events: none;
-								}
-								input {
-									width: 60%;
-								}
 							}
 						}
 					}
