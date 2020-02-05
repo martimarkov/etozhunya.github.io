@@ -12,7 +12,7 @@
 @media (min-width: 962px) {
 	.header__content {
 		.text {
-			> img {
+			> .img {
 				position: absolute;
 				bottom: 0px;
 			}
@@ -204,7 +204,7 @@
 			 			}
 			 		}
 			 	}
-			 	> img {
+			 	> .img {
 			 		margin: 0px 0px 50px 0px;
 			 		width: 90% !important;
 			 	}
