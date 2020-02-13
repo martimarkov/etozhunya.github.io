@@ -795,7 +795,7 @@ pre {
 
 @media (min-width: 1025px) {
   body.HomePage h1 {
-    left: 151px
+    left: 151px;
   }
   .col-md {
     flex-basis: 0;
