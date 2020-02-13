@@ -793,9 +793,9 @@ pre {
   .offset-sm-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   body.HomePage h1 {
-   /* left: 151px*/
+    left: 151px
   }
   .col-md {
     flex-basis: 0;
@@ -8509,7 +8509,7 @@ nav.navbar {
     background-repeat: no-repeat; }
     nav.navbar .toggle.hamburger {
       background-image: url("../images/hamburger-icon-dark-new.svg"); 
-      animation: pulse 3s ease infinite;
+      animation: pulse 2s ease infinite;
     }
     nav.navbar .toggle.cart {
       background-image: url("../images/cart-icon-dark-new.svg"); }
@@ -9395,13 +9395,12 @@ body.FAQPage .quick-answers .question {
 }
 @keyframes pulse {
   0% {
-    transform: scale(1, 1);
+    transform: scale(0.85);
   }
   50% {
-    opacity: 0.7;
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.5);
-    opacity: 0;
+    transform: scale(0.85);
   }
 }
