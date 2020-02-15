@@ -71,12 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
-
-.site-container, .paddyel {
-  padding-top: calc(55px - 3rem);
-  padding-left: calc(131px - 3rem);
-  padding-right: calc(131px - 3rem);
-}
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -260,6 +254,16 @@ fieldset {
   padding: 0;
   margin: 0;
   border: 0; }
+
+ .GalleryPage {
+    padding: 0!important;
+  }
+  .paddem {
+    padding: 2em !important;
+  }
+/*  .GalleryPage .site-container {
+    padding: 2em !
+  }*/
 
 legend {
   display: block;
@@ -469,6 +473,26 @@ pre {
     }
   }*/
   @media (max-width: 767px) {
+    body.theme-yellow .left-side p.lead {
+      margin-top: 50px;
+      color: #1E1437 !important;
+    }
+    .GalleryPage .row.border-bottom::after {
+      content: none;
+    }
+    .bgfff {
+      padding: 0 2em !important;
+    }
+    .imgscale {
+      margin: 50px 0px;
+      transform: scale(1);
+    }
+    .search-input {
+      margin-top: 5rem !important;
+    }
+    .quick-answers h2 {
+      max-width: 100% !important;
+    }
     .logoimg {
       display: none;
     }
@@ -476,8 +500,9 @@ pre {
       margin-top: 30px;
       transform: scale(1.35);
     }
-
-
+    .deletemob {
+      display: none !important;
+    }
     nav.navbar .toggle {
         width: 1.5rem !important;
         height: 1.5rem !important;
@@ -517,6 +542,15 @@ pre {
     .container {
       max-width: 540px; } }
   @media (min-width: 768px) {
+    .site-container, .paddyel {
+      padding-top: calc(55px - 3rem);
+      padding-left: calc(131px - 3rem);
+      padding-right: calc(131px - 3rem);
+    }
+    .paddyel {
+    padding-right: 131px;
+    padding-left: 131px;
+    }
     .container {
       max-width: 720px;
     }
@@ -924,6 +958,9 @@ pre {
   .col-lg-3 {
     width: 27%;
     max-width: 27%; }
+    .FAQPage .col-lg-3 {
+      width: 20%;
+    }
   .col-lg-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
@@ -1405,7 +1442,7 @@ pre {
   width: 1px;
 }
 .flexxx {
-   display: flex !important;
+   display: flex;
    justify-content: center;
    align-items: center;
 }
@@ -1429,14 +1466,14 @@ pre {
   cursor: pointer;
   pointer-events: none;
 }
-.pseudo::before {
+.pseudo2::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   z-index: 1;
-  right:40px;
+  right: 40px;
   background-color: #000;
-  height: 30px;
+  height: 26px;
   width: 1px;
 }
 .mb-3::after {
@@ -1782,6 +1819,9 @@ textarea.form-control {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 @media (max-width: 767px) {
+    body.ParticipatePage form .terms {
+    max-height: 450px !important;
+    }
     nav.navbar {
       width: calc(100% - 2em)!important;
       left: 1em;
@@ -1883,12 +1923,6 @@ textarea.form-control {
   align-items: center; }
   .form-inline .form-check {
     width: 100%; }
-    @media (max-width: 320px) {
-    nav.navbar {
-        width: calc(100% - 2em)!important;
-        left: 1em !important;
-      }
-    }
   @media (min-width: 576px) {
     .form-inline label {
       display: flex;
@@ -2437,6 +2471,7 @@ input[type="button"].btn-block {
     left: auto; } }
 
 @media (min-width: 768px) {
+
   .deleted768px {
     display: none;
   }
@@ -4298,6 +4333,7 @@ a.close.disabled {
 .modal-open {
   overflow: hidden; }
   .modal-open .modal {
+    display: flex !important;
     overflow-x: hidden;
     overflow-y: auto; }
 
@@ -5822,7 +5858,8 @@ button.bg-dark:focus {
 
 .mt-10,
 .my-10 {
-  margin-top: 5.5rem !important; }
+  margin-top: 5.5rem !important;
+  width: 100%; }
 
 .mr-10,
 .mx-10 {
@@ -5838,6 +5875,23 @@ button.bg-dark:focus {
 
 .m-0 {
   margin: 0 !important; }
+  .fz17 {
+    font-size: 17px;
+  }
+.pseudo2{
+  position: relative;
+}
+.pseudo2::after {
+  content: '\25BC';
+  position: absolute;
+  top: 42px;
+  z-index: 1;
+  right: 15px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+}
 
 .mt-0,
 .my-0 {
@@ -9194,10 +9248,6 @@ body.ContactPage .contact-details > div {
     body.ContactPage .contact-details > div.follow a {
       text-transform: inherit;
       text-decoration: none; }
-.paddyel {
-    padding-right: 131px;
-    padding-left: 131px;
-}
 .yellow {
   padding-top: 11rem;
   background-color: #FDD756;
@@ -9253,7 +9303,7 @@ body.FAQPage .quick-answers h3 {
 
 body.FAQPage .quick-answers .question {
   padding: 1rem 0px; }
-  .AboutPage .navbar.active, .ContactPage .navbar.active, .GalleryArtworkPage .navbar.active {
+  .AboutPage .navbar.active, .FAQPage .navbar.active, .ContactPage .navbar.active, .GalleryArtworkPage .navbar.active {
       padding-top: 10px;
       top: 0px;
       background-color: #fff;
@@ -9299,6 +9349,15 @@ body.FAQPage .quick-answers .question {
     left: 0 !important;
     width: 100% !important;
   }
+  .img100 {
+    width: 100%;
+  }
+  .posaipad {
+    position: absolute;
+    left: 2em;
+    top: 450px;
+    width: 20%;
+  }
   .pseudo::after {
     top:477px;
   }
@@ -9307,6 +9366,13 @@ body.FAQPage .quick-answers .question {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .FAQPage .main-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
   .logoimg {
     width: 25%;
   }
@@ -9345,7 +9411,10 @@ body.FAQPage .quick-answers .question {
     padding: 0!important;
   }
   .pl20 {
-    padding:0px 0px 0px 20px;
+    padding:0px 0px 0px 20px !important;
+  }
+  .pl40 {
+    padding-left: 40px !important;
   }
   .AboutPage {
     padding:2em !important;
@@ -9353,6 +9422,10 @@ body.FAQPage .quick-answers .question {
   nav.navbar {
     left:2em !important;
     width: calc(100% - 4em) !important;
+  }
+  .GalleryPage nav.navbar {
+    left:0em !important;
+    width: 100% !important;
   }
   .pseudo:after {
     content: " ";
@@ -9422,6 +9495,27 @@ body.FAQPage .quick-answers .question {
   }
   .spec {
     margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .GalleryPage .special {
+    padding-right: 21px;
+  }
+  body.GalleryPage form#sort-gallery select.form-control {
+      width: 100%;
+  }
+  .sortby::before {
+   right: 30px;
+   left: auto;
+     }
+  .sortby::after {
+    right: 10px;
+    left: auto;
+  }
+  .w72 {
+    max-width: 100% !important;
+    width: 100% !important; 
+    flex: 0 0 100% !important;
   }
 }
 @keyframes pulse {
