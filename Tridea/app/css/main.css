@@ -258,9 +258,6 @@ fieldset {
  .GalleryPage {
     padding: 0!important;
   }
-  .paddem {
-    padding: 2em !important;
-  }
 /*  .GalleryPage .site-container {
     padding: 2em !
   }*/
@@ -9342,7 +9339,7 @@ body.FAQPage .quick-answers .question {
     display: none;
   }
   .AboutPage .pseudo::before {
-    content: none;
+    content: none !important;
   }
 @media (min-width: 768px) and (max-width: 768px) {
   nav.navbar {
@@ -9366,6 +9363,9 @@ body.FAQPage .quick-answers .question {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .paddem {
+    padding: 2em !important;
+  }
   .special {
       padding-right: 2em;
   }
@@ -9509,7 +9509,11 @@ body.FAQPage .quick-answers .question {
     width: 80%;
   }
 }
+@media (max-width: 320px) {
+  
+}
 @media (min-width: 1024px) and (max-width: 1024px) {
+
   .pseudo::after {
     bottom: -40px;
     height: 3px;
@@ -9528,6 +9532,9 @@ body.FAQPage .quick-answers .question {
   }
 }
 @media (max-width: 767px) {
+  .paddem {
+    padding: 2em !important;
+  }
   .GalleryPage .special {
     padding-right: 21px;
   }
