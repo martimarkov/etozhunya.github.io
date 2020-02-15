@@ -9366,6 +9366,32 @@ body.FAQPage .quick-answers .question {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .special {
+      padding-right: 2em;
+  }
+  body.theme-yellow .left-side p.lead {
+    color: #1E1437 !important;
+}
+  .w35 {
+    width: 35%;
+  }
+  .w65 {
+    width: 65%;
+    flex: auto!important;
+  }
+  .imgscale {
+    transform: scale(1.14);
+  }
+  .additionall {
+    padding-left: 0px;
+    margin-top: 50px;
+  }
+  .GalleryPage .row.border-bottom::after {
+    content: none;
+  }
+  .mt50 {
+    padding-top: 200px !important;
+    }
   .FAQPage .main-content {
     display: -webkit-flex;
     display: -moz-flex;
@@ -9426,6 +9452,10 @@ body.FAQPage .quick-answers .question {
   .GalleryPage nav.navbar {
     left:0em !important;
     width: 100% !important;
+  }
+  .GalleryPage .navbar {
+      padding-left: 2em;
+      padding-right: 2em;
   }
   .pseudo:after {
     content: " ";
