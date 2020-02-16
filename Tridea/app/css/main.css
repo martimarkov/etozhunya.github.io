@@ -1817,6 +1817,12 @@ textarea.form-control {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 @media (max-width: 767px) {
+    .mt100m {
+      margin-top: 100px;
+    }
+    .mt1010 {
+      margin: 10px 0px;
+    }
     body.ParticipatePage form .terms {
     max-height: 450px !important;
     }
@@ -1845,7 +1851,7 @@ textarea.form-control {
       width: 100%;
     }
     .main-content .left-side p.lead.lg {
-      font-size: 2.45rem !important;
+      font-size: 2.2rem !important;
     }
     .edimg {
       display: none;
@@ -5726,7 +5732,8 @@ button.bg-dark:focus {
   width: 75% !important; }
 
 .w-100 {
-  width: 100% !important; }
+  width: 100% !important;
+  max-width: 100% !important; }
 
 .w-auto {
   width: auto !important; }
@@ -9352,6 +9359,10 @@ body.FAQPage .quick-answers .question {
     content: none !important;
   }
 @media (min-width: 768px) and (max-width: 768px) {
+  .mb15 {
+    margin-bottom: 15px;
+    display: block;
+  }
   nav.navbar {
     left: 0 !important;
     width: 100% !important;
@@ -9373,6 +9384,9 @@ body.FAQPage .quick-answers .question {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .TeamPage .mb-3::after {
+    content: none;
+  }
   .paddem {
     padding: 2em !important;
   }
@@ -9387,7 +9401,7 @@ body.FAQPage .quick-answers .question {
   }
   .w65 {
     width: 65%;
-    flex: auto!important;
+    flex: 0 0 65%!important;
   }
   .imgscale {
     transform: scale(1.14);
