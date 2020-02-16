@@ -95,7 +95,7 @@ body {
 				font-size: 28px;
 				font-family: 'arial';
 				font-weight: 500;
-				padding: 15px 30px 20px 30px;
+				padding: 30px 30px 20px 30px;
 			}
 			> ul {
 				display: flex;
@@ -119,7 +119,9 @@ body {
 			    		font-family: 'arial'
 			    	}
 			    	img {
-			    		width: 100%;
+			    		width: 85%;
+			    		margin: 0 auto;
+			    		display: block;
 			    		border: 2px solid black;
 			    	}
 			    }

@@ -85,6 +85,7 @@ body {
 			padding-top: 30px;
 			background-color: #f0f2f7;
 			h1 {
+				padding: 12px 0px 10px 0px;
 				color: #2b4ec0;
 				font-size: 28px;
 				font-family: 'arial';
@@ -164,8 +165,8 @@ body {
 						}
 						.terms {
 								display: flex;
-								margin-top: 55px;
-								justify-content: space-around;
+								margin-top: 70px;
+								justify-content: end;
 								> input {
 									width: 30px;
 									height: 25px;
