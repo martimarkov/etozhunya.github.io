@@ -20,6 +20,10 @@
     }
     .mobile {
         display: flex !important;
+        input {
+            width: 13px !important;
+            transform: translateY(-6px) !important;
+        }
     }
     .wrapper {
         width: 100%;
@@ -34,9 +38,6 @@
             background-color: rgba(255, 255, 255, 0.3);
             transition: 1.5s;
         }
-    }
-    .wrap {
-        transform: translateY(-5px);
     }
     .text__content {
         padding-top: 50px !important;
