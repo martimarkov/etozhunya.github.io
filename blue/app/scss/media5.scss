@@ -22,12 +22,12 @@
     .terms {
         display: none !important;
     }
+    .checkbox {
+    margin: 0;
+    z-index: 1111111;
+    }
     .mobile {
         display: flex !important;
-        input {
-            width: 13px !important;
-            transform: translateY(-6px) !important;
-        }
     }
     .wrapper {
         width: 100%;
