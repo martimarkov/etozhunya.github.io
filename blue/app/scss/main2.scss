@@ -100,7 +100,7 @@ body {
 					display: flex;
 					justify-content: space-between;
 					margin: 50px 0px 50px 0px;
-					align-items:center;
+				    align-items: end;
 					.left {
 						width: calc(98% - 25%);
 						span {
@@ -114,7 +114,7 @@ body {
 							text-align: justify;
 							font-family: 'arial';
 							width: 100%;
-							font-size: 20px;
+							font-size: 14px;
 						}	
 					}
 					.right {
@@ -130,14 +130,14 @@ body {
 					}
 				}
 				li:nth-child(4) {
-				    width: calc(98% - 253px);
-					height: 80px;
+			        width: calc(98% - 25%);
+					height: auto;
 					border: 2px solid #000;
 					margin: 50px 0 20px 0;
-					background: url(../img/logo.png) center center/ contain no-repeat;
 					img {
 						width: 100%;
-						height: 80px;
+						height: auto;
+						transform: translate3d(2px,2px,0px);
 					}
 				}
 			}

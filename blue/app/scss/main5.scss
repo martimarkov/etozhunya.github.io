@@ -96,7 +96,7 @@ body {
 				font-family: 'arial';
 				margin: 15px 0px;
 				display: block;
-				font-size: 20px;
+				font-size: 16px;
 			}
 			form {
 				.labels {
@@ -179,7 +179,7 @@ body {
 										color: #2b4ec0;
 										font-family: arial;
 										font-weight: 700;
-										font-size: 18px;
+										font-size: 16px;
 										a {
 										    color: #00f;
 										}
@@ -275,12 +275,16 @@ body {
 					}
 				}
 			}
-			.image-container {
+			.image_container {
 				margin: 100px 0px 20px 0px;
-				background: url(../img/logo.png) center center/contain no-repeat;
 				border: 2px solid #000;
 				width: 70%;
-				height: 80px;
+				height: auto;
+				img {
+					width: 100%;
+					height: auto;
+					transform: translate3d(2px,2px,0px);
+				}
 			}
 		}
 		.text::before {

@@ -59,7 +59,7 @@
 			font-size: 14px !important;
 		}
 	}
-	.hamburger {
+	.menu_click {
 	     height: 46px;
 	     width: 55px;
 	     display: block;
@@ -71,23 +71,23 @@
 	     z-index: 100;
 	     cursor: pointer;
 	}
-	 .hamburger.active {
+	 .menu_click.active {
 	     position: fixed;
 	}
-	 .hamburger.active .hamburger_button {
+	 .menu_click.active .menu_click_button {
 	     background-color: #222466a1;
 	}
-	 .hamburger.active .hamburger_button::before {
+	 .menu_click.active .menu_click_button::before {
 	     background-color: #fff;
 	     transform: rotate(45deg);
 	     top: 0;
 	}
-	 .hamburger.active .hamburger_button::after {
+	 .menu_click.active .menu_click_button::after {
 	     background-color: #fff;
 	     transform: rotate(-45deg);
 	     top: 0;
 	}
-	 .hamburger_button {
+	 .menu_click_button {
 	     height: 2px;
 	     width: 40%;
 	     display: block;
@@ -99,7 +99,7 @@
 	     transform: translateY(-50%);
 	     z-index: 21;
 	}
-	 .hamburger_button::after, .hamburger_button::before {
+	 .menu_click_button::after, .menu_click_button::before {
 	     content: '';
 	     background-color: #fff;
 	     position: absolute;
@@ -109,10 +109,10 @@
 	     border-radius: 3px;
 	     transition: top .3s, transform .3s .3s;
 	}
-	 .hamburger_button::after {
+	 .menu_click_button::after {
 	     top: -10px;
 	}
-	 .hamburger_button::before {
+	 .menu_click_button::before {
 	     top: 10px;
 	}
 	.menu {
@@ -201,6 +201,7 @@
 			 			width: 100% !important;
 			 			p {
 			 				margin: 5px 0px;
+			 				font-size: 14px;
 			 			}
 			 		}
 			 	}

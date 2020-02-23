@@ -116,6 +116,7 @@ body {
 			    	}
 			    	p {
 			    		text-align: justify;
+			    		font-size: 14px;
 			    		font-family: 'arial'
 			    	}
 			    	img {
@@ -144,12 +145,16 @@ body {
 				}
 			}
 			> .img {
-				background: url(../img/logo.png) center center/contain no-repeat;
-			    width: 63%;
-				height: 80px;
+			    width: 65%;
+				height: auto;
 				display: block;
 				margin: 20px 0px 20px 30px;
 				border: 2px solid black;
+				img {
+					width: 100%;
+					height: auto;
+					transform: translate3d(2px,2px,0px);
+				}
 			}
 		}
 		.text::before {

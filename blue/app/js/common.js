@@ -1,5 +1,5 @@
 $(function() {
-	var hamburger = document.getElementById('hamburger'),
+	var hamburger = document.getElementById('menu_click'),
 	menu = document.querySelector('.menu');
 
 	hamburger.addEventListener('click', function() {
@@ -19,7 +19,7 @@ $(function() {
 		if ($(window).width() < 768) {  
 		  $('.href').on('click', function() {
 		    $('.menu').addClass('hidden');
-		    $('#hamburger').removeClass('active');
+		    $('#menu_click').removeClass('active');
 		  })
 		}
 	var i = 0;
