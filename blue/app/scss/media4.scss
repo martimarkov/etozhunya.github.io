@@ -23,6 +23,9 @@
 	}
 }
 @media (max-width: 961px) {
+	.img {
+		border: 1px solid #000 !important;
+	}
 	.wrapper {
 		width: 100%;
 		display: flex !important;

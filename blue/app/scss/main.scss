@@ -236,7 +236,7 @@ body {
 						font-size: 14px;
 						text-align: justify;
 						font-family: 'arial';
-						margin-bottom: 37vh;
+						margin-bottom: 20vh;
 					}
 				}
 				.text_container::before {
@@ -253,8 +253,8 @@ body {
 				.image_container {
 					width: 100%;
 					height: auto;
-					border: solid 2px #000;
 					display: block;
+					border: 1px solid #000 !important;
 					transform: translateY(-30%);
 					img {
 						width: 100%;
