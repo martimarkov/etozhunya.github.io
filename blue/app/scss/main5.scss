@@ -82,10 +82,10 @@ body {
 			width: calc(83% - 100px);
 			position: relative;
 			padding-left: 30px;
-			padding-top: 30px;
+			padding-top: 15px;
 			background-color: #f0f2f7;
 			h1 {
-				padding: 12px 0px 10px 0px;
+				padding: 0px 0px 10px 0px;
 				color: #2b4ec0;
 				font-size: 28px;
 				font-family: 'arial';
@@ -155,7 +155,7 @@ body {
 						}
 					}
 					.first_labels, .second_labels {
-						width: 40%;
+						width: 45%;
 						h2 {
 							color: #427edc;
 							font-family: 'arial';
@@ -180,6 +180,7 @@ body {
 										font-family: arial;
 										font-weight: 700;
 										font-size: 16px;
+										line-height: 1.2;
 										a {
 										    color: #00f;
 										}
@@ -230,6 +231,7 @@ body {
 							left: 0;
 							top: 2px;
 							margin-right: 5px;
+							transform: translateY(5px);
 							&::after {
 								content: '';
 								position: absolute;
@@ -268,6 +270,7 @@ body {
 								font-size: 16px;
 								width: 100%;
 								text-transform: none;
+								line-height: 1.2;
 								a {
 								    color: #00f;
 								}
@@ -351,8 +354,8 @@ body {
 				height: auto;
 				img {
 					width: 100%;
-					height: auto;
-					transform: translate3d(2px,2px,0px);
+					height: 100%;
+					display: block;
 				}
 			}
 		}

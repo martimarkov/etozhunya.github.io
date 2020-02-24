@@ -41,11 +41,11 @@
 			}
 		}
 		.text {
-			height: calc(100vh - 90px);
+			height: auto;
 			min-height: 500px;
 			.for_image {
 				min-height: 500px;
-				height: calc(100vh - 90px);
+				height: auto;
 			}
 		}
 	}
@@ -76,6 +76,9 @@
 	}
 }
 @media (max-width: 961px) {
+	.image_container {
+		border: 1px solid #000 !important;
+	}
 	.text__content {
 		padding-top: 50px !important;
 		width: calc(100% - 12%) !important;

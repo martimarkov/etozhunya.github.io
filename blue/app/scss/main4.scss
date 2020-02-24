@@ -95,7 +95,7 @@ body {
 				font-size: 28px;
 				font-family: 'arial';
 				font-weight: 500;
-				padding: 30px 30px 20px 30px;
+				padding: 15px 30px 20px 30px;
 			}
 			> ul {
 				display: flex;
@@ -129,12 +129,20 @@ body {
 			    li:last-child {
 			    	width: 30%;
 			    }
+			    > li:first-child {
+			    	margin-right: 10px;
+			    }
+			    > li:nth-child(2) {
+			    	margin-left: 10px;
+			    }
 			}
 			.info {
 				display: block;
 				li {
+					width: 100% !important;
 					display: block;
 					margin-bottom: 50px;
+					margin-left: 0 !important;
 					h3 {
 						color: #427edc;
 						font-family: 'arial';
@@ -152,8 +160,8 @@ body {
 				border: 2px solid black;
 				img {
 					width: 100%;
-					height: auto;
-					transform: translate3d(2px,2px,0px);
+					height: 100%;
+					display: block;
 				}
 			}
 		}
