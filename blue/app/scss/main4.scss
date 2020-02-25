@@ -95,7 +95,7 @@ body {
 				font-size: 28px;
 				font-family: 'arial';
 				font-weight: 500;
-				padding: 15px 30px 20px 30px;
+				padding: 15px 30px 17px 30px;
 			}
 			> ul {
 				display: flex;
@@ -120,26 +120,27 @@ body {
 			    		font-family: 'arial'
 			    	}
 			    	img {
-			    		width: 85%;
+			    		width: 100%;
 			    		margin: 0 auto;
 			    		display: block;
 			    		border: 2px solid black;
 			    	}
 			    }
 			    li:last-child {
-			    	width: 30%;
+			    	width: 25.5%;
 			    }
-			    > li:first-child {
-			    	margin-right: 10px;
-			    }
-			    > li:nth-child(2) {
-			    	margin-left: 10px;
-			    }
+			    // > li:first-child {
+			    // 	margin-right: 10px;
+			    // }
+			    // > li:nth-child(2) {
+			    // 	margin-left: 10px;
+			    // }
 			}
 			.info {
 				display: block;
+				width: calc(100% - 25.5%);
 				li {
-					width: 100% !important;
+				    width: 100%!important;
 					display: block;
 					margin-bottom: 50px;
 					margin-left: 0 !important;

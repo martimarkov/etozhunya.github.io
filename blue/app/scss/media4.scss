@@ -67,6 +67,7 @@
 	    display: block;
 	    position: absolute;
 	    left: 30px;
+	    top:0px;
 	}
 	.text_container::before {
 		display: none;
@@ -92,7 +93,7 @@
 	     position: fixed;
 	}
 	 .menu_click.active .menu_click_button {
-	     background-color: #222466a1;
+	     background-color: rgba(34, 36, 102, 0.5);
 	}
 	 .menu_click.active .menu_click_button::before {
 	     background-color: #fff;
@@ -135,7 +136,7 @@
 	.menu {
 	     position: fixed;
 	     box-shadow: 9px 0px 22px 9px #1f1c1c;
-	     background-color: #222466a1;
+	     background-color: rgba(34, 36, 102, 0.5);
 	     top: 0;
 	     height: 100vh !important;
 	     width: 100vw !important;
@@ -150,8 +151,9 @@
 	         display: block !important;
 	         width: auto !important;
 	         li {
-	             margin: 30px 0 30px 10px !important;
-	             max-width: 90%;
+	             margin: 30px 0 30px 0px!important;
+	             max-width: 100%;
+	             width: 100%;
 	             padding: 12px 0px;
 	             justify-content: center;
 	             background-color: #222466 !important;
@@ -200,15 +202,19 @@
 			 	width: 88%;
 			 	margin: 0 auto;
 			 	padding-left: 15px;
+			 	padding-right: 15px;
 			 	h1 {
 			 		padding-left: 0;
+			 		padding-right: 0;
 			 	}
 			 	.info {
+			 		width: 100% !important;
 			 		li {
 			 			margin-bottom: 25px;
 			 		}
 			 	}
 			 	ul {
+			 		padding-right: 0;
 			 		padding-left: 0;
 			 		display: block;
 			 		height: auto;
@@ -220,11 +226,14 @@
 			 				margin: 5px 0px;
 			 				font-size: 14px;
 			 			}
+			 			img {
+			 				width: 70%;
+			 			}
 			 		}
 			 	}
 			 	> .img {
 			 		margin: 0 0px 20px 0;
-			 		width: calc(100% - 15px)!important;
+			 		width: 100%;
 			 	}
 			 }
 			 .text::before {
