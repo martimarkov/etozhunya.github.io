@@ -470,6 +470,9 @@ pre {
     }
   }*/
   @media (max-width: 767px) {
+    .faq {
+      left: 20px !important;
+    }
     body.theme-yellow .left-side p.lead {
       margin-top: 50px;
       color: #1E1437 !important;
@@ -8712,7 +8715,7 @@ nav.navbar {
     font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
-    left: 20px;
+    left: 131px;
     bottom: 3rem;
     border-bottom: 3px solid #fff; }
     .overlay-menu a.faq:hover {
@@ -8970,7 +8973,7 @@ body.HomePage {
   body.HomePage .social-media {
     display: none;
     position: absolute;
-    right: 121px;
+    right: 131px;
     bottom: 3rem;
     margin-top: 0px; }
   body.HomePage .social-icon.facebook {
@@ -9384,6 +9387,9 @@ body.FAQPage .quick-answers .question {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .faq {
+    left: 20px !important;
+  }
   .TeamPage .mb-3::after {
     content: none;
   }
@@ -9537,7 +9543,6 @@ body.FAQPage .quick-answers .question {
   
 }
 @media (min-width: 1024px) and (max-width: 1024px) {
-
   .pseudo::after {
     bottom: -40px;
     height: 3px;
