@@ -4,6 +4,17 @@
     	padding-left: 35%!important;
     }
 }
+@media (min-width: 600px) and (max-width: 961px) {
+	    .text {
+	    	ul {
+				li {
+					img {
+						width: 55% !important;
+					}
+				}
+	    	}
+	    }
+}
 @media (max-width: 1050px) and (min-width: 962px) {
 	.header__nav {
     	padding-left: 28%!important;
@@ -24,7 +35,10 @@
 }
 @media (max-width: 961px) {
 	.img {
-		border: 1px solid #000 !important;
+		img {
+			border: 1px solid #000 !important;
+			width: 100% !important;
+		}
 	}
 	.wrapper {
 		width: 100%;
@@ -209,8 +223,8 @@
 			 		}
 			 	}
 			 	> .img {
-			 		margin: 0px 0px 20px 0px;
-			 		width: 90% !important;
+			 		margin: 0 0px 20px 0;
+			 		width: calc(100% - 15px)!important;
 			 	}
 			 }
 			 .text::before {

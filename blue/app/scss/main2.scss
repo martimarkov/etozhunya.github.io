@@ -118,7 +118,7 @@ body {
 						}	
 					}
 					.right {
-						width: 25%;
+						width: 25.5%;
 						display: flex;
 						justify-content: flex-end;
 						align-items: center;
@@ -133,12 +133,14 @@ body {
 					margin-bottom: 150px;
 				}
 				li:nth-child(4) {
-			        width: calc(98% - 28%);
+			        width: calc(100% - 60px);
 					height: auto;
-					border: 2px solid #000;
 					margin: 50px 0 20px 0;
 					position: absolute;
 					bottom: 0;
+					.left {
+						border: 2px solid #000;
+					}
 					img {
 						width: 100%;
 						height: 100%;

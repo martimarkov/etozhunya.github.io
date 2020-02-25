@@ -153,13 +153,13 @@ body {
 				}
 			}
 			> .img {
-			    width: 65%;
+			    width: calc(100% - 60px);
 				height: auto;
 				display: block;
 				margin: 20px 0px 20px 30px;
-				border: 2px solid black;
 				img {
-					width: 100%;
+					border: 2px solid black;
+					width: calc(98% - 25%);
 					height: 100%;
 					display: block;
 				}

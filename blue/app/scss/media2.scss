@@ -216,9 +216,13 @@
 					li:nth-child(4) {
 						position: inherit;
 						display: block;
-						width: 90%;
+						width: 100%;
+						padding: 0px 15px;
 						margin: 0 auto 20px auto;
-						border: 1px solid #000 !important;
+						.left {
+							border: 1px solid #000 !important;
+							padding: 0px;
+						}
 					}
 				}
 			}

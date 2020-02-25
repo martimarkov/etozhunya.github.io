@@ -82,6 +82,7 @@ body {
 			width: calc(83% - 100px);
 			position: relative;
 			padding-left: 30px;
+			padding-right: 30px;
 			padding-top: 15px;
 			background-color: #f0f2f7;
 			h1 {
@@ -349,11 +350,13 @@ body {
 			}
 			.image_container {
 				margin: 100px 0px 20px 0px;
-				border: 2px solid #000;
-				width: 70%;
+				width: calc(100% - 60px);
 				height: auto;
+				position: absolute;
+				bottom: 20px;
 				img {
-					width: 100%;
+					border: 2px solid #000;
+					width: calc(98% - 25%);
 					height: 100%;
 					display: block;
 				}
