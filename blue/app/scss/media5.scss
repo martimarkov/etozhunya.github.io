@@ -248,8 +248,15 @@
         }
     }
 }
-@media (min-width: 962px) and (max-width: 1400px) {
+@media (min-width: 1240px) {
     .box {
+        display: flex;
         flex-flow: wrap;
+        .test {
+            margin-left: 10px;
+        }
+        .test:first-child {
+            margin-left: 0;
+        }
     }
 }
