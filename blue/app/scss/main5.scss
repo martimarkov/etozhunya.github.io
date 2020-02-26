@@ -327,6 +327,7 @@ body {
 						    display: flex;
 						    justify-content: space-between;
 						    textarea {
+						    	overflow: hidden;
 						    	border-radius: 4px;
 						    	border: 1px solid grey;
 						    	width: 55%;

@@ -100,7 +100,7 @@ body {
 					display: flex;
 					justify-content: space-between;
 					margin: 50px 0px 50px 0px;
-				    align-items: end;
+				    align-items: flex-start;
 					.left {
 						width: calc(98% - 25%);
 						span {
