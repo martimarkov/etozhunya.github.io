@@ -73,6 +73,7 @@ body {
             line-height: 1.4;
         }
         .ad {
+            margin: 50px 0px;
             span {
                 display: block;
                 margin: 20px 0px;
@@ -88,14 +89,19 @@ body {
                     cursor: pointer;
                     width: 48%;
                     padding: 25px 20px;
-                    background-color: #2f2f2f;
+                    background-color: #f17843e6;
                     margin: 15px 0px;
+                    text-align: center;
                     border-radius: 10px;
+                    box-shadow: 3px 3px 16px -3px #f17843e6;
                     a {
                         text-decoration: none;
                         font-family: Opensans-sb;   
-                        color:#f47c48;
+                        color:#000;
                     }
+                }
+                li:hover {
+                     background-color: #ca521ee6;
                 }
             }
         }
