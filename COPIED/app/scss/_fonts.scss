@@ -1,8 +1,8 @@
 @import "_mixins/font-face";
 
-// @include font-face("roboto", "../fonts/RobotoRegular");
-// @include font-face("roboto-b", "../fonts/RobotoBold");
-@include font-face("montserrat", "../fonts/Montserrat-Regular");
-@include font-face("montserrat-b", "../fonts/Montserrat-Medium");
-
+@include font-face("Opensans-bold", "../fonts/opensans-bold");
+@include font-face("Opensans-l", "../fonts/OpenSans-Light");
+@include font-face("Opensans-sb", "../fonts/opensans-semibold");
+@include font-face("Opensans-r", "../fonts/opensans-regular");
+@include font-face("Spinnaker-r", "../fonts/Spinnaker-Regular");
 
