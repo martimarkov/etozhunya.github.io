@@ -261,3 +261,15 @@
         }
     }
 }
+@media (min-width:961px) and  (max-width: 1239px)  {
+    button {
+        left: 23% !important;
+    }
+    .labels {
+        justify-content: space-between;
+    }
+    .first_labels, .second_labels {
+        width: 45% !important;
+        margin-left: 0 !important; 
+    }
+}
