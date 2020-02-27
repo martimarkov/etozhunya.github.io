@@ -194,6 +194,42 @@ body {
         }
     }
 }
+@media (max-width: 768px) {
+    .logo {
+        width: 150px !important;
+    }
+    .ad {
+        ul {
+            width: 100% !important;
+            align-items: center;
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .images {
+        width: 100% !important;
+    }
+    .footer {
+        .container {
+            img {
+                display: block;
+                width: 150px;
+            }
+            ul {
+                display: block;
+                li {
+                    margin-left: 0;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
 @import "media";
 
 
