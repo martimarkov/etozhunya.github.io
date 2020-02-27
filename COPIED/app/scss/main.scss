@@ -19,8 +19,9 @@ body {
     margin: 0 auto;
 }
 .images {
-    width: 100%;
-    margin: 40px 0px;
+    width: 70%;
+    margin: 40px auto;
+    display: block;
 }
 .header, .footer {
     width: 100%;
@@ -66,10 +67,37 @@ body {
             font-family: Opensans-sb;
             font-size: 28px;
         }
-        p {
+        p, span {
             font-family: Opensans-r;
             font-size: 20px;
             line-height: 1.4;
+        }
+        .ad {
+            span {
+                display: block;
+                margin: 20px 0px;
+                font-family: Opensans-sb;
+            }
+            ul {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: wrap;
+                margin: 0 auto;
+                li {
+                    cursor: pointer;
+                    width: 48%;
+                    padding: 25px 20px;
+                    background-color: #2f2f2f;
+                    margin: 15px 0px;
+                    border-radius: 10px;
+                    a {
+                        text-decoration: none;
+                        font-family: Opensans-sb;   
+                        color:#f47c48;
+                    }
+                }
+            }
         }
     }
 }
