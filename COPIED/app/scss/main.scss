@@ -33,7 +33,7 @@ body {
         display: flex;
         align-items: center;
         .logo {
-            width: 250px;
+            width: 200px;
             float: left;
         }
     }
@@ -80,7 +80,7 @@ body {
                 font-family: Opensans-sb;
             }
             ul {
-                width: 80%;
+                width: 70%;
                 display: flex;
                 justify-content: space-between;
                 flex-flow: wrap;
@@ -183,7 +183,7 @@ body {
         justify-content: space-between;
         position: relative;
         img {
-            width: 250px;
+            width: 200px;
         }
         ul {
             display: flex;
@@ -208,6 +208,9 @@ body {
             width: 100% !important;
             align-items: center;
             li {
+                width: 100% !important;
+                min-height: 65px !important;
+                margin: 10px 0px !important;
                 a {
                     font-size: 12px;
                 }
