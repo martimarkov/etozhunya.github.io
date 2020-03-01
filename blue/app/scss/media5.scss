@@ -16,6 +16,9 @@
             border: 1px solid #000 !important;
         }
     }
+    form {
+        margin-bottom: 130px !important; 
+    }
     #spec3 {
         margin-top: 40px;
     }
@@ -58,7 +61,7 @@
         width: 190px;
         display: block;
         position: absolute;
-        left: 30px;
+        left: 15px;
         top:0px;
     }
     .text_container::before {
@@ -210,7 +213,7 @@
                             display: block !important;
                             height: 80px;
                             .box {
-                                transform: translate3d(45%, -20%, 0px);
+                                transform: translate3d(48%,-26%,0);
                                 width: 100% !important;
                             }
                         }
@@ -228,7 +231,7 @@
                         }
                         .mobile {
                             margin-top: 20px !important;
-                            margin-bottom: 200px;
+                            margin-bottom: 100px;
                         }
                     }
                     button {
