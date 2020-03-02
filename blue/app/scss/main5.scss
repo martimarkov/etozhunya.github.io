@@ -76,7 +76,9 @@ body {
 			width: 17%;
 			background: url('../img/blue.png') center center/ cover;
 			background-position: 100% center;
-			animation: bg-animated 3s linear forwards;
+			animation-name: bg-animated;
+			animation-duration: 5s;
+			transition-timing-function: linear;
 		}
 		.text {
 			width: calc(83% - 100px);
@@ -384,10 +386,10 @@ body {
 }
 @keyframes bg-animated {
 	0% {
-		background-position: 100% center;
+		background-position: left center;
 	}
 	100% {
-		background-position: 0% center;
+		background-position: right center;
 	}
 }
 @import "media5";
