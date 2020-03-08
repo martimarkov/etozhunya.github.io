@@ -74,7 +74,7 @@ body {
 		min-height: calc(100vh - 90px);
 		.animated {
 			width: 17%;
-			background: url('../img/blue.png') center center/ cover;
+			background: url('../img/blue.jpg') center center/ cover;
 			background-position: 100% center;
 			animation-name: bg-animated;
 			animation-duration: 4.5s;
@@ -186,7 +186,9 @@ body {
 										font-size: 16px;
 										line-height: 1.2;
 										a {
-										    color: #00f;
+										    color: #000;
+										    font-size: 14px;
+										    font-weight: normal;
 										}
 									}
 									> p {
@@ -211,7 +213,6 @@ body {
 								font-size: 16px;
 								width: 40%;
 								font-family: "Arial";
-								text-transform: capitalize;
 								display: inline-block;
 							}
 							input {
@@ -276,7 +277,9 @@ body {
 								text-transform: none;
 								line-height: 1.2;
 								a {
-								    color: #00f;
+								    color: #000;
+								    font-size: 14px;
+								    font-weight: normal;
 								}
 							}
 							> p {

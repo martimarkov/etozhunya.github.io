@@ -17,7 +17,7 @@
         }
     }
     form {
-        margin-bottom: 130px !important; 
+        margin-bottom: 160px !important; 
     }
     #spec3 {
         margin-top: 40px;
@@ -252,8 +252,9 @@
         }
     }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1347px) {
     .box {
+        display: none;
         display: flex;
         flex-flow: wrap;
         .test {
@@ -264,7 +265,7 @@
         }
     }
 }
-@media (min-width:961px) and  (max-width: 1239px)  {
+@media (min-width:961px) and  (max-width: 1347px)  {
     button {
         left: 23% !important;
     }
