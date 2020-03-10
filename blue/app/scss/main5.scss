@@ -21,6 +21,7 @@ body {
 .header {
 	min-height: 100vh;
 	height: auto;
+	position: relative;
 	overflow: hidden;
 	&__nav {
 		background-color: #222466;
@@ -82,6 +83,7 @@ body {
 		}
 		.text {
 			width: calc(83% - 100px);
+			height: auto;
 			position: relative;
 			padding-left: 30px;
 			padding-right: 30px;
@@ -384,6 +386,7 @@ body {
 		.image {
 			width: 100px;
 			background-color: grey;
+			height: auto;
 		}
 	}
 }

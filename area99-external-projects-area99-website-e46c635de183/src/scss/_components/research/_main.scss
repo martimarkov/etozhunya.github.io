@@ -1,0 +1,67 @@
+// SECTION :: START
+
+.research-main {
+	padding-top: (104px + 51px);
+	padding-bottom: 105px;
+
+	&__wrapper {
+		display: flex;
+
+		&-left {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+		}
+		&-right {
+			width: 460px;
+			background-color: $c-181818;
+			background-image: url('../img/img-research-main-illustration.jpeg');
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-size: contain;
+			background-blend-mode: screen;
+		}
+	}
+
+	&__badge {
+		position: relative;
+		border-bottom: 1px solid rgba(#FFFFFF, 0.6);
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 24px;
+		color: rgba(#FFFFFF, 0.6);
+
+		&-wrapper {
+			display: flex;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__title {
+		padding-bottom: 34px;
+		@extend %fontUbuntu;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 57px;
+		color: #FFFFFF;
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 550px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #FFFFFF;
+	}
+
+	&__img {
+		//display: block;
+		//max-width: 100%;
+		//height: auto;
+		//isolation: isolate;
+		//mix-blend-mode: screen;
+	}
+}
+
+// SECTION :: END

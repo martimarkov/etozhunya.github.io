@@ -1,0 +1,28 @@
+---
+title: Area99
+
+pageClassName: p-home
+---
+extends shared/_layout
+
+block cookie
+	include components/common/_cookie
+
+block modal
+	include components/homepage/_modalVideo
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/homepage/_main
+
+		.guidelines
+			.guidelines__wrapper
+				.guidelines__line.guidelines__line-1
+				.guidelines__line.guidelines__line-2
+				.guidelines__line.guidelines__line-3
+
+			include components/homepage/_why
+			include components/homepage/_transformation
+			include components/homepage/_process
+			include components/homepage/_report

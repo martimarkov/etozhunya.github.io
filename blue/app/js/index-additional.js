@@ -6,4 +6,5 @@ $( window ).resize(function() {
 	  	$('.cut').shave(120);
 	  }
 	});
+
 $(window).trigger('resize');

@@ -1,0 +1,133 @@
+// SECTION :: START
+
+.research-ai {
+	padding-top: 84px;
+	padding-bottom: 100px;
+
+	&__wrapper {
+		display: flex;
+		border-bottom: 1px solid rgba(#fff, 0.4);
+
+		&-left {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-bottom: 14px;
+		}
+
+		&-right {
+			display: flex;
+			flex-direction: column;
+			width: 365px;
+		}
+	}
+
+	&__title {
+		padding-bottom: 45px;
+		@extend %fontUbuntu;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 52px;
+		color: #FFFFFF;
+	}
+
+	&__illustration {
+		display: flex;
+		align-items: flex-start;
+		padding-bottom: 58px;
+		padding-left: 2px;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-right: auto;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 828px;
+
+		&-desc {
+			padding-bottom: 36px;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 36px;
+			color: #FFFFFF;
+
+			span {
+				color: #00abbf;
+			}
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: flex;
+		padding-left: 42px;
+		padding-bottom: 14px;
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 32px;
+		color: #00ABBF;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 11px;
+			left: 7px;
+			width: 25px;
+			height: 4px;
+			background-color: #00ABBF;
+		}
+	}
+
+	&__tabs {
+		padding-left: 42px;
+		padding-top: 26px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgba(#fff, 0.4);
+
+		&.is-active {
+			.research-ai__tabs-body {
+				display: block;
+			}
+		}
+
+		&:first-of-type {
+			border-top: 1px solid rgba(#fff, 0.4);
+		}
+
+		&-wrapper {
+			height: 100%;
+			border-left: 1px solid rgba(#fff, 0.4);
+		}
+
+		&-head {
+			display: flex;
+
+			p {
+				padding-top: 8px;
+				font-weight: 500;
+				font-size: 26px;
+				line-height: 37px;
+				color: #FFFFFF;
+			}
+		}
+
+		&-body {
+			display: none;
+
+			p {
+				font-style: normal;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 36px;
+				color: rgba(#FFFFFF, 0.6);
+			}
+		}
+	}
+}
+
+// SECTION :: END

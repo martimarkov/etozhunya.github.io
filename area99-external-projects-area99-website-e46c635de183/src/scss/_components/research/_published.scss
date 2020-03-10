@@ -1,0 +1,61 @@
+// SECTION :: START
+
+.research-published {
+	padding-top: 99px;
+	padding-bottom: 73px;
+
+	&__wrapper {
+		display: flex;
+
+		&-left,
+		&-right {
+			width: 50%;
+		}
+
+		&-left {
+			padding-left: 48px;
+			padding-right: 45px;
+		}
+
+		&-right {
+			padding-left: 42px;
+		}
+	}
+
+	&__title {
+		width: 100%;
+		max-width: 500px;
+		padding-bottom: 37px;
+		@extend %fontUbuntu;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 52px;
+		color: #FFFFFF;
+	}
+
+	&__desc {
+		padding-bottom: 17px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #FFFFFF;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 22px;
+		color: #00ABBF;
+
+		.icon-font {
+			transform: rotate(-90deg);
+			margin-left: 5px;
+			font-size: 7px;
+			@include transition(color);
+		}
+	}
+}
+
+// SECTION :: END

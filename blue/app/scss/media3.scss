@@ -7,6 +7,14 @@
 // 		width: calc(98% - 35%) !important;
 // 	}
 // } 
+@media (min-width: 1450px) { 
+    .animated {
+    	min-height: calc(100vh - 90px);
+    }
+    .text {
+    	min-height: calc(100vh - 90px);
+    }	
+}
 @media (min-width: 961px) and (max-width: 1450px) { 
 	.header__nav {
 		.menu {

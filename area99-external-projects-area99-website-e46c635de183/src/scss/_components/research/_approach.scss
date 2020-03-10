@@ -1,0 +1,42 @@
+// SECTION :: START
+
+.research-approach {
+	padding-top: 84px;
+	padding-bottom: 31px;
+
+	&__wrapper {
+		display: flex;
+
+		&-left {
+			width: 363px;
+		}
+
+		&-right {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-left: 26px;
+		}
+	}
+
+	&__title {
+		@extend %fontUbuntu;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 57px;
+		color: #FFFFFF;
+	}
+
+	&__desc {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #FFFFFF;
+
+		&:not(:last-of-type) {
+			padding-bottom: 36px;
+		}
+	}
+}
+
+// SECTION :: END

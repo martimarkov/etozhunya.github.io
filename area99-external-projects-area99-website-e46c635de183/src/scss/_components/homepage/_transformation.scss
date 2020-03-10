@@ -1,0 +1,408 @@
+// SECTION :: START
+
+.transformation {
+	padding-top: 119px;
+	padding-bottom: 104px;
+	@include adaptive(1023) {
+		padding-top: 60px;
+		padding-bottom: 132px;
+	}
+
+	&__wrapper {
+		min-height: 100vh;
+	}
+
+	&__box {
+		cursor: pointer;
+		position: relative;
+		width: 100%;
+		max-width: 571px;
+		padding-top: 109px;
+		@include adaptive(1023) {
+			max-width: 100%;
+		}
+
+		&-col {
+			&-1 {
+				&.is-inview {
+					.transformation__box {
+						> svg,
+						.transformation__box-body {
+							animation-timing-function: ease-in-out;
+							animation-fill-mode: both;
+							animation-duration: 1.25s;
+							animation-name: fadeIn, slideInUp;
+						}
+
+						> svg {
+							animation-delay: 1.25s;
+						}
+
+						.transformation__box {
+							&-body {
+								animation-delay: 2.5s;
+								background-color: #356E7A;
+								@include transition(background-color);
+							}
+
+							&-link {
+								color: #ffffff;
+								@include transition(color);
+
+								&:before,
+								&:after {
+									width: 50%;
+									@include transition(width);
+								}
+							}
+						}
+					}
+				}
+			}
+			&-2,
+			&-3 {
+				&.is-inview {
+					.transformation__box {
+						&-arrow {
+							opacity: 1;
+
+							svg {
+								.path {
+									opacity: 1;
+									stroke-dasharray: 1000;
+									stroke-dashoffset: 1000;
+									animation: both dash 3s linear alternate;
+								}
+								polyline {
+									&.polyline {
+										animation-delay: 2.5s;
+										animation-timing-function: ease-in-out;
+										animation-fill-mode: both;
+										animation-duration: 1s;
+										animation-name: fadeIn;
+									}
+								}
+							}
+						}
+
+						> svg,
+						.transformation__box-body {
+							animation-timing-function: ease-in-out;
+							animation-fill-mode: both;
+							animation-duration: 1.25s;
+							animation-name: fadeIn, slideInUp;
+						}
+
+						> svg {
+							animation-delay: 3.75s;
+						}
+
+						.transformation__box {
+							&-body {
+								animation-delay: 5s;
+								background-color: #356E7A;
+								@include transition(background-color);
+							}
+
+							&-link {
+								color: #ffffff;
+								@include transition(background-color);
+
+								&:before,
+								&:after {
+									width: 50%;
+									@include transition(width);
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&.is-default-state {
+				.transformation__box {
+					> svg {
+						opacity: 0.1;
+						animation: none;
+						@include transition(0.5s);
+					}
+
+					.transformation__box {
+						&-body {
+							opacity: 1;
+							animation: none;
+							background-color: transparent;
+							@include transition(background-color 0.75s);
+						}
+
+						&-link {
+							color: #00ABBF;
+							@include transition(color);
+
+							&:before,
+							&:after {
+								width: 0;
+								@include transition(width);
+							}
+						}
+					}
+
+					&-arrow {
+						svg {
+							path {
+								&.path {
+									stroke: #fff;
+									opacity: 0.1;
+									@include transition(stroke);
+								}
+							}
+							polyline {
+								&.polyline {
+									opacity: 0;
+									animation: none;
+									@include transition(opacity);
+								}
+								&.polyline-default {
+									opacity: 0.1;
+									animation: none;
+									@include transition(opacity);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.transformation__box-1,
+		&.transformation__box-2,
+		&.transformation__box-3 {
+			&:hover {
+				svg {
+					opacity: 1;
+					@include transition(opacity 0.5s);
+				}
+
+				.transformation__box {
+					&-body {
+						background-color: #356E7A;
+						@include transition(background-color 0.5s);
+					}
+
+					&-link {
+						color: #ffffff;
+						@include transition(background-color 0.5s);
+					}
+				}
+			}
+		}
+		&-1 {
+			left: 3px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 70px;
+			@include adaptive(1023) {
+				left: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		&-2 {
+			left: 4px;
+			padding-bottom: 47px;
+			@include adaptive(1023) {
+				left: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		&-3 {
+			left: -6px;
+			@include adaptive(1023) {
+				left: 0;
+			}
+		}
+
+		&-wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+
+			> div {
+				display: flex;
+				width: 100%;
+
+				&:nth-of-type(3) {
+					justify-content: flex-end;
+				}
+			}
+		}
+
+		svg {
+			z-index: 0;
+			opacity: 0.1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			@include transition(opacity);
+			@include adaptive(1023) {
+				left: -70px;
+				width: 100%;
+				max-width: 220px;
+				height: 190px;
+				margin-left: 0;
+			}
+		}
+
+		&-body {
+			z-index: 2;
+			position: relative;
+			min-height: 303px;
+			padding: 38px 85px;
+			@include transition(background-color 0.3s);
+			@include adaptive(1023) {
+				left: -20px;
+				width: calc(100% + 40px);
+				padding: 30px 20px;
+			}
+		}
+
+		&-title {
+			padding-right: 70px;
+			padding-bottom: 20px;
+			font-weight: 500;
+			font-size: 26px;
+			line-height: 37px;
+			color: $c-white;
+			@include adaptive(1023) {
+				padding-right: 0;
+			}
+		}
+
+		&-desc {
+			padding-bottom: 20px;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 24px;
+			color: $c-white;
+		}
+
+		&-link {
+			position: relative;
+			display: flex;
+			align-items: center;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 19px;
+			color: #00ABBF;
+			@include transition(color);
+
+			&-wrapper {
+				display: flex;
+			}
+
+			.icon-font {
+				margin-left: 8px;
+				transform: rotate(-90deg);
+				font-size: 8px;
+			}
+		}
+
+		&-arrow {
+			position: relative;
+			@include adaptive(1023) {
+				display: none;
+			}
+
+			&.transformation__box-arrow-2 {
+				svg {
+					path {
+						&.path {
+							stroke: #fff;
+							opacity: 0.1;
+							@include transition(stroke);
+						}
+					}
+					polyline {
+						&.polyline {
+							opacity: 0;
+							animation: none;
+							@include transition(opacity);
+						}
+						&.polyline-default {
+							opacity: 0.1;
+							animation: none;
+							@include transition(opacity);
+						}
+					}
+				}
+			}
+
+			&-1 {
+				top: -144px;
+				left: -43px;
+			}
+
+			&-2 {
+				top: -77px;
+				left: -12px;
+			}
+
+			svg {
+				.dashed,
+				.path,
+				.path-default {
+					opacity: 0.1;
+					stroke-dasharray: 14;
+					stroke: #fff;
+				}
+
+				.path,
+				.dashed {
+					opacity: 0;
+				}
+
+				.path-default {
+					opacity: 0.1;
+					stroke: #fff;
+				}
+
+				polyline {
+					&.polyline {
+						opacity: 0;
+					}
+					&.polyline-default {
+						opacity: 0.1;
+					}
+				}
+			}
+		}
+	}
+
+	.c-title-wrapper {
+		justify-content: center;
+		max-width: 100%;
+		padding-bottom: 82px;
+		@include adaptive(1023) {
+			justify-content: flex-start;
+			.c-title {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+@keyframes dash {
+	from {stroke-dashoffset: 1000;}
+	to {stroke-dashoffset: 0;}
+}
+@keyframes defaultBoxNumber {
+	from {opacity: 1;}
+	to {opacity: 0.1;}
+}
+
+// SECTION :: END

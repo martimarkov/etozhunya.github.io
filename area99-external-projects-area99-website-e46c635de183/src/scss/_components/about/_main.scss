@@ -1,0 +1,114 @@
+// SECTION :: START
+
+.about-main {
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 99px;
+	padding-bottom: 92px;
+
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 414px;
+		background-image: url('../img/img-about-main-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center 100px;
+	}
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
+		display: flex;
+		padding-top: 55px;
+
+		&-left {
+			width: 571px;
+		}
+
+		&-right {
+			max-width: calc(100% - 571px);
+			padding-top: 131px;
+			padding-left: 79px;
+		}
+	}
+
+	&__badge {
+		position: relative;
+		border-bottom: 1px solid rgba(#FFFFFF, 0.6);
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 24px;
+		color: rgba(#FFFFFF, 0.6);
+
+		&-wrapper {
+			display: flex;
+			padding-bottom: 9px;
+		}
+	}
+
+	&__title {
+		padding-bottom: 34px;
+		@extend %fontUbuntu;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 57px;
+		color: #FFFFFF;
+	}
+
+	&__desc {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #FFFFFF;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			span,
+			.icon-font {
+				color: #00abbf;
+				@include transition(color);
+			}
+		}
+
+		span {
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 200%;
+			color: #FFFFFF;
+			@include transition(color);
+		}
+
+		.icon-font {
+			transform: rotate(-90deg);
+			margin-left: 7px;
+			font-size: 7px;
+			color: #ffffff;
+			@include transition(color);
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			max-width: 433px;
+		}
+
+		&-item {
+			width: 50%;
+			padding-bottom: 15px;
+		}
+	}
+}
+
+// SECTION :: END

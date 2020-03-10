@@ -1,0 +1,123 @@
+// SECTION :: START
+
+.about-responsability {
+	padding-top: 89px;
+	padding-bottom: 32px;
+
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		max-width: 981px;
+		margin-left: auto;
+		margin-right: auto;
+
+		&-right {
+			padding-left: 68px;
+			padding-right: 22px;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 57px;
+		color: #FFFFFF;
+	}
+
+	&__subtitle {
+		padding-bottom: 17px;
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 37px;
+		color: #FFFFFF;
+		@include transition(color);
+	}
+
+	&__desc {
+		padding-bottom: 46px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #FFFFFF;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		padding-top: 7px;
+
+		&-item {
+			display: flex;
+
+			&:not(:last-of-type) {
+				padding-bottom: 21px;
+			}
+		}
+
+		&-link {
+			display: flex;
+			min-height: 62px;
+
+			&:hover {
+				.about-responsability__subtitle,
+				.about-responsability__list-country,
+				.about-responsability__list-desc {
+					color: #00ABBF;
+					@include transition(color);
+				}
+
+				> div {
+					&:nth-of-type(1) {
+						border-color: #00ABBF;
+						@include transition(border-right);
+					}
+				}
+			}
+
+			> div {
+				&:nth-of-type(1) {
+					width: 166px;
+					padding-right: 15px;
+					border-right: 1px solid #fff;
+					@include transition(border-right);
+				}
+
+				&:nth-of-type(2) {
+					display: flex;
+					align-items: center;
+					width: calc(100% - 166px);
+					padding-left: 25px;
+				}
+			}
+
+			.about-responsability__subtitle {
+				padding-bottom: 0;
+			}
+		}
+
+		&-desc {
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 22px;
+			color: #FFFFFF;
+			@include transition(color);
+
+			.icon-font {
+				display: inline-flex;
+				transform: rotate(-90deg);
+				margin-left: 5px;
+				font-size: 8px;
+			}
+		}
+
+		&-country {
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 24px;
+			color: rgba(#FFFFFF, 0.6);
+			@include transition(color);
+		}
+	}
+}
+
+// SECTION :: END

@@ -1,0 +1,77 @@
+// SECTION :: START
+
+.about-touch {
+	padding-top: 89px;
+	padding-bottom: 104px;
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		width: 100%;
+		max-width: 1300px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 43px 77px 53px;
+		border-radius: 26px;
+		background-color: #356E7A;
+
+		&-left {
+			width: 230px;
+		}
+		&-right {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-left: 63px;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 57px;
+		color: #FFFFFF;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 7px;
+
+		&-item {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+
+			&:not(:last-of-type) {
+				padding-right: 43px;
+			}
+		}
+
+		&-desc {
+			padding-bottom: 12px;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 24px;
+			color: #FFFFFF;
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+			font-weight: bold;
+			font-size: 16px;
+			color: #FFFFFF;
+
+			.icon-font {
+				transform: rotate(-90deg);
+				margin-left: 5px;
+				font-size: 7px;
+				color: #ffffff;
+				@include transition(color);
+			}
+		}
+	}
+}
+
+// SECTION :: END
