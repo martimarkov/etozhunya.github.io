@@ -1,0 +1,20 @@
+---
+title: Area99
+
+pageClassName: p-Contact_us
+---
+extends shared/_layout
+
+block cookie
+	include components/common/_cookie
+
+block modal
+	include components/homepage/_modalVideo
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/contact/_main
+			// include components/about/_about-we
+			// include components/about/_about-responsability
+			// include components/about/_about-touch

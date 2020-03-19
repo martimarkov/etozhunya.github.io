@@ -24,6 +24,7 @@ function resizer() {
    }
 }
 
+
 // let countScroll = window.pageY0ffset,
 //  arrow = document.getElementById('up-arrow')
 

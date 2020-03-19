@@ -1,0 +1,92 @@
+// SECTION :: START
+
+.thanks-main {
+	padding-top: (104px + 47px);
+	position: relative;
+	overflow: hidden;
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		@include adaptive(1023) {
+			display: block;
+		}
+
+		&-left {
+			position: relative;
+			flex: 1;
+			min-width: 1px;
+			max-width: 50%;
+			padding-right: 20px;
+			padding-bottom: 57px;
+			margin-bottom: 250px;
+			@include adaptive(1023) {
+				padding-right: 0;
+				padding-bottom: 70px;
+				max-width: 100%;
+				width: 100%;
+				margin-bottom: 100px;
+				&::after {
+					content: none;
+				}
+			}
+		}
+	}
+
+	&__badge {
+		position: relative;
+		font-weight: 300;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 24px;
+		color: rgba(#FFFFFF, 0.6);
+	}
+	&__badge::before {
+		content: '';
+		background: url('../img/transparent_arrow.svg') center center/contain no-repeat;
+		width: 15px;
+		height: 10px;
+		margin-right: 10px;
+		opacity: 0.6;
+		display: inline-block;
+	}
+
+	&__title {
+		padding-bottom: 48px;
+		@extend %fontUbuntu;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 57px;
+		color: #FFFFFF;
+		@include adaptive(1023) {
+			font-size: 35px;
+		}
+	}
+	&__desc {
+		padding-bottom: 20px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #FFFFFF;
+
+		&:last-of-type {
+			padding-bottom: 40px;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+
+		a {
+			color: #00ABBF;
+			border-bottom: 1px dashed transparent;
+			@include transition(border-color);
+
+			&:hover {
+				border-color: #00ABBF;
+				@include transition(border-color);
+			}
+		}
+	}
+}
+// SECTION :: END

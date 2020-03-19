@@ -1,0 +1,151 @@
+// SECTION :: START
+
+.error-main {
+	padding-top: (104px + 47px);
+	position: relative;
+	overflow: hidden;
+	@include adaptive(1023) {
+		margin-bottom: 100px;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		@include adaptive(1023) {
+			display: block;
+		}
+
+		&-left {
+			position: relative;
+			flex: 1;
+			min-width: 1px;
+			max-width: 50%;
+			padding-right: 20px;
+			padding-bottom: 57px;
+
+			// &:after {
+			// 	content: '';
+			// 	opacity: 0.2;
+			// 	position: absolute;
+			// 	top: 0;
+			// 	right: 0;
+			// 	width: 1px;
+			// 	height: 100%;
+			// 	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
+			// }
+			@include adaptive(1023) {
+				padding-right: 0;
+				padding-bottom: 70px;
+				max-width: 100%;
+				width: 100%;
+				&::after {
+					content: none;
+				}
+			}
+		}
+
+		&-right {
+			@include adaptive(1023) {
+				display: none;
+				padding-bottom: 0px;
+				padding-left: 0;
+				float: right;
+				transform: translateX(6%);
+			}
+			.error-main__link-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				max-width: 500px;
+				&-item {
+				width: 50%;
+				padding-bottom: 15px;
+				}
+			}
+		}
+	}
+
+	&__badge {
+		position: relative;
+		font-weight: 300;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 24px;
+		color: rgba(#FFFFFF, 0.6);
+	}
+	&__badge::before {
+		content: '';
+		background: url('../img/transparent_arrow.svg') center center/contain no-repeat;
+		width: 15px;
+		height: 10px;
+		margin-right: 10px;
+		opacity: 0.6;
+		display: inline-block;
+	}
+
+	&__title {
+		padding-bottom: 48px;
+		@extend %fontUbuntu;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 57px;
+		color: #FFFFFF;
+		@include adaptive(1023) {
+			font-size: 35px;
+		}
+	}
+	.button {
+		display: inline-block;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+		color:#00ABBF;;
+		background-color:transparent;
+		border: none;
+		position: relative;
+		cursor: pointer;
+		margin-left: 35px;
+	}
+	.button::before {
+		content: '';
+		position: absolute;
+		left: -40px;
+		top: -5px;
+		width: 35px;
+		height: 35px;
+		border-radius: 50px;
+		background:url("../img/black-arrow.svg") 50% 55%/contain no-repeat;
+		background-color: #00ABBF;
+		background-size:40%;
+	
+	}
+	&__desc {
+		padding-bottom: 100px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #FFFFFF;
+
+		&:last-of-type {
+			padding-bottom: 40px;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+
+		a {
+			color: #00ABBF;
+			border-bottom: 1px dashed transparent;
+			@include transition(border-color);
+
+			&:hover {
+				border-color: #00ABBF;
+				@include transition(border-color);
+			}
+		}
+	}
+}
+// SECTION :: END

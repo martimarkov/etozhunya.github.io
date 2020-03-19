@@ -17,6 +17,13 @@
     }
 }
 @media (max-width: 962px) {
+    .desktop {
+        display: none;
+    }
+    .mobile-button {
+        display: block;
+        margin-top: 30px;
+    }
     .image_container {
         width: calc(100% - 30px) !important;
         img {
@@ -25,7 +32,7 @@
         }
     }
     form {
-        margin-bottom: 160px !important; 
+        margin-bottom: 120px !important; 
     }
     #spec3 {
         margin-top: 40px;
@@ -239,7 +246,7 @@
                         }
                         .mobile {
                             margin-top: 20px !important;
-                            margin-bottom: 100px;
+                            margin-bottom: 10px;
                         }
                     }
                     button {
@@ -274,9 +281,6 @@
     }
 }
 @media (min-width:961px) and  (max-width: 1347px)  {
-    button {
-        left: 23% !important;
-    }
     .labels {
         justify-content: space-between;
     }

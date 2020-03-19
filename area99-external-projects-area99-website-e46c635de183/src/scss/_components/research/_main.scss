@@ -6,11 +6,19 @@
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(1023) {
+			display: block;
+		}
 
 		&-left {
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+		}
+		.transform {
+			transform: translateY(400px);
+			z-index: 11;
+			position: relative;
 		}
 		&-right {
 			width: 460px;
@@ -20,9 +28,22 @@
 			background-position: right top;
 			background-size: contain;
 			background-blend-mode: screen;
+			transform: scale(1.5) translateX(-10%);
+			z-index: -1;
+			@include adaptive(1023) {
+				height: 260px;
+				background-position: 51% top;
+				transform: scale(1.5) translateX(-10%) translateY(-60px);
+			}
+			@media (min-width: 600px) and (max-width: 1023px) {
+				transform: scale(1.5) translateX(20%) translateY(-30px);
+			}
+			@media (max-width: 320px) {
+				transform: scale(1.5) translateX(-10%) translateY(-100px);	
+			}
 		}
 	}
-
+	
 	&__badge {
 		position: relative;
 		border-bottom: 1px solid rgba(#FFFFFF, 0.6);
@@ -44,6 +65,11 @@
 		font-size: 50px;
 		line-height: 57px;
 		color: #FFFFFF;
+		@include adaptive(1023) {
+			font-size: 35px;
+			z-index: 10;
+			position: relative;
+		}
 	}
 
 	&__desc {
@@ -53,6 +79,18 @@
 		font-size: 18px;
 		line-height: 36px;
 		color: #FFFFFF;
+		@include adaptive (1023) {
+			display: none;
+			max-width: 100%;
+		}
+	}
+	.mob-only {
+		display: none;
+		@include adaptive(1023) {
+			display: block;
+			background-blend-mode: screen;
+			background-color: #181818;
+		}
 	}
 
 	&__img {

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="main.css">
+<div class="try">
+	<label>
+		<span>Province<span class="req">*</span></span>
+		<div class="cont_select_center">
+		<div class="select_mate" data-mate-select="active" >
+		<select name="" onchange="" onclick="return false;" id="province">
+			<option value="">Alberta</option>
+			<option value="1">British Columbia</option>
+			<option value="2">Manitoba</option>
+			<option value="3">New Brunswick</option>
+			<option value="4">Newfoundland and Labrador</option>
+			<option value="5">Nova Scotia</option>
+			<option value="" selected="">Ontario</option>
+			<option value="6">Prince Edward Island</option>
+			<option value="7">Saskatchewan</option>
+			<option value="8">Quebec</option>
+	    </select>
+		<p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+		    <path d="M0-.75h24v24H0z" fill="none"/>
+		</svg></span>
+		<div class="cont_list_select_mate">
+		  <ul class="cont_select_int">  </ul> 
+		</div>
+		  </div>
+		</div>
+	</label>
+</div>	
+<script src="js.js"></script>

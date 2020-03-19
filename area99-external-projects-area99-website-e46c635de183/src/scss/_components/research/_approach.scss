@@ -6,6 +6,9 @@
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(1023) {
+			display: block;
+		}
 
 		&-left {
 			width: 363px;
@@ -16,6 +19,9 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding-left: 26px;
+			@include adaptive(1023) {
+				padding-left: 0;
+			}
 		}
 	}
 
@@ -25,6 +31,9 @@
 		font-size: 50px;
 		line-height: 57px;
 		color: #FFFFFF;
+		@include adaptive(1023) {
+			font-size: 30px;
+		}
 	}
 
 	&__desc {
@@ -36,6 +45,12 @@
 		&:not(:last-of-type) {
 			padding-bottom: 36px;
 		}
+	}
+	&__desc:last-child {
+		padding-bottom: 80px;
+	    @include adaptive (1023) {
+	    	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	    }
 	}
 }
 

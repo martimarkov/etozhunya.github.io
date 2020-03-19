@@ -27,15 +27,28 @@
 		position: relative;
 		display: flex;
 		padding-top: 55px;
+		@include adaptive(1023) {
+			padding-top: 80px;
+			position: relative;
+		}
 
 		&-left {
 			width: 571px;
+			@include adaptive(1023) {
+				width: 100%;
+			}
 		}
 
 		&-right {
 			max-width: calc(100% - 571px);
 			padding-top: 131px;
 			padding-left: 79px;
+			@media (min-width: 1024px) and (max-width: 1090px) {
+				padding-left: 10px;
+			}
+			@include adaptive(1023) {
+				display: none;
+			}
 		}
 	}
 
@@ -60,6 +73,9 @@
 		font-size: 50px;
 		line-height: 57px;
 		color: #FFFFFF;
+		@include adaptive(1023) {
+			font-size: 30px;
+		}
 	}
 
 	&__desc {
@@ -72,6 +88,19 @@
 	&__link {
 		display: flex;
 		align-items: center;
+		&::after {
+		  content: "";
+		  background: url('../img/Path-arrow.svg') center center/contain no-repeat;
+		  color: #fff;
+		  font-weight: normal;
+		  margin-left: 10px;
+		  width: 10px;
+		  height: 10px;
+		  display: inline-block;
+		}
+		.icon-font {
+			display: none;
+		}
 
 		&:hover {
 			span,
