@@ -1,0 +1,438 @@
+@import "vars";
+@media (max-width: 320px) {
+	.what_is_it, .how_it_works, .who_to_contact, .why_we_care {
+		.logo {
+			display: none;
+		}
+	}
+	.header {
+		height: auto;
+		.header-info {
+			p {
+				font-size: 20px;
+				margin-top: 60px;
+				width: 100% !important;
+			}
+		}
+	}
+	.what_is_it {
+		.container {
+			h2 {
+				font-size: 41px;
+			}
+			ul {
+				li {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+	.how_it_works {
+		.container {
+			.content {
+				.media {
+					img {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+	.header {
+		.header-info {
+			h1 {
+				font-size: 90px;
+				.ipad-pro {
+					display: block;
+				}
+			}
+			h1::after {
+				top: 310px;
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.information {
+		font-size: 16px !important;
+	}
+	.header {
+		padding: 25px;
+		.logo {
+			width: 70px;
+		}
+		.header-info {
+			transform: translateX(-120px);
+			h1::after {
+				top: 320px;
+			}
+			p {
+				width: 100%;
+			}
+		}
+	}	
+	.what_is_it {
+		.container {
+			> p {
+				width: 85% !important;
+			}
+		}
+	}
+	.contact {
+		a {
+			right: 90px;
+		}
+		p {
+			margin-left: 5%;
+			font-size: 30px;
+			max-width: 60%;
+		}
+	}
+	.how_it_works, .why_we_care {
+		.container {
+			position: relative;
+			.content {
+				display: block;
+				.media {
+					width: 80% !important;
+					display: flex;
+					justify-content: space-between;
+					flex-flow: wrap;
+					img {
+						width: 47%;
+						margin-bottom: 15px;
+						margin-right: 10px;
+					}
+				}
+				.text {
+					margin: 50px auto;
+					width: 100%;
+					p {
+						font-size: 18px;
+						width: 80%;
+					}
+				}
+			}
+		}
+	}
+	.why_we_care {
+		.container {
+			padding: 35px !important;
+			width: 100%;
+			min-width: 100%;
+		}	
+	}
+	.contact_us {
+		.contact-form {
+			.input, textarea {
+				width: 90% !important;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		width: 90%;
+		max-width: 90%;
+	}
+	body {
+		background-color: #000;
+	}
+	.logo {
+		left: 20px;
+		top: 25px;
+		width: 45px;
+	}
+	.header {
+		padding: 15px;
+		z-index: 1;
+		.scroll {
+			.up, .down {
+				display: none;
+			}
+		}
+		.header-info {
+			max-width: 100%;
+		}
+		video {
+			display: none;
+		}
+		.menu {
+			background: linear-gradient(to top, #1c6165, #000 90%);
+			width: 100vw;
+			height: 100vh;
+			z-index: 55;
+			top: 0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transform: translateX(0%);
+			transition: .4s cubic-bezier(0.4, 0, 1, 1);
+			ul {
+				position: relative;
+				li {
+					justify-content: center;
+					a {
+						img {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.menu.hidden {
+			transform: translateX(100%);
+			transition: .4s ease-out;
+		}
+		.header-info {
+			h1 {
+				font-size: 40px;
+			    line-height: 1.2;
+			    margin-top: 90px;
+				.ipad-pro {
+					display: block;
+				}
+			}
+			h1::after {
+				top: 340px;
+			}
+			p {
+				width: 95%;
+				font-size: 24px;
+			}
+			.subtitle {
+				line-height: 40px;
+			}
+		}
+		.hamburger {
+			height: 46px;
+			width: 50px;
+			display: block;
+			position: fixed;
+			z-index: 11;
+			border-radius: 30%;
+			right: 20px;
+			top: 35px;
+			z-index: 100;
+			cursor: pointer;
+		}
+		.hamburger.active {
+			position: fixed;
+		}	
+		.hamburger.active .hamburger_button {
+			background-color: #7fcbdf;
+		} 
+		.hamburger.active .hamburger_button::before, .hamburger.active .hamburger_button::after {
+			background-color: #7fcbdf;
+		}
+		.hamburger_button {
+			height: 2px;
+			width: 60%;
+			display: block;
+			background-color: #7fcbdf;
+		    position: relative;
+		    top: 50%;
+	      	margin: 0 auto;
+			border-radius: 3px;
+	    	transform: translateY(-50%);
+	    	z-index: 21;
+		}
+		.hamburger_button::after, .hamburger_button::before {
+			content: '';
+			background-color: #7fcbdf;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			left: 0;
+			border-radius: 3px;
+			transition: top .3s, transform .3s .3s;
+		}
+		.hamburger_button::after {
+			top: -7px;
+		}
+		.hamburger_button::before {
+			top: 7px;
+		}
+	}
+	.what_is_it, .contact_us {
+		.container {
+			h2 {
+				font-size: 40px;
+				padding-top: 50px;
+			}
+			p {
+				width: 95%;
+			}
+			ul {
+				padding-bottom: 50px;
+				li {
+					width: 100% !important;
+					margin-bottom: 50px;
+					p {
+						width: 100%;
+					}
+					.number {
+						font-size: 40px !important;
+					}
+					.information {
+						font-size: 14px !important;
+					}
+				}
+			}
+		}
+	}
+	.contact {
+			height: auto;
+			padding: 30px;
+			p {
+				margin: 0 auto;
+				font-size: 18px;
+			    max-width: 100%;
+			}
+			a {
+				position: relative;
+				top: inherit;
+				right: inherit;
+				text-align: center;
+				display: block;
+				width: 200px;
+				margin: 10px auto;
+			}
+		}
+	.how_it_works, .why_we_care  {
+		.container {
+			h2 {
+				font-size: 40px;
+			}
+			.content {
+				display: block;
+				.media {
+					img {
+						margin: 0 auto;
+						width: 290px;
+						margin-bottom: 15px;
+					}
+				}
+				.text {
+					margin: 0;
+					width: 100%;
+					p {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.why_we_care {
+		.container {
+			padding: 35px !important;
+			width: 100%;
+			min-width: 100%;
+			background-color: #ffffff91;
+			p {
+				width: 100%;
+			}
+			.content {
+				.media {
+					width: 100%;
+					padding-bottom: 20px;
+					img {
+						width: 250px;
+					}
+				}
+			}
+		}
+	}
+	.who_to_contact {
+		.logo {
+			display: none;
+		}
+		> p {
+			display: none;
+		}
+		.container {
+			h2 {
+				font-size: 40px;
+			}
+			.content {
+				display: block;
+				.media {
+ 					width: 100%;
+ 					position: relative;
+ 					img {
+ 						width: 100%;
+ 					}
+				}
+				.text {
+					margin-top: 25px !important;
+					text-align: center;
+					margin: 0;
+					width: 100% !important;
+					p {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+	.signature {
+		position: relative;
+		bottom: auto;
+		background-color: #fff;
+		.container {
+			text-align: center;
+			a {
+				padding: 10px 0px;
+				display: block;
+			}
+
+		}
+	}
+	.map {
+		width: 100%;
+		position: relative;
+		.wrapp {
+			display: block !important;
+			.left {
+				width: 100% !important;
+				position: relative;
+				iframe {
+					width: 100%;
+					margin-bottom: 50px;
+				}
+			}
+			.right {
+				position: relative;
+				width: 100% !important;
+			}
+		}
+	}
+	.contact_us {
+		padding-bottom: 100px;
+		.container {
+			max-width: 80%;
+			margin: 0 auto;
+			padding-left: 0;
+			h2 {
+				padding-top: 100px;
+			}	
+			.contact-form {
+				position: relative;
+				.input {
+					width: 100%;
+				}
+				textarea {
+					width: 100%;
+				}
+				.button {
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+}
