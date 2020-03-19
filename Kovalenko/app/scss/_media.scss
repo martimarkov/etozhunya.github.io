@@ -6,13 +6,8 @@
 		}
 	}
 	.header {
+		height: auto;
 		.header-info {
-			h1 {
-				font-size: 55px !important;
-			}
-			h1::after {
-				top: 310px !important;
-			}
 			p {
 				font-size: 20px;
 				margin-top: 60px;
@@ -60,6 +55,9 @@
 	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+	.information {
+		font-size: 16px !important;
+	}
 	.header {
 		padding: 25px;
 		.logo {
@@ -135,6 +133,10 @@
 	}
 }
 @media (max-width: 767px) {
+	.container {
+		width: 90%;
+		max-width: 90%;
+	}
 	body {
 		background-color: #000;
 	}
@@ -146,7 +148,6 @@
 	.header {
 		padding: 15px;
 		z-index: 1;
-		background: url('../img/bg-image.png') center center/cover no-repeat;
 		.scroll {
 			.up, .down {
 				display: none;
@@ -162,7 +163,7 @@
 			background: linear-gradient(to top, #1c6165, #000 90%);
 			width: 100vw;
 			height: 100vh;
-			z-index: 1;
+			z-index: 55;
 			top: 0;
 			left: 0;
 			display: flex;
@@ -188,7 +189,7 @@
 		}
 		.header-info {
 			h1 {
-				font-size: 60px;
+				font-size: 40px;
 			    line-height: 1.2;
 			    margin-top: 90px;
 				.ipad-pro {
@@ -201,6 +202,9 @@
 			p {
 				width: 95%;
 				font-size: 24px;
+			}
+			.subtitle {
+				line-height: 40px;
 			}
 		}
 		.hamburger {
@@ -266,7 +270,6 @@
 				padding-bottom: 50px;
 				li {
 					width: 100% !important;
-					margin-left: 25px !important;
 					margin-bottom: 50px;
 					p {
 						width: 100%;
@@ -275,7 +278,7 @@
 						font-size: 40px !important;
 					}
 					.information {
-						font-size: 16px !important;
+						font-size: 14px !important;
 					}
 				}
 			}
