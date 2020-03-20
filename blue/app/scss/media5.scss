@@ -280,7 +280,10 @@
         }
     }
 }
-@media (min-width:961px) and  (max-width: 1347px)  {
+@media (min-width:961px) and  (max-width: 1346px)  {
+    .desktop {
+        margin-top: 65px;
+    }
     .labels {
         justify-content: space-between;
     }
