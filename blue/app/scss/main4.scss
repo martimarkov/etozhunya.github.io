@@ -72,6 +72,22 @@ body {
 			    		font-weight: bold;
 			    		display: block;
 			    	}
+			    	.tele {
+			    		width: 100%;
+			    		position: relative;
+			    		li {
+			    			display: flex;
+			    			justify-content: flex-start;
+			    			width: 100%;
+			    			margin-top: 10px;
+			    			p {
+			    				width: 70px;
+			    			}
+			    			// span {
+			    			// 	padding-left: 20px;
+			    			// }
+			    		}
+			    	}
 			    	p {
 			    		text-align: justify;
 			    		font-size: 14px;
