@@ -24,6 +24,13 @@
 	}
 }
 @media (max-width: 961px) {
+	.tele {
+		li {
+			p {
+				margin: 0 !important;
+			}
+		}
+	}
 	.img {
 		img {
 			border: 1px solid #000 !important;
@@ -212,7 +219,7 @@
 			 		li {
 			 			margin:0px 0px 15px 0px !important;
 			 			width: 100% !important;
-			 			p {
+			 			> p {
 			 				margin: 5px 0px;
 			 				font-size: 14px;
 			 			}
