@@ -1,9 +1,4 @@
 @import "vars";
-@media (max-width: 1200px) and (min-width: 962px) {
-	.header__nav {
-    	padding-left: 35%!important;
-    }
-}
 @media (min-width: 600px) and (max-width: 961px) {
 	    .text {
 	    	ul {
@@ -14,11 +9,6 @@
 				}
 	    	}
 	    }
-}
-@media (max-width: 1050px) and (min-width: 962px) {
-	.header__nav {
-    	padding-left: 28%!important;
-	}
 }
 @media (min-width: 962px) {
 	.header__content {

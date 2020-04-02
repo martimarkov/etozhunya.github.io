@@ -15,25 +15,9 @@
     	min-height: calc(100vh - 90px);
     }	
 }
-@media (min-width: 961px) and (max-width: 1450px) { 
-	.header__nav {
-		.menu {
-			ul {
-				li {
-					margin: 0 5px !important;
-				}
-			}
-		}
-	}
-}
 @media (min-width: 961px) and (max-width: 1350px) {
 	.header__nav {
 		padding-left: 35%;
-	}
-}
-@media (min-width: 962px) and (max-width: 1050px) {
-	.header__nav {
-		padding-left: 28% !important;
 	}
 }
 @media (max-width: 961px) {
