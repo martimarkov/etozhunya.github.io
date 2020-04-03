@@ -24,13 +24,6 @@
 	}
 }
 @media (max-width: 961px) {
-	.tele {
-		li {
-			p {
-				margin: 0 !important;
-			}
-		}
-	}
 	.img {
 		img {
 			border: 1px solid #000 !important;
@@ -228,6 +221,14 @@
 			 			}
 			 		}
 			 	}
+			 	.tele {
+			 		li {
+			 			margin: 5px 0 5px 0!important;
+			 			p {
+			 				margin: 0 !important;
+			 			}
+			 		}
+			 	}
 			 	> .img {
 			 		margin: 0 0px 20px 0;
 			 		width: 100%;
@@ -241,4 +242,5 @@
 			 }
 		} 
 	}	
+
 }
