@@ -215,7 +215,6 @@ $('#form').submit(function(e){
         method: "POST",
         dataType: "json",
         data: JSON.stringify(order),
-        // contentType: 'application/json; charset=utf-8',
         success: function(response) {
             $('#form').addClass('active');
             $('.labels label .input').val('');
