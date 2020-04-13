@@ -51,7 +51,6 @@ Modernizr.on('webp', function (result) {
     document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-webp');
   }
   else {
-  	 alert('jeka tops');
     document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-jpg');
   }
 });
