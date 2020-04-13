@@ -27,7 +27,6 @@ body {
 			display: flex;
 			justify-content: space-between;
 			flex-flow: column;
-			position: relative;
 			.image {
 				height: 75%;
 				width: 100%;
@@ -40,10 +39,11 @@ body {
 					width: 100%;
 					min-height: 100%;
 					position: absolute;
-					z-index: -1;
+					left: 0;
+					top: 0;
 				}
 				.wrapper {
-					height: auto;
+					height: 100%;
 					width: 100%;
 					display: flex;
 					justify-content: space-between;

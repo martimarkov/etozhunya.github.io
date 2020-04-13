@@ -44,7 +44,47 @@ $(function() {
 	$(window).trigger('resize');
 });
 
+Modernizr.on('webp', function (result) {
+  // `result == Modernizr.webp`
+  console.log(result);  // either `true` or `false`
+  if (result) {
+    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-webp');
+  }
+  else {
+  	 alert('jeka tops');
+    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-jpg');
+  }
+});
 
+// Modernizr.on('webp', function (result) {
+//   // `result == Modernizr.webp`
+//   console.log(result);  // either `true` or `false`
+//   if (result) {
+//    alert('jeka top');
+//   }
+//   else {
+//    alert('jeka top4ik!');
+//   }
+// });
 
+// var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+// var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+// var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+// var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+// var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+// if ((is_chrome)&&(is_safari)) { is_safari = false; }
+// if ((is_chrome)&&(is_opera)) { is_chrome = false; }
+// if (is_safari) { alert('Safari'); }
+// var imageUrl = document.getElementById("blue").getAttribute("data-src");
 
-
+// $(document).ready(function() {
+//   var ua = navigator.userAgent.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i),
+//       browser;
+//   var imageUrl = document.getElementById("picture").getAttribute("data-src");    
+//   if (navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/Trident.*rv[ :]*11\./i)) {
+    
+//   }
+//   else {
+//    $('.menu').addClass('lol2');
+//   }
+// });

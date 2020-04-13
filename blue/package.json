@@ -25,6 +25,7 @@
 		"gulp-util": "^3.0.8"
 	},
 	"dependencies": {
+		"detect-browser": "^5.0.0",
 		"imagemin": "^7.0.1"
 	}
 }
