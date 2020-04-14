@@ -44,16 +44,6 @@ $(function() {
 	$(window).trigger('resize');
 });
 
-Modernizr.on('webp', function (result) {
-  // `result == Modernizr.webp`
-  console.log(result);  // either `true` or `false`
-  if (result) {
-    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-webp');
-  }
-  else {
-    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-jpg');
-  }
-});
 
 // Modernizr.on('webp', function (result) {
 //   // `result == Modernizr.webp`

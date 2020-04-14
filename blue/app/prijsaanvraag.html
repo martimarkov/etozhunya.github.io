@@ -31,7 +31,7 @@
 		</div>
 	</div>
 	<div class="header__content">
-		<div class="animated">
+		<div class="animated specialimage">
 			<ul class="wrapper">
 				<li></li>
 				<li></li>
@@ -119,8 +119,18 @@
 		</div>
 	</div>
 </div>
+<script src="js/modernizr-custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script src="js/common.js"></script>
 <script src="js/jquery.mask.js"></script>
+<script>
+	Modernizr.on('webp', function (result) {
+	  if (result) {
+	  }
+	  else {
+	  	$('.specialimage').addClass('no-webp')
+	  }
+	});
+</script>
 </body>
 </html>

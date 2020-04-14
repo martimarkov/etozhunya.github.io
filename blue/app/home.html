@@ -87,5 +87,16 @@
 <script src="js/common.js"></script>
 <script src="js/untitled.js"></script>
 <script src="js/jquery.mask.js"></script>
+<script>
+	Modernizr.on('webp', function (result) {
+	  if (result) {
+	    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-webp');
+	  }
+	  else {
+	  	$('.specialimage').addClass('no-webp')
+	    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-jpg');
+	  }
+	});
+</script>
 </body>
 </html>

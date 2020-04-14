@@ -46,11 +46,14 @@ body {
 		min-height: calc(100vh - 90px);
 		.animated {
 			width: 17%;
-			background: url('../img/blue.jpg') center center/ cover;
+			background: url('../img/blue.webp') center center/ cover;
 			background-position: 100% center;
 			animation-name: bg-animated;
 			animation-duration: 4.5s;
 			transition-timing-function: linear;
+		}
+		.animated.no-webp {
+			background: url('../img/blue.jpg') center center/ cover;
 		}
 		.text {
 			width: calc(83% - 100px);

@@ -31,7 +31,7 @@
 		</div>
 	</div>
 	<div class="header__content">
-		<div class="animated">
+		<div class="animated specialimage">
 			<ul class="wrapper">
 				<li></li>
 				<li></li>
@@ -47,7 +47,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
 					<div class="right">
-						<img src="img/paris.jpg" alt="">
+						<img data-webp="img/paris.webp" data-jpg="img/paris.jpg" id="paris">
 					</div>
 				</li>
 				<li>
@@ -56,7 +56,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
 					<div class="right">
-						<img src="img/paris.jpg" alt="">
+						<img data-webp="img/paris.webp" data-jpg="img/paris.jpg" id="paris2">
 					</div>
 				</li>
 				<li>
@@ -65,7 +65,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
 					<div class="right">
-						<img src="img/paris.jpg" alt="">
+						<img data-webp="img/paris.webp" data-jpg="img/paris.jpg" id="paris3">
 					</div>
 				</li>
 				<li>
@@ -80,8 +80,24 @@
 		</div>
 	</div>
 </div>
+<script src="js/modernizr-custom.js"></script>
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script src="js/common.js"></script>
 <script src="js/jquery.mask.js"></script>
+<script>
+	Modernizr.on('webp', function (result) {
+	  if (result) {
+	    document.getElementById('paris').src = document.getElementById('paris').getAttribute('data-webp');
+	    document.getElementById('paris2').src = document.getElementById('paris2').getAttribute('data-webp');
+	    document.getElementById('paris3').src = document.getElementById('paris3').getAttribute('data-webp');
+	  }
+	  else {
+	  	$('.specialimage').addClass('no-webp');
+	    document.getElementById('paris').src = document.getElementById('paris').getAttribute('data-jpg');
+	    document.getElementById('paris2').src = document.getElementById('paris2').getAttribute('data-jpg');
+	    document.getElementById('paris3').src = document.getElementById('paris3').getAttribute('data-jpg');
+	  }
+	});
+</script>
 </body>
 </html>
