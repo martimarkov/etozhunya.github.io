@@ -44,6 +44,16 @@ $(function() {
 	$(window).trigger('resize');
 });
 
+Modernizr.on('webp', function (result) {
+  if (result) {
+    document.getElementById('adlogo').src = document.getElementById('adlogo').getAttribute('data-webp');
+  }
+  else {
+  	$('.specialimage').addClass('no-webp')
+    document.getElementById('adlogo').src = document.getElementById('adlogo').getAttribute('data-jpg');
+  }
+});
+
 
 // Modernizr.on('webp', function (result) {
 //   // `result == Modernizr.webp`
