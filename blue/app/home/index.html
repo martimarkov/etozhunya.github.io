@@ -104,10 +104,12 @@
 	Modernizr.on('webp', function (result) {
 	  if (result) {
 	    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-webp');
+	    document.getElementById('adlogo').src = document.getElementById('adlogo').getAttribute('data-webp');
 	  }
 	  else {
 	  	$('.specialimage').addClass('no-webp')
 	    document.getElementById('blue').src = document.getElementById('blue').getAttribute('data-jpg');
+	    document.getElementById('adlogo').src = document.getElementById('adlogo').getAttribute('data-jpg');
 	  }
 	});
 </script>
