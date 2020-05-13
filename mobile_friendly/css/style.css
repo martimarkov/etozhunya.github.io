@@ -9,6 +9,12 @@
     margin-bottom: 15px;     padding-left: 0px;
      border-radius: 5px;
 }
+.desktoponly {
+    display: block;
+}
+.mobonly {
+    display: none;
+}
 .center {
     margin: auto;
     width: 100%;
