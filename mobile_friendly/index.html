@@ -100,17 +100,38 @@ div.div-sub-menu{border:1px solid #cfd1cb;border-left:10;font:Verdana;width: 90%
             
 			<!--  / MENU CONTAINER \ -->
 			<div id="menuCntr">
+
+
+        <div class="hamburger" id="hamburger">
+          <span class="hamburger_button"></span>
+        </div>
+        <div class="fixed__nav-links">
+          <div class="menu hidden">
+            <ul>
+              <li><a href="http://www.theonlinetestcentre.com/">Home</a></li>
+              <li><a href="/numerical-tests.html">Numerical</a></li>
+              <li><a href="/verbal-tests.html">Verbal</a></li>
+              <li><a href="/diagrammatic-tests.html">Diagrammatic</a></li>
+              <li><a href="/logic-tests.html">Logic</a></li>
+              <li><a href="/reasoning-puzzles.html">Reasoning &amp; Puzzles</a></li>
+              <li><a href="/general-knowledge.html">General Knowledge</a></li>
+              <li><a href="/blog/blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
 				<div class="left">
 					<div class="right">						<ul>						
 						<h2><li><a href="#" onclick="$('#divSubMenu').slideToggle()"><img src="images/dropdownmenulogo.png" alt="Menu" title="View all menu items." /></a></li></h2>
-						<!-- <h2><li><a href="http://www.theonlinetestcentre.com/">Home</a></li></h2>
+
+						<h2><li><a href="http://www.theonlinetestcentre.com/">Home</a></li></h2>
 						<h2><li><a href="/numerical-tests.html">Numerical</a></li></h2>
 						<h2><li><a href="/verbal-tests.html">Verbal</a></li></h2>
 						<h2><li><a href="/diagrammatic-tests.html">Diagrammatic</a></li></h2>
 						<h2><li><a href="/logic-tests.html">Logic</a></li></h2>
 						<h2><li><a href="/reasoning-puzzles.html">Reasoning & Puzzles</a></li></h2>
-                        <h2><li><a href="/general-knowledge.html">General Knowledge</a></li></h2>
-                        <h2><li><a href="/blog/blog.html">Blog</a></li></h2> -->
+            <h2><li><a href="/general-knowledge.html">General Knowledge</a></li></h2>
+            <h2><li><a href="/blog/blog.html">Blog</a></li></h2>
 </ul>
 <div class="clear"></div>
 					</div>
@@ -573,6 +594,13 @@ Copyright &copy;  <strong>The Online Test Centre - Since 2005</strong> | <a href
 
 
 <script>
+    var hamburger = document.getElementById('hamburger'),
+    menu = document.querySelector('.fixed__nav-links .menu');
+    
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('hidden');
+    })  
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

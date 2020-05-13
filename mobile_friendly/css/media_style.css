@@ -37,6 +37,8 @@
 	}
 	.logo {
 		padding: 0;
+		width: 80%;
+		padding-top: 15px;
 	}
 	.logo a {
 		display: block;
@@ -49,4 +51,90 @@
 	.companyInfoBox {
 		padding: 20px 5px;
 	}
+	#menuCntr .right h2 {
+		display: none;
+	}
+	#menuCntr .right h2:first-child {
+		display: block;
+	}
+	.fixed__nav-links {
+		display: block;
+	}
+	.menu {
+		z-index: 5;
+		left: -100%;
+		transition: .5s;
+		background-color: #323232;
+		width: 100vw;
+		height: 100vh;
+		top: 0%;
+		left: 0%;
+		text-align: center;
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	} 
+	.menu.hidden {
+		left: 100%;
+		transition: .5s;
+	}
+	.menu ul li {
+		float: inherit !important;
+	}
+
+
+
+	.hamburger {
+			height: 46px;
+			width: 50px;
+			display: block;
+			position: fixed;
+			z-index: 11;
+			border-radius: 30%;
+			right: 20px;
+			top: 35px;
+			z-index: 100;
+			cursor: pointer;
+			background-color: #a5c806;
+			}
+		.hamburger.active {
+			position: fixed;
+		}	
+		.hamburger.active .hamburger_button {
+			background-color: #000;
+		} 
+		.hamburger.active .hamburger_button::before, .hamburger.active .hamburger_button::after {
+			background-color: #000;
+		}
+		.hamburger_button {
+			height: 2px;
+			width: 60%;
+			display: block;
+			background-color: #373737;
+		    position: relative;
+		    top: 50%;
+	      	margin: 0 auto;
+			border-radius: 3px;
+	    	transform: translateY(-50%);
+	    	z-index: 21;
+		}
+		.hamburger_button::after, .hamburger_button::before {
+			content: '';
+			background-color: #373737;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			left: 0;
+			border-radius: 3px;
+			transition: top .3s, transform .3s .3s;
+		}
+		.hamburger_button::after {
+			top: -7px;
+		}
+		.hamburger_button::before {
+			top: 7px;
+		}			
+
 }

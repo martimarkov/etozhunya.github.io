@@ -16,6 +16,9 @@
     padding: 5px;
     background-color: #ebebeb;
 }
+.fixed__nav-links {
+    display: none;   
+}
 
 	
 		
