@@ -43,7 +43,18 @@ $(function() {
 
 	$(window).trigger('resize');
 });
-
+// window.onload = function() {
+//   $('.flyin').addClass('fly');
+// };
+window.setTimeout(function(){
+        $('.flyin').addClass('fly');
+}, 1000);
+window.setTimeout(function(){
+        $('.flyin2').addClass('fly');
+}, 1100);
+window.setTimeout(function(){
+        $('.flyin3').addClass('fly');
+}, 1200);
 
 
 
