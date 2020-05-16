@@ -205,7 +205,8 @@ body {
 				}
 				.text_container::before {
 					content: '';
-					width: calc(100% - 33px);
+					// width: calc(100% - 33px);
+					width: 97%;
 					height: 120%;
 					position: absolute;
 					top: -45px;
