@@ -12,11 +12,10 @@
 		justify-content: space-around;
 		li {
 			cursor: pointer;
-			margin: 0 auto;
 			box-shadow: 3px 3px 5px #171741;
 		    background-color: #01169e;
 			border: 1px solid #5e5f80;
-			height: 26%;
+			height: 25%;
 			position: relative;
 			text-align: center;
 			width: 80%;
@@ -45,6 +44,7 @@
 			background-color:#8ab3da;
 		}
 		li:nth-child(4) {
+			margin-bottom: 15px;
 			height: auto;
 			border: none;
 			box-shadow:none;
@@ -79,7 +79,7 @@
 			justify-content: space-between;
 			height: 100%;
 			position: relative;
-			z-index: 1;
+			z-index: 2;
 			li {
 				display: flex;
 				align-items: center;
