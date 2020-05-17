@@ -63,7 +63,7 @@
 		}
 		li.fly {
 			left: 0;
-			transition: .4s;
+			transition: .7s;
 			transition-timing-function: ease-in-out;
 		}
 	}
@@ -73,12 +73,14 @@
 		width: 12% !important;
 		height: auto !important;
 		li {
-			height: 23%;
+			height: 28% !important;
 			a {
+				letter-spacing: 0px !important;
 				font-size: 14px !important;
 			}
 		}
 		li:nth-child(4) {
+			height: auto !important;
 			margin-bottom: 0 !important;
 		}
 	}
