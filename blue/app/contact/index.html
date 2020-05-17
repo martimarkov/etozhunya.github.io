@@ -76,8 +76,21 @@
 				<img src="../img/new-logo.png" alt="">
 			</div>
 		</div>
-		<div class="image">
-			<!-- <img src="" alt=""> -->
+		<div class="ad">
+			<ul>
+				<li class="flyin" id="fly">
+					<a href="#">Kwaliteit</a>
+				</li>
+				<li class="flyin2">
+					<a href="#">Levertijd</a>
+				</li>
+				<li class="flyin3">
+					<a href="#">Service</a>
+				</li>
+				<li>
+					<img class="scaling" data-webp="../img/logodekra.webp" data-jpg="../img/logodekra.png" id="adlogo">
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -89,10 +102,12 @@
 	Modernizr.on('webp', function (result) {
 	  if (result) {
 	  	document.getElementById('paris4').src = document.getElementById('paris4').getAttribute('data-webp');
+	  	document.getElementById('adlogo').src = document.getElementById('adlogo').getAttribute('data-webp');
 	  }
 	  else {
 	  	$('.specialimage').addClass('no-webp');
 	  	document.getElementById('paris4').src = document.getElementById('paris4').getAttribute('data-jpg');
+	  	document.getElementById('adlogo').src = document.getElementById('adlogo').getAttribute('data-jpg');
 	  }
 	});
 </script>
