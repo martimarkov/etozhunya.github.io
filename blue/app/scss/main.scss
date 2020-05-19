@@ -71,12 +71,12 @@ body {
 				position: relative;
 			}
 			li:first-child {
-				background-color: #d6e6f4;
+				background-color: rgb(204, 223, 242);
 				a {
 					color: #2a2a6a;
 					.case {
 						font-size: 16px;
-						background-color: #E1EDF7;
+						background-color: rgb(218, 232,245);
 					}
 					p {
 						font-size: 14px;
@@ -84,9 +84,9 @@ body {
 				}
 			}
 			li:nth-child(2) {
-				background-color: #bcd8f1;
+				background-color: rgb(173,205,239);
 				.case {
-					background-color: #CFE3F5;
+					background-color: rgb(196, 220, 243);
 				}
 			}
 			li:nth-child(2)::before {
@@ -110,9 +110,9 @@ body {
 			top: 0;
 			}
 			li:nth-child(3) {
-				 background-color: #8ab3d9;
+				 background-color: rgb(119,162,210);
 				 .case {
-				 	background-color: #9EB7D4;
+				 	background-color: rgb(157, 188, 223);
 				 }
 			}
 			a {
