@@ -18,7 +18,7 @@ body * {
 	.header {
 		display: flex;
 		justify-content: space-between;
-		padding:5px 15px 0px 15px;
+		padding:5px 20px 0px 20px;
 		width: 100vw;
 		position: absolute;
 		&-nav {
@@ -462,6 +462,11 @@ body * {
 				h4::before {
 					background: url('../img/02.png') center center/contain no-repeat;
 				}
+				.media {
+					img {
+						transform: translateX(0px);
+					}
+				}
 			}
 			li:nth-child(2)::after {
 			    content: '';
@@ -538,7 +543,7 @@ footer {
 	}
 	.contact-us {
 		position: absolute;
-		top: 50%;
+		top: 42%;
 		transform: translateY(-50%);
 		right: 0;
 		display: flex;
