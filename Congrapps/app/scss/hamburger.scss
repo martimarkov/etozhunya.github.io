@@ -22,7 +22,8 @@
 		}  
 	}
 	.hamburger.close::after {
-		content: none;
+		opacity: 0;
+		transition: .4s;
 	}
 	.hamburger.hide::after {
 	 	top: -42px;
