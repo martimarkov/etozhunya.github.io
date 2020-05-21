@@ -535,10 +535,11 @@ body * {
 			display: flex;
 			justify-content: space-between;
 			li {
-				width: 20%;
+				width: 23%;
 				background: linear-gradient(180deg, #5362A7 36.46%, #FFFFFF 36.47%, #FFFFFF 100%);
 				box-shadow: 0px 3px 15px rgba(48, 89, 135, 0.25);
 				border-radius: 10px;
+				transition: .5s;
 				.blue {
 					display: flex;
 					justify-content: center;
@@ -570,6 +571,54 @@ body * {
 					}
 				}
 				.white {
+					p {
+
+					}
+					a {
+						font-family: Arial;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 16px;
+						background: #589CE8;
+						box-shadow: 0px 2px 5px rgba(48, 89, 135, 0.27);
+						color: #fff;
+						text-decoration: none;
+						padding: 15px 70px 15px 40px;
+						border-radius: 68px;
+						margin-bottom: 10px;
+						display: inline-block;
+						position: relative;
+					}
+					a::after {
+						width: 40px;
+						height: 98%;
+						content: '';
+						background: url('../img/purchase.svg') center center/contain no-repeat;
+						position: absolute;
+						top: 0px;
+						right: 4px;
+						transition: .2s;
+					}
+				}
+			}
+			li:hover {
+				cursor: pointer;
+				transform: translateY(-20px);
+				transition: .5s;
+				.blue {
+					background: linear-gradient(#475ba1 50%, #5a6caf);
+					transition: .2s;
+					span {
+						color:#FFAC24;
+					}
+				}
+				a {
+					box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+				}
+				a::after {
+					transform: scale(1.05) translateX(10px);
+					transition: .2s;
 				}
 			}
 		}
