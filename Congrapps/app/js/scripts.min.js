@@ -26,9 +26,10 @@
 		 			$('.hamburger').removeClass('close')
 		 			$('.hamburger_button').removeClass('color')
 		 		}
-		 		if ($(this).scrollTop(); === 0) {
-		 			$('.hamburger').addClass('close')
-		 			$('.hamburger_button').addClass('color')
+		 		if (scrolled === 0) {
+		 			$('.hamburger').addClass('close'),
+		 			$('.hamburger_button').addClass('color'),
+		 			$('.mob-only').removeClass('visible');	
 		 		}
 		 	
 		 	});
