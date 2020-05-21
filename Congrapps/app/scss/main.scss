@@ -16,11 +16,16 @@ body * {
 	min-height: 100vh;
 	background: url('../img/background.png') center center/cover no-repeat;
 	.header {
+		z-index: 99999;
+		transition: .2s;
 		display: flex;
 		justify-content: space-between;
 		padding:5px 20px 0px 20px;
 		width: 100vw;
-		position: absolute;
+		position: fixed;
+		.hamburger {
+			display: none;
+		}
 		&-nav {
 			display: flex;
 			justify-content: space-between;
@@ -143,6 +148,11 @@ body * {
 				}
 			}
 		}
+	}
+	.header.fixed {
+		background-color: #fff;
+		transition: .2s;
+		box-shadow: 0 2px 5px rgba(48,89,135,.27);
 	}
 	.grid {
 		height: 100vh;

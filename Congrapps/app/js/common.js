@@ -6,3 +6,12 @@
 		menu.classList.toggle('visible');
 	})	
 
+		var scrolled;
+			$(window).scroll(function(){
+			  scrolled = $(this).scrollTop();	
+		  		if (scrolled > 100) {
+			  		$('.header').addClass('fixed');
+		 		} else {
+		 			$('.header').removeClass('fixed');
+		 		}
+		 	});
