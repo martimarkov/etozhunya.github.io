@@ -14,6 +14,19 @@
 		 		} else {
 		 			$('.header').removeClass('fixed');
 		 		}
+		 		if (scrolled > 10) {
+		 			$('.mob-only').addClass('visible');	
+		 		} else {
+		 			$('.mob-only').removeClass('visible');	
+		 		}
+		 		if (scrolled < 10) {
+		 			$('.hamburger_button').addClass('color')
+		 			$('.hamburger').addClass('close')
+		 		} else {
+		 			$('.hamburger').removeClass('close')
+		 			$('.hamburger_button').removeClass('color')
+		 		}
+		 	
 		 	});
 
 			var lastScrollTop = 0;

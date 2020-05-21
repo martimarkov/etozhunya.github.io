@@ -15,11 +15,14 @@
 		position: fixed;
 	}
 	.hamburger.hide {
-		top: -70px;
+		top: -42px;
 		transition: .5s; 
 		.logo-m {
-			top: -70px;
+			top: -42px;
 		}  
+	}
+	.hamburger.close::after {
+		content: none;
 	}
 	.hamburger.hide::after {
 	 	top: -42px;
@@ -45,6 +48,9 @@
 		border-radius: 3px;
     	transform: translateY(-50%);
     	z-index: 21;
+	}
+	.hamburger_button.color, .hamburger_button.color::after, .hamburger_button.color::before {
+		background-color: #fff;
 	}
 	.hamburger_button::after, .hamburger_button::before {
 		content: '';
@@ -94,6 +100,14 @@
 		left: 15px;
 		top: 16px;
 		transition: .5s;  
+	}
+	.mob-only {
+		opacity: 0;
+		transition: .4s;
+	}
+	.mob-only.visible {
+		opacity: 1;
+		transition: .4s;
 	}
 	.hamburger::after {
 		content: '';
