@@ -15,3 +15,16 @@
 		 			$('.header').removeClass('fixed');
 		 		}
 		 	});
+
+			var lastScrollTop = 0;
+			$(window).scroll(function(event){
+			   var st = $(this).scrollTop();
+			   if (st > lastScrollTop){
+			   		$('.hamburger').addClass('hide');
+			   		
+			   } else {
+			    	$('.hamburger').removeClass('hide');
+			   }
+			   lastScrollTop = st;
+			});
+
