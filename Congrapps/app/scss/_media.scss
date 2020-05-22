@@ -1,7 +1,8 @@
 @import "vars";
 @media (max-width: 768px) {
 	.home {
-		background-color: #000;
+		background: url('../img/background-m.png') center center/contain no-repeat;
+		height: 950px;
 		.header {
 			left: 100%;
 			transition: .4s;
@@ -12,8 +13,9 @@
 			position: fixed;
 			background-color: #fff;
 			width: 100vw;
-			height: 100vh;
 			z-index: 1;
+			height: calc(100vh - 46px);
+			    bottom: 0;
 			.hamburger {
 				display:block !important;
 			}
@@ -113,5 +115,278 @@
 	}
 	.applications, .three-ways, footer {
 		display:none;
+	}
+}
+@media (max-width: 1440px) {
+	.grid {
+		width: 60%;
+	}
+	.home {
+		.header {
+			&-nav {
+				img {
+					width: 100px;
+				}
+			}
+			&-nav_list {
+				li {
+					a {
+						font-size: 11px;
+					}
+				}
+			}
+			&-profile {
+				ul {
+					li {
+						a {
+							font-size: 12px;
+						}
+					}
+					li:nth-child(3)::before, li:nth-child(2)::before, li:nth-child(1)::before {
+						width: 15px;
+						height: 15px;
+					}
+					li:nth-child(4) {
+						img {
+							width: 17px;
+						}
+					}
+					li:nth-child(5) {
+						a {
+							img {
+								width: 18px;
+							}
+						}
+					}
+					li:nth-child(7) {
+						img {
+							width: 30px;
+							height: 30px;
+						}
+						.lvl {
+							left: 5px;
+							font-size: 5px;
+						}
+					}
+				}
+			}
+		}
+		.grid {
+			width: 65%;
+			h1 {
+				font-size: 26px;
+				line-height: 37px;
+			}
+			p {
+				font-size: 14px;
+			}
+			.button {
+				padding: 12px 70px;
+				font-size: 12px;
+			}
+		}
+	}
+	.applications {
+		.grid {
+			h2 {
+				font-size: 25px;
+			}
+			p {
+				font-size: 12px;
+			}
+			.links {
+				li {
+					padding: 20px 0px;
+					a {	
+						font-size: 14px;	
+					}
+				}
+			}
+			h3 {
+				font-size: 20px;
+			}
+			.information {
+				li {
+					height: 150px;
+					div {
+						width: 50px;
+						height: 50px;
+						transform: translateY(-25px);
+					}
+					span {
+						font-size: 14px;
+					}
+					p {
+						font-size: 12px;
+					}
+					span, p {
+					    transform: translateY(0);
+					}
+				}
+			}
+			.statistics {
+				li {
+					.digit {
+						font-size: 28px;
+						line-height: 25px;
+					}
+					span {
+						margin-top: 5px;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	.three-ways {
+		.grid {
+			width: 70%;
+			ul {
+				li {
+					.media {
+
+					}
+					.text {
+						h4 {
+							font-size: 23px;
+						}
+						h4::before {
+							width: 63px;
+							left: -58px;
+						}
+						p {
+							font-size: 12px;
+						}
+					}
+					.buttons {
+						a {
+							font-size: 12px;
+							padding: 10px 20px;
+						}
+					}
+				}
+				li:first-child {
+					.media {
+						img {
+							transform: translateX(100px);
+							width: 350px;
+						}
+					}
+				}
+				li:first-child::after {
+					height: 220px;
+				}
+				li:nth-child(2) {
+					.media {
+						img {
+							width: 300px;
+						}
+					}
+				}
+				li:nth-child(3) {
+					.media {
+						img {
+							transform: translate3d(150px,10px,10px);
+							width: 350px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.access {
+		.grid {
+			h3 {
+				font-size: 25px;
+			}
+			p {
+				font-size: 12px;
+			}
+			.purchase_list {
+				li {
+					.white {
+						padding-left:10px;
+						padding-right: 10px;
+						p {
+							font-size: 12px;
+						}
+						a {
+							font-size: 11px;
+						}
+					}
+				}
+			}
+			.container {
+				h3 {
+					font-size: 25px;
+				}
+				p {
+					font-size: 12px;
+				}
+				.opportunity {
+					li {
+						.blue {
+							padding: 30px 0px 30px 0px;
+							.forimg {
+								height: 60px;
+								width: 60px;
+								img {
+									width: 50%;
+								}
+							}
+							span {
+								font-size:20px;
+							}
+						}
+						.white {
+							height: 150px;
+							p {
+								font-size: 14px;
+							}
+							p::after {
+								bottom: -15px;
+							}
+							a {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+			h4 {
+				font-size: 23px;
+			}
+			.buttons {
+				a {
+					font-size: 13px;
+					padding: 10px 40px;
+				}
+				a:first-child::after {
+					top: -15px;
+					height: 70px;
+				}
+			}
+		}
+	}
+	footer {
+		.footer-wrapper {
+			width: 1000px !important;
+			ul {
+				li {
+					font-size: 13px !important;
+				}
+				li:first-child {
+					font-size: 15px !important;
+				}
+			}
+			.contact-us {
+				span {
+					font-size: 15px !important;
+				}
+				.icon {
+					transform: translateX(-10px);
+				}
+			}
+		}
 	}
 }

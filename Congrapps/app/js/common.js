@@ -31,18 +31,22 @@
 		 			$('.hamburger_button').addClass('color'),
 		 			$('.mob-only').removeClass('visible');	
 		 		}
+		 		if ($(window).scrollTop() > 250) {
+		 			console.log('ssa')
+		 			var lastScrollTop = 0;
+		 			$(window).scroll(function(event){
+		 			   var st = $(this).scrollTop();
+		 			   if (st > lastScrollTop){
+		 			   		// $('.hamburger').addClass('hide');
+		 			   		
+		 			   } else {
+		 			    	$('.hamburger').removeClass('hide');
+		 			   }
+		 			   lastScrollTop = st;
+		 			});
+		 		} 
 		 	
 		 	});
 
-			var lastScrollTop = 0;
-			$(window).scroll(function(event){
-			   var st = $(this).scrollTop();
-			   if (st > lastScrollTop){
-			   		$('.hamburger').addClass('hide');
-			   		
-			   } else {
-			    	$('.hamburger').removeClass('hide');
-			   }
-			   lastScrollTop = st;
-			});
+		
 

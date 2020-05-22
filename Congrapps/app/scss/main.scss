@@ -349,6 +349,7 @@ body * {
 			justify-content: space-around;
 			padding: 20px 0px;
 			li {
+				position: relative;
 				text-align: center;
 				img {
 					width: 25px;
@@ -374,6 +375,17 @@ body * {
 					text-align: center;
 					color: #505E78;
 				}
+			}
+			li:first-child::after, li:nth-child(2)::after  {
+				content: '';
+			    width: 1px;
+			    height: 55px;
+			    background-color: #00f;
+			    display: inline-block;
+			    position: absolute;
+			    right: -90px;
+			    top: 25px;
+			    opacity: 0.4;
 			}
 		}
 	}
@@ -592,6 +604,7 @@ body * {
 					justify-content: space-around;
 					align-items: center;
 					height: 220px;
+					position: relative;
 					p {
 						font-family: Arial;
 						font-style: normal;
