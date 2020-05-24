@@ -187,6 +187,7 @@
 	.access {
 		.grid {
 			h3 {
+				padding-top: 60px;
 				font-size: 25px;
 			}
 			p {
@@ -280,7 +281,101 @@
 		}
 	}
 }
-@media (max-width: 768px) {
+@media (min-width: 951px) and (max-width: 1439px) {
+	.grid {
+		width: 70%;
+	}
+	.home {
+		.grid {
+			width: 75%;
+		}
+		.header {
+			&-nav_list {
+				li {
+					a {
+						font-size: 9px;
+					}
+				}
+			}
+		}
+	}
+	.information {
+		li {
+			.desktop {
+				display: none !important;
+			}
+			.mob {
+				display: block !important;
+			}
+		}
+	}
+	.three-ways {
+		.grid {
+			ul {
+				li {
+					.media {
+
+					}
+					.text {
+						
+					}
+					.buttons {
+						a {
+							font-size: 10px;
+							padding: 10px;
+						}
+					}
+				}
+				// li:first-child {
+				// 	.media {
+				// 		img {
+				// 	    	transform: translate3d(120px,100px,0);
+				// 			width: 290px;
+				// 		}
+				// 	}
+				// }
+				// li:first-child::after {
+				// 	height: 220px;
+				// }
+				// li:nth-child(2) {
+				// 	.media {
+				// 		img {
+				// 			width: 220px;
+				// 			transform: translateX(-100px);
+				// 		}
+				// 	}
+				// }
+				// li:nth-child(3) {
+				// 	.media {
+				// 		img {
+				// 			width: 280px;
+				// 		}
+				// 	}
+				// }
+			}
+		}
+	}
+	.access {
+		.grid {
+			.purchase_list {
+				li {
+					.white {
+						padding-left:10px;
+						padding-right: 10px;
+						p {
+							font-size: 12px;
+						}
+						a {
+							font-size: 10px;
+							padding: 10px 60px 10px 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 950px) {
 	.mob {
 		display: block;
 	}
@@ -293,6 +388,9 @@
 		.grid {
 			width: 85%;
 			text-align: center;
+			div {
+				margin: 0 auto;
+			}
 			h1 {
 				font-size: 30px;
 				line-height: 34px;
@@ -317,7 +415,7 @@
 			position: fixed;
 			background-color: #fff;
 			width: 100vw;
-			z-index: 1;
+			z-index: 99999;
 			height: calc(100vh - 46px);
 			    bottom: 0;
 			.hamburger {
@@ -418,23 +516,27 @@
 		}
 	}
 	.applications {
+		height: 1200px;
 		.grid {
 			width: 85%;
 			h3 {
 				font-size: 24px;
 				line-height: 28px;
 				text-align: center;
+				margin-bottom: 40px;
 			}
 			p {
 				font-size: 13px;
 				line-height: 150%;
 				width: 100%;
+				margin-bottom: 30px;
 			}
 			.links {
 				flex-flow: wrap;
 				justify-content: space-around;
 				margin-bottom: 40px;
 				li {
+					height: 100px;
 					width: 44%;
 					margin-bottom: 20px;
 				}
@@ -470,8 +572,9 @@
 			}
 			.statistics {
 				position: relative;
-				z-index: 99;
+				z-index: 1;
 				width: 100%;
+				transform: translateY(10%);
 				li {
 					span {
 						display: block;
@@ -489,11 +592,12 @@
 		}
 	}
 	.three-ways {
+		margin-bottom: 50px;
 		.grid {
 			width: 85%;
 			ul {
 				li {
-					margin-top: 100px !important;
+					margin-top: 60px !important;
 					flex-direction: column-reverse !important;
 					.text {
 						width: 100%;
@@ -535,11 +639,16 @@
 			}
 			p {
 				width: 90%;
+				width: 85%;
 				font-size: 13px;
+				padding-bottom: 15px;
 				line-height: 150%;
 			}
 			.purchase_list {
+				overflow: hidden;
 				flex-flow: wrap;
+				margin-bottom: 0;
+				padding-bottom: 0;
 				li {
 					width: 100%;
 					margin-bottom: 40px;
@@ -593,6 +702,7 @@
 				.greenline {
 					margin-top: 0;
 					position: relative;
+					margin-bottom: 50px;
 					.block {
 						width: 3%;
 					}
@@ -648,36 +758,75 @@
 					display: flex;
 					justify-content: space-around;
 					flex-flow: wrap;
+					li {
+						position: relative;
+						border: 2px solid #589ce891;
+						box-sizing: border-box;
+						border-radius: 15px;
+						margin-top: 30px;
+					}
 					li:nth-child(1), li:nth-child(2) {
-						width: 40%;
+						width: 45%;
+						padding: 20px;
+						padding-top: 30px;
 					}
 					li:nth-child(3) {
-						width: 100%;
+						margin-top: 40px;
+						width: 70%;
+						padding: 20px;
+						padding-top: 30px;
 					}
 					.forimg {
+						position: absolute;
+						top:-33px;
+						left: 50%;
+					    transform: translateX(-50%);
 						background-color: #fff;
 						border-radius: 40px;
 						border: 12px solid #55D480;
 						box-shadow: 0px 3px 4px rgba(53, 60, 68, 0.5);
-						width: 76px;
-						height: 76px;
+						width: 66px;
+						height: 66px;
 						display: flex;
 						justify-content: center;
 						align-items: center;
 						margin: 0 auto; 
 					}
 					span {
+						display: block;
+						margin-top: 10px;
 						font-family: Arial;
 						font-style: normal;
 						font-weight: bold;
 						font-size: 18px;
 						line-height: 21px;
-						display: flex;
-						align-items: center;
-						text-align: center;
 						text-transform: uppercase;
 						color: #505E78;
 					}
+				}
+			}
+			h4 {
+				margin-top: 50px;
+				font-size: 24px;
+				line-height: 28px;
+				color: #505E78;
+			}
+			p {
+				font-size: 13px;
+				line-height: 150%;
+			}
+			.buttons {
+				padding-top: 0;
+				padding-bottom: 20px;
+				a {
+					padding: 15px 40px;
+					font-size: 16px;
+					line-height: 18px;
+					display: block;
+					margin-bottom: 20px;
+				}
+				a:first-child::after {
+					content: none;
 				}
 			}
 		}
@@ -685,7 +834,57 @@
 	.access::after {
 		content: none;
 	}
-	footer {
-		display:none;
+}
+@media (max-width: 320px) {
+	.home .grid .button {
+    	padding: 18px 90px;
+    	font-size: 14px;
+	}
+	.digit {
+		font-size: 25px !important;
+	}
+}
+@media (min-width: 1100px) and (max-width: 1439px) {
+	.three-ways {
+		.grid {
+			ul {
+				li:nth-child(2) {
+					.media {
+						img {
+							transform: translateX(-100px) !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 950px) and (max-width: 1099px) {
+	.three-ways {
+		.grid {
+			ul {
+				li:nth-child(1) {
+					.media {
+						img {
+							transform: translate3d(100px,30px,0) !important;
+						}
+					}
+				}
+				li:nth-child(2) {
+					.media {
+						img {
+							transform: translateX(-100px) !important;
+						}
+					}
+				}
+				li:nth-child(3) {
+					.media {
+						img {
+							transform: translate3d(120px,-20px,10px);
+						}
+					}
+				}
+			}
+		}
 	}
 }

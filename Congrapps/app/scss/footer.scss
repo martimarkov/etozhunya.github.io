@@ -2,6 +2,18 @@ footer {
 	position: relative;
 	z-index: 1;
 	background-color:  #374266;
+	p {
+		line-height: 20px;
+		font-family: Arial;
+		color: rgba(255, 251, 251, 0.72);
+		font-size: 12px;
+		position: absolute;
+		bottom: 20px;
+		a {
+			text-decoration: none;
+			color: #589CE8;
+		}
+	}
 	.footer-wrapper {
 		height: 250px;
 		position: relative;
@@ -78,5 +90,38 @@ footer {
 			border: 1px solid black;
 			border-radius: 50%;
 		}
+	}
+}
+@media (max-width: 768px) {
+	footer {
+		height: auto;
+		.footer-wrapper {
+			height: 350px;
+			.text-link {
+				position: relative;
+				top: auto;
+				transform: translateY(0);
+				padding: 20px 0px 10px 0px;
+				display: block;
+				ul {
+					margin-bottom: 10px;
+					display: flex;
+					margin-right: 0;
+					flex-flow:wrap;
+					li:first-child {
+						width: 100%;
+						margin: auto 0px;
+					}
+					li:nth-child(2) {
+						margin: auto 0px;	
+					}
+				}
+			}
+			.contact-us {
+				position: relative;
+				top: auto;
+				transform: translateX(0);
+			}
+		}	
 	}
 }
