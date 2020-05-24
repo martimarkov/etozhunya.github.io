@@ -13,7 +13,7 @@
 			&-nav_list {
 				li {
 					a {
-						font-size: 11px;
+						font-size: 13px;
 					}
 				}
 			}
@@ -21,12 +21,12 @@
 				ul {
 					li {
 						a {
-							font-size: 12px;
+							font-size: 14px;
 						}
 					}
 					li:nth-child(3)::before, li:nth-child(2)::before, li:nth-child(1)::before {
-						width: 15px;
-						height: 15px;
+						width: 12px;
+						height: 12px;
 					}
 					li:nth-child(4) {
 						img {
@@ -91,7 +91,7 @@
 			.information {
 				li {
 					width: 30%;
-					height: 120px;
+					height: 130px;
 					div {
 						width: 50px;
 						height: 50px;
@@ -187,7 +187,6 @@
 	.access {
 		.grid {
 			h3 {
-				padding-top: 60px;
 				font-size: 25px;
 			}
 			p {
@@ -235,7 +234,7 @@
 								font-size: 14px;
 							}
 							p::after {
-								bottom: -15px;
+								bottom: -25px;
 							}
 							a {
 								font-size: 15px;
@@ -294,6 +293,13 @@
 				li {
 					a {
 						font-size: 9px;
+					}
+				}
+			}
+			&-profile {
+				li {
+					a {
+						font-size: 12px !important;
 					}
 				}
 			}
@@ -384,7 +390,7 @@
 	}
 	.home {
 		background: url('../img/background-m.png') center center/cover no-repeat;
-		height: 870px;
+		height: 800px;
 		.grid {
 			width: 85%;
 			text-align: center;
@@ -394,14 +400,15 @@
 			h1 {
 				font-size: 30px;
 				line-height: 34px;
-				margin-top: 50px;
+				margin-top: 150px;
 			}
 			p {
 				font-size: 15px;
 				line-height: 180%;
 			}
 			.button {
-				padding: 18px 80px;
+				padding: 18px 0px;
+				display: block;
 			    font-size: 14px;
 			}
 		}
@@ -516,7 +523,8 @@
 		}
 	}
 	.applications {
-		height: 1200px;
+		height: 1110px;
+		margin-top: 20px;
 		.grid {
 			width: 85%;
 			h3 {
@@ -607,6 +615,7 @@
 						}
 						h4::before {
 							left: -45px;
+							top: -40px;
 						}
 					}
 					.media {
@@ -637,7 +646,7 @@
 		.grid {
 			width: 85%;
 			h3 {
-				padding-top: 0;
+				margin-top: 20px;
 				font-size: 24px;
 				line-height: 28px;
 			}
@@ -673,6 +682,9 @@
 							top: 40px;
 						}
 					}
+					.mob {
+						display: block;
+					}
 					.white {
 						text-align: left;
 						height: 70px;
@@ -688,7 +700,7 @@
 						}
 						a::after {
 							top: 2px;
-							right:-3px;
+							right:-5px;
 							height: 85%;
 						}
 					}
@@ -840,6 +852,9 @@
 	}
 }
 @media (max-width: 320px) {
+	h1 {
+		margin-top: 250px !important;
+	}
 	.home .grid .button {
     	padding: 18px 90px;
     	font-size: 14px;

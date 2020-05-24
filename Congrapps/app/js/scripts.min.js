@@ -3,6 +3,7 @@
 	
 	hamburger.addEventListener('click', function() {
 		hamburger.classList.toggle('active');
+		// hamburger.classList.removeClass('close');
 		menu.classList.toggle('visible');
 	})	
 
