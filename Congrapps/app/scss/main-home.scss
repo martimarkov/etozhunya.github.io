@@ -81,6 +81,9 @@ body * {
 					}
 				}
 			}
+			&_img {
+			    transform: translateY(-2px);
+			}
 		}
 		&-profile {
 			ul {
