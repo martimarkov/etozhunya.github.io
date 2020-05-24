@@ -4,6 +4,9 @@
 		width: 60%;
 	}
 	.home {
+		.scrollbutton {
+			display: none;
+		}
 		.header {
 			&-nav {
 				img {
