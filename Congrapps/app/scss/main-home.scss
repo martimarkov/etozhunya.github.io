@@ -170,6 +170,12 @@ body * {
 		transition: .2s;
 		box-shadow: 0 2px 5px rgba(48,89,135,.27);
 	}
+	.header.visible {
+		left: 0%;
+		transition: .4s;
+		padding-top: 60px;
+		height: 100vh;
+	}
 	.grid {
 		height: 100vh;
 		display: flex;
