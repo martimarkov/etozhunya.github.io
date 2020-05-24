@@ -377,7 +377,7 @@
 }
 @media (max-width: 950px) {
 	.mob {
-		display: block;
+		display: block !important;
 	}
 	.desktop {
 		display: none !important;
