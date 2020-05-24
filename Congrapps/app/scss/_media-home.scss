@@ -579,10 +579,9 @@
 				}
 			}
 			.statistics {
-				position: relative;
 				z-index: 1;
-				width: 100%;
-				transform: translateY(10%);
+				width: 90%;
+				bottom: -100px;
 				li {
 					span {
 						display: block;
@@ -595,6 +594,9 @@
 					right: -16px;
 					height: 80px;
 					top:10px;
+				}
+				.mob {
+					display: block;
 				}
 			}
 		}
@@ -861,6 +863,9 @@
 	}
 	.digit {
 		font-size: 25px !important;
+	}
+	.statistics {
+		bottom: -115px !important;
 	}
 }
 @media (min-width: 1100px) and (max-width: 1439px) {
