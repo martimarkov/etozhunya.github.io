@@ -7,6 +7,7 @@
 		menu.classList.toggle('visible');
 	})	
 
+	if ($('body').hasClass('check')) {
 		var scrolled;
 			$(window).scroll(function(){
 			  scrolled = $(this).scrollTop();	
@@ -48,6 +49,10 @@
 		 		} 
 		 	
 		 	});
+	}	
+
+	
+		 	
 
 		
 
