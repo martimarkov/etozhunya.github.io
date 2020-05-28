@@ -10,6 +10,9 @@ body * {
 .mob {
 	display: none;
 }
+.titles {
+	display: none;
+}
 .mob-wrapper {
 	display: none;
 }
@@ -299,9 +302,15 @@ body * {
 				text-decoration: none;
 				line-height: 16px;
 				position: relative;
+				transition: .2s;
 				text-align: center;
 				color: #FFFFFF;
 				padding: 15px 65px 15px 20px;
+			}
+			a:hover::after {
+				background-color: #fff;
+				transform: scale(1.05) translateX(10px);
+				transition: .2s;
 			}
 			a::after {
 				background: url('../img/chaika.svg') center center/cover no-repeat;
@@ -321,7 +330,9 @@ body * {
 			position: absolute;
 			bottom: 0;
 			display: flex;
+			width: 60%;
 			li {
+				cursor: pointer;
 				margin: 0px 25px;
 				background: #FFFFFF;
 				box-shadow: 0px 4px 22px rgba(48, 89, 135, 0.25);
@@ -330,8 +341,11 @@ body * {
 				justify-content: center;
 				align-items: center;
 				height: 75px;
+				flex-flow: wrap;
 				width: 230px;
-				a {
+				transition: .2s;
+				span {
+					display: block;
 					font-family: Arial;
 					font-style: normal;
 					font-weight: bold;
@@ -342,17 +356,41 @@ body * {
 					text-transform: uppercase;
 					color: #505E78;
 					text-align: center;
-					span {
-						display: block;
-					}
+					width: 100%;
+				}
+				.white {
+					display: none;
 				}
 			}
-			li:first-child {
+			li.active {
+				transition: .2s;
 				background-color: $blue;
 				transform: translateY(-20px);
-				a {
+				span {
 					color: #fff;
 				}
+
+			}
+			li.active {
+				>img {
+					display: none;
+				}
+				.white {
+					display: block;
+				}
+			}
+			li.active::before {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				left: 40%;
+				bottom: -100px;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				width: 25px;
+				height: 25px;
+				background-color: #fff;
 			}
 		}
 	}

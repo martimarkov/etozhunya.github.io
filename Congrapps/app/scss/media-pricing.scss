@@ -298,6 +298,7 @@
 		.statistics {
 			z-index: 1;
 			width: 90%;
+			justify-content: space-between;				
 			.mob {
 				display: block;
 			}
@@ -305,6 +306,7 @@
 				display: none;
 			}
 			li {
+				margin: 0px 10px;
 				.digit {
 					font-size: 28px;
 					line-height: 25px;

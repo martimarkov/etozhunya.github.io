@@ -295,6 +295,7 @@ body * {
 				border-radius: 68px;
 				font-family: Arial;
 				font-style: normal;
+				transition: .2s;
 				font-weight: bold;
 				font-size: 12px;
 				text-decoration: none;
@@ -303,6 +304,11 @@ body * {
 				text-align: center;
 				color: #FFFFFF;
 				padding: 15px 65px 15px 20px;
+			}
+			a:hover::after {
+				background-color: #fff;
+				transform: scale(1.05) translateX(10px);
+				transition: .2s;
 			}
 			a::after {
 				background: url('../img/chaika.svg') center center/cover no-repeat;
@@ -548,29 +554,40 @@ body * {
 	.mob {
 		display: none;
 	}
-	li:first-child::after, li:nth-child(2)::after  {
+}
+.statistics::before {
 		content: '';
 	    width: 1px;
-	    height: 55px;
+	    height: 75px;
 	    background-color: #00f;
 	    display: inline-block;
 	    position: absolute;
-	    right: -90px;
-	    top: 25px;
+	    right: 30%;
+	    top: 40px;
 	    opacity: 0.4;
-	}
 }
-.statistics::before {
-	top: -70px;
-	left: 50%;
-	transform: translateX(-50%);
-	content: '';
-	position: absolute;
-	display: inline-block;
-	width: 20px;
-	height: 50px;
-	background: url('../img/connect.svg') center center/cover no-repeat;
+.statistics::after {
+		content: '';
+	    width: 1px;
+	    height: 75px;
+	    background-color: #00f;
+	    display: inline-block;
+	    position: absolute;
+	    left: 30%;
+	    top: 40px;
+	    opacity: 0.4;
 }
+// .statistics::before {
+// 	top: -70px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	content: '';
+// 	position: absolute;
+// 	display: inline-block;
+// 	width: 20px;
+// 	height: 50px;
+// 	background: url('../img/connect.svg') center center/cover no-repeat;
+// }
 .content::before {
     bottom: -140px;
     right: 0;

@@ -455,17 +455,28 @@ body * {
 			.mob {
 				display: none;
 			}
-			li:first-child::after, li:nth-child(2)::after  {
+		}
+		.statistics::before {
 				content: '';
 			    width: 1px;
-			    height: 55px;
+			    height: 75px;
 			    background-color: #00f;
 			    display: inline-block;
 			    position: absolute;
-			    right: -90px;
-			    top: 25px;
+			    right: 30%;
+			    top: 40px;
 			    opacity: 0.4;
-			}
+		}
+		.statistics::after {
+				content: '';
+			    width: 1px;
+			    height: 75px;
+			    background-color: #00f;
+			    display: inline-block;
+			    position: absolute;
+			    left: 30%;
+			    top: 40px;
+			    opacity: 0.4;
 		}
 	}
 }
@@ -841,6 +852,21 @@ body * {
 			border-radius: 4px;
 			position: relative;
 			height: 40px;
+			.lines {
+				justify-content: space-between;
+
+				position: absolute;
+				width: 100%;
+				display: flex;
+				top: -40px;
+				left: 0;
+				li {
+					width: 1px;
+					height: 40px;
+					background-color: #000;
+					opacity: 0.2;
+				}
+			}
 			.block {
 				width: 80%;
 				height: 100%;
