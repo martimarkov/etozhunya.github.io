@@ -413,14 +413,13 @@ body * {
 		}
 		.statistics {
 			position: absolute;
-			bottom: -50px;
-			background: #FFFFFF;
+			background: #FFFF;
 			box-shadow: 0px 4px 22px rgba(48, 89, 135, 0.25);
 			border-radius: 10px;
 			padding: 0px 10%;
 			width: 55%;
+			transform: translate3d(-50%,-50%,0);
 			left: 50%;
-			transform: translateX(-50%);
 			display: flex;
 			justify-content: space-around;
 			padding: 20px 0px;
@@ -653,7 +652,7 @@ body * {
 			display: flex;
 			justify-content: space-between;
 			li {
-				width: 23%;
+				width: 20%;
 				background: linear-gradient(180deg, #5362A7 36.46%, #FFFFFF 36.47%, #FFFFFF 100%);
 				box-shadow: 0px 3px 15px rgba(48, 89, 135, 0.25);
 				border-radius: 10px;
@@ -668,24 +667,24 @@ body * {
 					border-radius: 10px 10px 0px 0px;
 					padding: 50px 0px 20px 0px;
 					img {
-						width: 76px;
+						width: 66px;
 						position: absolute;
 						top: 0;
-						height: 76px;
+						height: 66px;
 						transform: translateY(-25px);
 					}
 					span {
 						font-family: Arial;
 						font-style: normal;
 						font-weight: bold;
-						font-size: 16px;
+						font-size: 14px;
 						line-height: 150%;
 						text-align: center;
 						width: 100%;
 						color: #fff;
 					}
 					.price {
-						font-size: 28px;
+						font-size: 24px;
 					}
 				}
 				.mob {
@@ -715,8 +714,8 @@ body * {
 						box-shadow: 0px 2px 5px rgba(48, 89, 135, 0.27);
 						color: #fff;
 						text-decoration: none;
-						padding: 15px 70px 15px 40px;
 						border-radius: 68px;
+						padding: 10px 60px 10px 30px;
 						margin-bottom: 10px;
 						display: inline-block;
 						position: relative;
@@ -728,7 +727,7 @@ body * {
 						background: url('../img/purchase.svg') center center/contain no-repeat;
 						position: absolute;
 						top: 0px;
-						right: 4px;
+						right: 1px;
 						transition: .2s;
 					}
 				}
@@ -740,8 +739,8 @@ body * {
 			}
 			li:nth-child(4) {
 				img {
-					width: 162px;
-					height: 76px;
+					width: 152px;
+					height: 66px;
 				}
 			}
 			li:hover {
@@ -879,6 +878,7 @@ body * {
 			justify-content: space-around;
 			position: relative;
 			li {
+				transition: .5s;
 				background: linear-gradient(180deg, #5362A7 38.35%, #FFFFFF 38.36%, #FFFFFF 100%);
 				box-shadow: 0px 3px 15px rgba(48, 89, 135, 0.25);
 				border-radius: 10px;
@@ -968,6 +968,10 @@ body * {
 						transition: .2s;
 					}
 				}
+			}
+			li:hover {
+				transform: translateY(-20px);
+				transition: .5s;
 			}
 		}
 		h4 {

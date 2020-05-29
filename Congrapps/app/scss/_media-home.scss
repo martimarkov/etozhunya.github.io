@@ -539,7 +539,7 @@
 		}
 	}
 	.applications {
-		height: 1110px;
+		height: 1150px;
 		margin-top: 20px;
 		.grid {
 			width: 85%;
@@ -597,8 +597,10 @@
 			.statistics {
 				z-index: 1;
 				width: 90%;
-				bottom: -100px;
+				bottom: 0px;
+				transform: translate3d(-50%,50%,0);
 				justify-content: space-between;
+				padding-bottom: 0;
 				li {
 					margin: 0px 10px;
 					span {
@@ -881,6 +883,32 @@
 		content: none;
 	}
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+	.statistics {
+		justify-content: space-around !important;
+	}
+	.access {
+		.grid {
+			.purchase_list {
+				li {
+					.blue,  {
+						span  {
+							font-size: 20px !important;
+						}
+					}
+					.white {
+						a {
+							font-size: 10px;
+						}
+						p {
+							font-size: 17px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 @media (max-width: 320px) {
 	h1 {
 		margin-top: 250px !important;
@@ -892,8 +920,8 @@
 	.digit {
 		font-size: 25px !important;
 	}
-	.statistics {
-		bottom: -115px !important;
+	.information {
+		padding-bottom: 170px !important;
 	}
 }
 @media (min-width: 1100px) and (max-width: 1439px) {
