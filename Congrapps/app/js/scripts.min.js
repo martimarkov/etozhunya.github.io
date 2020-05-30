@@ -11,17 +11,17 @@
 		var scrolled;
 			$(window).scroll(function(){
 			  scrolled = $(this).scrollTop();	
-		  		if (scrolled > 100) {
+		  		if (scrolled > 10) {
 			  		$('.header').addClass('fixed');
 		 		} else {
 		 			$('.header').removeClass('fixed');
 		 		}
-		 		if (scrolled > 10) {
+		 		if (scrolled > 1) {
 		 			$('.mob-only').addClass('visible');	
 		 		} else {
 		 			$('.mob-only').removeClass('visible');	
 		 		}
-		 		if (scrolled < 10) {
+		 		if (scrolled < 1) {
 		 			$('.hamburger_button').addClass('color')
 		 			$('.hamburger').addClass('close')
 		 		} else {

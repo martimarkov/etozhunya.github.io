@@ -26,6 +26,7 @@ body * {
 		position: absolute;
 		bottom: 20px;
 		width: 45px;
+		transform: translateX(-50%);
 		height: 45px;
 		display: inline-block;
 		border-radius: 40px;
@@ -54,7 +55,7 @@ body * {
 	}
 	.scrollbutton:hover {
 		animation: none;
-		transform: scale(1.1) translateY(-40%);
+		transform: scale(1.05) translateY(-40%) translateX(-50%);
 		transition: .5s;
 	}
 	.header {
@@ -99,7 +100,7 @@ body * {
 					content: '';
 					display: block;
 					position: absolute;
-					bottom: -10px;
+					bottom: -16px;
 					transition: .3s;
 					left: 50%;
 					transform: translateX(-50%);
