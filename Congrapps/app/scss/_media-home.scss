@@ -1,4 +1,13 @@
 @import "vars";
+@media (min-width: 1500px) {
+	.home {
+		.grid {
+			p {
+				max-width: 600px;		
+			}
+		}
+	}	
+}	    
 @media (max-width: 1440px) {
 	.grid {
 		width: 60%;

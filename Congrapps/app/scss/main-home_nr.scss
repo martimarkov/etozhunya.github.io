@@ -66,6 +66,7 @@ body * {
 		padding:5px 20px 5px 20px;
 		width: 100vw;
 		position: fixed;
+		height: 52px;
 		.hamburger {
 			display: none;
 		}
@@ -100,7 +101,7 @@ body * {
 							content: '';
 							display: block;
 							position: absolute;
-							bottom: -10px;
+							bottom: -16px;
 							transition: .3s;
 							left: 50%;
 							transform: translateX(-50%);
@@ -133,7 +134,7 @@ body * {
 						text-decoration: none;
 						padding: 10px 35px;
 						background: #fff;
-						box-shadow: 0px 2px 5px rgba(48, 89, 135, 0.27);
+						// box-shadow: 0px 2px 5px rgba(48, 89, 135, 0.27);
 						font-family: Arial;
 						font-style: normal;
 						font-weight: bold;
@@ -144,6 +145,11 @@ body * {
 						text-align: center;
 						position: relative;
 						color: $blue;
+						transition: .5s;
+					}
+					a:first-child {
+						background-color: $blue;
+						color: #fff;
 					}
 					a:first-child::after {
 					    left: -20px;
@@ -155,7 +161,9 @@ body * {
 					    display: inline-block;
 					    position: absolute;
 					}	
-					a:hover {
+					a:hover {	
+						box-shadow: 0px 8px 12px -8px #000;
+						transition: .5s;
 						background-color: $blue;
 						color: #fff;
 					}
