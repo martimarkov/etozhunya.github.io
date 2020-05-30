@@ -846,6 +846,7 @@
 		.grid {
 			width: 85%;
 			ul {
+				width: 100%;
 				li {
 					margin-top: 60px !important;
 					flex-direction: column-reverse !important;
@@ -856,7 +857,7 @@
 							line-height: 28px;
 						}
 						h4::before {
-							left: -45px;
+							left: -25px;
 							top: -40px;
 						}
 					}
