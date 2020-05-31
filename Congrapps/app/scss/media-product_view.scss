@@ -1,4 +1,15 @@
 @import "vars";
+@media (min-width: 1600px) {
+	.price-wrapper {
+		li {
+			ul {
+				li:first-child::after {
+					width: 300% !important;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 951px) and (max-width: 1439px) {
 	.product_view {
 		.box {
