@@ -242,6 +242,9 @@
 	}
 }
 @media (max-width: 950px) {	
+	.mob-wrapper {
+		display: flex !important;
+	}
 	.mob {
 		display: block;
 	}
