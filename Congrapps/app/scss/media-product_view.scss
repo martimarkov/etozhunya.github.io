@@ -1,4 +1,20 @@
 @import "vars";
+@media (max-width: 767px) {
+	.info-wrapper {
+		ul{
+			li {
+				a {
+					width: auto !important;
+					padding: 10px 20px;
+				}
+				a::after {
+					content: none !important;
+					width: 30px;
+				}
+			}
+		}	
+	}
+}
 @media (min-width: 768px) and(max-width: 1024px)   {
  	.content-container {
 		.check {
@@ -143,9 +159,8 @@
 			ul {
 				li {
 					a {
-						width: 150px !important;
-						padding-top: 10px !important;
-						padding-bottom: 10px !important;
+						width: auto!important;
+						padding: 13px 50px 13px 20px !important;
 					}
 				}
 			}
@@ -578,15 +593,12 @@
 						}
 						a {
 							width: 100px;
-							padding: 5px 0px;
+							padding: 5px 30px;
 							font-size: 11px;
 							.desktop {
 								display: block;
 							}
 
-						}
-						a::after {
-							content: none !important;
 						}
 					}
 					li:first-child {
