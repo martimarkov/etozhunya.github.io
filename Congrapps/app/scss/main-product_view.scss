@@ -13,9 +13,6 @@ body * {
 .titles {
 	display: none;
 }
-.mob-wrapper {
-	display: none;
-}
 .product_view {
 	.header {
 		box-shadow: 0 2px 5px rgba(48,89,135,.27);
@@ -437,6 +434,11 @@ body * {
 			line-height: 150%;
 			color: #505E78;
 			margin: 15px 0px 25px 0px;
+		}
+		.check {
+			.mob-wrapper2, .mob-wrapper {
+				display: none;
+			}
 		}
 		.info-wrapper {
 			padding: 20px 0px;
