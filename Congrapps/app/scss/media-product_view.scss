@@ -29,9 +29,9 @@
 							}
 						}
 					}
-					ul::before {
-						left: 0;
-					}
+					// ul::before {
+					// 	left: 0;
+					// }
 				}
 			}
 		}
@@ -47,7 +47,7 @@
 					}
 					a {
 						font-size: 8px;
-						padding: 2px 25px 2px 8px !important;
+						padding: 2px 20px 2px 6px !important;
 						max-width: 75px !important;
 					}
 				}
@@ -329,6 +329,7 @@
 						display: inline-block;
 						position: relative;
 						max-width: 75px;
+						width: 500px;
 					}
 					.unlock {
 						margin-top: 15px;

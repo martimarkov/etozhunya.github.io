@@ -328,12 +328,12 @@ body * {
 			transform: translateY(50%);
 			z-index: 2;
 			position: absolute;
+			justify-content: space-between;
 			bottom: 0;
 			display: flex;
 			width: 60%;
 			li {
 				cursor: pointer;
-				margin: 0px 25px;
 				background: #FFFFFF;
 				box-shadow: 0px 4px 22px rgba(48, 89, 135, 0.25);
 				border-radius: 15px;
@@ -342,9 +342,13 @@ body * {
 				align-items: center;
 				height: 75px;
 				flex-flow: wrap;
-				width: 230px;
+				width: 24%;
 				transition: .2s;
+				img {
+					transform: translateY(10px);
+				}
 				span {
+					transform: translateY(-5px);
 					display: block;
 					font-family: Arial;
 					font-style: normal;
@@ -383,13 +387,13 @@ body * {
 				content: '';
 				display: inline-block;
 				position: absolute;
-				left: 40%;
+				left: 44%;
 				bottom: -100px;
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
-				width: 25px;
-				height: 25px;
+				width: 32px;
+				height: 32px;
 				background-color: #fff;
 			}
 		}
@@ -572,7 +576,7 @@ body * {
 						}
 						span:first-child {
 							font-weight: bold;
-							margin-bottom: 15px;
+							margin-bottom: 8px;
 						}
 						a {
 							font-family: Arial;
@@ -587,6 +591,12 @@ body * {
 							display: inline-block;
 							position: relative;
 							max-width: 92px;
+							width: 500px;
+							transition: .4s
+						}
+						a:hover {
+							transform: scale(1.1);
+							transition: .4s
 						}
 						a:first-child {
 							border: 1px solid #FFAC24;
@@ -614,7 +624,7 @@ body * {
 						}
 					}
 					li:nth-child(3), li:nth-child(1), li:nth-child(2) {
-						width: 22%;
+						width: 21.5%;
 					}
 					li:nth-child(4) {
 						width: 10%;
@@ -664,7 +674,7 @@ body * {
 					li:nth-child(1)::after {
 					content: '';
 					display: inline-block;
-					width: 270%;
+					width: calc(300% + 15px);
 					height: 1px;
 					position: absolute;
 				    top: 50%;
@@ -677,10 +687,10 @@ body * {
 					content: '';
 					display: inline-block;
 					width: 35px;
-					height: 50px;
+					height: 35px;
 					background: url('../img/title05.png') center center/contain no-repeat;
 					position: absolute;
-				    left: 10px;
+				    left: 5px;
 				    top: 17px;
 				}
 			}
